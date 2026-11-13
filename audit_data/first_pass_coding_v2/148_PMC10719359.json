@@ -1,0 +1,134 @@
+{
+ "idx": 148,
+ "pmcid": "PMC10719359",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing an improved YOLOv5 detector (with SPPFKCSPC, C3-SPPFK, C3-CA, and EIOU) evaluated on NEU-DET and PV-Multi-Defect.",
+ "detector_family": "YOLOv5 (custom)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes (300 images per class), Baidu AI Studio link",
+     "evidence": "The public dataset NEU-DET offered by Northeastern College was the one used in this study, which contains 1800 images in all. Among them, each flaw has 300 images, and there are six different sorts of defects.",
+     "location": "Experiment - Analysis of datasets"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/test/val 6:2:2",
+     "evidence": "In our experiments, the two datasets are split into training, testing and validation sets at a proportion of 6:2:2.",
+     "location": "Experiment - Analysis of datasets"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "test",
+     "evidence": "After each change, the effectiveness of the model on the set of tests needs to be re-evaluated to see how this change affects the overall model performance.",
+     "location": "Results of ablation experiments"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "448x448",
+     "evidence": "Parameters | The size of input images | Learning rate | Epochs | Batch size\nSettings | 448 × 448 | 0.01 | 200 | 32",
+     "location": "Table 2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs",
+     "evidence": "Parameters | The size of input images | Learning rate | Epochs | Batch size\nSettings | 448 × 448 | 0.01 | 200 | 32",
+     "location": "Table 2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "Parameters | The size of input images | Learning rate | Epochs | Batch size\nSettings | 448 × 448 | 0.01 | 200 | 32",
+     "location": "Table 2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "mixed",
+     "evidence": "The experimental setup for the comparative algorithms in Tables 4 and 5 is identical to experiments in the previous literatures.",
+     "location": "Experimentation and setup, Table 4 (Table 4 has missing cells for cited methods, while YOLOv5 baseline is trained by authors in Table 7)"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "Tesla V100-PCIE-16 GB reported in Table 1, but inference batch size and precision for FPS not reported",
+     "evidence": "",
+     "location": "Table 1, Table 4"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "only dataset links provided",
+     "evidence": "",
+     "location": "Data availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "Ours (Improved YOLOv5 / Scheme 5)",
+    "map50": 88.3,
+    "map50_95": 52.3,
+    "baseline": "YOLOv5",
+    "baseline_map50": 81.1,
+    "improvement_pp": 7.2,
+    "single_run": null,
+    "evidence": "On the NEU-DET dataset, we got a mean average accuracy (mAP) of 88.3%, which is 7.2% greater than the original approach.",
+    "location": "Abstract, Table 4, Table 7"
+   }
+  }
+ ],
+ "code_links": [
+  "https://aistudio.baidu.com/aistudio/datasetdetail/195425",
+  "https://github.com/CCNUZFW/PV-Multi-Defect"
+ ],
+ "coder_notes": "Manual parameter tuning is described in Experimentation and setup, without specifying whether test or validation results guided the tuning. Links in Data availability are dataset links only."
+}

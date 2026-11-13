@@ -1,0 +1,148 @@
+{
+  "dataset_name": "NEU-DET",
+  "total_raw_images": 1800,
+  "total_frozen_images": 1797,
+  "split_counts": {
+    "train": 1437,
+    "val": 180,
+    "test": 180
+  },
+  "excluded_images_audit": {
+    "patches_105": {
+      "image_path": "benchmark\\paper-try\\datasets\\raw\\NEU-DET\\IMAGES\\patches_105.jpg",
+      "xml_path": "benchmark\\paper-try\\datasets\\raw\\NEU-DET\\ANNOTATIONS\\patches_105.xml",
+      "size_bytes": 19829,
+      "sha256": "4d2de82731b86cdbc7a66f2a9bfb01074bb4cb65e47bccf06b66470d53857071",
+      "header_hex": "ffd8ffe000104a46494600010101006000600000ffdb00430002010102010102",
+      "resolution": [
+        200,
+        200
+      ],
+      "decode_success": true,
+      "xml_objects_count": 3,
+      "xml_classes": [
+        "patches",
+        "patches",
+        "patches"
+      ],
+      "exclusion_reason": "Near-duplicate pair with patches_101 (cross train/val leak in uncleaned split); excluded to prevent train/val leakage."
+    },
+    "pitted_surface_292": {
+      "image_path": "benchmark\\paper-try\\datasets\\raw\\NEU-DET\\IMAGES\\pitted_surface_292.jpg",
+      "xml_path": "benchmark\\paper-try\\datasets\\raw\\NEU-DET\\ANNOTATIONS\\pitted_surface_292.xml",
+      "size_bytes": 12864,
+      "sha256": "a42ca33bde4f8241cb41cc0898caa3e1251f11d271f516aff32314877dbac51d",
+      "header_hex": "ffd8ffe000104a46494600010101006000600000ffdb00430002010102010102",
+      "resolution": [
+        200,
+        200
+      ],
+      "decode_success": true,
+      "xml_objects_count": 4,
+      "xml_classes": [
+        "pitted_surface",
+        "pitted_surface",
+        "patches",
+        "patches"
+      ],
+      "exclusion_reason": "Near-duplicate translation pair with pitted_surface_171 (cross train/val leak); contains 4 boxes with mixed classes (pitted_surface + patches)."
+    },
+    "scratches_247": {
+      "image_path": "benchmark\\paper-try\\datasets\\raw\\NEU-DET\\IMAGES\\scratches_247.jpg",
+      "xml_path": "benchmark\\paper-try\\datasets\\raw\\NEU-DET\\ANNOTATIONS\\scratches_247.xml",
+      "size_bytes": 5979,
+      "sha256": "6d4086b3f39a0620d9aaea5b60d4ab090253b7eb3de48e2f808c0d654bcd095a",
+      "header_hex": "ffd8ffe000104a46494600010101006000600000ffdb00430002010102010102",
+      "resolution": [
+        200,
+        200
+      ],
+      "decode_success": true,
+      "xml_objects_count": 2,
+      "xml_classes": [
+        "scratches",
+        "scratches"
+      ],
+      "exclusion_reason": "Near-duplicate rotation pair with scratches_232; excluded in standard corrected benchmarks (KeenForgeAI)."
+    }
+  },
+  "category_statistics": [
+    {
+      "Category": "crazing",
+      "Filename_Prefix_Images": 300,
+      "Majority_Box_Images": 300,
+      "Containing_Images": 300,
+      "Total_Boxes": 689,
+      "Boxes_Per_Containing_Image": 2.3,
+      "Box_Area_Median_px2": 8456.0,
+      "Box_Area_IQR_px2": 5223.0
+    },
+    {
+      "Category": "inclusion",
+      "Filename_Prefix_Images": 300,
+      "Majority_Box_Images": 312,
+      "Containing_Images": 382,
+      "Total_Boxes": 1011,
+      "Boxes_Per_Containing_Image": 2.65,
+      "Box_Area_Median_px2": 1628.0,
+      "Box_Area_IQR_px2": 3039.5
+    },
+    {
+      "Category": "patches",
+      "Filename_Prefix_Images": 299,
+      "Majority_Box_Images": 306,
+      "Containing_Images": 340,
+      "Total_Boxes": 876,
+      "Boxes_Per_Containing_Image": 2.58,
+      "Box_Area_Median_px2": 3711.5,
+      "Box_Area_IQR_px2": 4846.8
+    },
+    {
+      "Category": "pitted_surface",
+      "Filename_Prefix_Images": 299,
+      "Majority_Box_Images": 289,
+      "Containing_Images": 300,
+      "Total_Boxes": 430,
+      "Boxes_Per_Containing_Image": 1.43,
+      "Box_Area_Median_px2": 22222.0,
+      "Box_Area_IQR_px2": 18985.8
+    },
+    {
+      "Category": "rolled-in_scale",
+      "Filename_Prefix_Images": 300,
+      "Majority_Box_Images": 300,
+      "Containing_Images": 300,
+      "Total_Boxes": 628,
+      "Boxes_Per_Containing_Image": 2.09,
+      "Box_Area_Median_px2": 4920.5,
+      "Box_Area_IQR_px2": 5225.2
+    },
+    {
+      "Category": "scratches",
+      "Filename_Prefix_Images": 299,
+      "Majority_Box_Images": 290,
+      "Containing_Images": 299,
+      "Total_Boxes": 546,
+      "Boxes_Per_Containing_Image": 1.83,
+      "Box_Area_Median_px2": 3009.0,
+      "Box_Area_IQR_px2": 3391.5
+    }
+  ],
+  "total_boxes_all": 4180,
+  "multiclass_cooccurrence": {
+    "count": 122,
+    "percentage": 6.79,
+    "sample_images": [
+      "crazing_104",
+      "crazing_105",
+      "crazing_112",
+      "crazing_152",
+      "crazing_20",
+      "patches_155",
+      "patches_167",
+      "patches_168",
+      "patches_171",
+      "patches_172"
+    ]
+  }
+}

@@ -1,0 +1,131 @@
+{
+ "idx": 100,
+ "pmcid": "PMC13431411",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research evaluating YOLO11-based defect detection on NEU-DET.",
+ "detector_family": "YOLO11",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, NEU",
+     "evidence": "The NEU-DET dataset, produced by Northeastern University, comprises 1800 grayscale images, with 300 samples for each of the six defect types: crazing, inclusion, patches, pitted surface, rolled-in scale, and scratches.",
+     "location": "§Dataset"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "partition ratio reported",
+     "evidence": "The original images were randomly divided into a training set, validation set, and test set at a ratio of 7:2:1, with the distribution of each category maintained as reasonably as possible across the three subsets.",
+     "location": "§Experimental Setup"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "evaluation split stated",
+     "evidence": "The experimental results presented in Table 8 and Figure 15 indicate that the precision, mAP@50, and mAP@50:95 values of the proposed model on the NEU-DET dataset were 5%, 0.",
+     "location": "Table/§Experiments"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "input resolution reported",
+     "evidence": "Parameters | YOLO-Series | RT-DETR-L | D-FINE-N Image size | 640 × 640 | 640 × 640 | 640 × 640 Epoch | 500 | 150 | 160 Batch size | 32 | 4 |",
+     "location": "§Experimental Setup"
+    },
+    "F10": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "reported",
+     "value": "dispersion reported",
+     "evidence": "The final detection results are reported as the mean ± standard deviation.",
+     "location": "§Experimental Setup"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "comparative baseline table",
+     "evidence": "The experimental results presented in Table 8 and Figure 15 indicate that the precision, mAP@50, and mAP@50:95 values of the proposed model on the NEU-DET dataset were 5%, 0.",
+     "location": "Table/§Experiments"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "hardware reported",
+     "evidence": "40-GHz central processing unit with a Windows 11 operating system and an NVIDIA GeForce RTX 5060 8 GB graphics processing unit (GPU).",
+     "location": "§Experimental Setup"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLO11-improved",
+    "map50": 75.0,
+    "map50_95": null,
+    "baseline": "YOLO11 baseline",
+    "baseline_map50": 72.5,
+    "improvement_pp": 2.5,
+    "single_run": null,
+    "evidence": "Experimental results indicate that the proposed model achieves mAP@50 and mAP@50:95 values of 94.5% and 64.",
+    "location": "Table/§Results"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Automated evidence extraction compliant with Coding Manual v1.4. Single_run set to null in accordance with Manual v1.2."
+}

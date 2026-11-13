@@ -1,0 +1,131 @@
+{
+ "idx": 15,
+ "pmcid": "PMC12491516",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original journal article training and evaluating a YOLOv11n-based detector on GC10-DET+, an enlarged, re-annotated derivative of GC10-DET.",
+ "detector_family": "YOLOv11",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "ambiguous",
+     "value": "GC10-DET+ (non-public derivative of GC10-DET with extra web images, re-annotation and offline augmentation); 10 classes listed; no image count, no link",
+     "evidence": "The dataset used in this study, GC10-DET+, is primarily derived from the GC10-DET dataset37.",
+     "location": "Experiment > Dataset description"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 7:1:2",
+     "evidence": "the dataset was partitioned into training, validation, and test sets in a 7:1:2 ratio",
+     "location": "Experiment > Dataset description"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "checked full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "no duplicate check; offline flips/rotations added to underrepresented classes, order relative to split not stated",
+     "evidence": "",
+     "location": "Experiment > Dataset description"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "checked full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "validation set exists but checkpoint selection criterion not stated",
+     "evidence": "",
+     "location": "checked full text"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "main tables do not state evaluation set; only qualitative examples said to be from test set",
+     "evidence": "Figure 9 presents several detection examples from our model on the test set.",
+     "location": "Detection effect analysis"
+    },
+    "F08": {
+     "status": "ambiguous",
+     "value": "unclear",
+     "evidence": "the dataset was partitioned into training, validation, and test sets in a 7:1:2 ratio",
+     "location": "Experiment > Dataset description"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "checked full text"
+    },
+    "F10": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "checked full text"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "checked full text"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "checked full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "single run",
+     "evidence": "",
+     "location": "checked full text"
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "unclear (SSD row has missing entries, suggesting partly copied; not stated)",
+     "evidence": "",
+     "location": "Table 6"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "FPS reported; global environment RTX 3060 Laptop GPU given, batch/precision/timing scope not stated",
+     "evidence": "All experimental data in this paper were obtained using the following environment (Table 1)",
+     "location": "Experimental environment configuration; Table 1; Tables 5-6"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "no code link; data available on request",
+     "evidence": "",
+     "location": "Code availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "checked full text"
+    }
+   },
+   "main_result": {
+    "model": "PSF-YOLO",
+    "map50": 82.2,
+    "map50_95": 45.8,
+    "baseline": "YOLOv11n",
+    "baseline_map50": 79.0,
+    "improvement_pp": 3.2,
+    "single_run": null,
+    "evidence": "Overall, these improvements result in a significant reduction of 25% in parameter count, accompanied by a 3.2% increase in",
+    "location": "Table 5 (ablation); Table 6"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Dataset is GC10-DET+, a non-public derivative (additional web images, re-annotation, offline augmentation of minority classes); manual says 'public derivative versions' count, so main agent should adjudicate include vs E3. Table 6 lists 'Our' mAP50-95 as 42.5% whereas Table 5 and Conclusion give 45.8% (internal inconsistency); map50_95 taken from Table 5. No hyperparameters (epochs, batch, input size) reported. Augmentation may have been applied before the 7:1:2 split (order not stated), potential leakage. Data available from corresponding author on request."
+}

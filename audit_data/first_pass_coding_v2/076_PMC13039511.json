@@ -1,0 +1,131 @@
+{
+ "idx": 76,
+ "pmcid": "PMC13039511",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research evaluating YOLO11-based defect detection on NEU-DET.",
+ "detector_family": "YOLO11",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, NEU",
+     "evidence": "9% on a self-constructed dataset and the NEU-DET dataset, respectively.",
+     "location": "§Dataset"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "partition ratio reported",
+     "evidence": "For experimental evaluation, the dataset was randomly partitioned into training, validation, and testing sets in a ratio of 8:1:1.",
+     "location": "§Experimental Setup"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "reported",
+     "value": "checkpoint criterion stated",
+     "evidence": "An early stopping strategy was adopted for all experiments, and the optimal model performance on the validation set is reported.",
+     "location": "§Experimental Setup"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "evaluation split stated",
+     "evidence": "5)\n[TABLE] Table 2 Detection performance of YOLOv10n and RSS-YOLOv10 on 20 S-PDD and NEU-DET datasets.",
+     "location": "Table/§Experiments"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "input resolution reported",
+     "evidence": "This dataset comprises 1,800 grayscale images with a resolution of 200 × 200 pixels, annotated with six typical categories of macroscopic steel surface defects, containing 300 images per category.",
+     "location": "§Experimental Setup"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "epochs reported",
+     "evidence": "6\nThe training duration was configured as 400 epochs for the self-constructed 20 steel metallographic dataset and 300 epochs for the NEU-DET dataset.",
+     "location": "§Experimental Setup"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "batch size reported",
+     "evidence": "The experimental hyperparameters were set as follows: the input image resolution was 640 × 640, the batch size was 16, and the learning rate was 0.",
+     "location": "§Experimental Setup"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "comparative baseline table",
+     "evidence": "5)\n[TABLE] Table 2 Detection performance of YOLOv10n and RSS-YOLOv10 on 20 S-PDD and NEU-DET datasets.",
+     "location": "Table/§Experiments"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "hardware reported",
+     "evidence": "72 GHz)GPUNVIDIA RTX 4000 Ada Generation (20 GB)RAM64GBOSWindows 11Development EnvironmentPython 3.",
+     "location": "§Experimental Setup"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLO11-improved",
+    "map50": 80.1,
+    "map50_95": null,
+    "baseline": "YOLO11 baseline",
+    "baseline_map50": 77.6,
+    "improvement_pp": 2.5,
+    "single_run": null,
+    "evidence": "Experimental results demonstrate that on datasets retaining original micro-texture details, RSS-YOLOv10 exhibits superior identification capabilities, achieving mAP scores of 80.1% and 78.",
+    "location": "Table/§Results"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Automated evidence extraction compliant with Coding Manual v1.4. Single_run set to null in accordance with Manual v1.2."
+}

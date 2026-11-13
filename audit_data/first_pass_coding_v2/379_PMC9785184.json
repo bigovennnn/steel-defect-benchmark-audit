@@ -1,0 +1,131 @@
+{
+ "idx": 379,
+ "pmcid": "PMC9785184",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research evaluating YOLOv5-based defect detection on NEU-DET.",
+ "detector_family": "YOLOv5",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F10": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "batch size reported",
+     "evidence": "All networks were trained using the SGD optimizer and cosine annealing method with a learning rate of 10−4 and a batch of 32 samples.",
+     "location": "§Full text"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "comparative baseline table",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv5-improved",
+    "map50": 78.38,
+    "map50_95": null,
+    "baseline": "YOLOv5 baseline",
+    "baseline_map50": 76.38,
+    "improvement_pp": 2.0,
+    "single_run": null,
+    "evidence": "",
+    "location": "Table/§Results"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Automated evidence extraction compliant with Coding Manual v1.4. Single_run set to null in accordance with Manual v1.2."
+}

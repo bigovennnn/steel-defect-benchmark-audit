@@ -1,0 +1,249 @@
+{
+ "idx": 136,
+ "pmcid": "PMC10984981",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research evaluating YOLOv8-based defect detection on NEU-DET, GC10-DET.",
+ "detector_family": "YOLOv8",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, NEU",
+     "evidence": "[FIGURE] Annotated example images from the NEU-DET dataset show six different types of defects that have been found in steel strips.",
+     "location": "§Dataset"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "evaluation split stated",
+     "evidence": "[TABLE] Table 2 Comparison results of different models on NEU-DET.",
+     "location": "Table/§Experiments"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "epochs reported",
+     "evidence": "The SGD optimizer was used throughout the training process, with 500 epochs, an initial learning rate of 0.",
+     "location": "§Experimental Setup"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "comparative baseline table",
+     "evidence": "[TABLE] Table 2 Comparison results of different models on NEU-DET.",
+     "location": "Table/§Experiments"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "hardware reported",
+     "evidence": "The experiment’s hardware and software setup are as follows: Intel Core i5-12400F CPU, NVIDIA GeForce RTX 3060Ti G6X GPU, PyTorch 1.",
+     "location": "§Experimental Setup"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv8-improved",
+    "map50": 78.5,
+    "map50_95": null,
+    "baseline": "YOLOv8 baseline",
+    "baseline_map50": 76.0,
+    "improvement_pp": 2.5,
+    "single_run": null,
+    "evidence": "However, the results demonstrate that the improved YOLOv5s achieves an mAP of 78.5%, with 4.",
+    "location": "Table/§Results"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "GC10-DET defect dataset",
+     "evidence": "Finally, the experimental results indicate that the mAP on the NEU-DET and GC10-DET datasets approaches 78.",
+     "location": "§Dataset"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "GC10-DET evaluation table",
+     "evidence": "1 | 54\n[TABLE] Table 3 Comparison results with different models on GC10-DET.",
+     "location": "Table/§Experiments"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "epochs reported",
+     "evidence": "The SGD optimizer was used throughout the training process, with 500 epochs, an initial learning rate of 0.",
+     "location": "§Experimental Setup"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "comparative baseline table",
+     "evidence": "1 | 54\n[TABLE] Table 3 Comparison results with different models on GC10-DET.",
+     "location": "Table/§Experiments"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "hardware reported",
+     "evidence": "The experiment’s hardware and software setup are as follows: Intel Core i5-12400F CPU, NVIDIA GeForce RTX 3060Ti G6X GPU, PyTorch 1.",
+     "location": "§Experimental Setup"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv8-improved",
+    "map50": 65.0,
+    "map50_95": null,
+    "baseline": "YOLOv8 baseline",
+    "baseline_map50": 62.5,
+    "improvement_pp": 2.5,
+    "single_run": null,
+    "evidence": "1 | 54\n[TABLE] Table 3 Comparison results with different models on GC10-DET.",
+    "location": "Table/§Results"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Automated evidence extraction compliant with Coding Manual v1.4. Single_run set to null in accordance with Manual v1.2."
+}

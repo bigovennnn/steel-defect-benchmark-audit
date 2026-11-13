@@ -1,0 +1,166 @@
+{
+  "pipeline_exact_parameters": {
+    "total_valid_images": 1797,
+    "total_unordered_pairs_screened": 1613706,
+    "stage1_coarse_16x16": {
+      "primary_threshold": 0.85,
+      "marginal_band_audited": [
+        0.8,
+        0.85
+      ],
+      "min_overlap_fraction": 0.6,
+      "max_shift_fraction": 0.25,
+      "pairs_passing_085": 122706,
+      "pairs_in_band_080_085": 96572
+    },
+    "stage2_intermediate_64x64": {
+      "threshold": 0.85,
+      "passed_count": 44915,
+      "rejected_but_supplementally_audited_at_200x200": 77791
+    },
+    "stage3_native_200x200_verification": {
+      "pixel_ncc_threshold": 0.95,
+      "gradient_ncc_threshold": 0.9,
+      "min_overlap_fraction": 0.6,
+      "from_stage2_pass": 213,
+      "from_stage2_supplement": 6,
+      "subtotal_coarse_ge_085": 219,
+      "from_coarse_band_080_085": 4,
+      "total_merged_candidate_edges": 223
+    }
+  },
+  "distribution_across_223_edges": {
+    "coarse_ncc_min": 0.8096,
+    "coarse_ncc_max": 0.9998,
+    "pixel_ncc_min": 0.952,
+    "pixel_ncc_median": 0.9955,
+    "pixel_ncc_max": 1.0,
+    "gradient_ncc_min": 0.9025,
+    "gradient_ncc_median": 0.9884,
+    "gradient_ncc_max": 1.0,
+    "overlap_min": 0.6006,
+    "overlap_max": 0.97
+  },
+  "borderline_4_pairs_in_080_085": [
+    {
+      "a_file": "scratches_27.jpg",
+      "b_file": "scratches_295.jpg",
+      "coarse_ncc": 0.8437,
+      "pixel_ncc": 0.9981,
+      "gradient_ncc": 0.9954,
+      "overlap_fraction": 0.9603
+    },
+    {
+      "a_file": "scratches_220.jpg",
+      "b_file": "scratches_240.jpg",
+      "coarse_ncc": 0.8281,
+      "pixel_ncc": 0.9958,
+      "gradient_ncc": 0.9849,
+      "overlap_fraction": 0.8482
+    },
+    {
+      "a_file": "crazing_96.jpg",
+      "b_file": "crazing_93.jpg",
+      "coarse_ncc": 0.8359,
+      "pixel_ncc": 0.9912,
+      "gradient_ncc": 0.9951,
+      "overlap_fraction": 0.7235
+    },
+    {
+      "a_file": "crazing_115.jpg",
+      "b_file": "crazing_118.jpg",
+      "coarse_ncc": 0.8096,
+      "pixel_ncc": 0.9884,
+      "gradient_ncc": 0.9937,
+      "overlap_fraction": 0.7751
+    }
+  ],
+  "coarse_threshold_sensitivity": [
+    {
+      "edges": 223,
+      "unique_images": 351,
+      "connected_components": 147,
+      "max_component_size": 8,
+      "coarse_threshold": 0.8,
+      "naive_cross_split_edges": 74,
+      "naive_train_test_edges": 32
+    },
+    {
+      "edges": 219,
+      "unique_images": 343,
+      "connected_components": 143,
+      "max_component_size": 8,
+      "coarse_threshold": 0.85,
+      "naive_cross_split_edges": 72,
+      "naive_train_test_edges": 31
+    },
+    {
+      "edges": 199,
+      "unique_images": 321,
+      "connected_components": 135,
+      "max_component_size": 8,
+      "coarse_threshold": 0.9,
+      "naive_cross_split_edges": 65,
+      "naive_train_test_edges": 29
+    },
+    {
+      "edges": 145,
+      "unique_images": 241,
+      "connected_components": 106,
+      "max_component_size": 5,
+      "coarse_threshold": 0.95,
+      "naive_cross_split_edges": 44,
+      "naive_train_test_edges": 20
+    }
+  ],
+  "native_threshold_sensitivity": [
+    {
+      "edges": 223,
+      "unique_images": 351,
+      "connected_components": 147,
+      "max_component_size": 8,
+      "label": "pixel>=0.95 & grad>=0.90 (Frozen v5 baseline, coarse>=0.80)",
+      "p_th": 0.95,
+      "g_th": 0.9,
+      "c_th": 0.8,
+      "naive_cross_split_edges": 74,
+      "naive_train_test_edges": 32
+    },
+    {
+      "edges": 219,
+      "unique_images": 343,
+      "connected_components": 143,
+      "max_component_size": 8,
+      "label": "pixel>=0.95 & grad>=0.90 (Primary coarse>=0.85 only)",
+      "p_th": 0.95,
+      "g_th": 0.9,
+      "c_th": 0.85,
+      "naive_cross_split_edges": 72,
+      "naive_train_test_edges": 31
+    },
+    {
+      "edges": 184,
+      "unique_images": 292,
+      "connected_components": 124,
+      "max_component_size": 7,
+      "label": "pixel>=0.98 & grad>=0.95 (Strict native)",
+      "p_th": 0.98,
+      "g_th": 0.95,
+      "c_th": 0.8,
+      "naive_cross_split_edges": 57,
+      "naive_train_test_edges": 22
+    },
+    {
+      "edges": 134,
+      "unique_images": 219,
+      "connected_components": 93,
+      "max_component_size": 7,
+      "label": "pixel>=0.99 & grad>=0.98 (Ultra-strict native)",
+      "p_th": 0.99,
+      "g_th": 0.98,
+      "c_th": 0.8,
+      "naive_cross_split_edges": 46,
+      "naive_train_test_edges": 18
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+ "idx": 128,
+ "pmcid": "PMC11820220",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research training and evaluating YOLOv10n-SFDC on both NEU-DET and GC10-DET.",
+ "detector_family": "YOLOv10",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images (300 per class), 6 classes, 200x200 pixels, NEU link",
+     "evidence": "In total, the dataset includes 300 images for each defect type, with all images sized at 200 × 200 pixels.",
+     "location": "5.1, Data Availability Statement"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val 9:1 (1620/180)",
+     "evidence": "The images were randomly allocated to a training set and a validation set at a 9:1 ratio, resulting in a training set comprising 1620 images and a validation set containing 180 images.",
+     "location": "5.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "only train/val (9:1, 1620/180) split is defined in 5.1, while 5.3 mentions training and testing phases without specifying evaluation set",
+     "evidence": "The images were randomly allocated to a training set and a validation set at a 9:1 ratio, resulting in a training set comprising 1620 images and a validation set containing 180 images.",
+     "location": "5.1, 5.3"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "5.1, 5.3"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "During the training phase, the model underwent 300 epochs, utilized a batch size of 32, and handled input images with a resolution of 640 × 640.",
+     "location": "5.2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "During the training phase, the model underwent 300 epochs, utilized a batch size of 32, and handled input images with a resolution of 640 × 640.",
+     "location": "5.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "During the training phase, the model underwent 300 epochs, utilized a batch size of 32, and handled input images with a resolution of 640 × 640.",
+     "location": "5.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "mixed",
+     "evidence": "Under the same experimental conditions, the detection performance of the revised YOLOv10n-SFDC exhibits notable differences from the original YOLOv10 in various aspects.",
+     "location": "5.3, 5.4, Table 3"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text (no FPS or latency reported)"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv10n-SFDC",
+    "map50": 85.5,
+    "map50_95": null,
+    "baseline": "YOLOv10n",
+    "baseline_map50": 79.2,
+    "improvement_pp": 6.3,
+    "single_run": null,
+    "evidence": "NEU-DET | 0.718 | 0.854 | 0.855 | 0.792",
+    "location": "Table 3, Table 4"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "3563 grayscale images, 10 classes, 2048x1000 pixels, GitHub link",
+     "evidence": "The dataset comprises 3563 grayscale images, each with a resolution of 2048 × 1000 pixels. The dataset was divided into a training set and a validation set in an 80:20 ratio.",
+     "location": "5.1, Data Availability Statement"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val 80:20",
+     "evidence": "The dataset comprises 3563 grayscale images, each with a resolution of 2048 × 1000 pixels. The dataset was divided into a training set and a validation set in an 80:20 ratio.",
+     "location": "5.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "only train/val (80:20) split is defined in 5.1, without explicit statement of evaluation split in 5.5",
+     "evidence": "The dataset comprises 3563 grayscale images, each with a resolution of 2048 × 1000 pixels. The dataset was divided into a training set and a validation set in an 80:20 ratio.",
+     "location": "5.1, 5.5"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "5.1, 5.5"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "During the training phase, the model underwent 300 epochs, utilized a batch size of 32, and handled input images with a resolution of 640 × 640.",
+     "location": "5.2, 5.5"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "During the training phase, the model underwent 300 epochs, utilized a batch size of 32, and handled input images with a resolution of 640 × 640.",
+     "location": "5.2, 5.5"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "During the training phase, the model underwent 300 epochs, utilized a batch size of 32, and handled input images with a resolution of 640 × 640.",
+     "location": "5.2, 5.5"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "rerun",
+     "evidence": "The YOLOv10n-SFDC model, trained with the same parameters for both the NEU-DET and GC10-DET datasets, demonstrated strong performance on the GC10-DET dataset",
+     "location": "5.5, Table 4"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv10n-SFDC",
+    "map50": 65.6,
+    "map50_95": null,
+    "baseline": "YOLOv10",
+    "baseline_map50": 64.4,
+    "improvement_pp": 1.2,
+    "single_run": null,
+    "evidence": "GC10-DET | 0.637 | 0.617 | 0.656 | 0.644",
+    "location": "Table 4"
+   }
+  }
+ ],
+ "code_links": [
+  "http://faculty.neu.edu.cn/songkechen/zh_CN/zhym/263269/list/index.htm",
+  "https://github.com/lvxiaoming2019/GC10-DET-Metallic-Surface-Defect-Datasets",
+  "https://www.kaggle.com/datasets/sukmaadhiwijaya/welding-defect-object-detection/data"
+ ],
+ "coder_notes": "Links are dataset links only. Both NEU-DET (9:1) and GC10-DET (80:20) are split only into train and validation sets."
+}

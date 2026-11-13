@@ -1,0 +1,469 @@
+{
+  "n_graph_edges": 223,
+  "n_non_graph_candidates": 126,
+  "n_non_graph_both_positive": 69,
+  "n_missed_cross_component": 64,
+  "missed_by_pool": {
+    "Pool_C_ORB_RANSAC_Top50": 40,
+    "Pool_C_ResNet50_Cosine_Top50": 16,
+    "Pool_B_Registration_Boundary_070_085": 8
+  },
+  "missed_pairs": [
+    [
+      "patches_37",
+      "patches_38"
+    ],
+    [
+      "crazing_52",
+      "crazing_54"
+    ],
+    [
+      "crazing_155",
+      "crazing_157"
+    ],
+    [
+      "rolled-in_scale_150",
+      "rolled-in_scale_151"
+    ],
+    [
+      "crazing_281",
+      "crazing_282"
+    ],
+    [
+      "crazing_206",
+      "crazing_207"
+    ],
+    [
+      "crazing_196",
+      "crazing_198"
+    ],
+    [
+      "rolled-in_scale_69",
+      "rolled-in_scale_70"
+    ],
+    [
+      "pitted_surface_277",
+      "pitted_surface_278"
+    ],
+    [
+      "crazing_200",
+      "crazing_201"
+    ],
+    [
+      "pitted_surface_27",
+      "pitted_surface_34"
+    ],
+    [
+      "crazing_25",
+      "crazing_26"
+    ],
+    [
+      "rolled-in_scale_5",
+      "rolled-in_scale_6"
+    ],
+    [
+      "pitted_surface_169",
+      "pitted_surface_174"
+    ],
+    [
+      "crazing_185",
+      "crazing_186"
+    ],
+    [
+      "pitted_surface_173",
+      "pitted_surface_174"
+    ],
+    [
+      "pitted_surface_36",
+      "pitted_surface_37"
+    ],
+    [
+      "pitted_surface_181",
+      "pitted_surface_182"
+    ],
+    [
+      "crazing_236",
+      "crazing_237"
+    ],
+    [
+      "crazing_1",
+      "crazing_2"
+    ],
+    [
+      "rolled-in_scale_133",
+      "rolled-in_scale_134"
+    ],
+    [
+      "crazing_11",
+      "crazing_13"
+    ],
+    [
+      "scratches_185",
+      "scratches_258"
+    ],
+    [
+      "rolled-in_scale_4",
+      "rolled-in_scale_6"
+    ],
+    [
+      "rolled-in_scale_41",
+      "rolled-in_scale_42"
+    ],
+    [
+      "pitted_surface_248",
+      "pitted_surface_249"
+    ],
+    [
+      "scratches_255",
+      "scratches_256"
+    ],
+    [
+      "rolled-in_scale_49",
+      "rolled-in_scale_50"
+    ],
+    [
+      "crazing_55",
+      "crazing_56"
+    ],
+    [
+      "crazing_221",
+      "crazing_222"
+    ],
+    [
+      "crazing_255",
+      "crazing_256"
+    ],
+    [
+      "crazing_21",
+      "crazing_22"
+    ],
+    [
+      "scratches_177",
+      "scratches_260"
+    ],
+    [
+      "rolled-in_scale_283",
+      "rolled-in_scale_284"
+    ],
+    [
+      "crazing_186",
+      "crazing_188"
+    ],
+    [
+      "crazing_168",
+      "crazing_169"
+    ],
+    [
+      "rolled-in_scale_3",
+      "rolled-in_scale_4"
+    ],
+    [
+      "rolled-in_scale_288",
+      "rolled-in_scale_289"
+    ],
+    [
+      "pitted_surface_116",
+      "pitted_surface_300"
+    ],
+    [
+      "rolled-in_scale_65",
+      "rolled-in_scale_66"
+    ],
+    [
+      "patches_15",
+      "patches_16"
+    ],
+    [
+      "rolled-in_scale_54",
+      "rolled-in_scale_55"
+    ],
+    [
+      "inclusion_88",
+      "inclusion_89"
+    ],
+    [
+      "scratches_178",
+      "scratches_182"
+    ],
+    [
+      "scratches_6",
+      "scratches_7"
+    ],
+    [
+      "rolled-in_scale_162",
+      "rolled-in_scale_163"
+    ],
+    [
+      "scratches_178",
+      "scratches_259"
+    ],
+    [
+      "patches_108",
+      "patches_114"
+    ],
+    [
+      "scratches_137",
+      "scratches_138"
+    ],
+    [
+      "patches_130",
+      "patches_132"
+    ],
+    [
+      "crazing_298",
+      "crazing_299"
+    ],
+    [
+      "patches_110",
+      "patches_113"
+    ],
+    [
+      "crazing_197",
+      "crazing_199"
+    ],
+    [
+      "patches_40",
+      "patches_44"
+    ],
+    [
+      "rolled-in_scale_192",
+      "rolled-in_scale_204"
+    ],
+    [
+      "rolled-in_scale_77",
+      "rolled-in_scale_78"
+    ],
+    [
+      "patches_87",
+      "patches_89"
+    ],
+    [
+      "patches_126",
+      "patches_128"
+    ],
+    [
+      "crazing_83",
+      "crazing_84"
+    ],
+    [
+      "pitted_surface_149",
+      "pitted_surface_298"
+    ],
+    [
+      "rolled-in_scale_196",
+      "rolled-in_scale_206"
+    ],
+    [
+      "pitted_surface_203",
+      "pitted_surface_214"
+    ],
+    [
+      "rolled-in_scale_33",
+      "rolled-in_scale_34"
+    ],
+    [
+      "rolled-in_scale_174",
+      "rolled-in_scale_175"
+    ]
+  ],
+  "grouped_splits": {
+    "G0": {
+      "cross": 26,
+      "train_test": 14,
+      "test_images_touched": 14
+    },
+    "G1": {
+      "cross": 23,
+      "train_test": 11,
+      "test_images_touched": 10
+    },
+    "G2": {
+      "cross": 13,
+      "train_test": 4,
+      "test_images_touched": 4
+    },
+    "G3": {
+      "cross": 19,
+      "train_test": 7,
+      "test_images_touched": 7
+    },
+    "G4": {
+      "cross": 20,
+      "train_test": 11,
+      "test_images_touched": 10
+    },
+    "G5": {
+      "cross": 25,
+      "train_test": 18,
+      "test_images_touched": 17
+    },
+    "G6": {
+      "cross": 17,
+      "train_test": 5,
+      "test_images_touched": 5
+    },
+    "G7": {
+      "cross": 20,
+      "train_test": 4,
+      "test_images_touched": 4
+    },
+    "G8": {
+      "cross": 24,
+      "train_test": 12,
+      "test_images_touched": 11
+    },
+    "G9": {
+      "cross": 21,
+      "train_test": 8,
+      "test_images_touched": 8
+    }
+  },
+  "counterfactual_splits": {
+    "K0": {
+      "L": {
+        "cross": 14,
+        "train_test": 10,
+        "touch_test_leaked": 2,
+        "touch_test_clean": 9
+      },
+      "C": {
+        "cross": 13,
+        "train_test": 9,
+        "touch_test_leaked": 2,
+        "touch_test_clean": 9
+      }
+    },
+    "K1": {
+      "L": {
+        "cross": 16,
+        "train_test": 9,
+        "touch_test_leaked": 0,
+        "touch_test_clean": 10
+      },
+      "C": {
+        "cross": 15,
+        "train_test": 9,
+        "touch_test_leaked": 0,
+        "touch_test_clean": 10
+      }
+    },
+    "K2": {
+      "L": {
+        "cross": 15,
+        "train_test": 7,
+        "touch_test_leaked": 0,
+        "touch_test_clean": 10
+      },
+      "C": {
+        "cross": 16,
+        "train_test": 7,
+        "touch_test_leaked": 0,
+        "touch_test_clean": 10
+      }
+    },
+    "K3": {
+      "L": {
+        "cross": 23,
+        "train_test": 10,
+        "touch_test_leaked": 2,
+        "touch_test_clean": 10
+      },
+      "C": {
+        "cross": 23,
+        "train_test": 10,
+        "touch_test_leaked": 2,
+        "touch_test_clean": 10
+      }
+    },
+    "K4": {
+      "L": {
+        "cross": 22,
+        "train_test": 12,
+        "touch_test_leaked": 0,
+        "touch_test_clean": 14
+      },
+      "C": {
+        "cross": 23,
+        "train_test": 13,
+        "touch_test_leaked": 0,
+        "touch_test_clean": 14
+      }
+    },
+    "K5": {
+      "L": {
+        "cross": 20,
+        "train_test": 7,
+        "touch_test_leaked": 0,
+        "touch_test_clean": 7
+      },
+      "C": {
+        "cross": 20,
+        "train_test": 7,
+        "touch_test_leaked": 0,
+        "touch_test_clean": 7
+      }
+    },
+    "K6": {
+      "L": {
+        "cross": 18,
+        "train_test": 9,
+        "touch_test_leaked": 3,
+        "touch_test_clean": 9
+      },
+      "C": {
+        "cross": 17,
+        "train_test": 10,
+        "touch_test_leaked": 3,
+        "touch_test_clean": 9
+      }
+    },
+    "K7": {
+      "L": {
+        "cross": 25,
+        "train_test": 10,
+        "touch_test_leaked": 2,
+        "touch_test_clean": 9
+      },
+      "C": {
+        "cross": 27,
+        "train_test": 11,
+        "touch_test_leaked": 2,
+        "touch_test_clean": 9
+      }
+    },
+    "K8": {
+      "L": {
+        "cross": 22,
+        "train_test": 10,
+        "touch_test_leaked": 3,
+        "touch_test_clean": 11
+      },
+      "C": {
+        "cross": 21,
+        "train_test": 10,
+        "touch_test_leaked": 3,
+        "touch_test_clean": 11
+      }
+    },
+    "K9": {
+      "L": {
+        "cross": 19,
+        "train_test": 15,
+        "touch_test_leaked": 3,
+        "touch_test_clean": 13
+      },
+      "C": {
+        "cross": 18,
+        "train_test": 13,
+        "touch_test_leaked": 3,
+        "touch_test_clean": 13
+      }
+    }
+  },
+  "g_split_correlation": {
+    "pearson_r": 0.33,
+    "pearson_p": 0.351,
+    "spearman_rho": 0.311,
+    "spearman_p": 0.382
+  }
+}

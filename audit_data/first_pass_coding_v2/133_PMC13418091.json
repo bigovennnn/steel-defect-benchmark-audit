@@ -1,0 +1,252 @@
+{
+ "idx": 133,
+ "pmcid": "PMC13418091",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research that trains and evaluates YOLOv12n and RT-DETR-R18 bounding-box detectors on eight industrial datasets including NEU-DET and GC10-DET (Metal Surface Defects Dataset, 2280 images, 10 classes) to validate a dataset quality evaluation system (Table 1, Table 4, Table 8).",
+ "detector_family": "YOLOv12 / RT-DETR",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, 200x200 pixels, GitCode link",
+     "evidence": "5 | NEU-DET Dataset | 6 | This dataset is created by the Northeastern University team, including six types of defects, crazing, patches, and scratches, among others. It contains 1800 images in total, and the size of each image is 200 × 200.",
+     "location": "Table 1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 8:1:1",
+     "evidence": "All datasets are cleaned and checked, and the training, validation, and test sets are divided at a ratio of 8:1:1.",
+     "location": "4.2"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text (duplicate annotations within images are penalized in Section 3.4.1, but duplicate image checking/removal is not reported)"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.2, Table 8"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "4.2"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1, Table 4"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs",
+     "evidence": "Epoch | 200 | 200",
+     "location": "Table 4"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16 (YOLOv12n), 4 (RT-DETR-R18)",
+     "evidence": "Batch Size | 16 | 4",
+     "location": "Table 4"
+    },
+    "F12": {
+     "status": "reported",
+     "value": "0",
+     "evidence": "Seed | 0 | 0",
+     "location": "Table 4"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text (Section 5 notes repeated experiments with different random seeds as future work)"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "the calculation of dataset evaluation index scores is carried out under a unified hardware and software environment, while the main hyperparameters of the detection model training are kept consistent.",
+     "location": "4.1, Table 4, Table 8"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text (no FPS or latency reported)"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv12n",
+    "map50": 78.5,
+    "map50_95": null,
+    "baseline": "RT-DETR-R18",
+    "baseline_map50": 76.3,
+    "improvement_pp": 2.2,
+    "single_run": null,
+    "evidence": "5 | NEU-DET Dataset | 0.603 | 0.785 | 0.763",
+    "location": "Table 8"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "2280 grayscale images, 10 classes, 2048x1000 pixels, Baidu AI Studio link (listed as 'Metal Surface Defects Dataset')",
+     "evidence": "It contains 2280 grayscale images in total, and the size of each image is 2048 × 1000. | https://aistudio.baidu.com/datasetdetail/90446(accessed on 23 February 2026)",
+     "location": "Table 1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 8:1:1",
+     "evidence": "All datasets are cleaned and checked, and the training, validation, and test sets are divided at a ratio of 8:1:1.",
+     "location": "4.2"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.2, Table 8"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "4.2"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1, Table 4"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs",
+     "evidence": "Epoch | 200 | 200",
+     "location": "Table 4"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16 (YOLOv12n), 4 (RT-DETR-R18)",
+     "evidence": "Batch Size | 16 | 4",
+     "location": "Table 4"
+    },
+    "F12": {
+     "status": "reported",
+     "value": "0",
+     "evidence": "Seed | 0 | 0",
+     "location": "Table 4"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "the calculation of dataset evaluation index scores is carried out under a unified hardware and software environment, while the main hyperparameters of the detection model training are kept consistent.",
+     "location": "4.1, Table 4, Table 8"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv12n",
+    "map50": 65.3,
+    "map50_95": null,
+    "baseline": "RT-DETR-R18",
+    "baseline_map50": 65.9,
+    "improvement_pp": -0.6,
+    "single_run": null,
+    "evidence": "3 | Metal Surface Defects Dataset | 0.653 | 0.653 | 0.659",
+    "location": "Table 8"
+   }
+  }
+ ],
+ "code_links": [
+  "https://aistudio.baidu.com/datasetdetail/90446",
+  "https://gitcode.com/open-source-toolkit/fa031"
+ ],
+ "coder_notes": "Dataset 3 ('Metal Surface Defects Dataset', 10 categories, 2280 grayscale images of 2048x1000) is GC10-DET. The paper evaluates YOLOv12n and RT-DETR-R18 as downstream detectors across 8 datasets to validate its dataset quality scoring framework. Table 4 specifies Seed=0 and Section 5 notes 'Future work will include ... repeated experiments with different random seeds'."
+}

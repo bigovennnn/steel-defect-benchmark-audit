@@ -1,0 +1,131 @@
+{
+ "idx": 44,
+ "pmcid": "PMC11001973",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original study training and evaluating a YOLOv5-based detector on NEU-DET (despite \"classification\" in title, it is box detection).",
+ "detector_family": "YOLOv5",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, 300 per class; NEU link in data availability",
+     "evidence": "The dataset comprises a sum of 1800 pictures across all categories, with 300 images allocated to each category.",
+     "location": "Data description"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "9:1 train/test",
+     "evidence": "the dataset is split in a 9:1 mix to training sets which are employed for model training, and test sets which are utilized for model evaluation.",
+     "location": "Data description"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F07": {
+     "status": "reported",
+     "value": "test",
+     "evidence": "Subsequently, the models were evaluated on the test set to conduct a comprehensive analysis of their detection capabilities.",
+     "location": "Model comparison experiment"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": ""
+    },
+    "F09": {
+     "status": "reported",
+     "value": "224x224",
+     "evidence": "image_size | 224 × 224",
+     "location": "Table 2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "100 epochs",
+     "evidence": "Epochs | 100",
+     "location": "Table 2"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "Under the above environment, set the same hyperparameters for the NEU-DET dataset to train the models.",
+     "location": "Model comparison experiment"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "NVIDIA A16; FPS reported but batch/precision/timing scope not given",
+     "evidence": "The utilized graphics card is the NVIDIA A16.",
+     "location": "Experimental condition"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "YOLOv5-KBS",
+    "map50": 79.9,
+    "map50_95": null,
+    "baseline": "YOLOv5l",
+    "baseline_map50": 75.7,
+    "improvement_pp": 4.2,
+    "single_run": null,
+    "evidence": "YOLOv5-KBS | 0.580 | 0.828 | 0.922 | 0.841 | 0.652 | 0.970 | 0.799",
+    "location": "Table 4, Table 5"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Only a dataset link (NEU faculty page) is given, no code. Train/test only, no validation set; checkpoint selection not stated. Batch size not in Table 2."
+}

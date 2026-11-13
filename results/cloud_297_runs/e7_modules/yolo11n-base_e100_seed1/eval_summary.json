@@ -1,0 +1,72 @@
+{
+  "suite": "e7_modules",
+  "arch": "yolo11n-base",
+  "seed": 1,
+  "epochs": 100,
+  "imgsz": 640,
+  "batch": 8,
+  "workers": 3,
+  "pretrained_tensors_transferred": 448,
+  "split_name": "neu_grouped_v6",
+  "split_design_sha256": "1a635ccfc6a61b3bdeb8f198f4812dc7693ef93954bc138ff9294f01ec11ce85",
+  "val": {
+    "precision": 0.7355695339830296,
+    "recall": 0.6891842642257827,
+    "map50": 0.7619908478735969,
+    "map50_95": 0.4000856771842755,
+    "per_class_ap50": {
+      "crazing": 0.391042999121289,
+      "inclusion": 0.7929250184934368,
+      "patches": 0.9604258246537443,
+      "pitted_surface": 0.833642118064934,
+      "rolled-in_scale": 0.7145603938506445,
+      "scratches": 0.8793487330575328
+    },
+    "per_class_ap50_95": {
+      "crazing": 0.14753794679422894,
+      "inclusion": 0.42795171420821615,
+      "patches": 0.6545256730730663,
+      "pitted_surface": 0.44301152728890836,
+      "rolled-in_scale": 0.3434292869967893,
+      "scratches": 0.38405791474444406
+    },
+    "speed_ms_per_image": {
+      "preprocess": 1.47872946690768,
+      "inference": 7.790803882138182,
+      "loss": 0.005500896885577176,
+      "postprocess": 5.250009868500961
+    }
+  },
+  "test": {
+    "precision": 0.7449514260762379,
+    "recall": 0.6516530140628153,
+    "map50": 0.7259854983789656,
+    "map50_95": 0.36999886222707007,
+    "per_class_ap50": {
+      "crazing": 0.2930926921835685,
+      "inclusion": 0.7682105624247848,
+      "patches": 0.9669054538545367,
+      "pitted_surface": 0.7682594742922413,
+      "rolled-in_scale": 0.6640789520384455,
+      "scratches": 0.8953658554802171
+    },
+    "per_class_ap50_95": {
+      "crazing": 0.11002945101664874,
+      "inclusion": 0.42445629811302216,
+      "patches": 0.6421582193096225,
+      "pitted_surface": 0.41715211179721845,
+      "rolled-in_scale": 0.30344840413369073,
+      "scratches": 0.32274868899221787
+    },
+    "speed_ms_per_image": {
+      "preprocess": 1.645508523668266,
+      "inference": 7.510527903731499,
+      "loss": 0.0054218392405245034,
+      "postprocess": 5.33068168701397
+    }
+  },
+  "train_seconds": 3683.5,
+  "torch": "2.12.1+cu130",
+  "cuda": "13.0",
+  "gpu": "NVIDIA GeForce RTX 3090"
+}

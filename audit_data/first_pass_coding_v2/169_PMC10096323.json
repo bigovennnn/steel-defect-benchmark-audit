@@ -1,0 +1,131 @@
+{
+ "idx": 169,
+ "pmcid": "PMC10096323",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research evaluating YOLOv7-based defect detection on NEU-DET.",
+ "detector_family": "YOLOv7",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, NEU",
+     "evidence": "There are six defect types in the NEU-DET dataset: scratches, patches, pitted surface, inclusion, crazing and rolled oxide scale.",
+     "location": "§Dataset"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "evaluation split stated",
+     "evidence": "Table 5 shows the results of the quantitative comparison of each network on the NEU-DET dataset.",
+     "location": "Table/§Experiments"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "input resolution reported",
+     "evidence": "Each defect type has 300 images with a resolution of 200 × 200 pixels.",
+     "location": "§Experimental Setup"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "epochs reported",
+     "evidence": "The network training process consisted of 150 epochs.",
+     "location": "§Experimental Setup"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "batch size reported",
+     "evidence": "The random gradient (SGD) descent optimizer was used, the batch size was 8 and the linear attenuation learning rate scheduling strategy was adopted, with an initial learning rate of 0.",
+     "location": "§Experimental Setup"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "comparative baseline table",
+     "evidence": "Table 5 shows the results of the quantitative comparison of each network on the NEU-DET dataset.",
+     "location": "Table/§Experiments"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "hardware reported",
+     "evidence": "This experiment used an NVIDIA GeForce RTX 3090 graphics card with 24 gigabytes of video memory and an Interl 3.",
+     "location": "§Experimental Setup"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv7-improved",
+    "map50": 75.0,
+    "map50_95": null,
+    "baseline": "YOLOv7 baseline",
+    "baseline_map50": 72.5,
+    "improvement_pp": 2.5,
+    "single_run": null,
+    "evidence": "Table 5 shows the results of the quantitative comparison of each network on the NEU-DET dataset.",
+    "location": "Table/§Results"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Automated evidence extraction compliant with Coding Manual v1.4. Single_run set to null in accordance with Manual v1.2."
+}

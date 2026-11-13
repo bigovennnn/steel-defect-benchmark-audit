@@ -1,0 +1,133 @@
+{
+ "idx": 56,
+ "pmcid": "PMC13562717",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original article proposing SFEDet (YOLO12-L based) trained and evaluated for bounding-box detection on NEU-DET.",
+ "detector_family": "YOLO12",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "6 classes, 300 images per class, 1,800 images",
+     "evidence": "Each category contains 300 grayscale images, resulting in 1,800 images in total.",
+     "location": "Experimental setting > Dataset and evaluation protocol"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "1,296 train / 144 val / 360 test (indices 241-300 per class)",
+     "evidence": "In our implementation, the development pool is further split into 1,296 training and 144 validation images; all quantitative results are reported on the independent test set.",
+     "location": "Experimental setting > Dataset and evaluation protocol"
+    },
+    "F03": {
+     "status": "ambiguous",
+     "value": "test split defined by per-class image indices 241-300; how the 1,296/144 train/val split was drawn is not stated",
+     "evidence": "Following the standard NEU-DET partition protocol, images with indices 1–240 are used for model development, whereas images with indices 241–300 are reserved exclusively for testing",
+     "location": "Experimental setting > Dataset and evaluation protocol"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "checked full text"
+    },
+    "F05": {
+     "status": "reported",
+     "value": "YOLO12-L backbone from official pretrained weights; new modules random init; baselines not described",
+     "evidence": "The YOLO12-L backbone is initialized from official pretrained weights, while newly introduced modules are randomly initialized.",
+     "location": "Implementation and training details"
+    },
+    "F06": {
+     "status": "reported",
+     "value": "highest validation mAP@0.5",
+     "evidence": "The model checkpoint with the highest validation mAP@0.5 is selected for test evaluation.",
+     "location": "Dataset and evaluation protocol"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "test (360 images)",
+     "evidence": "Table 1 presents the detection performance on the NEU-DET test set.",
+     "location": "Main results and analysis; Table 1"
+    },
+    "F08": {
+     "status": "reported",
+     "value": "separate",
+     "evidence": "The best validation checkpoint is selected for test evaluation, which is performed using batch size 16 on the official test split.",
+     "location": "Implementation and training details"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640 train and inference",
+     "evidence": "During training and inference, all images are resized to a fixed resolution of 640× 640.",
+     "location": "Dataset and evaluation protocol"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "max 300 epochs, early stopping patience 50 (final model stopped at epoch 235)",
+     "evidence": "The maximum number of epochs is set to 300 with early stopping (patience of 50 epochs).",
+     "location": "Implementation and training details"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "4",
+     "evidence": "the batch size is set to 4 during training",
+     "location": "Implementation and training details"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "'unified reproducible protocol' claimed but no seed given",
+     "evidence": "",
+     "location": "checked full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "single run",
+     "evidence": "",
+     "location": "checked full text"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "rerun (literature methods labelled 'reproduced'; YOLO-series and classical baselines presumably rerun under same protocol, not stated explicitly)",
+     "evidence": "Reproduced literature methods with different input sizes or backbones are included.",
+     "location": "Table 1 caption; Compared methods and ablation protocol"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "FPS reported; only GPU for training (RTX PRO 6000) and test batch 16 stated; speed-measurement conditions not explicitly given",
+     "evidence": "Inference speed (FPS) is provided for reference",
+     "location": "Dataset and evaluation protocol; Table 1"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "no code link (only Ultralytics framework link); data available on request",
+     "evidence": "",
+     "location": "Data availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "checked full text"
+    }
+   },
+   "main_result": {
+    "model": "SFEDet (Large)",
+    "map50": 75.1,
+    "map50_95": null,
+    "baseline": "YOLO12-L",
+    "baseline_map50": 72.7,
+    "improvement_pp": 2.4,
+    "single_run": null,
+    "evidence": "SFEDet (Large) achieves the highest mAP@0.5 of 75.1%, outperforming the baseline YOLO12-L (72.7%) by 2.4 points",
+    "location": "Main results and analysis; Table 1"
+   }
+  }
+ ],
+ "code_links": [
+  "https://github.com/ultralytics/ultralytics"
+ ],
+ "coder_notes": "Ultralytics link is the framework, not the authors' code. Internal inconsistencies: Table 2 first row (LGP only) shows 72.7 while text says LGP-only 72.6 and ablation protocol says YOLO12-L baseline is 72.7; text says YOLO26-L mAP 71.6 whereas Table 1 shows 69.6. Train/val split of development pool (1,296/144) method not described. Brightness robustness tables (Tables 3-4) are additional test-set evaluations."
+}

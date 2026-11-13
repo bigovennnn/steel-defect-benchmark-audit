@@ -1,0 +1,251 @@
+{
+ "idx": 53,
+ "pmcid": "PMC13618933",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research training and evaluating a two-stage few-shot bounding-box detector (PA-MSAN) on NEU-DET (1/3/5-shot) and GC10-DET (5-shot cross-domain).",
+ "detector_family": "other (custom two-stage RPN/RoI Align few-shot detector, Faster R-CNN-like)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "6 classes, 200x200 grayscale; source link faculty.neu.edu.cn; image count not given",
+     "evidence": "https://faculty.neu.edu.cn/songkc/en/zdylm/263270/list/index.htm",
+     "location": "3.1, Table 6, link list"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "70/15/15 train/val/test fixed split; K support images per class sampled from training pool",
+     "evidence": "Each dataset is divided once into 70% training, 15% validation, and 15% test subsets.",
+     "location": "3.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; seeds 0-4 govern support sampling, base split list/seed not given"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; only augmented views kept within source subset"
+    },
+    "F05": {
+     "status": "reported",
+     "value": "PA-MSAN Xavier init (from scratch); baselines COCO/ImageNet pretrained per Table 7",
+     "evidence": "PA-MSAN | 416 × 416 | Xavier initialization | Same split and augmentation | Adam, 200 epochs, batch size 16",
+     "location": "Table 7"
+    },
+    "F06": {
+     "status": "reported",
+     "value": "highest validation mAP checkpoint",
+     "evidence": "Each training run uses a 200-epoch budget, and the checkpoint with the highest validation mAP is used for final test evaluation.",
+     "location": "3.2"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "held-out test subset",
+     "evidence": "Validation images are used for checkpoint selection and test images for final evaluation.",
+     "location": "Table 8 note"
+    },
+    "F08": {
+     "status": "reported",
+     "value": "separate",
+     "evidence": "Validation images are used for checkpoint selection and test images for final evaluation.",
+     "location": "Table 8 note"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "416x416",
+     "evidence": "All images are resized to 416 × 416 and normalized to the 0–1 interval before entering the network.",
+     "location": "3.2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs",
+     "evidence": "Training Epochs | Epochs | 200 | 200-epoch training budget; best-validation checkpoint used for evaluation",
+     "location": "Table 5"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "Training uses mini-batch stochastic optimization with batch size 16.",
+     "location": "3.2"
+    },
+    "F12": {
+     "status": "reported",
+     "value": "0,1,2,3,4",
+     "evidence": "Each shot setting is repeated five times with random seeds {0, 1, 2, 3, 4}.",
+     "location": "3.1.1"
+    },
+    "F13": {
+     "status": "reported",
+     "value": "5 runs, mean ± SD (seed-level values in S1 File)",
+     "evidence": "Values are reported as mean ± standard deviation over five repeated runs using seeds 0–4.",
+     "location": "Table 11/12 notes"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "PA-MSAN and all baselines use the same seed-specific support selections and evaluation thresholds.",
+     "location": "4.2.1"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "RTX 3090, batch 1, 416x416, includes post-processing/NMS, excludes I/O and preprocessing; precision not stated",
+     "evidence": "Inference-time measurements use batch size 1 with 416 × 416 inputs on the RTX 3090.",
+     "location": "3.2"
+    },
+    "F16": {
+     "status": "ambiguous",
+     "value": "https://osf.io/9tf8p/ appears in link list; contents (code vs data) not described in body text",
+     "evidence": "https://osf.io/9tf8p/",
+     "location": "link list"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "PA-MSAN (5-shot)",
+    "map50": 92.2,
+    "map50_95": null,
+    "baseline": "Faster R-CNN (5-shot)",
+    "baseline_map50": 89.3,
+    "improvement_pp": 2.9,
+    "single_run": false,
+    "evidence": "Compared with Faster R-CNN, PA-MSAN improves mAP@0.5 by 2.9 percentage points and APsmall by 3.9 percentage points",
+    "location": "Abstract; Table 12"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "10 classes, variable resolution; source GitHub link; image count not given",
+     "evidence": "https://github.com/lvxiaoming2019/GC10-DET-Metallic-Surface-Defect-Datasets",
+     "location": "3.1, Table 6, link list"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "70/15/15 train/val/test fixed split; 5 support images per class from training pool",
+     "evidence": "Each dataset is divided once into 70% training, 15% validation, and 15% test subsets.",
+     "location": "3.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "reported",
+     "value": "NEU-DET source-domain trained model adapted with target-domain support; PA-MSAN Xavier init; baselines pretrained per Table 7",
+     "evidence": "Cross-domain evaluation uses NEU-DET as the source-domain training dataset and GC10-DET as the target dataset.",
+     "location": "4.2.2, Table 7"
+    },
+    "F06": {
+     "status": "reported",
+     "value": "highest validation mAP checkpoint (general protocol)",
+     "evidence": "Each training run uses a 200-epoch budget, and the checkpoint with the highest validation mAP is used for final test evaluation.",
+     "location": "3.2"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "fixed GC10-DET test subset",
+     "evidence": "PA-MSAN constructs target-domain class prototypes from these 5-shot support samples, and performance is evaluated on the fixed non-overlapping GC10-DET test subset.",
+     "location": "3.1.1"
+    },
+    "F08": {
+     "status": "reported",
+     "value": "separate",
+     "evidence": "Validation images are used for checkpoint selection and test images for final evaluation.",
+     "location": "Table 8 note"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "416x416",
+     "evidence": "all images from both datasets are read or converted into a single-channel grayscale format, resized to 416 × 416, and normalized to the 0–1 interval.",
+     "location": "3.1"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200-epoch budget",
+     "evidence": "YOLOv5, Faster R-CNN, TFA, Meta R-CNN, and FSRW follow their method-specific training procedures within the same 200-epoch budget.",
+     "location": "3.3"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "CNN Detector, Proto CNN, Attention CNN, and PA-MSAN use Adam for 200 epochs with an initial learning rate of 1 × 10−3 and batch size 16.",
+     "location": "3.3"
+    },
+    "F12": {
+     "status": "reported",
+     "value": "0,1,2,3,4",
+     "evidence": "Each shot setting is repeated five times with random seeds {0, 1, 2, 3, 4}.",
+     "location": "3.1.1"
+    },
+    "F13": {
+     "status": "reported",
+     "value": "5 runs, mean ± SD",
+     "evidence": "PA-MSAN reaches 86.4 ± 0.4% mAP@0.5 on GC10-DET, compared with 92.2 ± 0.4% on NEU-DET.",
+     "location": "4.2.2"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "For target-domain evaluation, every compared method uses the same five labeled GC10-DET support images per class for its method-specific adaptation stage",
+     "location": "3.3"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "RTX 3090, batch 1, 416x416 (general statement)",
+     "evidence": "Inference-time measurements use batch size 1 with 416 × 416 inputs on the RTX 3090.",
+     "location": "3.2"
+    },
+    "F16": {
+     "status": "ambiguous",
+     "value": "https://osf.io/9tf8p/ appears in link list; contents not described",
+     "evidence": "https://osf.io/9tf8p/",
+     "location": "link list"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "PA-MSAN (5-shot cross-domain)",
+    "map50": 86.4,
+    "map50_95": null,
+    "baseline": "Faster R-CNN (5-shot)",
+    "baseline_map50": null,
+    "improvement_pp": null,
+    "single_run": false,
+    "evidence": "Under the 5-shot target-domain support setting, PA-MSAN reaches 86.4 ± 0.4% mAP@0.5 on GC10-DET",
+    "location": "4.2.2, Fig 10"
+   }
+  }
+ ],
+ "code_links": [
+  "https://osf.io/9tf8p/"
+ ],
+ "coder_notes": "Few-shot detection (1/3/5-shot); results not comparable to full-data NEU/GC10 benchmarks. Main NEU result uses 5-shot setting; baseline chosen as Faster R-CNN because abstract states improvement relative to it. GC10 baseline values only in Fig 10 (relative differences given, absolute baseline mAP not in text). OSF link appears only in extracted link list (likely data availability statement); content unknown. Seed-level results in S1 File (DOCX). Note: abstract-level figures such as 92.2±0.4 identical between Table 1, 4, 9, 11, 12 (consistent)."
+}

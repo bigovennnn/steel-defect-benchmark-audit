@@ -1,0 +1,251 @@
+{
+ "idx": 5,
+ "pmcid": "PMC13004511",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing WaveMamba-YOLO and benchmarking on NEU-DET and GC10-DET.",
+ "detector_family": "YOLOv11 (WaveMamba-YOLO)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 200x200, 6 defect categories, 300 per category",
+     "evidence": "It contains a total of 1,800 grayscale images with a fixed resolution of 200 × 200 pixels",
+     "location": "§3.2"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "unclear whether evaluated on val or test split",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "with the input resolution fixed at 640×640.",
+     "location": "§4.4"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "Each model was trained for 300 epochs.",
+     "location": "§4.1"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "64",
+     "evidence": "an initial learning rate of 0.0001 and a batch size of 64.",
+     "location": "§4.1"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "all competing detectors were trained and evaluated under identical experimental settings",
+     "location": "§4.4"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "NVIDIA RTX 3090 GPU",
+     "evidence": "equipped with an NVIDIA RTX 3090 GPU and an Intel Core i7-12700KF processor.",
+     "location": "§4.1"
+    },
+    "F16": {
+     "status": "reported",
+     "value": "https://github.com/HIRAM-HUANG/WaveMamba-YOLO",
+     "evidence": "All code files are available from the github database (https://github.com/HIRAM-HUANG/WaveMamba-YOLO).",
+     "location": "Data Availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "WaveMamba-YOLO",
+    "map50": 77.7,
+    "map50_95": 43.5,
+    "baseline": "YOLOv11n",
+    "baseline_map50": 76.5,
+    "improvement_pp": 1.2,
+    "single_run": null,
+    "evidence": "On NEU-DET, it attains the highest mAP@0.5 of 77.70%, surpassing YOLOv11n",
+    "location": "Table 5, §4.4"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "3570 grayscale images, 10 distinct defect categories",
+     "evidence": "encompassing 3,570 grayscale images and ten distinct defect categories.",
+     "location": "§3.2"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "unclear whether evaluated on val or test split",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "with the input resolution fixed at 640×640.",
+     "location": "§4.4"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "Each model was trained for 300 epochs.",
+     "location": "§4.1"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "64",
+     "evidence": "an initial learning rate of 0.0001 and a batch size of 64.",
+     "location": "§4.1"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "all competing detectors were trained and evaluated under identical experimental settings",
+     "location": "§4.4"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "NVIDIA RTX 3090 GPU",
+     "evidence": "equipped with an NVIDIA RTX 3090 GPU and an Intel Core i7-12700KF processor.",
+     "location": "§4.1"
+    },
+    "F16": {
+     "status": "reported",
+     "value": "https://github.com/HIRAM-HUANG/WaveMamba-YOLO",
+     "evidence": "All code files are available from the github database (https://github.com/HIRAM-HUANG/WaveMamba-YOLO).",
+     "location": "Data Availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "WaveMamba-YOLO",
+    "map50": 63.8,
+    "map50_95": 30.6,
+    "baseline": "YOLOv11n",
+    "baseline_map50": 62.1,
+    "improvement_pp": 1.7,
+    "single_run": null,
+    "evidence": "WaveMamba-YOLO reaches 63.80% mAP@0.5 and 30.60% mAP@0.5:0.95",
+    "location": "Table 5, §4.4"
+   }
+  }
+ ],
+ "code_links": [
+  "https://github.com/HIRAM-HUANG/WaveMamba-YOLO"
+ ],
+ "coder_notes": "WaveMamba-YOLO evaluated on Severstal, NEU-DET and GC10-DET. Code is open on GitHub."
+}

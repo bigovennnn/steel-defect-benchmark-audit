@@ -1,0 +1,135 @@
+{
+ "idx": 62,
+ "pmcid": "PMC13166906",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research training and evaluating an improved RT-DETR detector on NEU-DET (plus DAGM2007 and PCB-DET).",
+ "detector_family": "RT-DETR",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, 200x200 (ref 42)",
+     "evidence": "The image resolution is fixed at 200×200. Each class contains 300 samples, resulting in a total of 1800 images.",
+     "location": "4.1.1"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1.1, 4.2"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "5.1.1, Table 2"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640 (multi-scale training enabled)",
+     "evidence": "All input images are resized to 640 × 640 to balance receptive field and computational efficiency.",
+     "location": "4.2, Table 1"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "The model is trained for 300 epochs with a batch size of 16",
+     "location": "4.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "The model is trained for 300 epochs with a batch size of 16",
+     "location": "4.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "single run",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "mixed",
+     "evidence": "It should be noted that the result of Liu et al. [56] is directly cited from the experimental settings and reported results in their original paper",
+     "location": "5.1.1"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "FPS reported; A100 used for training and inference; batch/precision not stated",
+     "evidence": "GPU | NVIDIA A100 80GB × 1 | Graphics processing unit used for training and inference",
+     "location": "Table 1, Table 2"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "Ours (RT-DETR + QEM-SG + HAF)",
+    "map50": 78.9,
+    "map50_95": 44.3,
+    "baseline": "RT-DETR baseline (Table 5)",
+    "baseline_map50": 72.6,
+    "improvement_pp": 6.3,
+    "single_run": null,
+    "evidence": "Ours | 76.4 | 72.8 | 0.75 | 78.9 | 44.3 | 103.5 | 43.21",
+    "location": "Table 2, Table 5"
+   }
+  }
+ ],
+ "code_links": [
+  "https://www.kaggle.com/datasets/zy12345/neudet",
+  "https://www.kaggle.com/datasets/amor000/reconstructed-dagm2007-dataset",
+  "https://www.kaggle.com/datasets/akhatova/pcb-defects"
+ ],
+ "coder_notes": "Kaggle links appear only in the [LINKS] list (likely from reference entries), not in body text; dataset links, not code. Baseline in Table 5 is unnamed 'Baseline' (presumably RT-DETR, cf. 5.6). Other baselines stated 'evaluated under the same training strategy' (rerun) while Liu et al. copied, hence mixed. NEU split not described. Odd description: NEU classes listed as 'scratches, cracks, and indentations'; Fig 4 caption says 'Ten typical defects'."
+}

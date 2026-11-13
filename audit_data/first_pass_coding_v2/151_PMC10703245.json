@@ -1,0 +1,131 @@
+{
+ "idx": 151,
+ "pmcid": "PMC10703245",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing CFM-YOLOv5 (integrating an EVC module and a small-object prediction head into YOLOv5s) and evaluating bounding-box defect detection on NEU-DET.",
+ "detector_family": "YOLOv5s (custom CFM-YOLOv5)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 grayscale images, 6 classes (300 images per class)",
+     "evidence": "The data set contains six types of metal surface defects such as crazing, patches, and pitted surface. Each type has 300 grayscale images, a total of 1800 grayscale images.",
+     "location": "Experimental results and discussion"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "mentions training and verification results in Fig 5 and test results in Ablation experiment, but split ratios or image counts are not reported",
+     "evidence": "",
+     "location": "Experimental results and discussion"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "Ablation experiment mentions test results, but dataset partitioning is never defined",
+     "evidence": "Through the analysis of the test results, although the detection speed is reduced by 40%, it still has the potential for real-time detection.",
+     "location": "Ablation experiment, Tables 2-5"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "100 epochs",
+     "evidence": "The batch size was chosen as 16. We updated the network for 100 epochs. The optimizer was chosen as Adam with a learning rate as 10.",
+     "location": "Experimental environment"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "The batch size was chosen as 16. We updated the network for 100 epochs. The optimizer was chosen as Adam with a learning rate as 10.",
+     "location": "Experimental environment"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "mixed",
+     "evidence": "In this paper, we use ResNet18-dcn, ResNet18-ds, ResNet18-dsf, ResNet34-dsf and YOLOX as part of the comparative experiment.",
+     "location": "Ablation experiment, Tables 3-5 (YOLOv5s has mAP 0.742 in Table 3 vs 0.682 in Table 5; unclear which comparison models were rerun vs copied)"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "RTX 3060 12G reported in Experimental environment, but inference batch size and precision for FPS not reported",
+     "evidence": "",
+     "location": "Experimental environment, Tables 3-5"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "Data AvailabilityAll relevant data are within the paper.",
+     "evidence": "",
+     "location": "Front Data Availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "CFM-YOLOv5",
+    "map50": 78.6,
+    "map50_95": null,
+    "baseline": "YOLOv5s",
+    "baseline_map50": 74.2,
+    "improvement_pp": 4.4,
+    "single_run": null,
+    "evidence": "The ablation experimental results show that the mAP of CFM-YOLOv5 is 78.6:%, which is about 4.4:% higher than that of the benchmark YOLOv5 model.",
+    "location": "Introduction, Table 2, Table 3, Table 4, Table 5"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Internal inconsistencies across tables: YOLOv5s (basic) has mAP 0.742 in Table 3 (where all 6 class APs match YOLOv5s in Table 5, whose mAP is printed as 0.682), and OURS FPS is 31.2 in Table 3, 77 in Table 4, and 0.770 in Table 5."
+}

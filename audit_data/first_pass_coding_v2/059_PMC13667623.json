@@ -1,0 +1,133 @@
+{
+ "idx": 59,
+ "pmcid": "PMC13667623",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing SA-DETR and benchmarking on NEU-DET.",
+ "detector_family": "RT-DETR (SA-DETR)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images from six defect categories, source link",
+     "evidence": "NEU-DET contains 1800 images from six defect categories: crazing, inclusion, patches, pitted surface, rolled-in scale, and scratches.",
+     "location": "§4.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "8:1:1 train/val/test",
+     "evidence": "Both datasets are divided into training, validation, and test sets at a ratio of 8:1:1.",
+     "location": "§4.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "reported",
+     "value": "trained from scratch without pretrained weights",
+     "evidence": "All models are trained from scratch without pretrained weights.",
+     "location": "§4.1"
+    },
+    "F06": {
+     "status": "reported",
+     "value": "early stopping when validation does not improve for 50 epochs",
+     "evidence": "Training is terminated when the validation performance does not improve for 50 consecutive epochs.",
+     "location": "§4.1"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "test split exists in F02, but Table 1 does not specify test vs val",
+     "evidence": "Table 1 Performance comparison of different object detection models on the NEU-DET dataset.",
+     "location": "Table 1"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "All input images are resized to 640×640 pixels.",
+     "location": "§4.1"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "500 maximum epochs (with early stopping)",
+     "evidence": "The batch size is set to 4, and the maximum number of training epochs is 500.",
+     "location": "§4.1"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "4",
+     "evidence": "The batch size is set to 4, and the maximum number of training epochs is 500.",
+     "location": "§4.1"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "five-split mean±SD only on PCB, not NEU-DET",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "all comparison models use the same dataset splits and basic training settings.",
+     "location": "§4.1"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "NVIDIA RTX 4090 GPU, PyTorch 2.1, batch 4, FPS reported",
+     "evidence": "All experiments are implemented using PyTorch 2.1 and conducted on an NVIDIA RTX 4090 GPU.",
+     "location": "§4.1"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "SA-DETR (Ours)",
+    "map50": 73.9,
+    "map50_95": 42.7,
+    "baseline": "RT-DETR-L",
+    "baseline_map50": 69.4,
+    "improvement_pp": 4.5,
+    "single_run": null,
+    "evidence": "SA-DETR (Ours) | 73.3 | 69.7 | 73.9 | 42.7 | 21.0 | 57.8 | 1.28 | 0.74 | 103.0",
+    "location": "Table 1"
+   }
+  }
+ ],
+ "code_links": [
+  "https://faculty.neu.edu.cn/songkc/en/zdylm/263265/list/"
+ ],
+ "coder_notes": "Evaluates SA-DETR on NEU-DET and PCB. 5-split mean±SD reported only for PCB (Table 2); NEU-DET evaluation is single run."
+}

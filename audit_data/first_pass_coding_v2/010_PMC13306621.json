@@ -1,0 +1,131 @@
+{
+ "idx": 10,
+ "pmcid": "PMC13306621",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research training and evaluating a YOLOv8-based bounding-box detector (SCT-YOLO) on GC10-DET as a generalization experiment (main dataset is SD-Saliency-900).",
+ "detector_family": "YOLOv8 (custom SCT-YOLO, dual-backbone)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "2065 images retained after cleaning, 10 defect types, cited source [53]",
+     "evidence": "After a rigorous process of data verification and quality cleaning on the originally collected samples, 2065 valid images were retained.",
+     "location": "5.5"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val 9:1 (1858/207), no separate test set",
+     "evidence": "These samples were then randomly partitioned into a training set (1858 samples) and a validation set (207 samples) at a ratio of 9:1.",
+     "location": "5.5"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; random split without file list or seed"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "unspecified 'data verification and quality cleaning' only; no explicit duplicate check",
+     "evidence": "",
+     "location": "5.5"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; checkpoint selection criterion not stated"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "only train/validation split exists; Table 7 evaluation set not explicitly named, presumably validation",
+     "evidence": "These samples were then randomly partitioned into a training set (1858 samples) and a validation set (207 samples) at a ratio of 9:1.",
+     "location": "5.5, Table 7"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "5.1, 5.5"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "500 epochs (all experiments)",
+     "evidence": "The model training adopts the SGD (Stochastic Gradient Descent) optimizer with an initial learning rate of 0.01 and a batch size of 16, for a total of 500 epochs.",
+     "location": "5.1"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16 (all experiments)",
+     "evidence": "The model training adopts the SGD (Stochastic Gradient Descent) optimizer with an initial learning rate of 0.01 and a batch size of 16, for a total of 500 epochs.",
+     "location": "5.1"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; 'different random seeds' mentioned only for SD-Saliency-900 ablation, no values"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "single run on GC10-DET; five-run mean±SD only for SD-Saliency-900 ablation (Table 5)",
+     "evidence": "",
+     "location": "5.3, 5.5"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "All comparative experiments are performed under the same hyperparameter configuration to ensure fair evaluation of model performance and the reliability of experimental results.",
+     "location": "5.1"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "RTX 4080 (also referred to as RTX 4080 Super); inference batch, precision and timing scope not stated",
+     "evidence": "the inference speed is represented by FPS, measured in the above experimental environment, to evaluate the real-time processing capability of the model.",
+     "location": "5.1"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; only MDPI supplementary dataset link"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "SCT-YOLO",
+    "map50": 78.4,
+    "map50_95": null,
+    "baseline": "YOLOv8n",
+    "baseline_map50": 65.7,
+    "improvement_pp": 12.7,
+    "single_run": null,
+    "evidence": "SCT-YOLO | 99.5 | 96.7 | 97.1 | 85.3 | 79.3 | 86.4 | 39.3 | 50.2 | 52.0 | 98.1 | 78.4 | 5.66 | 260.3 | 15.2",
+    "location": "Table 7"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Main experiments use SD-Saliency-900 (not audited); GC10-DET used for generalization. Table 7 mAP column assumed mAP@0.5 (paper designates mAP@0.5 as core metric). Five-run mean±SD and seeds apply only to SD-Saliency-900 ablation. Supplementary 'Dataset S1' is SCT feature dataset on MDPI site, not code. GC10 image count 2065 after cleaning (original GC10 has 2294 images)."
+}

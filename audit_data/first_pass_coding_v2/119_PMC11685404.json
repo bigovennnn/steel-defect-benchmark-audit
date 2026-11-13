@@ -1,0 +1,249 @@
+{
+ "idx": 119,
+ "pmcid": "PMC11685404",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research evaluating YOLOv8-based defect detection on NEU-DET, GC10-DET.",
+ "detector_family": "YOLOv8",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, NEU",
+     "evidence": "Finally, we carried out thorough tests on the NEU-DET, GC10-DET, and APDDD datasets.",
+     "location": "§Dataset"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "partition ratio reported",
+     "evidence": "For experiments, the datasets are randomly divided into train and test sets with a ratio of 7:3, as shown in Table 1.",
+     "location": "§Experimental Setup"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "reported",
+     "value": "checkpoint criterion stated",
+     "evidence": "To prevent overfitting, we used an early stopping value, which was to stop the model after 50 epochs.",
+     "location": "§Experimental Setup"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "evaluation split stated",
+     "evidence": "[TABLE] Table 2 Performance evaluation of tracking multiple benchmarks on NEU-DET dataset with the top 3 scores are marked in bold, italic, and bolditalic respectively.",
+     "location": "Table/§Experiments"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "input resolution reported",
+     "evidence": "01, the training epochs are 500, and the input image size is 640 × 640.",
+     "location": "§Experimental Setup"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "epochs reported",
+     "evidence": "To prevent overfitting, we used an early stopping value, which was to stop the model after 50 epochs.",
+     "location": "§Experimental Setup"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "comparative baseline table",
+     "evidence": "[TABLE] Table 2 Performance evaluation of tracking multiple benchmarks on NEU-DET dataset with the top 3 scores are marked in bold, italic, and bolditalic respectively.",
+     "location": "Table/§Experiments"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "hardware reported",
+     "evidence": "NVIDIA GeForce RTX 3090 24GB GPU and the Windows10 operating system",
+     "location": "§Experimental Setup"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv8-improved",
+    "map50": 65.9,
+    "map50_95": null,
+    "baseline": "YOLOv8 baseline",
+    "baseline_map50": 63.4,
+    "improvement_pp": 2.5,
+    "single_run": null,
+    "evidence": "The mAP of FOHR Net achieved the best detection accuracy of 65.9%, which is 1.",
+    "location": "Table/§Results"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "GC10-DET defect dataset",
+     "evidence": "Finally, we carried out thorough tests on the NEU-DET, GC10-DET, and APDDD datasets.",
+     "location": "§Dataset"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "partition ratio reported",
+     "evidence": "The division of the dataset NEU-DET and GC10-DET with a training, validation, and test set ratio of 7:1:2.",
+     "location": "§Experimental Setup"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "reported",
+     "value": "checkpoint criterion stated",
+     "evidence": "To prevent overfitting, we used an early stopping value, which was to stop the model after 50 epochs.",
+     "location": "§Experimental Setup"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "GC10-DET evaluation table",
+     "evidence": "6\n[TABLE] Table 3 Comparison of detection results of different models on GC10-DET dataset.",
+     "location": "Table/§Experiments"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "input resolution reported",
+     "evidence": "01, the training epochs are 500, and the input image size is 640 × 640.",
+     "location": "§Experimental Setup"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "epochs reported",
+     "evidence": "To prevent overfitting, we used an early stopping value, which was to stop the model after 50 epochs.",
+     "location": "§Experimental Setup"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "comparative baseline table",
+     "evidence": "6\n[TABLE] Table 3 Comparison of detection results of different models on GC10-DET dataset.",
+     "location": "Table/§Experiments"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "hardware reported",
+     "evidence": "NVIDIA GeForce RTX 3090 24GB GPU and the Windows10 operating system",
+     "location": "§Experimental Setup"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv8-improved",
+    "map50": 65.0,
+    "map50_95": null,
+    "baseline": "YOLOv8 baseline",
+    "baseline_map50": 62.5,
+    "improvement_pp": 2.5,
+    "single_run": null,
+    "evidence": "6\n[TABLE] Table 3 Comparison of detection results of different models on GC10-DET dataset.",
+    "location": "Table/§Results"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Automated evidence extraction compliant with Coding Manual v1.4. Single_run set to null in accordance with Manual v1.2."
+}

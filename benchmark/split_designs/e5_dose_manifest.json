@@ -1,0 +1,47 @@
+{
+  "k00_D25": {
+    "leak_partners_kept": 8,
+    "leak_partners_total": 34,
+    "n_train": 1403
+  },
+  "k00_D50": {
+    "leak_partners_kept": 16,
+    "leak_partners_total": 34,
+    "n_train": 1403
+  },
+  "k00_D75": {
+    "leak_partners_kept": 26,
+    "leak_partners_total": 34,
+    "n_train": 1403
+  },
+  "k01_D25": {
+    "leak_partners_kept": 8,
+    "leak_partners_total": 34,
+    "n_train": 1403
+  },
+  "k01_D50": {
+    "leak_partners_kept": 17,
+    "leak_partners_total": 34,
+    "n_train": 1403
+  },
+  "k01_D75": {
+    "leak_partners_kept": 26,
+    "leak_partners_total": 34,
+    "n_train": 1403
+  },
+  "k02_D25": {
+    "leak_partners_kept": 7,
+    "leak_partners_total": 31,
+    "n_train": 1406
+  },
+  "k02_D50": {
+    "leak_partners_kept": 14,
+    "leak_partners_total": 31,
+    "n_train": 1406
+  },
+  "k02_D75": {
+    "leak_partners_kept": 24,
+    "leak_partners_total": 31,
+    "n_train": 1406
+  }
+}

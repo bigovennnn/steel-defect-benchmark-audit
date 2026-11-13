@@ -1,0 +1,131 @@
+{
+ "idx": 12,
+ "pmcid": "PMC13194957",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing YOLO-DCF and evaluating object detection on NEU-DET.",
+ "detector_family": "YOLO11",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 grayscale images, 6 classes, 300 per class",
+     "evidence": "The NEU-DET dataset comprises 1,800 grayscale images that capture six typical surface defects in hot-rolled steel strips",
+     "location": "§3.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "random 7:2:1 train/val/test",
+     "evidence": "For both datasets, a random 7:2:1 split was applied to create training, validation, and test sets, respectively.",
+     "location": "§3.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "test split mentioned in F02, but Table 6 does not specify val vs test",
+     "evidence": "Table 6 presents a comparative evaluation of YOLO-DCF against several existing YOLO-series models on the NEU-DET",
+     "location": "§3.4"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "ambiguous",
+     "value": "native 200x200 mentioned; training input resolution not explicitly stated",
+     "evidence": "with images standardized at 200",
+     "location": "§3.1"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "250",
+     "evidence": "Epochs | 250",
+     "location": "Table 2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "Batch size | 32",
+     "location": "Table 2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "All experiments and tests in this study were conducted using the same platform and environmental parameters",
+     "location": "§3.2"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "NVIDIA RTX 3080 GPU, Torch 2.2.2+cu121",
+     "evidence": "GPU | NVIDIA RTX 3080",
+     "location": "Table 1"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLO-DCF",
+    "map50": 79.3,
+    "map50_95": 44.5,
+    "baseline": "YOLO11n",
+    "baseline_map50": 77.7,
+    "improvement_pp": 1.6,
+    "single_run": null,
+    "evidence": "YOLO-DCF | 0.788 | 0.742 | 0.793 | 0.445 | 3.2 | 8.6",
+    "location": "Table 6"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Evaluates YOLO-DCF on NEU-DET and PKU-Market-PCB. Main results in Table 6."
+}

@@ -1,0 +1,249 @@
+{
+ "idx": 7,
+ "pmcid": "PMC13120313",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original journal article training and evaluating a YOLOv11s-based box detector on NEU-DET and GC10-DET.",
+ "detector_family": "YOLOv11",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 200x200, 6 classes, Northeastern University",
+     "evidence": "The NEU-DET dataset was collected by Northeastern University and contained 1800 gray-scale images with a size of 200 × 200 pixels",
+     "location": "4.2"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 7:1:2",
+     "evidence": "NEU-DET dataset was divided into training set, verification set, and test set according to a 7:1:2 ratio",
+     "location": "4.2"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": ""
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "The input image was uniformly adjusted to the 640 × 640 size",
+     "location": "4.3"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "the number of training rounds (epoch) was 300",
+     "location": "4.3"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "The batch size was set to 16",
+     "location": "4.3"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "RTX 3090 (and Jetson AGX Xavier); batch/precision not stated",
+     "evidence": "The server GPU was equipped with an NVIDIA GeForce RTX 3090, 24 g video memory",
+     "location": "4.1"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "data available on request; no code link",
+     "evidence": "",
+     "location": "Data Availability Statement"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "MSFE-YOLO",
+    "map50": 79.8,
+    "map50_95": 45.8,
+    "baseline": "YOLOv11s",
+    "baseline_map50": 78.1,
+    "improvement_pp": 1.7,
+    "single_run": null,
+    "evidence": "MSFE-YOLO | 11.69 | 27.9 | 78.9 | 72.6 | 75.6 | 79.8 | 45.8",
+    "location": "Table 4"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "2294 images, 2048x1000, 10 classes",
+     "evidence": "The GC10-DET dataset was collected from real industrial scenes and contained 2294 images with a size of 2048 × 1000 pixels",
+     "location": "4.2"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 7:1:2",
+     "evidence": "The GC10-DET dataset was also divided into training set, verification set and test set according to the 7:1:2 ratio.",
+     "location": "4.2"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": ""
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "The input image was uniformly adjusted to the 640 × 640 size",
+     "location": "4.3"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "the number of training rounds (epoch) was 300",
+     "location": "4.3"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "The batch size was set to 16",
+     "location": "4.3"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "RTX 3090; batch/precision not stated",
+     "evidence": "The server GPU was equipped with an NVIDIA GeForce RTX 3090, 24 g video memory",
+     "location": "4.1"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "data available on request; no code link",
+     "evidence": "",
+     "location": "Data Availability Statement"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "MSFE-YOLO",
+    "map50": 66.7,
+    "map50_95": 34.4,
+    "baseline": "YOLOv11s",
+    "baseline_map50": 64.6,
+    "improvement_pp": 2.1,
+    "single_run": null,
+    "evidence": "MSFE-YOLO | 11.69 | 27.9 | 64.0 | 61.6 | 62.8 | 66.7 | 34.4",
+    "location": "Table 5"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "F07: paper never states whether Tables 1-5 are on the validation or test split despite a 7:1:2 split. F14: baselines appear retrained (same input/params reported) but this is not stated. Settings described for 'all experiments' applied to both datasets."
+}

@@ -1,0 +1,249 @@
+{
+ "idx": 63,
+ "pmcid": "PMC13201761",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original YOLO11n-based detector (HDR-YOLO) trained and evaluated on NEU-DET and GC10-DET.",
+ "detector_family": "YOLO11",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes",
+     "evidence": "NEU-DET consists of 1,800 grayscale images covering six representative defect categories",
+     "location": "Experimental setup and evaluation protocol"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 7:1.5:1.5 (each dataset)",
+     "evidence": "Each dataset was split into training, validation, and test sets with a ratio of 7 : 1.5 : 1.5.",
+     "location": "Experimental setup and evaluation protocol"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "All images were resized to",
+     "location": "Experimental setup and evaluation protocol"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "All models were trained for 300 epochs with a batch size of 32.",
+     "location": "Experimental setup and evaluation protocol"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "All models were trained for 300 epochs with a batch size of 32.",
+     "location": "Experimental setup and evaluation protocol"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "For fair comparison, all baseline and competing detectors were trained and evaluated under identical experimental settings, including dataset splits, input resolution",
+     "location": "Experimental setup and evaluation protocol"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "RTX 5090, Windows 11, PyTorch and ONNX; batch not stated",
+     "evidence": "All experiments were conducted on a workstation equipped with an NVIDIA RTX 5090 GPU (32 GB) running the Windows 11 operating system.",
+     "location": "Computational efficiency section, Table 9"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "code available on request",
+     "evidence": "",
+     "location": "Data availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "HDR-YOLO",
+    "map50": 81.77,
+    "map50_95": 52.59,
+    "baseline": "YOLO11n",
+    "baseline_map50": 77.85,
+    "improvement_pp": 3.92,
+    "single_run": null,
+    "evidence": "attaining an mAP@50 of 81.77% and an mAP@50:95 of 52.59%, which correspond to absolute improvements of 3.92% and 3.94% over the baseline YOLO11n",
+    "location": "Table 5"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "'over 3,500 annotated images', 10 classes (count inconsistent with the standard 2,294/2,312 release)",
+     "evidence": "GC10-DET contains over 3,500 annotated images across ten defect types",
+     "location": "Experimental setup and evaluation protocol"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 7:1.5:1.5 (each dataset)",
+     "evidence": "Each dataset was split into training, validation, and test sets with a ratio of 7 : 1.5 : 1.5.",
+     "location": "Experimental setup and evaluation protocol"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "All images were resized to",
+     "location": "Experimental setup and evaluation protocol"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "All models were trained for 300 epochs with a batch size of 32.",
+     "location": "Experimental setup and evaluation protocol"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "All models were trained for 300 epochs with a batch size of 32.",
+     "location": "Experimental setup and evaluation protocol"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "For fair comparison, all baseline and competing detectors were trained and evaluated under identical experimental settings, including dataset splits, input resolution",
+     "location": "Experimental setup and evaluation protocol"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "RTX 5090, Windows 11, PyTorch and ONNX; batch not stated",
+     "evidence": "All experiments were conducted on a workstation equipped with an NVIDIA RTX 5090 GPU (32 GB) running the Windows 11 operating system.",
+     "location": "Computational efficiency section, Table 9"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "code available on request",
+     "evidence": "",
+     "location": "Data availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "HDR-YOLO",
+    "map50": 81.59,
+    "map50_95": 50.79,
+    "baseline": "YOLO11n",
+    "baseline_map50": 73.92,
+    "improvement_pp": 7.67,
+    "single_run": null,
+    "evidence": "The proposed model achieves an mAP@50 of 81.59% and an mAP@50:95 of 50.79%, outperforming YOLO11n by 7.67% and 8.74%, respectively.",
+    "location": "Table 6"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "F09 evidence is the sentence prefix; the 640x640 value sits in an adjacent LaTeX block in the extracted text. GC10-DET described as 'over 3,500 annotated images' and as hot-rolled steel, inconsistent with the public release. Class-wise Tables 7/8 have swapped dataset labels (Table 7 'GC10-DET' lists NEU classes) and their 'all' mAP50 values (0.817, 0.815) do not match the main tables exactly. Paper title/intro mention casting but experiments are only NEU/GC10. Code available on request only. Hardware listed as RTX 5090 with PyTorch 1.10/CUDA 11.8 (version combination looks implausible)."
+}

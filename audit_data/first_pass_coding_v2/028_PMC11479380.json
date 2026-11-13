@@ -1,0 +1,131 @@
+{
+ "idx": 28,
+ "pmcid": "PMC11479380",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research training and evaluating an improved YOLOv8n bounding-box detector (YOLO-SDS) on NEU-DET.",
+ "detector_family": "YOLOv8 (custom YOLO-SDS)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "6 classes x 300 = 1800 images, 200x200",
+     "evidence": "Each defect type consists of 300 samples, with each image sized at 200 × 200 pixels.",
+     "location": "4.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/test 9:1 (1620/180), no validation set",
+     "evidence": "The NEU-DET dataset is allocated between training and testing sets with a 9:1 distribution, resulting in 1620 images for training and 180 images for testing.",
+     "location": "4.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; only 'default settings of the YOLOv8n model'"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "only train/test split; result tables not explicitly stated to be on test set",
+     "evidence": "The NEU-DET dataset is allocated between training and testing sets with a 9:1 distribution, resulting in 1620 images for training and 180 images for testing.",
+     "location": "4.1, 4.5"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "4.1, 4.2"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "The size of the input images in all experiments was set to 640 × 640 pixels.",
+     "location": "4.2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs",
+     "evidence": "During training, the epoch count was established at 200, with a batch size of 16",
+     "location": "4.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "During training, the epoch count was established at 200, with a batch size of 16",
+     "location": "4.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "To ensure data reliability, the quantity of epochs was uniformly set to 200, and all models were experimented on the NEU-DET dataset.",
+     "location": "4.5"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "FPS reported; GPU RTX 4060 Ti given in setup but inference batch/precision/timing scope not stated",
+     "evidence": "the GPU was an NVIDIA GeForce RTX 4060 Ti with CUDA version 11.7.",
+     "location": "4.2"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "YOLO-SDS",
+    "map50": 77.7,
+    "map50_95": null,
+    "baseline": "YOLOv8n",
+    "baseline_map50": null,
+    "improvement_pp": 1.5,
+    "single_run": null,
+    "evidence": "YOLO-SDS achieved a 77.7% mAP and 1.79 M Params on NEU-DET",
+    "location": "Conclusions; abstract (+1.5%)"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Table 1-5 contents absent from extracted text; main mAP taken from Conclusions, improvement 1.5 from abstract ('increasing average detection accuracy by 1.5%'); implied baseline YOLOv8n ~76.2 not stated in text. mAP@0.5:0.95 mentioned in ablation but values not in text. F14 marked rerun from blanket statement, but Table 3 includes published methods (Yolo-sd, MSC-Dnet) that may be copied; verify against PDF tables. Data available on request only."
+}

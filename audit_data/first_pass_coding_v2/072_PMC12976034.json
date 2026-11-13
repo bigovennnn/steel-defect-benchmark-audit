@@ -1,0 +1,251 @@
+{
+ "idx": 72,
+ "pmcid": "PMC12976034",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing an improved YOLOv7-tiny anchor-free detector evaluated with mAP on (relabelled) NEU-DET and GC10-DET.",
+ "detector_family": "YOLOv7-tiny (anchor-free head from YOLOv9)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1799 images, 6 classes, 200x200; re-annotated by authors (NEU-DET-R-FE)",
+     "evidence": "Each category contains 300 images, totaling 1799 images, as the medium-complexity dataset for this study.",
+     "location": "Methods, NEU-DET dataset; Dataset annotation optimization"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 7:2:1; 1259/360/180",
+     "evidence": "we divided three public datasets (DAGM 2007, NEU-DET, GC10-DET) into training sets, validation sets, and test sets in a 7:2:1 ratio.",
+     "location": "Dataset configuration, Table 4"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "reported",
+     "value": "from scratch (no pretrained weights)",
+     "evidence": "It is also worth noting that no pretrained weights were used in this work, in order to guarantee the rationality and fairness of the training process.",
+     "location": "Hyperparameter settings"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F07": {
+     "status": "reported",
+     "value": "Main comparison (Table 8) on validation set; separate test-set results in Table 9",
+     "evidence": "Comparing Table 9 with Table 8 shows that the improved model performed well on both validation and test sets, with small fluctuations in various indicators.",
+     "location": "Test set validation; Tables 8-9"
+    },
+    "F08": {
+     "status": "ambiguous",
+     "value": "unclear",
+     "evidence": "Comparing Table 9 with Table 8 shows that the improved model performed well on both validation and test sets, with small fluctuations in various indicators.",
+     "location": "Tables 8-9 (checkpoint selection set not stated)"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "Image Size(640, 640)",
+     "location": "Table 5"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300",
+     "evidence": "HyperparameterConfigurationEpochs300Batch Size16",
+     "location": "Table 5"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "HyperparameterConfigurationEpochs300Batch Size16",
+     "location": "Table 5"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "single run",
+     "evidence": "",
+     "location": ""
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "In the same computational environment and with the same hyperparameter baseline, this study used three public datasets (DAGM 2007, NEU-DET, GC10-DET) to compare the performance of the YOLOv7-tiny model and the improved model",
+     "location": "Comparative experiments, Table 8"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "RTX 3080; inference-only time 6.6 ms; batch/precision not stated",
+     "evidence": "Note: The FPS calculation only considers the inference process and does not include image display.",
+     "location": "Equipment specifications; Table 10"
+    },
+    "F16": {
+     "status": "ambiguous",
+     "value": "Supplementary Software (config + module definitions) extending YOLOv9 codebase; no URL; other code on request",
+     "evidence": "The final model configuration and the additional module definitions required to run the final model are provided as Supplementary Software",
+     "location": "Code availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "Improved model (YOLOv7-tiny-AF-MobileNetV3-large-EMA-BAFPN) on NEU-DET-R-FE",
+    "map50": 77.52,
+    "map50_95": 53.11,
+    "baseline": "YOLOv7-tiny on original NEU-DET",
+    "baseline_map50": 69.3,
+    "improvement_pp": 8.22,
+    "single_run": null,
+    "evidence": "On the NEU-DET dataset, the mAP@0.5 increased from 69.30% to 77.52%, and the mAP@0.5:0.95 increased from 35.39% to 53.11%.",
+    "location": "Table 8 (validation set); Conclusion"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "2294 public images, 10 classes, 2048x1000; re-annotated by authors",
+     "evidence": "The dataset scale offered 3570 images, with only 2294 images publicly available as the dataset in this study.",
+     "location": "Methods, GC10-DET dataset"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 7:2:1; 1606/459/229",
+     "evidence": "we divided three public datasets (DAGM 2007, NEU-DET, GC10-DET) into training sets, validation sets, and test sets in a 7:2:1 ratio.",
+     "location": "Dataset configuration, Table 4"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "reported",
+     "value": "from scratch (no pretrained weights)",
+     "evidence": "It is also worth noting that no pretrained weights were used in this work, in order to guarantee the rationality and fairness of the training process.",
+     "location": "Hyperparameter settings"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F07": {
+     "status": "reported",
+     "value": "Main comparison/ablation on validation set; test-set results in Table 9 and Table 11",
+     "evidence": "Comparing Table 9 with Table 8 shows that the improved model performed well on both validation and test sets, with small fluctuations in various indicators.",
+     "location": "Tables 6, 8, 9, 11"
+    },
+    "F08": {
+     "status": "ambiguous",
+     "value": "unclear",
+     "evidence": "Comparing Table 9 with Table 8 shows that the improved model performed well on both validation and test sets, with small fluctuations in various indicators.",
+     "location": "Tables 8-9"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "Image Size(640, 640)",
+     "location": "Table 5"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300",
+     "evidence": "HyperparameterConfigurationEpochs300Batch Size16",
+     "location": "Table 5; Table 1 footnote"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "HyperparameterConfigurationEpochs300Batch Size16",
+     "location": "Table 5"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "single run",
+     "evidence": "",
+     "location": ""
+    },
+    "F14": {
+     "status": "reported",
+     "value": "mixed",
+     "evidence": "In this work, we directly adopt their reported performance figures to conduct a multi-model comparison",
+     "location": "Table 11 (rerun on relabelled GC10) and Table 12 (copied from Wu et al.)"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "RTX 3080; inference-only time 11.0 ms; batch/precision not stated",
+     "evidence": "Note: The FPS calculation only considers the inference process and does not include image display.",
+     "location": "Equipment specifications; Table 10"
+    },
+    "F16": {
+     "status": "ambiguous",
+     "value": "Supplementary Software, no URL",
+     "evidence": "The final model configuration and the additional module definitions required to run the final model are provided as Supplementary Software",
+     "location": "Code availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "Improved model on GC10-DET-R-FE",
+    "map50": 75.17,
+    "map50_95": 48.78,
+    "baseline": "YOLOv7-tiny on original GC10-DET",
+    "baseline_map50": 65.41,
+    "improvement_pp": 9.76,
+    "single_run": null,
+    "evidence": "On the GC10-DET dataset, the mAP@0.5 increased from 65.41% to 75.17%, and the mAP@0.5:0.95 increased from 33.25% to 48.78%.",
+    "location": "Table 8 (validation set); Conclusion"
+   }
+  }
+ ],
+ "code_links": [
+  "https://ychlab8.wixsite.com/ychlab/s-projects-side-by-side"
+ ],
+ "coder_notes": "Authors re-annotated both NEU-DET and GC10-DET and applied log-transform enhancement; the improved model is evaluated on relabelled data while the YOLOv7-tiny baseline in Table 8 is on original labels, so improvement_pp conflates labels and model. Main Table 8 is validation-set; test-set mAP50 is 74.8 (NEU) and 76.9 (GC10) in Table 9. Wix link is a data link (datasets), not code. F16 coded ambiguous because code is supplied as Supplementary Software without URL."
+}

@@ -1,0 +1,251 @@
+{
+ "idx": 66,
+ "pmcid": "PMC13505926",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing GE-YOLO11n (with AW-ACE enhancement and ES-DCGAN sample synthesis) and evaluating bounding-box detection on NEU-DET and GC10-DET.",
+ "detector_family": "YOLO11 (custom GE-YOLO11n)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 original images (expanded to 3600 with 1800 ES-DCGAN generated training images), 6 classes, Northeastern University",
+     "evidence": "The original NEU-DET dataset contains 1800 images, which are split into an original training set (1260), a validation set (360), and a test set (180) at a ratio of 7:2:1.",
+     "location": "6.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 7:2:1 (1260/360/180 original; 3060/360/180 with ES-DCGAN training augmentation)",
+     "evidence": "The original NEU-DET dataset contains 1800 images, which are split into an original training set (1260), a validation set (360), and a test set (180) at a ratio of 7:2:1.",
+     "location": "6.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; Zenodo archive linked in Data Availability"
+    },
+    "F04": {
+     "status": "reported",
+     "value": "Checked near-duplicates between 1800 generated and 1260 real training images and among pairs of real training images using minimum pixelwise and VGG19 conv4_4 feature Euclidean distances",
+     "evidence": "indicating that the generated images are diverse and are not near-duplicates of the real training images.",
+     "location": "4.3"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; validation set used for hyperparameter/module selection in 6.2-6.3, but per-run epoch checkpoint selection rule not stated"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "test set for main comparison (Table 11, mean of 5 tests) and Sec 6.4; validation set for hyperparameter/ablation studies (Tables 7-10)",
+     "evidence": "For each repetition, the detection model is independently trained, and its mAP@.5 is calculated on the corresponding test set.",
+     "location": "6.2, 6.3, 6.4, 6.5"
+    },
+    "F08": {
+     "status": "reported",
+     "value": "separate",
+     "evidence": "The 540 real defect images are randomly split into a validation set (360 images) and a test set (180 images) at a 2:1 ratio",
+     "location": "6.2, 6.3, 6.4"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; 200x200x3 given only for ES-DCGAN in Tables 3-4"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs (also 100 epochs tested in Table 7)",
+     "evidence": "The number of training epochs is set to 200, with a batch size of 16.",
+     "location": "6.2, 6.5"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16 (also 32 tested in Table 7)",
+     "evidence": "The number of training epochs is set to 200, with a batch size of 16.",
+     "location": "6.2, 6.5"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; random seed 42 reported only for ES-DCGAN in Table 2"
+    },
+    "F13": {
+     "status": "reported",
+     "value": "5 repeated random val/test splits with independent training; on test set GE-YOLO11n mAP@0.5 is 91.3% ± 0.2% (Sec 6.4, Fig 19); Table 11 reports 5-test means without std",
+     "evidence": "The mean mAP@.5 value is 91.3%, with a standard deviation of 0.2%, so the result obtained from the five tests for mAP@0.5 is 91.3% ± 0.2%.",
+     "location": "6.4, 6.5, Table 11"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "All the models use the NEU-DET dataset processed by AW-ACE and the ES-DCGAN (3060 training images+360 validation images+180 test images).",
+     "location": "6.5"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "NVIDIA GeForce GTX 1080 Ti (Table 6); distinguishes detector-only latency (Tables 7-8) and full-pipeline latency including preprocessing, resizing, inference, NMS, and postprocessing (Tables 10-11), but inference batch size and numerical precision not explicitly stated",
+     "evidence": "where the full-pipeline latency includes preprocessing, resizing, model inference, nonmaximum suppression, and postprocessing steps.",
+     "location": "6.1, 6.3, 6.5, Table 6"
+    },
+    "F16": {
+     "status": "reported",
+     "value": "https://doi.org/10.5281/zenodo.19327455",
+     "evidence": "The key data and code supporting the results of this study have been publicly stored on Zenodo. Please find the link: https://doi.org/10.5281/zenodo.19327455.",
+     "location": "Data Availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "GE-YOLO11n (with AW-ACE and ES-DCGAN)",
+    "map50": 91.3,
+    "map50_95": 66.9,
+    "baseline": "YOLO11n (with AW-ACE and ES-DCGAN, Table 11; on unaugmented val set YOLO11n is 85.3 and GE-YOLO11n is 86.8 in Table 8)",
+    "baseline_map50": 90.6,
+    "improvement_pp": 0.7,
+    "single_run": false,
+    "evidence": "The detailed performance of each model is shown in Table 11, which displays the mean values of the five test results",
+    "location": "6.4, 6.5, Table 11"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "2294 images and 3564 instances after removing 6 unlabeled and 12 duplicate images, 10 classes",
+     "evidence": "After applying the aforementioned corrections, a total of 2294 images and 3564 instances are obtained (some images contain multiple defect instances) for the subsequent model experiments.",
+     "location": "6.6"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 7:2:1",
+     "evidence": "After the GC10-DET dataset is processed with the proposed AW-ACE image enhancement module, the data are divided into a training set, a validation set, and a test set at a ratio of 7:2:1.",
+     "location": "6.6"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; Zenodo archive linked in Data Availability"
+    },
+    "F04": {
+     "status": "reported",
+     "value": "Removed 6 unlabeled images and 12 duplicate images (exact filenames listed in Sec 6.6) and standardized label typos",
+     "evidence": "Removal of unlabeled and duplicate images: Unlabeled images: img_08_4406743300_00407, img_05_425382900_00002, img_06_425614600_0042, img_06_425614600_00438, img_07_3436814000_00020, and img_07_436164700_01539.",
+     "location": "6.6"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "test set",
+     "evidence": "The trained GE-YOLO11n model (epoch = 200) is applied to the test images, and the parameters for the ten classes of defects that are identified in a single run are shown in Table 14.",
+     "location": "6.6, Tables 14-15"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "6.6"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs",
+     "evidence": "The trained GE-YOLO11n model (epoch = 200) is applied to the test images, and the parameters for the ten classes of defects that are identified in a single run are shown in Table 14.",
+     "location": "6.6"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "6.6 (16 stated for NEU-DET in 6.5, not explicitly restated in 6.6)"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "ambiguous",
+     "value": "Table 15 reports mean of 5 test results without standard deviation or interval; Table 14 reports a single run",
+     "evidence": "A comparison between YOLO11n and GE-YOLO11n is shown in Table 15. All parameters are the mean values of the five test results",
+     "location": "6.6, Table 15"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "A comparison between YOLO11n and GE-YOLO11n is shown in Table 15. All parameters are the mean values of the five test results",
+     "location": "6.6, Table 15"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "NVIDIA GeForce GTX 1080 Ti (Table 6), full-pipeline latency includes preprocessing, resizing, model inference, NMS, and postprocessing, but inference batch size and precision not stated",
+     "evidence": "All parameters are the mean values of the five test results, and the full-pipeline latency includes preprocessing, resizing, model inference, nonmaximum suppression, and postprocessing steps.",
+     "location": "6.1, 6.6, Table 15"
+    },
+    "F16": {
+     "status": "reported",
+     "value": "https://doi.org/10.5281/zenodo.19327455",
+     "evidence": "The key data and code supporting the results of this study have been publicly stored on Zenodo. Please find the link: https://doi.org/10.5281/zenodo.19327455.",
+     "location": "Data Availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "GE-YOLO11n (with AW-ACE)",
+    "map50": 75.9,
+    "map50_95": 54.2,
+    "baseline": "YOLO11n (with AW-ACE)",
+    "baseline_map50": 72.8,
+    "improvement_pp": 3.1,
+    "single_run": false,
+    "evidence": "A comparison between YOLO11n and GE-YOLO11n is shown in Table 15. All parameters are the mean values of the five test results",
+    "location": "6.6, Table 15"
+   }
+  }
+ ],
+ "code_links": [
+  "https://doi.org/10.5281/zenodo.19327455"
+ ],
+ "coder_notes": "On NEU-DET, Table 8 reports original unaugmented validation set results (GE-YOLO11n 86.8% mAP@.5, 62.3% mAP@.5:.95 vs YOLO11n 85.3%, 61.4%; +1.5 pp), Table 10 reports validation set ablation across preprocessing/GAN stages (85.3% -> 91.6%, +6.3 pp), and Table 11 reports 5-split test set mean on the AW-ACE+ES-DCGAN dataset (GE-YOLO11n 91.3%, 66.9% vs YOLO11n 90.6%, 66.2%; +0.7 pp). On GC10-DET, Table 14 reports single-run test results for GE-YOLO11n (76.1% mAP@.5, 54.3% mAP@.5:.95), while Table 15 reports the 5-run mean comparison against YOLO11n (75.9% vs 72.8% mAP@.5, 54.2% vs 52.5% mAP@.5:.95)."
+}

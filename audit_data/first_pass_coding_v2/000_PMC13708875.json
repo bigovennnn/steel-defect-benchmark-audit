@@ -1,0 +1,134 @@
+{
+ "idx": 0,
+ "pmcid": "PMC13708875",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research training and evaluating a YOLO-based bounding-box detector (YOLO-RMF) on NEU-DET.",
+ "detector_family": "YOLOv8 (custom YOLO-RMF)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, 200x200, NEU source link",
+     "evidence": "It contains 1800 grayscale images at a fixed resolution of 200 × 200 pixels, covering six representative hot-rolled strip steel surface defects",
+     "location": "4.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 7:2:1 (1260/360/180)",
+     "evidence": "We split the dataset into training, validation, and test sets in a 7:2:1 ratio (1260/360/180 images), preserving the balanced per-class distribution in all splits.",
+     "location": "4.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; seed 0 stated only for shuffling/initialization/augmentation"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; validation set exists but selection criterion not stated"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "test (Table 6 Note)",
+     "evidence": "mAP50 on the NEU-DET test set (source domain, values consistent with Table 1)",
+     "location": "Table 6 Note"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "4.1, 4.3, 4.4"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640 (multi-scale 480-800 for first 200 epochs)",
+     "evidence": "Input image resolution is 640 × 640 pixels for all experiments.",
+     "location": "4.3"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "1000 epochs",
+     "evidence": "The model is trained for 1000 epochs with a batch size of 16",
+     "location": "4.3"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "The model is trained for 1000 epochs with a batch size of 16",
+     "location": "4.3"
+    },
+    "F12": {
+     "status": "ambiguous",
+     "value": "seed 0 stated in 4.3, but Table 1 note states 10 runs with different seeds",
+     "evidence": "All detection metrics are reported as the mean of 10 independent training runs with different random seeds.",
+     "location": "Table 1 Note, §4.3"
+    },
+    "F13": {
+     "status": "reported",
+     "value": "10 runs with independent seeds; 95% CI and Cohen's d (Tables 10-11)",
+     "evidence": "each ablation configuration and comparison baseline is trained 10 times with independent random seeds, and mAP metrics are analyzed statistically.",
+     "location": "4.10"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "The same seed protocol and training pipeline are applied to every compared baseline.",
+     "location": "4.3"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "RTX 4090, batch 1, FP32, incl. NMS; Jetson AGX Orin TensorRT FP16/INT8",
+     "evidence": "All GPU inference speeds (FPS) are measured on a single NVIDIA RTX 4090 GPU with batch size 1 under FP32 precision.",
+     "location": "4.2"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "source code available upon reasonable request",
+     "evidence": "",
+     "location": "6"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "YOLO-RMF",
+    "map50": 76.1,
+    "map50_95": 40.6,
+    "baseline": "YOLOv8s",
+    "baseline_map50": 74.5,
+    "improvement_pp": 1.6,
+    "single_run": false,
+    "evidence": "All detection metrics are reported as the mean of 10 independent training runs with different random seeds.",
+    "location": "Table 1 Note"
+   }
+  }
+ ],
+ "code_links": [
+  "http://faculty.neu.edu.cn/songkechen/zh_CN/zdylm/263270/list/index.htm",
+  "https://github.com/clovermini/MVIT_metal_datasets"
+ ],
+ "coder_notes": "Tables not in txt. Baseline_map50 74.5 derived from 76.1-1.6. Ablation baseline is YOLOv8n (value not in text). Unclear whether Table 1 values are single seed-0 runs or means of the 10 runs in Sec 4.10, so single_run=null. Links are dataset links only. Test vs val for Table 1 not explicit."
+}

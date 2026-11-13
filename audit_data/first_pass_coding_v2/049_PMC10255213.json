@@ -1,0 +1,134 @@
+{
+ "idx": 49,
+ "pmcid": "PMC10255213",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing an improved YOLOv5s detector trained and evaluated with mAP on NEU-DET.",
+ "detector_family": "YOLOv5",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, 200x200, NEU",
+     "evidence": "The dataset contains 1800 grayscale images of steel surface defects, with 300 images for each type of defect and a resolution of 200 × 200 for each image.",
+     "location": "Section 4.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 8:1:1; 1440/180/180",
+     "evidence": "The training set, validation set, and test set are divided in the ratio of 8:1:1, as shown in Table 1, with 1440 images in the training set and 180 images in both the test set and validation set.",
+     "location": "Section 4.1, Table 1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "Separate val and test sets defined but evaluation set of Table 9 not stated",
+     "evidence": "",
+     "location": ""
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": ""
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "we chose image size 640 × 640, batch size 32, and the model was run for up to 300 epochs",
+     "location": "Section 4.2, Table 3"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "up to 300 epochs",
+     "evidence": "we chose image size 640 × 640, batch size 32, and the model was run for up to 300 epochs",
+     "location": "Section 4.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "we chose image size 640 × 640, batch size 32, and the model was run for up to 300 epochs",
+     "location": "Section 4.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "single run",
+     "evidence": "",
+     "location": ""
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "rerun",
+     "evidence": "All models were tasked with detection on the NEU-DET steel surface dataset, and the detection results are shown in Figure 10.",
+     "location": "Section 4.6, Table 9"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "RTX3090 server; inference batch/precision not stated; 67.1 FPS",
+     "evidence": "This experiment is built on an AutoDL server with an RTX3090 GPU, Intel(R)Xeon(R)Platinum 8358P CPU, running on a Linux operating system",
+     "location": "Section 4.2"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "Only ultralytics baseline repos cited; no authors' code link",
+     "evidence": "",
+     "location": ""
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "Improved YOLOv5s (RepLK-C3 + multi-path RepLK-SPP)",
+    "map50": 76.8,
+    "map50_95": null,
+    "baseline": "YOLOv5s",
+    "baseline_map50": 68.2,
+    "improvement_pp": 8.6,
+    "single_run": null,
+    "evidence": "In terms of model performance, the mAP value of our model reaches 76.8%, compared to the original YOLOv5 and the latest YOLOv8 algorithm; these are increases of 8.6% and 3.7%, respectively.",
+    "location": "Section 4.6, Table 9"
+   }
+  }
+ ],
+ "code_links": [
+  "https://github.com/ultralytics/yolov5",
+  "https://github.com/ultralytics/ultralytics"
+ ],
+ "coder_notes": "Table 9 contents not in extracted text; baseline_map50 68.2 derived as 76.8 - 8.6. mAP threshold (0.5) not explicitly stated; assumed mAP@0.5. Ultralytics links are baseline references, not the authors' code."
+}

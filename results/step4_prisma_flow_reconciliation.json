@@ -1,0 +1,46 @@
+{
+  "status": "provisional_retrieval_ledger_not_final_deduplicated_prisma_flow",
+  "identification": 433,
+  "title_abstract_screened": 433,
+  "screening_decisions": {
+    "include_ft": 154,
+    "unclear_ft": 42,
+    "exclude": 237
+  },
+  "title_abstract_excluded": 237,
+  "fulltext_retrieval_sought": 196,
+  "retained_with_pmcid": 137,
+  "retained_without_pmcid": 59,
+  "pmc_download_attempts": 137,
+  "pmc_download_success": 135,
+  "pmc_download_errors": [
+    {
+      "idx": "13",
+      "pmcid": "PMC13074744",
+      "status": "error HTTP Error 500: ",
+      "time_utc": "2026-11-01T06:44:38Z"
+    },
+    {
+      "idx": "65",
+      "pmcid": "PMC13492231",
+      "status": "error HTTP Error 500: ",
+      "time_utc": "2026-11-01T06:47:14Z"
+    }
+  ],
+  "records_outside_successful_xml_set": 61,
+  "outside_xml_records_with_oa_metadata_links": 47,
+  "fulltext_assessed": 135,
+  "included_studies_papers": 131,
+  "included_evaluations_total": 182,
+  "included_evaluations_by_dataset": {
+    "NEU-DET": 125,
+    "GC10-DET": 57
+  },
+  "limitations": [
+    "Legacy exclusion code meanings differ from the frozen manual; no silent remapping.",
+    "A missing PMC XML copy or HTTP failure is not evidence of a paywall.",
+    "The previous 16 paywall / 45 external / 12+3+30 decomposition was hardcoded and is withdrawn.",
+    "External discoveries are separate from this screening file; overlaps and version links require record-level adjudication before final counts.",
+    "Open-access metadata links have not all been followed or coded; no new acquisition was performed."
+  ]
+}

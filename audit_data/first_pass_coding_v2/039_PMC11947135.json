@@ -1,0 +1,251 @@
+{
+ "idx": 39,
+ "pmcid": "PMC11947135",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing YOLOv5s-Improved and evaluating detection on NEU-DET and GC10-DET.",
+ "detector_family": "YOLOv5",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, Northeastern University Steel Surface Defects Dataset (NEU-DET)",
+     "evidence": "The dataset utilized in this thesis is sourced from the Northeastern University Steel Surface Defects Dataset (NEU-DET).",
+     "location": "§3.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "8:1:1 train/val/test (text states 1,260 / 270 / 270 samples)",
+     "evidence": "The dataset was randomly divided into training, validation, and test sets with a ratio of 8:1:1. This resulted in 1,260 samples for the training set, 270 samples for the validation set, and 270 samples for the test set.",
+     "location": "§3.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "test split exists in F02, but Table 6 does not specify val vs test",
+     "evidence": "Table 6 Algorithm comparison.",
+     "location": "Table 6"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "500",
+     "evidence": "Batch size | Momentum | Initial learning rate | Weight decay | Epochs 32 | 0.937 | 0.01 | 0.0005 | 500",
+     "location": "Table 2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "Batch size | Momentum | Initial learning rate | Weight decay | Epochs 32 | 0.937 | 0.01 | 0.0005 | 500",
+     "location": "Table 2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "Table 6 Algorithm comparison.",
+     "location": "Table 6"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "NVIDIA GTX 1080Ti (12G), PyTorch 1.7.1, Ubuntu 20.04",
+     "evidence": "The detection model proposed in this study was trained on an NVIDIA GTX 1080Ti (12G) GPU running the Ubuntu 20.04 operating system.",
+     "location": "§3.2"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv5s-Improved",
+    "map50": 78.8,
+    "map50_95": null,
+    "baseline": "YOLOv5s",
+    "baseline_map50": 74.7,
+    "improvement_pp": 4.1,
+    "single_run": null,
+    "evidence": "YOLOv5s-Improved | 77 | 73.4 | 78.8 | 34.4 | 9.42M | 18.2MB",
+    "location": "Table 6"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "GC10-DET dataset containing various metal defects",
+     "evidence": "another dataset, GC10-DET, containing various metal defects, was used for training.",
+     "location": "§4.4"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "mAP reported in Table 7 without specifying val vs test split",
+     "evidence": "Table 7 Generalizability comparison.",
+     "location": "Table 7"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "500 (Table 2 general setup)",
+     "evidence": "Batch size | Momentum | Initial learning rate | Weight decay | Epochs 32 | 0.937 | 0.01 | 0.0005 | 500",
+     "location": "Table 2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32 (Table 2 general setup)",
+     "evidence": "Batch size | Momentum | Initial learning rate | Weight decay | Epochs 32 | 0.937 | 0.01 | 0.0005 | 500",
+     "location": "Table 2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "Table 7 Generalizability comparison.",
+     "location": "Table 7"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "NVIDIA GTX 1080Ti (12G), PyTorch 1.7.1, Ubuntu 20.04",
+     "evidence": "The detection model proposed in this study was trained on an NVIDIA GTX 1080Ti (12G) GPU running the Ubuntu 20.04 operating system.",
+     "location": "§3.2"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv5s-improved",
+    "map50": 71.0,
+    "map50_95": null,
+    "baseline": "YOLOv5s",
+    "baseline_map50": 63.4,
+    "improvement_pp": 7.6,
+    "single_run": null,
+    "evidence": "YOLOv5s-improved | 71.9 | 68.4 | 71.0 | 34.4 | 9.2M | 18.8MB",
+    "location": "Table 7"
+   }
+  }
+ ],
+ "code_links": [
+  "https://github.com/ultralytics/ultralytics"
+ ],
+ "coder_notes": "Evaluates YOLOv5s-Improved on NEU-DET (Table 6) and GC10-DET (Table 7). Discrepancy between stated 8:1:1 ratio and 1260/180/360 sample counts noted in F02."
+}

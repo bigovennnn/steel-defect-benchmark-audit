@@ -1,0 +1,133 @@
+{
+ "idx": 18,
+ "pmcid": "PMC12466993",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing ES-YOLO (YOLOv8 framework) and evaluating defect detection on NEU-DET.",
+ "detector_family": "YOLOv8",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "6 typical surface defects of hot-rolled strip steel, ref [42]",
+     "evidence": "we selected the NEU-DET dataset [42], which contained six typical surface defects of hot-rolled strip steel",
+     "location": "§5.1"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "validation set",
+     "evidence": "the model's performance on the validation set is presented in Table 2.",
+     "location": "§5.4.2"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640*640",
+     "evidence": "640*640",
+     "location": "Table 1"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "100",
+     "evidence": "A total of 100 epochs were trained",
+     "location": "§5.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "64",
+     "evidence": "Batch | Image | Monmentum | Epoch Value | 0.01 | 64",
+     "location": "Table 1"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "YOLO | NEU-DET | 0.84 | 0.637 | 0.773 | 69.444 ms",
+     "location": "Table 3"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "69.444 ms inference time",
+     "evidence": "YOLO | NEU-DET | 0.84 | 0.637 | 0.773 | 69.444 ms",
+     "location": "Table 3"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "ES-YOLO",
+    "map50": 80.1,
+    "map50_95": null,
+    "baseline": "YOLO",
+    "baseline_map50": 77.3,
+    "improvement_pp": 2.8,
+    "single_run": null,
+    "evidence": "All | 0.952 | 0.657 | 0.801 | 0.343 | 0.048",
+    "location": "Table 2"
+   }
+  }
+ ],
+ "code_links": [
+  "https://github.com/ultralytics/ultralytics"
+ ],
+ "coder_notes": "Evaluated on NEU-DET converted to event format. Evaluated on validation set in Table 2."
+}

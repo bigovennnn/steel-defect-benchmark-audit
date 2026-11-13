@@ -1,0 +1,131 @@
+{
+ "idx": 150,
+ "pmcid": "PMC11085271",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing an improved YOLOv7 detector (with PConv, CA, SPD, and EIoU) and evaluating bounding-box object detection on NEU-DET.",
+ "detector_family": "YOLOv7 (custom)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 grayscale images, 6 classes, 200x200",
+     "evidence": "The NEU-DET steel defect dataset contains 1800 grayscale images, including 1440 in the training set, 180 in the testing set, and 180 in the validation set, all with a resolution of 200 × 200 pixels.",
+     "location": "3.1.1. Dataset"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/test/val 1440/180/180 (8:1:1)",
+     "evidence": "The NEU-DET steel defect dataset contains 1800 grayscale images, including 1440 in the training set, 180 in the testing set, and 180 in the validation set, all with a resolution of 200 × 200 pixels.",
+     "location": "3.1.1. Dataset"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "3.2, 3.3, Tables 1-3"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "raw image resolution 200x200 stated, but network input resize resolution not reported",
+     "evidence": "",
+     "location": "3.1.1, 3.1.2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs",
+     "evidence": "In the experiment, the batch size was set to 8, the epoch was set to 200, and the learning rate was set to 0.005.",
+     "location": "3.1.2. Experimental Environment and Parameter Setting"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "8",
+     "evidence": "In the experiment, the batch size was set to 8, the epoch was set to 200, and the learning rate was set to 0.005.",
+     "location": "3.1.2. Experimental Environment and Parameter Setting"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "In order to ensure fairness in the comparison of models, under the condition that all parameter settings remain unchanged, we trained both the original YOLOv7 algorithm and the improved version separately.",
+     "location": "3.3.1. Comparison Experiment of Improvement Effect"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "RTX 3070 8 GB and timing scope (preprocessing + inference + post-processing) reported, but inference batch size and precision not stated",
+     "evidence": "",
+     "location": "3.1.2, 3.1.3"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "Data are contained within the article.",
+     "evidence": "",
+     "location": "Data Availability Statement"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "Improved YOLOv7 (Base + PConv + CA + SPD + EIoU)",
+    "map50": 80.4,
+    "map50_95": null,
+    "baseline": "YOLOv7",
+    "baseline_map50": 76.4,
+    "improvement_pp": 4.0,
+    "single_run": null,
+    "evidence": "From the above data comparison, it can be seen that the improved YOLOv7 algorithm’s mAP value has increased from 76.4% to 80.4%, an increase of 4.0 percentage points.",
+    "location": "Abstract, 3.3.1, Table 1"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Only YOLOv7 variants (ablation, attention modules, IoU losses) are compared in Tables 1-3; no external SOTA table is included."
+}

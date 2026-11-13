@@ -1,0 +1,71 @@
+{
+  "audit_date": "2026-11-08",
+  "reason": "Post-hoc audit of full-text PMC JATS XML files for duplicate/leakage mentions revealed a model-assisted false negative on PMC12891620 (Chen et al., Scientific Reports 2026). The authors explicitly checked content hashes on NEU-DET, found patches_101 and patches_105 to be identical, and removed patches_105 to prevent duplicate counting.",
+  "original_model_assisted_record": {
+    "file": "079_PMC12891620.json",
+    "pmcid": "PMC12891620",
+    "dataset": "NEU-DET",
+    "status": "not_reported_in_paper",
+    "note": "Missed by LLM extraction prompt because the deduplication was described inside the dataset conversion/YOLO-format transformation text rather than a dedicated data leakage subsection."
+  },
+  "corrected_record": {
+    "file": "079_PMC12891620.json",
+    "pmcid": "PMC12891620",
+    "dataset": "NEU-DET",
+    "status": "reported",
+    "value": "Content-hash check identified patches_101.jpg and patches_105.jpg as identical in NEU-DET; retained patches_101.jpg only, resulting in 1,439 train / 360 val images under 8:2 split.",
+    "evidence": "During conversion, a content-hash check found that patches_101.jpg and patches_105.jpg in the patches class are identical; to avoid duplicate counting we kept only patches_101.jpg, yielding 1,439 training images and 360 validation images.",
+    "location": "Methods / NEU-DET dataset description (txt_v2/079_PMC12891620.txt)"
+  },
+  "corpus_keyword_sweep": {
+    "total_fulltext_files_checked": 135,
+    "keywords_probed": ["duplicate", "near-identical", "hash", "data leak", "leakage"],
+    "total_matched_snippets": 73,
+    "false_positive_context_breakdown": {
+      "magnetic_flux_leakage_ndt_sensor": 26,
+      "tunnel_or_pipe_water_oil_leakage_defect": 14,
+      "nms_duplicate_bounding_box_predictions": 12,
+      "loss_or_feature_map_tensor_duplication": 9,
+      "fft_spectral_leakage": 1,
+      "genuine_dataset_duplicate_handling": 3
+    },
+    "confirmed_genuine_f04_evaluations": [
+      {
+        "pmcid": "PMC13505926",
+        "dataset": "NEU-DET",
+        "status": "reported",
+        "detail": "Checked generated vs real near-duplicates via pixel/VGG Euclidean distance."
+      },
+      {
+        "pmcid": "PMC13505926",
+        "dataset": "GC10-DET",
+        "status": "reported",
+        "detail": "Removed 6 unlabeled and 12 duplicate GC10-DET images."
+      },
+      {
+        "pmcid": "PMC12891620",
+        "dataset": "NEU-DET",
+        "status": "reported",
+        "detail": "Content-hash check purged patches_105.jpg as identical to patches_101.jpg."
+      }
+    ]
+  },
+  "summary_counts_before_correction": {
+    "total_evaluations": 182,
+    "reported": 2,
+    "reported_pct": 1.10,
+    "ambiguous": 1,
+    "ambiguous_pct": 0.55,
+    "not_reported": 179,
+    "not_reported_pct": 98.35
+  },
+  "summary_counts_after_correction": {
+    "total_evaluations": 182,
+    "reported": 3,
+    "reported_pct": 1.65,
+    "ambiguous": 1,
+    "ambiguous_pct": 0.55,
+    "not_reported": 178,
+    "not_reported_pct": 97.80
+  }
+}

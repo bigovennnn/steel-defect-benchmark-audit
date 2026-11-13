@@ -1,0 +1,53 @@
+{
+  "overall_pass": true,
+  "checks": {
+    "springer_sn_jnl_structure": {
+      "pass": true,
+      "detail": "sn-jnl[sn-apa/sn-basic]=True, zero_intro_subheadings=True"
+    },
+    "abstract_springer_compliance": {
+      "pass": true,
+      "detail": "words=241 (150-250), zero_math=True, zero_jargon=True"
+    },
+    "literature_f04_and_corpus_counts": {
+      "pass": true,
+      "detail": "F04=3 (1.6%) and 131/182 verified"
+    },
+    "terminology_and_collision_hygiene": {
+      "pass": true,
+      "detail": "found_raw=[], zero_exp_E_collision=True"
+    },
+    "stats_json_297_consistency": {
+      "pass": true,
+      "detail": "checked=['2.61', '8.87', '4.08', '3.56', '3.86', '3.00'], missing=[], e7_prefix_values_withheld=True"
+    },
+    "audit_mean_compliance": {
+      "pass": true,
+      "detail": "n_evals=182, expected='5.37 \\pm 2.07' in text=True"
+    },
+    "fig04_counts_match_rollup": {
+      "pass": true,
+      "detail": "mismatched_fields=[]"
+    },
+    "training_protocol_matches_args": {
+      "pass": true,
+      "detail": "rtdetr_runs=20 auto/AdamW=True, yolo_runs=80 SGD=True, disclosed=True"
+    },
+    "dose_and_missed_pair_traceability": {
+      "pass": true,
+      "detail": "checked=['L=438.0', '+3.51 \\\\pm 3.52', '64 of those', '26 cases on $G_0$ (14 between training and test)', '7--14 per split touch'], missing=[]"
+    },
+    "no_stale_phrases": {
+      "pass": true,
+      "detail": "found=[]"
+    },
+    "figure_pipeline_and_examples_sync": {
+      "pass": true,
+      "detail": "fig05 uses 0.95/0.90; fig06b PDF present & cited"
+    },
+    "bibtex_and_latex_clean_build": {
+      "pass": true,
+      "detail": "bib_entries_ok=True, blg_zero_err_warn=True, log_clean=True, max_overfull_pt=0.00"
+    }
+  }
+}

@@ -1,0 +1,254 @@
+{
+ "idx": 140,
+ "pmcid": "PMC10909228",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing an improved YOLOv7-tiny detector (CAF-YOLO) and evaluating bounding-box object detection on GC10-DET and NEU-DET.",
+ "detector_family": "YOLOv7-tiny (custom CAF-YOLO)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "2,257 images, 10 classes, 2048x1000, Kaggle link",
+     "evidence": "The GC10-DET dataset contains 2,257 images of steel surface defect detection in actual industrial production.",
+     "location": "Experiment and Result Analysis - Datasets (1)"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 8:1:1",
+     "evidence": "The dataset is divided into training, validation, and testing sets in an 8:1:1 ratio.",
+     "location": "Experiment and Result Analysis - Datasets (1)"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; Method states outputting final model when reaching set iterations without validation selection rule"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Tables 1, 2, 5; evaluation split for reported mAP not explicitly stated"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "Therefore, in this study, we use a batch size of 32 and train for 500 epochs with image sizes set to 640 × 640.",
+     "location": "Experimental setup"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "500 epochs",
+     "evidence": "Therefore, in this study, we use a batch size of 32 and train for 500 epochs with image sizes set to 640 × 640.",
+     "location": "Experimental setup"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "Therefore, in this study, we use a batch size of 32 and train for 500 epochs with image sizes set to 640 × 640.",
+     "location": "Experimental setup"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "mixed",
+     "evidence": "References | Methods | Wf | Pu | Wl | Cg | Ws | Os | Ss | In | Rp | Cr | mAP | FPS",
+     "location": "Table 2, Table 5 (Table 2 cites literature with missing FPS values, while ablation baseline YOLOv7-tiny in Table 5 is trained by authors)"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "RTXA5000 GPU stated in setup, but inference batch size and precision for FPS not reported",
+     "evidence": "",
+     "location": "Experimental setup, Table 2, Table 5"
+    },
+    "F16": {
+     "status": "ambiguous",
+     "value": "Zenodo link provided (https://zenodo.org/record/8219708); text under Code notes only 3 module files included, full training repo to be verified in step 2",
+     "evidence": "The code and data for this article are available at Zenodo:",
+     "location": "Code, Data Availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "Improved YOLOv7-tiny (CAF-YOLO)",
+    "map50": 81.0,
+    "map50_95": null,
+    "baseline": "YOLOv7-tiny",
+    "baseline_map50": 70.2,
+    "improvement_pp": 10.8,
+    "single_run": null,
+    "evidence": "The original YOLOv7-tiny model (baseline) achieved an mAP of 70.2. In comparison, C-YOLO outperforms it with a 4.3 higher mAP.",
+    "location": "Table 1, Table 2, Table 5"
+   }
+  },
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1,800 grayscale images, 6 classes, 200x200, NEU homepage and Kaggle links",
+     "evidence": "There are a total of 1,800 images in the dataset. The image resolution is 200*200. All images are grayscale.",
+     "location": "Experiment and Result Analysis - Datasets (2)"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 8:1:1",
+     "evidence": "The training, validation, and test sets are divided into 8:1:1 ratios.",
+     "location": "Experiment and Result Analysis - Datasets (2)"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; Method states outputting final model when reaching set iterations without validation selection rule"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Tables 3, 4, 6; evaluation split for reported mAP not explicitly stated"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "Therefore, in this study, we use a batch size of 32 and train for 500 epochs with image sizes set to 640 × 640.",
+     "location": "Experimental setup"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "500 epochs",
+     "evidence": "Therefore, in this study, we use a batch size of 32 and train for 500 epochs with image sizes set to 640 × 640.",
+     "location": "Experimental setup"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "Therefore, in this study, we use a batch size of 32 and train for 500 epochs with image sizes set to 640 × 640.",
+     "location": "Experimental setup"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "mixed",
+     "evidence": "References | Methods | Crazing | Inlcusion | Patches | Pitted _surface | Rolled -in scale | Scratches | mAP | FPS",
+     "location": "Table 4, Table 6 (Table 4 cites literature with missing FPS values, while ablation baseline YOLOv7-tiny in Table 6 is trained by authors)"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "RTXA5000 GPU stated in setup, but inference batch size and precision for FPS not reported",
+     "evidence": "",
+     "location": "Experimental setup, Table 4, Table 6"
+    },
+    "F16": {
+     "status": "ambiguous",
+     "value": "Zenodo link provided (https://zenodo.org/record/8219708); text under Code notes only 3 module files included, full training repo to be verified in step 2",
+     "evidence": "The code and data for this article are available at Zenodo:",
+     "location": "Code, Data Availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "Improved YOLOv7-tiny (CAF-YOLO)",
+    "map50": 80.1,
+    "map50_95": null,
+    "baseline": "YOLOv7-tiny",
+    "baseline_map50": 70.9,
+    "improvement_pp": 9.2,
+    "single_run": null,
+    "evidence": "Table 6 presents the results, showing that the baseline model YOLOv7-tiny achieved an mAP of 70.9.",
+    "location": "Table 3, Table 4, Table 6"
+   }
+  }
+ ],
+ "code_links": [
+  "https://zenodo.org/record/8219708",
+  "https://www.kaggle.com/datasets/alex000kim/gc10det",
+  "http://faculty.neu.edu.cn/songkechen/zh_CN/zdylm/263270/list/index.htm",
+  "https://www.kaggle.com/datasets/zy12345/neudet?resource=download"
+ ],
+ "coder_notes": "Abstract states nearly 11% improvement on GC10-DET (81.0 vs 70.2 = +10.8 pp) and 9.2% on NEU-DET (80.1 vs 70.9 = +9.2 pp). SOTA comparison Tables 2 and 4 include a References column with missing FPS entries (likely copied from literature), while Tables 5 and 6 report author-run ablations against YOLOv7-tiny."
+}

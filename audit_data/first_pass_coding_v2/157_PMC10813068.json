@@ -1,0 +1,134 @@
+{
+ "idx": 157,
+ "pmcid": "PMC10813068",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing YOLOv5s-FPD and evaluating bounding-box object detection on NEU-DET and VOC2007.",
+ "detector_family": "YOLOv5s (custom YOLOv5s-FPD)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 raw images (expanded to 18,000 via offline SSIE preprocessing), 6 classes (300 per class), 200x200, NEU link",
+     "evidence": "The total dataset comprises 1800 images with 300 images per category, and each image has a size of 200 × 200 pixels. To increase the size of the dataset, image preprocessing is employed using seven methods, resulting in 18,000 images.",
+     "location": "3.1.1. Description of the Data Set"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/test/val 8:1:1",
+     "evidence": "The dataset is randomly partitioned into training, testing and validation sets, with an 8:1:1 ratio.",
+     "location": "3.1.1. Description of the Data Set"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "ambiguous",
+     "value": "offline SSIE preprocessing expands 1,800 images to 18,000 (9 augmented copies per image) before random 8:1:1 partitioning, creating near-duplicate leakage across splits (mAP50 jumps from 60.4% to 97.5%)",
+     "evidence": "The data are processed in seven ways: cropping, panning, changing brightness, adding noise, rotating angle, mirroring, and cutout, and each image is increased by 9 processed images each, and the total number of images in the dataset is increased from 1800 to 18,000.",
+     "location": "3.1.1, 4.3.1"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1, 4.2, Tables 2, 4-9"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "608 (tested 640 and 608, set to 608)",
+     "evidence": "We hope that the model can cope with the complex situation of actual production, so we choose the general 640 resolution as the base point for testing, and the accuracy of 608 resolution is higher in the results, so we set the input image resolution to 608.",
+     "location": "3.1.3. Algorithm Description"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "400 epochs (also 500 epochs in a verification experiment without data enhancement in Section 5)",
+     "evidence": "The YOLOv5s model is used as the benchmark for this experiment, and during the training process, the batch size is set to 32, and the training epoch is set to 400.",
+     "location": "4. Results"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "The YOLOv5s model is used as the benchmark for this experiment, and during the training process, the batch size is set to 32, and the training epoch is set to 400.",
+     "location": "4. Results"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "Before running the experiments, the NEU-DET dataset is pre-processed. The pre-processed dataset is given to each model for experimentation.",
+     "location": "4.1. YOLOV5s-FPD Model Experiment"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "NVIDIA RTX3060 stated in Section 4, but inference batch size and precision for FPS not reported",
+     "evidence": "",
+     "location": "4. Results, Table 2"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "only dataset links provided",
+     "evidence": "",
+     "location": "Data Availability Statement"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv5s-FPD",
+    "map50": 97.5,
+    "map50_95": 73.7,
+    "baseline": "YOLOv5-s",
+    "baseline_map50": 95.7,
+    "improvement_pp": 1.8,
+    "single_run": null,
+    "evidence": "After preprocessing, the mAP index of the original YOLOv5 model increased from 57.8% to 95.7%, while the mAP index of the YOLOv5s-FPD model increased from 60.4% to 97.5%",
+    "location": "Abstract, 4.3.1, Table 2, Table 6, Table 7"
+   }
+  }
+ ],
+ "code_links": [
+  "http://faculty.neu.edu.cn/songkc/en/zhym/263264/list/index.htm",
+  "http://host.robots.ox.ac.uk/pascal/VOC/voc2007/index.html"
+ ],
+ "coder_notes": "Paper reports both before-SSIE (1,800 images: YOLOv5s 57.8% mAP50 / 33.7% mAP95 vs YOLOv5s-FPD 60.4% mAP50 / 35.8% mAP95, +2.6 pp) and after-SSIE (18,000 images: YOLOv5s 95.7% mAP50 / 68.6% mAP95 vs YOLOv5s-FPD 97.5% mAP50 / 73.7% mAP95, +1.8 pp). Note that Table columns label mAP50:95 as 'Map@0.95' / 'mAP@0.95'."
+}

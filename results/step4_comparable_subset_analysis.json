@@ -1,0 +1,25 @@
+{
+  "sample_size": 122,
+  "delta_map50": {
+    "mean": 3.71,
+    "std": 2.94,
+    "median": 2.5,
+    "iqr": 1.96,
+    "min": -1.1,
+    "max": 20.9
+  },
+  "protocol_completeness_score": {
+    "mean": 5.39,
+    "std": 2.08,
+    "median": 5.0
+  },
+  "correlation_delta_vs_completeness": 0.1,
+  "code_availability_comparison": {
+    "open_code_n": 19,
+    "open_code_mean_delta": 2.41,
+    "open_code_median_delta": 2.5,
+    "closed_code_n": 103,
+    "closed_code_mean_delta": 3.95,
+    "closed_code_median_delta": 2.8
+  }
+}

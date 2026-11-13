@@ -1,0 +1,251 @@
+{
+ "idx": 60,
+ "pmcid": "PMC13412141",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing A2S2C-Det (a two-stage Faster R-CNN-based bounding-box detector) and evaluating it on NEU-DET and GC10-DET.",
+ "detector_family": "Faster R-CNN (custom A2S2C-Det with ResNet-50)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, stated as 512x512 pixels",
+     "evidence": "The NEU-DET dataset comprises 1800 images with a resolution of 512 × 512 pixels, which include six typical defect types, namely crazing (Cr), inclusion (In), patch (Pa), pitted surface (Ps), rolled-in scale (Rs), and scratches (Sc).",
+     "location": "4.1.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/test 8:2 random split",
+     "evidence": "For evaluation, all datasets are randomly split into training and test sets with a fixed ratio of 8:2, and to ensure statistical reliability.",
+     "location": "4.1.2"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; GitHub repo linked in Data Availability Statement"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "ambiguous",
+     "value": "Sec 4.1.2 uses ImageNet mean/std normalization without stating backbone pretraining; Sec 4.4 says external dataset PVEL-AD is trained from scratch following the identical protocol used for the steel defect datasets",
+     "evidence": "To ensure a rigorous evaluation of external-dataset applicability, all compared methods are trained from scratch on this subset following the identical protocol used for the steel defect datasets.",
+     "location": "4.1.2, 4.4"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; only train/test 8:2 split mentioned"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "test set",
+     "evidence": "Clean performance P is the mAP50 on the original test set.",
+     "location": "4.5, Table 1, Table 8"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "4.1.2"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "train: multiscale 640x640 to 800x800; test: 800x800",
+     "evidence": "During the training phase, the input square images are randomly scaled to square resolutions ranging from 640 × 640 to 800 × 800 pixels",
+     "location": "4.1.2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "24 epochs",
+     "evidence": "The training process is conducted for a total of 24 epochs.",
+     "location": "4.1.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "2 per GPU",
+     "evidence": "Our method is trained with a batch size of 2 per GPU and the SGD optimizer, with a weight decay of 0.0001 and a momentum of 0.9.",
+     "location": "4.1.2"
+    },
+    "F12": {
+     "status": "ambiguous",
+     "value": "5 different random seeds used in ablation (values not reported)",
+     "evidence": "All experiments are repeated five times with different random seeds, and the mean ± standard deviation are reported.",
+     "location": "4.3"
+    },
+    "F13": {
+     "status": "reported",
+     "value": "5 runs with mean ± std reported for ablation (Tables 4 and 6: Ours mAP 0.471±0.004, mAP50 0.820±0.007; Base mAP 0.420±0.005, mAP50 0.768±0.012)",
+     "evidence": "All experiments are repeated five times with different random seeds, and the mean ± standard deviation are reported.",
+     "location": "4.3, Tables 4, 6"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "To ensure a fair comparison, all results of the compared methods are obtained by running their official public code with default parameter settings under the same dataset splits and evaluation protocols as our method.",
+     "location": "4.2.1"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "NVIDIA GeForce RTX 4090 GPU, batch size 1 (precision and pre/post-processing inclusion not stated)",
+     "evidence": "On an NVIDIA GeForce RTX 4090 GPU (with a batch size of 1), the baseline Faster R-CNN achieves 24.5 images/s with 0.118T FLOPs and 42.27 M parameters",
+     "location": "4.3"
+    },
+    "F16": {
+     "status": "reported",
+     "value": "https://github.com/hpguo1982/A2S2C-Det",
+     "evidence": "The source code is available at https://github.com/hpguo1982/A2S2C-Det (accessed on 1 March 2026).",
+     "location": "Data Availability Statement"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "A2S2C-Det",
+    "map50": 82.0,
+    "map50_95": 47.1,
+    "baseline": "Faster R-CNN",
+    "baseline_map50": 76.8,
+    "improvement_pp": 5.2,
+    "single_run": null,
+    "evidence": "As shown in Table 1, our A2S2C-Det achieves competitive performance on the NEU-DET dataset, attaining a mAP of 0.471, mAP50 of 0.820, F1-score of 0.724, recall of 0.888, and precision of 0.611",
+    "location": "4.2.1, Table 1, Table 6"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "2294 RGB images, 10 classes, stated as 640x640 pixels",
+     "evidence": "The GC10-DET dataset contains 2294 RGB images with a resolution of 640 × 640 pixels, covering ten defect categories",
+     "location": "4.1.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/test 8:2 random split",
+     "evidence": "For evaluation, all datasets are randomly split into training and test sets with a fixed ratio of 8:2, and to ensure statistical reliability.",
+     "location": "4.1.2"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; GitHub repo linked in Data Availability Statement"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "ambiguous",
+     "value": "Sec 4.1.2 uses ImageNet mean/std normalization without stating backbone pretraining; Sec 4.4 says external dataset PVEL-AD is trained from scratch following the identical protocol used for the steel defect datasets",
+     "evidence": "To ensure a rigorous evaluation of external-dataset applicability, all compared methods are trained from scratch on this subset following the identical protocol used for the steel defect datasets.",
+     "location": "4.1.2, 4.4"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; only train/test 8:2 split mentioned"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "test set",
+     "evidence": "Clean performance P is the mAP50 on the original test set.",
+     "location": "4.5, Table 2, Table 8"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "4.1.2"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "train: multiscale 640x640 to 800x800; test: 800x800",
+     "evidence": "During the training phase, the input square images are randomly scaled to square resolutions ranging from 640 × 640 to 800 × 800 pixels",
+     "location": "4.1.2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "24 epochs",
+     "evidence": "The training process is conducted for a total of 24 epochs.",
+     "location": "4.1.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "2 per GPU",
+     "evidence": "Our method is trained with a batch size of 2 per GPU and the SGD optimizer, with a weight decay of 0.0001 and a momentum of 0.9.",
+     "location": "4.1.2"
+    },
+    "F12": {
+     "status": "ambiguous",
+     "value": "5 different random seeds used in ablation (values not reported)",
+     "evidence": "All experiments are repeated five times with different random seeds, and the mean ± standard deviation are reported.",
+     "location": "4.3"
+    },
+    "F13": {
+     "status": "reported",
+     "value": "5 runs with mean ± std reported for ablation (Tables 5 and 6: Ours mAP 0.365±0.005, mAP50 0.730±0.008; Base mAP 0.324±0.004, mAP50 0.684±0.010)",
+     "evidence": "All experiments are repeated five times with different random seeds, and the mean ± standard deviation are reported.",
+     "location": "4.3, Tables 5, 6"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "To ensure a fair comparison, all results of the compared methods are obtained by running their official public code with default parameter settings under the same dataset splits and evaluation protocols as our method.",
+     "location": "4.2.1"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "NVIDIA GeForce RTX 4090 GPU, batch size 1 (reported in Sec 4.3 alongside NEU-DET/GC10-DET ablation)",
+     "evidence": "On an NVIDIA GeForce RTX 4090 GPU (with a batch size of 1), the baseline Faster R-CNN achieves 24.5 images/s with 0.118T FLOPs and 42.27 M parameters",
+     "location": "4.3"
+    },
+    "F16": {
+     "status": "reported",
+     "value": "https://github.com/hpguo1982/A2S2C-Det",
+     "evidence": "The source code is available at https://github.com/hpguo1982/A2S2C-Det (accessed on 1 March 2026).",
+     "location": "Data Availability Statement"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "A2S2C-Det",
+    "map50": 73.0,
+    "map50_95": 36.5,
+    "baseline": "Faster R-CNN",
+    "baseline_map50": 68.4,
+    "improvement_pp": 4.6,
+    "single_run": null,
+    "evidence": "As shown in Table 2, A2S2C-Det obtains a mAP of 0.365, mAP50 of 0.730, F1-score of 0.667, recall of 0.774, and precision of 0.586 on the GC10-DET dataset.",
+    "location": "4.2.1, Table 2, Table 6"
+   }
+  }
+ ],
+ "code_links": [
+  "https://github.com/hpguo1982/A2S2C-Det"
+ ],
+ "coder_notes": "Ablation Tables 4-6 explicitly report 5-run mean ± std, and overall mAP/mAP50 in Table 6 (0.471/0.820 on NEU-DET and 0.365/0.730 on GC10-DET) match Tables 1-2, though Cr AP50 in Table 1 is 0.586 vs 0.587±0.019 in Table 4 and Sec 4.2.1 does not explicitly state whether all 26 baselines in Tables 1-2 were run 5 times, so main_result.single_run is coded as null per v1.2."
+}

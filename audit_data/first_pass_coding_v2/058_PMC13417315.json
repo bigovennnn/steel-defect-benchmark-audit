@@ -1,0 +1,249 @@
+{
+ "idx": 58,
+ "pmcid": "PMC13417315",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research training and evaluating a YOLOv11-based detector (MCM-YOLO) on NEU-DET and GC10-DET.",
+ "detector_family": "YOLOv11 (MCM-YOLO)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "6 classes, 300 images per class; NEU source link in Data Availability",
+     "evidence": "The NEU-DET dataset is available at http://faculty.neu.edu.cn/songkechen/zh_CN/zdylm/263270/list/ (accessed on 1 June 2026)",
+     "location": "4.1; Data Availability Statement"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "ambiguous",
+     "value": "early stopping (patience 100) on validation performance implied; final checkpoint rule and set not stated",
+     "evidence": "Each model was trained for up to 500 epochs, with an early stopping patience of 100 epochs introduced to reduce overfitting.",
+     "location": "4.2, 4.5.1"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; only 'validation performance' mentioned for convergence curves"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "The input image resolution was uniformly set to 640×640, and the batch size was set to 32.",
+     "location": "4.2, Table 2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "up to 500 epochs, early stopping patience 100",
+     "evidence": "Each model was trained for up to 500 epochs, with an early stopping patience of 100 epochs introduced to reduce overfitting.",
+     "location": "4.2, Table 2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "The input image resolution was uniformly set to 640×640, and the batch size was set to 32.",
+     "location": "4.2, Table 2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; ± values only for Grad-CAM metrics over 50 images"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "all models were trained and evaluated under the same hardware and software environment",
+     "location": "4.2"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "platform RTX 4060 / i9-14900K stated; FPS batch, precision and timing scope not stated",
+     "evidence": "The experimental platform consisted of an Intel Core i9-14900K processor, 64 GB RAM, and a single NVIDIA GeForce RTX 4060 GPU.",
+     "location": "4.2, Table 3"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; only dataset links"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "MCM-YOLO",
+    "map50": 80.4,
+    "map50_95": 45.7,
+    "baseline": "YOLOv11n",
+    "baseline_map50": 78.6,
+    "improvement_pp": 1.8,
+    "single_run": null,
+    "evidence": "Compared with the baseline YOLOv11n, MCM-YOLO improves Recall from 72.4% to 77.6%, mAP@0.5 from 78.6% to 80.4%, and mAP@0.5:0.95 from 45.0% to 45.7%",
+    "location": "4.4, Table 3"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "10 classes; GC10 GitHub source link",
+     "evidence": "the GC-10 dataset is available at https://github.com/lvxiaoming2019/GC10-DET-Metallic-Surface-Defect-Datasets (accessed on 1 June 2026)",
+     "location": "4.1; Data Availability Statement"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "ambiguous",
+     "value": "early stopping (patience 100) stated for each model; selection set not stated",
+     "evidence": "Each model was trained for up to 500 epochs, with an early stopping patience of 100 epochs introduced to reduce overfitting.",
+     "location": "4.2"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640 (uniform)",
+     "evidence": "The input image resolution was uniformly set to 640×640, and the batch size was set to 32.",
+     "location": "4.2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "up to 500 epochs, early stopping patience 100",
+     "evidence": "Each model was trained for up to 500 epochs, with an early stopping patience of 100 epochs introduced to reduce overfitting.",
+     "location": "4.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "The input image resolution was uniformly set to 640×640, and the batch size was set to 32.",
+     "location": "4.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "all models were trained and evaluated under the same hardware and software environment",
+     "location": "4.2, Table 9"
+    },
+    "F15": {
+     "status": "not_applicable",
+     "value": "no speed reported on GC10 (Table 9 accuracy only)",
+     "evidence": "",
+     "location": "Table 9"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "MCM-YOLO",
+    "map50": 65.1,
+    "map50_95": 33.6,
+    "baseline": "YOLOv11n",
+    "baseline_map50": 62.7,
+    "improvement_pp": 2.4,
+    "single_run": null,
+    "evidence": "Compared with the baseline model YOLOv11n, MCM-YOLO improves mAP@0.5 from 62.7% to 65.1%, with a gain of 2.4 percentage points.",
+    "location": "4.6, Table 9"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "No split information at all for either dataset (no train/val/test roles or ratios). No code link; links are dataset sources only. Early stopping on 'validation performance' implies a validation set but the evaluation set for tables is never named. Hardware statement covers all experiments but FPS batch size not given. NEU F01 total image count not stated explicitly (300 per class x 6), source link provided."
+}

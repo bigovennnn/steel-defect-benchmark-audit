@@ -1,0 +1,131 @@
+{
+ "idx": 126,
+ "pmcid": "PMC12298282",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research evaluating the proposed CWCN few-shot object detector on NEU-DET (Section 4.4.2, Table 4, Figure 7).",
+ "detector_family": "Faster R-CNN (CWCN with WTConvNeXt backbone)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "ambiguous",
+     "value": "6 defect types, cites [36], 360 query images; total dataset image count (1800) and URL not given",
+     "evidence": "This dataset focuses on steel surface defects, including six common defect types, and we refer to [22] to create 6-way-1-shot, 6-way-5-shot and 6-way-10-shot support sets, along with 360 images as a query set.",
+     "location": "4.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "6-way 1-shot, 5-shot, and 10-shot support sets for fine-tuning; 360 images as query set for testing",
+     "evidence": "This dataset focuses on steel surface defects, including six common defect types, and we refer to [22] to create 6-way-1-shot, 6-way-5-shot and 6-way-10-shot support sets, along with 360 images as a query set.",
+     "location": "3.1, 4.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "reported",
+     "value": "Base model pretrained on COCO2014 (98,459 images, 60 classes) following [19]",
+     "evidence": "In our work, we use COCO2014 [35] as the source domain dataset, and the dataset processing approach is based on [19] as a reference, where 98,459 images covering 60 classes are used for model pretraining.",
+     "location": "4.1, 4.3"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "test (query set, 360 images)",
+     "evidence": "The query set Dquery for testing comprises unlabeled samples from the same n categories.",
+     "location": "3.1, 4.1"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "3.1, 4.1, 4.3"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "around 80 epochs (1-shot), around 40 epochs (5-shot and 10-shot)",
+     "evidence": "for the open-source dataset, the settings followed the work of [22], tuning on 1-shot tasks around 80 epochs and on 5/10-shot tasks around 40 epochs, with the BASE_LR of 0.002.",
+     "location": "4.3"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "To make a fair comparison, the pretraining settings of all implementations followed [19] and our method employ one pipeline without ProSL for pretraining.",
+     "location": "4.3"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "GeForce RTX 3090 reported; batch size, precision, and pre/post-processing for 10-shot FPS in Table 4 not reported",
+     "evidence": "All experiments are conducted on a GeForce RTX 3090.",
+     "location": "4.3, 4.4.2, Table 4"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "CWCN (WTConvNeXt-B, 10-Shot)",
+    "map50": null,
+    "map50_95": 14.68,
+    "baseline": "CD-ViTO (Vit-B, 10-Shot)",
+    "baseline_map50": null,
+    "improvement_pp": null,
+    "single_run": null,
+    "evidence": "WTConvNeXt-B | 5.13 | 12.27 | 14.68 | 9.10",
+    "location": "Table 4"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Cross-domain few-shot object detection on NEU-DET (1/5/10-shot). Table 4 reports COCO mAP (0.5:0.95) for 1/5/10-shot (for WTConvNeXt-B: 5.13 / 12.27 / 14.68); overall AP50 on NEU-DET is not tabulated (only per-class bars in Fig. 7)."
+}

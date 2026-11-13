@@ -1,0 +1,97 @@
+{
+  "n_series": 9,
+  "metrics": {
+    "leak_micro": {
+      "level_means": [
+        79.36,
+        79.22,
+        80.79,
+        82.03,
+        82.35
+      ],
+      "page": {
+        "L": 438.0,
+        "z": 2.2,
+        "p_one_sided": 0.0139,
+        "p_two_sided": 0.0278
+      },
+      "slope_mean": 3.51,
+      "slope_sd": 3.52,
+      "slope_t": 2.99,
+      "slope_df": 8,
+      "slope_p_two_sided": 0.017,
+      "endpoint_mean": 2.98,
+      "endpoint_sd": 3.01,
+      "endpoint_p_wilcoxon": 0.0273
+    },
+    "leak_map50": {
+      "level_means": [
+        71.88,
+        72.11,
+        72.71,
+        77.7,
+        76.24
+      ],
+      "page": {
+        "L": 444.0,
+        "z": 2.6,
+        "p_one_sided": 0.0047,
+        "p_two_sided": 0.0093
+      },
+      "slope_mean": 5.73,
+      "slope_sd": 6.43,
+      "slope_t": 2.67,
+      "slope_df": 8,
+      "slope_p_two_sided": 0.028,
+      "endpoint_mean": 4.36,
+      "endpoint_sd": 5.93,
+      "endpoint_p_wilcoxon": 0.0742
+    },
+    "leak_map50_95": {
+      "level_means": [
+        39.91,
+        40.58,
+        41.37,
+        45.14,
+        44.27
+      ],
+      "page": {
+        "L": 448.0,
+        "z": 2.867,
+        "p_one_sided": 0.0021,
+        "p_two_sided": 0.0041
+      },
+      "slope_mean": 5.32,
+      "slope_sd": 4.97,
+      "slope_t": 3.21,
+      "slope_df": 8,
+      "slope_p_two_sided": 0.012,
+      "endpoint_mean": 4.37,
+      "endpoint_sd": 4.56,
+      "endpoint_p_wilcoxon": 0.0273
+    },
+    "leak_inst_rec": {
+      "level_means": [
+        72.59,
+        74.18,
+        73.82,
+        75.56,
+        76.16
+      ],
+      "page": {
+        "L": 439.5,
+        "z": 2.3,
+        "p_one_sided": 0.0107,
+        "p_two_sided": 0.0214
+      },
+      "slope_mean": 3.41,
+      "slope_sd": 4.3,
+      "slope_t": 2.38,
+      "slope_df": 8,
+      "slope_p_two_sided": 0.045,
+      "endpoint_mean": 3.57,
+      "endpoint_sd": 4.57,
+      "endpoint_p_wilcoxon": 0.0547
+    }
+  }
+}

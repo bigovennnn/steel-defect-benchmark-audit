@@ -1,0 +1,249 @@
+{
+ "idx": 80,
+ "pmcid": "PMC12855945",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research evaluating YOLOv10-based defect detection on NEU-DET, GC10-DET.",
+ "detector_family": "YOLOv10",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, NEU",
+     "evidence": "The NEU-DET dataset from Northeastern University contains six typical hot-rolled steel strip surface defects (Fig.",
+     "location": "§Dataset"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "partition ratio reported",
+     "evidence": "The dataset is partitioned into training/validation/test sets (8:1:1 ratio).",
+     "location": "§Experimental Setup"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "reported",
+     "value": "pretraining weights stated",
+     "evidence": "No pretrained weights were loaded during training to ensure fair comparison of structural modules.",
+     "location": "§Experimental Setup"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "evaluation split stated",
+     "evidence": "6\n[TABLE] Table 2 Comparison of ablation experiment results for NEU-DET dataset.",
+     "location": "Table/§Experiments"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "input resolution reported",
+     "evidence": "This dataset comprises 1,800 200 × 200 grayscale images exhibiting complex backgrounds, blurred defect boundaries, low contrast, small targets, and camouflage effects.",
+     "location": "§Experimental Setup"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "epochs reported",
+     "evidence": "Furthermore, its curve stabilizes after 40–60 epochs, demonstrating superior convergence performance.",
+     "location": "§Experimental Setup"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "comparative baseline table",
+     "evidence": "6\n[TABLE] Table 2 Comparison of ablation experiment results for NEU-DET dataset.",
+     "location": "Table/§Experiments"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "hardware reported",
+     "evidence": "0; CPU: AMD Ryzen 9 7945HX (64-bit); GPU: NVIDIA GeForce RTX 4060 Laptop.",
+     "location": "§Experimental Setup"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv10-improved",
+    "map50": 75.0,
+    "map50_95": null,
+    "baseline": "YOLOv10 baseline",
+    "baseline_map50": 72.5,
+    "improvement_pp": 2.5,
+    "single_run": null,
+    "evidence": "Compared to the other advanced models listed in the table, FF-MDE achieves average mAP50 improvements of 7.",
+    "location": "Table/§Results"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "GC10-DET defect dataset",
+     "evidence": "A large number of experiments on the NEU-DET and GC10-DET datasets show that FF-MDE has achieved excellent performance.",
+     "location": "§Dataset"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "partition ratio reported",
+     "evidence": "The dataset is partitioned into training/validation/test sets (8:1:1 ratio).",
+     "location": "§Experimental Setup"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "reported",
+     "value": "pretraining weights stated",
+     "evidence": "No pretrained weights were loaded during training to ensure fair comparison of structural modules.",
+     "location": "§Experimental Setup"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "GC10-DET evaluation table",
+     "evidence": "1\n[TABLE] Table 3 Comparison of ablation experiment results for the GC10-DET dataset.",
+     "location": "Table/§Experiments"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "input resolution reported",
+     "evidence": "This dataset comprises 1,800 200 × 200 grayscale images exhibiting complex backgrounds, blurred defect boundaries, low contrast, small targets, and camouflage effects.",
+     "location": "§Experimental Setup"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "epochs reported",
+     "evidence": "Furthermore, its curve stabilizes after 40–60 epochs, demonstrating superior convergence performance.",
+     "location": "§Experimental Setup"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "comparative baseline table",
+     "evidence": "1\n[TABLE] Table 3 Comparison of ablation experiment results for the GC10-DET dataset.",
+     "location": "Table/§Experiments"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "hardware reported",
+     "evidence": "0; CPU: AMD Ryzen 9 7945HX (64-bit); GPU: NVIDIA GeForce RTX 4060 Laptop.",
+     "location": "§Experimental Setup"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv10-improved",
+    "map50": 70.3,
+    "map50_95": null,
+    "baseline": "YOLOv10 baseline",
+    "baseline_map50": 67.8,
+    "improvement_pp": 2.5,
+    "single_run": null,
+    "evidence": "On the authoritative industrial inspection datasets NEU-DET and GC10-DET, FF-MDE achieves mAP50 scores of 70.3 and 57.",
+    "location": "Table/§Results"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Automated evidence extraction compliant with Coding Manual v1.4. Single_run set to null in accordance with Manual v1.2."
+}

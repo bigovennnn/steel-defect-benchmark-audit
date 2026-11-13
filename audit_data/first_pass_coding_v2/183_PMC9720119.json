@@ -1,0 +1,131 @@
+{
+ "idx": 183,
+ "pmcid": "PMC9720119",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing an enhanced lightweight YOLOX model with L-CSP and Multi-scale Feature Fusion Attention Module (MFFAM) on NEU-DET.",
+ "detector_family": "YOLOX",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, 200x200 raw resolution (padded with average grayscale to 416x416)",
+     "evidence": "Each image in the dataset has a raw resolution of 200*200 pixels, for a total of 1800 images.",
+     "location": "Results - Datasets and operating environments"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train:val:test 6:2:2 random split",
+     "evidence": "Randomly divide the training, validation, and test sets according to the ratio of 6:2:2.",
+     "location": "Results - Datasets and operating environments"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Results - Datasets and operating environments"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Results - Datasets and operating environments"
+    },
+    "F05": {
+     "status": "ambiguous",
+     "value": "pretrained backbone weights stated as used, but source dataset not specified (and L-CSP modifies backbone layer/channel structure)",
+     "evidence": "We designed the experiments using the same dataset, training settings, and pre-training weights.",
+     "location": "Multi-scale feature fusion attention module, Datasets and operating environments"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Results - Datasets and operating environments"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "test",
+     "evidence": "The impact of the proposed improvement modules on the performance of the network model, as well as the improvement effect of multiple modules acting together, is verified separately in the test set.",
+     "location": "Results - Ablation study"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "Results"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "416x416 (padded from 200x200)",
+     "evidence": "The fill pixels are the average grayscale of the whole image and the size after the filling is 416*416.",
+     "location": "Results - Datasets and operating environments"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "500 epochs",
+     "evidence": "The number of epochs is set to 500, the batch size is set to 64, the initial learning rate is set to 0.01",
+     "location": "Results - Datasets and operating environments"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "64",
+     "evidence": "The number of epochs is set to 500, the batch size is set to 64, the initial learning rate is set to 0.01",
+     "location": "Results - Datasets and operating environments"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Results - Datasets and operating environments"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Results"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "mixed",
+     "evidence": "The network models were trained using the same settings in the framework of experiments on the same platform.",
+     "location": "Results - Ablation study (rerun in Table 1), Table 3 (copied from references)"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "NVIDIA RTX 2060 6G GPU stated as test GPU and FPS reported in Tables 1 and 3, but test batch size and precision not stated",
+     "evidence": "",
+     "location": "Results - Datasets and operating environments, Table 1"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "raw data will be made available by the authors without undue reservation",
+     "evidence": "",
+     "location": "Data availability statement"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "Enhanced YOLOX (Scenario 3: L-CSP + MFFAM)",
+    "map50": 81.21,
+    "map50_95": null,
+    "baseline": "YOLOX (Scenario 0)",
+    "baseline_map50": 76.29,
+    "improvement_pp": 4.92,
+    "single_run": null,
+    "evidence": "The results show that the overall model in this paper is able to improve the mAP from 76.29 to 81.21% on the populated dataset and improve the detection speed from 70.14 to 82.87 FPS.",
+    "location": "Table 1, Conclusion"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Images in NEU-DET (200x200) were padded with average grayscale pixels to 416x416 before 6:2:2 splitting so that defects occupy 1/4 of the relative area. Abstract has a typo stating '4.29%' improvement, whereas Table 1, Section 4.2.1, and Conclusion show 81.21 - 76.29 = 4.92%. Table 3 copies numbers from literature references (including classification accuracy of ResNet models listed under the mAP column)."
+}

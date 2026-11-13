@@ -1,0 +1,86 @@
+{
+  "n_leaked_test_images": 25,
+  "n_clusters": 25,
+  "singleton_clusters": 25,
+  "multi_image_clusters": 0,
+  "class_dropout_diagnosis_in_bootstrap": {
+    "pct_resamples_with_at_least_1_missing_class": 25.6,
+    "macro_ap50_point_estimate_official": 3.25,
+    "macro_ap50_bootstrap_mean": 1.66,
+    "macro_ap50_bootstrap_ci95": [
+      -2.35,
+      5.29
+    ],
+    "explanation": "Because `patches` has only 1 image and `rolled-in_scale` has 2 images in the 25-image subset, 44.5% of bootstrap resamples omit at least one entire defect class, shifting the 6-class macro-mAP bootstrap mean downward. Pooled Micro-AP@0.5 and instance/image recall eliminate this class-dropout bias."
+  },
+  "crossed_design_inference_n8_seeds": {
+    "official_macro_map50_delta_pp": {
+      "point_mean": 3.25,
+      "seed_level_sd_n8": 2.19,
+      "cell_level_sd_n24": 2.68,
+      "seed_level_ci95_df7": [
+        1.42,
+        5.07
+      ],
+      "wilcoxon_p_n8": 0.0078
+    },
+    "pooled_micro_ap50_delta_pp": {
+      "point_mean": 2.69,
+      "seed_level_sd_n8": 2.42,
+      "cell_level_sd_n24": 2.85,
+      "seed_level_ci95_df7": [
+        0.67,
+        4.72
+      ],
+      "wilcoxon_p_n8": 0.0234
+    },
+    "instance_recall_conf25_delta_pp": {
+      "point_mean": 5.9,
+      "seed_level_sd_n8": 4.7,
+      "cell_level_sd_n24": 5.01,
+      "seed_level_ci95_df7": [
+        1.97,
+        9.84
+      ],
+      "wilcoxon_p_n8": 0.0156
+    },
+    "per_image_recall_conf25_delta_pp": {
+      "point_mean": 3.53,
+      "seed_level_sd_n8": 4.31,
+      "cell_level_sd_n24": 4.38,
+      "seed_level_ci95_df7": [
+        -0.07,
+        7.13
+      ],
+      "wilcoxon_p_n8": 0.0547
+    },
+    "full_test_set_180_map50_delta_pp": {
+      "point_mean": 0.92,
+      "seed_level_sd_n8": 1.44,
+      "cell_level_sd_n24": 1.67,
+      "seed_level_ci95_df7": [
+        -0.28,
+        2.13
+      ],
+      "wilcoxon_p_n8": 0.1484
+    }
+  },
+  "bootstrap_ci95_b2000": {
+    "micro_ap50_point_mean": 2.69,
+    "micro_ap50_cluster_boot_mean": 2.55,
+    "micro_ap50_cluster_boot_ci95": [
+      -1.63,
+      6.38
+    ],
+    "micro_ap50_twoway_seed_x_cluster_ci95": [
+      -1.94,
+      6.97
+    ],
+    "instance_recall_point_mean": 5.9,
+    "instance_recall_cluster_boot_mean": 5.74,
+    "instance_recall_cluster_boot_ci95": [
+      -0.14,
+      11.58
+    ]
+  }
+}

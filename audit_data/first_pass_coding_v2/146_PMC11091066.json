@@ -1,0 +1,249 @@
+{
+ "idx": 146,
+ "pmcid": "PMC11091066",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing an anchor-free detector (DLA-FCOS) and evaluating bounding-box object detection on CLTP-DD, NEU-DET, and GC10-DET.",
+ "detector_family": "FCOS (custom anchor-free DLA-FCOS)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes (300 images per class)",
+     "evidence": "NEU-DET includes 6 different types of steel strip defects, namely rolled-in scale, patches, crazing, pitted surface, inclusion, and scratches. Each defect contains 300 images, and there are 1800 images in total.",
+     "location": "Detection result analysis on public datasets - Experiment public dataset"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 7:2:1",
+     "evidence": "Unlike CLTP-DD, the 1800 images are divided into a training set, a validation set, and a testing set at a ratio of 7:2:1.",
+     "location": "Detection result analysis on public datasets - Experiment public dataset"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "reported",
+     "value": "ImageNet pre-trained ResNet50 backbone; other modules initialized with std 0.001; two-step fine-tuning uses last epoch of step 1",
+     "evidence": "During training, a pre-training model trained on ImageNet is used to initialize the ResNet50 backbone, and SGD (Stochastic Gradient Descent) with a momentum of 0.9 and weight decay of 0.001 is employed to optimize the entire network.",
+     "location": "Experimental platform"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "step 2 initializes from the last epoch of step 1, but final checkpoint selection criterion on NEU-DET is not stated",
+     "evidence": "",
+     "location": "Experimental platform"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "test",
+     "evidence": "AP represents the average detection accuracy of the model on the test set. AP50 represents the AP at IoU = 0.5.",
+     "location": "Evaluation metric"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F09": {
+     "status": "ambiguous",
+     "value": "multi-scale 640x640 and 800x800 stated for 1000x1120 images (CLTP-DD); unclear if same resize applies to NEU-DET",
+     "evidence": "Before training, all input images are resized, and multi-scale training is conducted to resize the size of the original input images from 1000 × 1120 to 640 × 640 and 800 × 800.",
+     "location": "Experimental platform"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "24 epochs + 36 epochs fine-tuning (60 epochs total)",
+     "evidence": "Specifically, the model is first trained for 24 epochs with a learning rate of 10–3 and a batch size of 2, and then it is further trained for 36 epochs",
+     "location": "Experimental platform"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "2",
+     "evidence": "Specifically, the model is first trained for 24 epochs with a learning rate of 10–3 and a batch size of 2, and then it is further trained for 36 epochs",
+     "location": "Experimental platform"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "mixed",
+     "evidence": "Method | Crazing | Inclusion | Patches | Pitted surface | Rolled in scale | Scratches | mAP (%)",
+     "location": "Table 3, Table 4 (FCOS baseline in Table 3 is trained by authors, while SOTA methods in Table 4 have reference citations)"
+    },
+    "F15": {
+     "status": "not_applicable",
+     "value": "FPS only reported on CLTP-DD (Tables 2 and 6), not on NEU-DET",
+     "evidence": "",
+     "location": "Tables 3, 4"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "datasets available from corresponding author on reasonable request; no code link",
+     "evidence": "",
+     "location": "Data availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "DLA-FCOS",
+    "map50": 78.4,
+    "map50_95": 38.1,
+    "baseline": "FCOS (ResNet50)",
+    "baseline_map50": 75.2,
+    "improvement_pp": 3.2,
+    "single_run": null,
+    "evidence": "Specifically, AP50, AP75, and APbbox increase by 3.2%, 4.2%, and 1.3% respectively compared with those of the baseline network, with AP50 reaching 78.4%, demonstrating excellent performance on this dataset.",
+    "location": "Table 3, Table 4"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "2294 defect images, 10 classes",
+     "evidence": "GC10-DET contains 2294 defect images, which are divided into a training set and a testing set at a ratio of 8:2.",
+     "location": "Detection result analysis on public datasets - Experiment public dataset"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/test 8:2",
+     "evidence": "GC10-DET contains 2294 defect images, which are divided into a training set and a testing set at a ratio of 8:2.",
+     "location": "Detection result analysis on public datasets - Experiment public dataset"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "reported",
+     "value": "ImageNet pre-trained ResNet50 backbone; other modules initialized with std 0.001; two-step fine-tuning uses last epoch of step 1",
+     "evidence": "During training, a pre-training model trained on ImageNet is used to initialize the ResNet50 backbone, and SGD (Stochastic Gradient Descent) with a momentum of 0.9 and weight decay of 0.001 is employed to optimize the entire network.",
+     "location": "Experimental platform"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "no validation set on GC10-DET (8:2 train/test); step 2 uses last epoch of step 1",
+     "evidence": "",
+     "location": "Experimental platform, Experiment public dataset"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "test",
+     "evidence": "AP represents the average detection accuracy of the model on the test set. AP50 represents the AP at IoU = 0.5.",
+     "location": "Evaluation metric"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F09": {
+     "status": "ambiguous",
+     "value": "multi-scale 640x640 and 800x800 stated for 1000x1120 images (CLTP-DD); unclear if same resize applies to GC10-DET",
+     "evidence": "Before training, all input images are resized, and multi-scale training is conducted to resize the size of the original input images from 1000 × 1120 to 640 × 640 and 800 × 800.",
+     "location": "Experimental platform"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "24 epochs + 36 epochs fine-tuning (60 epochs total)",
+     "evidence": "Specifically, the model is first trained for 24 epochs with a learning rate of 10–3 and a batch size of 2, and then it is further trained for 36 epochs",
+     "location": "Experimental platform"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "2",
+     "evidence": "Specifically, the model is first trained for 24 epochs with a learning rate of 10–3 and a batch size of 2, and then it is further trained for 36 epochs",
+     "location": "Experimental platform"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "mixed",
+     "evidence": "Method | Pu | Wl | Cg | Ws | Os | Ss | In | Rp | Cr | Wf | mAP (%)",
+     "location": "Table 3, Table 5 (FCOS baseline in Table 3 is trained by authors, while SOTA methods in Table 5 have reference citations)"
+    },
+    "F15": {
+     "status": "not_applicable",
+     "value": "FPS only reported on CLTP-DD (Tables 2 and 6), not on GC10-DET",
+     "evidence": "",
+     "location": "Tables 3, 5"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "datasets available from corresponding author on reasonable request; no code link",
+     "evidence": "",
+     "location": "Data availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "DLA-FCOS",
+    "map50": 67.7,
+    "map50_95": 33.2,
+    "baseline": "FCOS (ResNet50)",
+    "baseline_map50": 60.5,
+    "improvement_pp": 7.2,
+    "single_run": null,
+    "evidence": "In GC10-DET, AP50 increases significantly by 7.2% compared with that of FCOS, demonstrating the effectiveness of the proposed improved module.",
+    "location": "Table 3, Table 5"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Table 3 reports AP50, AP75, and APbbox (COCO-style mAP50:95 in MMDetection: 38.1 on NEU-DET, 33.2 on GC10-DET). Conclusion has a minor typo stating 78.2% on NEU-DET while Abstract, Table 3, Table 4, and text in Section 'Experiment results and comparison analysis' all report 78.4%."
+}

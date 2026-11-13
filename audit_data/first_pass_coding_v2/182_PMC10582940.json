@@ -1,0 +1,133 @@
+{
+ "idx": 182,
+ "pmcid": "PMC10582940",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing YOLOv5-GSS (YOLOv5s with GSConv Slim Neck, SimAM, and SIoU) and evaluating bounding-box object detection on NEU-DET.",
+ "detector_family": "YOLOv5 (YOLOv5s)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 grayscale images, 6 classes (300 each), 200x200 pixels, Baidu AI Studio link",
+     "evidence": "The dataset contains 1,800 grayscale images of hot-rolled strip steel, capturing six common surface defects: rolling swarf (Rs), plaque (Pa), cracking (Cr), pockmarking (Ps), inclusions (In), and scratches (Sc). Each defect type consists of 300 samples",
+     "location": "4.2, Data availability statement"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train:val 9:1",
+     "evidence": "Prior to conducting the experiments, the dataset was divided into a training set and a validation set, with a ratio of 9:1.",
+     "location": "4.2"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.2"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.2"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1, 4.2"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "validation",
+     "evidence": "The performance of YOLOv5-GSS with different modules was analyzed, and the validation results for each module are presented in Table 2.",
+     "location": "4.2, 4.4.1"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "4.2; only training and validation sets (9:1) exist, checkpoint selection criterion not stated"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1, Table 1; only raw image resolution 200x200 mentioned in 4.2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "A batch size of 16 was employed, and training was conducted over 300 epochs.",
+     "location": "4.1, Table 1"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "A batch size of 16 was employed, and training was conducted over 300 epochs.",
+     "location": "4.1, Table 1"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1, Table 1"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.4; ANOVA in 4.4.3 compares per-class AP across models in Table 5, not repeated training runs"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "mixed",
+     "evidence": "During the experiments, it was observed that the combination of MobileNetV3 (Howard et al., 2019) and YOLOv5 reduced the computational load but also decreased the computation speed.",
+     "location": "4.4.3, Tables 4-5"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "RTX 3060 12GB GPU stated in 4.1 and FPS reported in Tables 2-5, but batch size and precision for FPS measurement not reported",
+     "evidence": "",
+     "location": "4.1, Tables 2-5"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "only dataset link provided; no code link",
+     "evidence": "",
+     "location": "Data availability statement"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv5-GSS",
+    "map50": 83.8,
+    "map50_95": null,
+    "baseline": "YOLOv5 (YOLOv5s)",
+    "baseline_map50": 80.9,
+    "improvement_pp": 2.9,
+    "single_run": null,
+    "evidence": "According to experimental findings, the YOLOv5-GSS algorithm outperforms the YOLOv5 method by 2.9% on the NEU-DET dataset and achieves an average accuracy (mAP) of 83.8%",
+    "location": "Abstract, Table 2"
+   }
+  }
+ ],
+ "code_links": [
+  "https://aistudio.baidu.com/aistudio/datasetdetail/195425"
+ ],
+ "coder_notes": "Only a 9:1 training/validation split is created (no separate test set). In Section 4.4.3, one-way ANOVA is computed across the 6 class AP values of the 7 models in Table 5 (df_between=6, df_within=35), not across multiple runs."
+}

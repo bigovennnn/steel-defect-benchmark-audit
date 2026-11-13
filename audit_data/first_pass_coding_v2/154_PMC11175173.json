@@ -1,0 +1,131 @@
+{
+ "idx": 154,
+ "pmcid": "PMC11175173",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing Fine-YOLO (combining YOLOv7 backbone LPFA, YOLOv7-Tiny-SiLU neck HDFA, and NWD loss) evaluated on EDS and NEU-DET.",
+ "detector_family": "YOLOv7 / YOLOv7-Tiny-SiLU (custom Fine-YOLO)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes",
+     "evidence": "The dataset consists of 1800 images containing six different types of surface defects: cracks, inclusions, spots, pitted surfaces, rolled-in scales, and scratches, as shown in Figure 8.",
+     "location": "4.3.2. NEU-DET Dataset"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 1458/162/180 (9:1 train+val to test, then 9:1 train to val)",
+     "evidence": "In this study, the dataset is split into a 9:1 ratio of training set to test set. The training set is then subdivided into a 9:1 ratio to yield a training subset of 1458 images, a test subset of 180 images, and a validation subset of 162 images.",
+     "location": "4.3.2. NEU-DET Dataset"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.3.2, Table 3"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "Image resizing to 640 × 640 is performed, with detector training conducted over 150 epochs. The initial learning rate is set to 0.01, and a batch size of 16 is utilized.",
+     "location": "4.1. Implementation Details"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "150 epochs",
+     "evidence": "Image resizing to 640 × 640 is performed, with detector training conducted over 150 epochs. The initial learning rate is set to 0.01, and a batch size of 16 is utilized.",
+     "location": "4.1. Implementation Details"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "Image resizing to 640 × 640 is performed, with detector training conducted over 150 epochs. The initial learning rate is set to 0.01, and a batch size of 16 is utilized.",
+     "location": "4.1. Implementation Details"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "not stated whether the 4 lightweight steel defect models in Table 3 were rerun by the authors or copied from literature",
+     "evidence": "",
+     "location": "4.3.2, Table 3"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "RTX 3080 16GB and timing scope (T1+T2+T3+T4) stated in 4.1-4.2, but inference batch size and precision not reported",
+     "evidence": "",
+     "location": "4.1, 4.2, Table 3"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "The data that support the findings of this study are available on request from the corresponding author.",
+     "evidence": "",
+     "location": "Data Availability Statement"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "Fine-YOLO (Ours)",
+    "map50": 73.1,
+    "map50_95": null,
+    "baseline": "RDD-YOLO [42] (63.8%) / Regularized YOLO [44] (70.3%) / Improved YOLOX [45] (72.3%) / DCAM-Net [43] (72.5%)",
+    "baseline_map50": null,
+    "improvement_pp": null,
+    "single_run": null,
+    "evidence": "Fine-YOLO (Ours) | 0.698 | 0.722 | 0.731 | 16.1 M | 56.9 | 161.3",
+    "location": "Abstract, 4.3.2, Table 3"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "NEU-DET is used as an auxiliary validation dataset (Section 4.3.2, Table 3). Unlike on EDS (Tables 1 and 4), vanilla YOLOv7 and YOLOv7-Tiny-SiLU baselines are not reported on NEU-DET in Table 3, so baseline_map50 and improvement_pp on NEU-DET are set to null."
+}

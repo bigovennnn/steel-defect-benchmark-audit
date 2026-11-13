@@ -1,0 +1,212 @@
+[
+  {
+    "sample_idx": 1,
+    "pmcid": "PMC13708875",
+    "dataset": "NEU-DET",
+    "file": "000_PMC13708875.json"
+  },
+  {
+    "sample_idx": 2,
+    "pmcid": "PMC13004511",
+    "dataset": "NEU-DET",
+    "file": "005_PMC13004511.json"
+  },
+  {
+    "sample_idx": 2,
+    "pmcid": "PMC13004511",
+    "dataset": "GC10-DET",
+    "file": "005_PMC13004511.json"
+  },
+  {
+    "sample_idx": 3,
+    "pmcid": "PMC13030490",
+    "dataset": "NEU-DET",
+    "file": "008_PMC13030490.json"
+  },
+  {
+    "sample_idx": 3,
+    "pmcid": "PMC13030490",
+    "dataset": "GC10-DET",
+    "file": "008_PMC13030490.json"
+  },
+  {
+    "sample_idx": 4,
+    "pmcid": "PMC13040021",
+    "dataset": "NEU-DET",
+    "file": "009_PMC13040021.json"
+  },
+  {
+    "sample_idx": 4,
+    "pmcid": "PMC13040021",
+    "dataset": "GC10-DET",
+    "file": "009_PMC13040021.json"
+  },
+  {
+    "sample_idx": 5,
+    "pmcid": "PMC12533008",
+    "dataset": "NEU-DET",
+    "file": "016_PMC12533008.json"
+  },
+  {
+    "sample_idx": 5,
+    "pmcid": "PMC12533008",
+    "dataset": "GC10-DET",
+    "file": "016_PMC12533008.json"
+  },
+  {
+    "sample_idx": 6,
+    "pmcid": "PMC12129336",
+    "dataset": "NEU-DET",
+    "file": "020_PMC12129336.json"
+  },
+  {
+    "sample_idx": 7,
+    "pmcid": "PMC13029871",
+    "dataset": "NEU-DET",
+    "file": "021_PMC13029871.json"
+  },
+  {
+    "sample_idx": 7,
+    "pmcid": "PMC13029871",
+    "dataset": "GC10-DET",
+    "file": "021_PMC13029871.json"
+  },
+  {
+    "sample_idx": 8,
+    "pmcid": "PMC12061413",
+    "dataset": "NEU-DET",
+    "file": "023_PMC12061413.json"
+  },
+  {
+    "sample_idx": 9,
+    "pmcid": "PMC12349437",
+    "dataset": "NEU-DET",
+    "file": "025_PMC12349437.json"
+  },
+  {
+    "sample_idx": 10,
+    "pmcid": "PMC11849088",
+    "dataset": "NEU-DET",
+    "file": "034_PMC11849088.json"
+  },
+  {
+    "sample_idx": 10,
+    "pmcid": "PMC11849088",
+    "dataset": "GC10-DET",
+    "file": "034_PMC11849088.json"
+  },
+  {
+    "sample_idx": 11,
+    "pmcid": "PMC10675464",
+    "dataset": "NEU-DET",
+    "file": "042_PMC10675464.json"
+  },
+  {
+    "sample_idx": 11,
+    "pmcid": "PMC10675464",
+    "dataset": "GC10-DET",
+    "file": "042_PMC10675464.json"
+  },
+  {
+    "sample_idx": 12,
+    "pmcid": "PMC11001973",
+    "dataset": "NEU-DET",
+    "file": "044_PMC11001973.json"
+  },
+  {
+    "sample_idx": 13,
+    "pmcid": "PMC13614541",
+    "dataset": "NEU-DET",
+    "file": "054_PMC13614541.json"
+  },
+  {
+    "sample_idx": 13,
+    "pmcid": "PMC13614541",
+    "dataset": "GC10-DET",
+    "file": "054_PMC13614541.json"
+  },
+  {
+    "sample_idx": 14,
+    "pmcid": "PMC13568295",
+    "dataset": "NEU-DET",
+    "file": "064_PMC13568295.json"
+  },
+  {
+    "sample_idx": 15,
+    "pmcid": "PMC13208663",
+    "dataset": "NEU-DET",
+    "file": "071_PMC13208663.json"
+  },
+  {
+    "sample_idx": 15,
+    "pmcid": "PMC13208663",
+    "dataset": "GC10-DET",
+    "file": "071_PMC13208663.json"
+  },
+  {
+    "sample_idx": 16,
+    "pmcid": "PMC13421597",
+    "dataset": "NEU-DET",
+    "file": "087_PMC13421597.json"
+  },
+  {
+    "sample_idx": 17,
+    "pmcid": "PMC12899440",
+    "dataset": "NEU-DET",
+    "file": "096_PMC12899440.json"
+  },
+  {
+    "sample_idx": 18,
+    "pmcid": "PMC12658271",
+    "dataset": "NEU-DET",
+    "file": "107_PMC12658271.json"
+  },
+  {
+    "sample_idx": 19,
+    "pmcid": "PMC12358517",
+    "dataset": "NEU-DET",
+    "file": "118_PMC12358517.json"
+  },
+  {
+    "sample_idx": 20,
+    "pmcid": "PMC12431288",
+    "dataset": "NEU-DET",
+    "file": "123_PMC12431288.json"
+  },
+  {
+    "sample_idx": 21,
+    "pmcid": "PMC12212875",
+    "dataset": "NEU-DET",
+    "file": "131_PMC12212875.json"
+  },
+  {
+    "sample_idx": 22,
+    "pmcid": "PMC11085271",
+    "dataset": "NEU-DET",
+    "file": "150_PMC11085271.json"
+  },
+  {
+    "sample_idx": 23,
+    "pmcid": "PMC10096323",
+    "dataset": "NEU-DET",
+    "file": "169_PMC10096323.json"
+  },
+  {
+    "sample_idx": 24,
+    "pmcid": "PMC10300763",
+    "dataset": "NEU-DET",
+    "file": "172_PMC10300763.json"
+  },
+  {
+    "sample_idx": 25,
+    "pmcid": "PMC9720119",
+    "dataset": "NEU-DET",
+    "file": "183_PMC9720119.json"
+  },
+  {
+    "sample_idx": 26,
+    "pmcid": "PMC10346955",
+    "dataset": "NEU-DET",
+    "file": "188_PMC10346955.json"
+  }
+]

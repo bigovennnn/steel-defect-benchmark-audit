@@ -1,0 +1,40 @@
+﻿paper_id,dataset,field,status,value,evidence_location,source_url,note
+S001,NEU-DET,split,reported,1440 train / 360 validation,Section 3.2,https://doi.org/10.3389/frai.2025.1675154,test set status not established
+S001,NEU-DET; GC10-DET,epochs,reported,100,Section 3.2,https://doi.org/10.3389/frai.2025.1675154,
+S003,NEU-DET,split,reported,class-balanced approximately 3:1:1 train/val/test,Section 4.1.2,https://doi.org/10.3390/jimaging12060259,
+S003,NEU-DET; GC10-DET,pretraining,reported,official pretrained weights where available for reproduced Ultralytics models,Section 4.1.1,https://doi.org/10.3390/jimaging12060259,does not imply every model used identical initialization
+S004,NEU-DET,split,reported,1440 train / 180 validation / 180 test,Section 4.1,https://doi.org/10.3390/s25247527,
+S004,GC10-DET,split,reported,1834 train / 230 validation / 230 test,Section 4.1,https://doi.org/10.3390/s25247527,total 2294; dataset version must be identified
+S004,NEU-DET; GC10-DET,epochs,reported,300,Section 4.2,https://doi.org/10.3390/s25247527,
+S005,NEU-DET,split,reported,1296 train / 144 validation / 360 test,Experimental setting: Dataset and evaluation protocol,https://doi.org/10.1038/s41598-026-64588-4,
+S005,NEU-DET,pretraining,reported,official pretrained YOLO12-L; new modules randomly initialized,Experimental setting,https://doi.org/10.1038/s41598-026-64588-4,
+S005,NEU-DET,eval_set,reported,independent test; checkpoint selected using validation mAP50,Experimental setting: Dataset and evaluation protocol,https://doi.org/10.1038/s41598-026-64588-4,
+S006,NEU-DET,pretraining,ambiguous,Section 3.1 reports pretrained weights; Section 3.5 describes training from scratch using pretrained weights,Sections 3.1 and 3.5,https://doi.org/10.1007/s44163-026-02329-2,preserve both statements; do not infer which is correct
+S012,NEU-DET; GC10-DET,split,reported,7:1:2 train/validation/test,Section 4.2,https://doi.org/10.3390/s26082311,
+S012,NEU-DET; GC10-DET,epochs,reported,300,Section 4.3,https://doi.org/10.3390/s26082311,
+S014,NEU-DET,split,reported,1260 original train / 360 validation / 180 test; generated images train only,Sections 4.3 and 6.1,https://doi.org/10.1371/journal.pone.0356877,
+S014,NEU-DET,epochs,reported,200 for detector; 150 for DCGAN,Sections 4.3 and 6.2,https://doi.org/10.1371/journal.pone.0356877,separate models
+S016,NEU-DET,split,reported,6:2:2 train/validation/test,Dataset,https://doi.org/10.1038/s41598-025-20154-y,
+S016,NEU-DET,epochs,reported,300,Experimental environment,https://doi.org/10.1038/s41598-025-20154-y,
+S018,NEU-DET; GC10-DET,pretraining,reported,no pretrained weights used,Section 4.2,https://doi.org/10.1371/journal.pone.0331025,
+S018,NEU-DET; GC10-DET,epochs,reported,200,Section 4.2,https://doi.org/10.1371/journal.pone.0331025,
+S019,NEU-DET; GC10-DET,epochs,reported,200,Ablation experiment,https://doi.org/10.1038/s41598-025-04811-w,
+S028,NEU-DET,split_order,ambiguous,"18,000 images after preprocessing; then random 8:1:1 split is described",Section 3.1.1,https://doi.org/10.3390/biomimetics9010028,whether original images and augmentations were grouped is not established; do not assert leakage
+S031,NEU-DET,split,reported,1260 train / 360 validation / 180 test,Section 4.1,https://doi.org/10.3390/s26206533,
+S031,NEU-DET; MVIT,epochs,reported,1000,Section 4.3,https://doi.org/10.3390/s26206533,15 epochs additional fine-tuning for pruned models
+S031,NEU-DET; MVIT,random_seed,reported,0,Section 4.3,https://doi.org/10.3390/s26206533,single fixed seed is not multi-run uncertainty
+S021,NEU-DET,pretraining,reported,loaded yolov9-c.pt,Experimental environment and parameter settings,https://doi.org/10.1038/s41598-025-10647-1,
+S021,NEU-DET,epochs,reported,300,Experimental environment and parameter settings,https://doi.org/10.1038/s41598-025-10647-1,
+S045,NEU-DET,pretraining,reported,"YOLOv5-n/s, YOLOX-n/s, YOLOv7-tiny/v7 pretrained weights",Section 5.1,https://doi.org/10.3390/s22249926,
+S048,NEU-DET; GC10-DET,pretraining,reported,VOC2007 + 2012 pretrained weights for ablation and model training,Section 4.2,https://doi.org/10.3390/s26062001,
+S048,NEU-DET; GC10-DET,epochs,reported,"200, including 50 frozen epochs",Section 4.2,https://doi.org/10.3390/s26062001,
+S052,GC-10,pretraining,reported,LHO-net retrained from scratch without pretrained weights from other datasets,Section 4.9,https://doi.org/10.3390/s26061990,do not generalize to NEU or all baselines
+S052,NEU-DET; GC-10,repeat,reported,three repeated train/val/test assignments of 8/1/1 subsets,Section 4.7,https://doi.org/10.3390/s26061990,test subsets may overlap; paper calls them independent; verify manifests
+S052,GC-10,dataset_count,reported,2856 train / 357 val / 357 test,Section 4.2,https://doi.org/10.3390/s26061990,version differs from project mirror; check provenance
+S035,NEU-DET,epochs,reported,300,Experimental environment and parameter settings,https://doi.org/10.1038/s41598-025-28022-5,
+S040,,epochs,reported,300,"Section 4, Experiments",https://doi.org/10.3390/s23177619,dataset linkage needs full review
+S041,,epochs,reported,100,Experimental environment,https://doi.org/10.1371/journal.pone.0289179,dataset linkage needs full review
+S042,NEU-DET,epochs,reported,300,Section 4.1,https://doi.org/10.3389/fnbot.2023.1263739,
+S044,GC10-DET,split,reported,2136 preprocessed images; 8:1:1 train/val/test,Section 2.2,https://doi.org/10.3390/s23146558,filtering means dataset differs from 2294 XML mirror
+S045,NEU-DET,split,reported,80% train / 20% validation,Section 4.1,https://doi.org/10.3390/s22249926,does not by itself prove absence of a separate test set
+S045,NEU-DET,epochs,reported,initially 100,Section 4.1,https://doi.org/10.3390/s22249926,check training and stopping per model

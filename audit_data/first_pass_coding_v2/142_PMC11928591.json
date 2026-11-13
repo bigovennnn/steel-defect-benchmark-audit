@@ -1,0 +1,251 @@
+{
+ "idx": 142,
+ "pmcid": "PMC11928591",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing an improved YOLOv5n detector (with C3-DSConv, C3CA, Gold-YOLO neck, and SIoU) evaluated on NEU-DET and GC10-DET.",
+ "detector_family": "YOLOv5n (custom)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1,800 images, 6 classes, NEU repository link",
+     "evidence": "It comprises six defect categories: Crazing (CR), Inclusion (IN), Patches (PA), Pitted Surface (PS), Rolled-in Scale (RS), and Scratches (SC). Each category contains 600 samples, with a total of 1,800 images.",
+     "location": "Experimental results and analysis - Data sets"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "Table 1 gives defect instance counts in the training dataset, and text mentions a test set, but split ratios or image counts per split are not stated",
+     "evidence": "",
+     "location": "Data sets, Table 1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "C3-DSConv ablation explicitly states evaluation on the test set, whereas Tables 4-7 do not explicitly state whether val or test set",
+     "evidence": "An ablation experiment was conducted on the test set to verify the effectiveness of the algorithm and the capability of the C3-DSConv module",
+     "location": "Ablation experiments of integrating the C3-DSConv module, Tables 3-7"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs",
+     "evidence": "The model training is set to 200 epochs and the size of batch-size is 16, keeping these basic parameters unchanged, using YOLOv5n as the baseline model",
+     "location": "Data sets"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "The model training is set to 200 epochs and the size of batch-size is 16, keeping these basic parameters unchanged, using YOLOv5n as the baseline model",
+     "location": "Data sets"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "selected for the comparison of the detection performance under the benchmark of the same dataset division, and the specific results are shown in Table 7.",
+     "location": "Performance comparison of different algorithmic models"
+    },
+    "F15": {
+     "status": "not_applicable",
+     "value": "no inference speed (FPS/latency) reported",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "The codes used in this study are available from the corresponding authors.",
+     "evidence": "",
+     "location": "Data availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "Proposed algorithm (Improved YOLOv5n)",
+    "map50": 75.3,
+    "map50_95": null,
+    "baseline": "YOLOv5n",
+    "baseline_map50": 71.0,
+    "improvement_pp": 4.3,
+    "single_run": null,
+    "evidence": "Experimental results demonstrate that the improved YOLOv5n algorithm achieves a mean average precision of 75.3% on the NEU-DET dataset, which is 4.3% higher than the original model.",
+    "location": "Abstract, Table 6, Table 7"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "3570 grayscale images, 10 classes",
+     "evidence": "These defects are all collected from the surfaces of steel plates. The dataset consists of 3570 grayscale images.",
+     "location": "Generalization experiments"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Generalization experiments"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Generalization experiments, Table 8"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs (consistent with NEU-DET)",
+     "evidence": "The environment and parameter settings were kept consistent throughout the implementation process to ensure the comparability and validity of the experimental results.",
+     "location": "Generalization experiments"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16 (consistent with NEU-DET)",
+     "evidence": "The environment and parameter settings were kept consistent throughout the implementation process to ensure the comparability and validity of the experimental results.",
+     "location": "Generalization experiments"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "The environment and parameter settings were kept consistent throughout the implementation process to ensure the comparability and validity of the experimental results.",
+     "location": "Generalization experiments, Table 8"
+    },
+    "F15": {
+     "status": "not_applicable",
+     "value": "no inference speed (FPS/latency) reported",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "The codes used in this study are available from the corresponding authors.",
+     "evidence": "",
+     "location": "Data availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "Proposed algorithm (Improved YOLOv5n)",
+    "map50": 68.4,
+    "map50_95": null,
+    "baseline": "YOLOv5n",
+    "baseline_map50": 65.3,
+    "improvement_pp": 3.1,
+    "single_run": null,
+    "evidence": "Proposed algorithm | 82.1 | 86.3 | 96.1 | 82.6 | 48.3 | 56.9 | 29 | 10.9 | 60.1 | 72.3 | 68.4",
+    "location": "Table 8"
+   }
+  }
+ ],
+ "code_links": [
+  "http://faculty.neu.edu.cn/songkechen/zh_CN/zhym/263269/list/index.htm"
+ ],
+ "coder_notes": "Paper states 600 samples per class and 1,800 total images for NEU-DET (likely confusing 300 images/class with 600). Table 1 reports defect instance counts in the training set (total 3,309 instances), without giving image split ratios."
+}

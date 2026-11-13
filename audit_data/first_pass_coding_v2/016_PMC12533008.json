@@ -1,0 +1,249 @@
+{
+ "idx": 16,
+ "pmcid": "PMC12533008",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research training and evaluating an improved YOLOv8n detector (SCCI-YOLO) on NEU-DET, with a generalization experiment on GC10-DET.",
+ "detector_family": "YOLOv8 (SCCI-YOLO, YOLOv8n-based)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 grayscale images, 6 classes, 300 per class; NEU source link",
+     "evidence": "The database includes 1800 grayscale images: six different types of typical surface defects, and each type of defect contains 300 samples",
+     "location": "Dataset; Data availability"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "random train/val/test 6:2:2; per-class label counts in Table 1",
+     "evidence": "which we randomly divided into training, validation, and test sets in the ratio of 6:2:2",
+     "location": "Dataset, Table 1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; random split, no file list or seed"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; only generic mention that YOLOv8 provides pre-trained sizes"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; validation set exists but checkpoint selection not stated"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; test split exists but the set used for Tables 3-7 not stated"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "Dataset, Result analysis"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "the input image resolution size is adjusted to 640 640 pixels",
+     "location": "Experimental environment"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "the total number of cycles for all model training is 300 epochs",
+     "location": "Experimental environment"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "The batch size is set to 16",
+     "location": "Experimental environment"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "we conducted in-depth comparative experiments with several mainstream target detection algorithms under the same hardware environment",
+     "location": "Introduction; Fig. 12"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "RTX 3090 listed as experimental environment; FPS batch/precision/timing scope not stated",
+     "evidence": "GPU | RTX 3090 (24GB)",
+     "location": "Table 2"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; only dataset link"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "SCCI-YOLO",
+    "map50": 78.6,
+    "map50_95": 45.3,
+    "baseline": "YOLOv8n",
+    "baseline_map50": 76.4,
+    "improvement_pp": 2.2,
+    "single_run": null,
+    "evidence": "NEU-DET | 78.6 | 45.3",
+    "location": "Tables 6-7, Table 5"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "ambiguous",
+     "value": "10 classes stated; no image count or source link",
+     "evidence": "the GC10-DET dataset contains 10 classes of steel surface defects",
+     "location": "Analysis of generalization experiment results"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F09": {
+     "status": "ambiguous",
+     "value": "640x640 stated in general environment section after NEU description; not explicitly for all datasets",
+     "evidence": "the input image resolution size is adjusted to 640 640 pixels",
+     "location": "Experimental environment"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs (all model training)",
+     "evidence": "the total number of cycles for all model training is 300 epochs",
+     "location": "Experimental environment"
+    },
+    "F11": {
+     "status": "ambiguous",
+     "value": "16 stated in general environment section; not explicitly for GC10",
+     "evidence": "The batch size is set to 16",
+     "location": "Experimental environment"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun (original YOLOv8n trained on each dataset)",
+     "evidence": "Table 6 Experimental results for each dataset on the original model.",
+     "location": "Table 6"
+    },
+    "F15": {
+     "status": "not_applicable",
+     "value": "no speed reported on GC10",
+     "evidence": "",
+     "location": "Tables 6-7"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "SCCI-YOLO",
+    "map50": 67.3,
+    "map50_95": 33.4,
+    "baseline": "YOLOv8n",
+    "baseline_map50": 64.8,
+    "improvement_pp": 2.5,
+    "single_run": null,
+    "evidence": "GC10 | 67.3 | 33.4",
+    "location": "Tables 6-7"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "No code link (github.com/ultralytics/yolov5 appears only in reference links). Dataset link is NEU faculty page. GC10 used only as generalization experiment with almost no setup details; whether 6:2:2 split/640/batch16 apply to GC10 unclear. F14 rerun inferred from 'same hardware environment' statement in introduction; comparison values are shown only in Fig. 12. Table 5 ablation checkmarks lost in text extraction."
+}

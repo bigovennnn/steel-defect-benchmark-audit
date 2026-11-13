@@ -1,0 +1,12 @@
+{
+ "idx": 55,
+ "pmcid": "PMC13568460",
+ "eligibility": "exclude",
+ "exclusion_code": "E2",
+ "eligibility_reason": "Evaluates pixel-level surface defect segmentation using polygon masks without bounding-box detection.",
+ "detector_family": "",
+ "is_preprint_or_version_note": "",
+ "datasets": [],
+ "code_links": [],
+ "coder_notes": "Pixel-level defect segmentation with probability maps rather than bounding box detection."
+}

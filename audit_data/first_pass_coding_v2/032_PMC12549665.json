@@ -1,0 +1,249 @@
+{
+ "idx": 32,
+ "pmcid": "PMC12549665",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research benchmarking six backbones inside YOLOv9-C (and YOLOv5-m) for bounding-box detection on NEU-DET and GC10-DET.",
+ "detector_family": "YOLOv9 (also YOLOv5-m)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, 300 per class, 200x200; Song and Yan 2013; source URL in data availability",
+     "evidence": "comprises 1800 images of surface defects on hot-rolled steel strips, divided into six categories",
+     "location": "3.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train 1,440 / validation 360; no test set",
+     "evidence": "For the NEU-DET dataset, 1,440 images are allocated for training and 360 for validation.",
+     "location": "3.2"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "ambiguous",
+     "value": "pretraining mentioned only for ResNet50 in method description; not stated for experiments or other backbones",
+     "evidence": "Benefiting from extensive pretraining, ResNet50 improves detection accuracy across diverse defect types.",
+     "location": "2.2.1"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "validation set implied (only train/val split defined); not explicitly stated for Table 3",
+     "evidence": "For the NEU-DET dataset, 1,440 images are allocated for training and 360 for validation.",
+     "location": "3.2; Table 3"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": ""
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "only 'high-resolution tiling' mentioned, no numeric input size",
+     "evidence": "",
+     "location": "3.2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "100 epochs",
+     "evidence": "For the experiments, the batch size was set to 16, the epoch was set to 100.",
+     "location": "3.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "For the experiments, the batch size was set to 16, the epoch was set to 100.",
+     "location": "3.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "with consistent training conditions including identical data splits, input resolution, augmentation, and schedules",
+     "location": "4 Discussion"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "no speed numbers reported; 'batch-1 latency' mentioned in discussion; hardware RTX 3090",
+     "evidence": "Our deployment-oriented analysis further incorporates GFLOPs and batch-1 latency metrics",
+     "location": "3.2; 4"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "only dataset URL given",
+     "evidence": "",
+     "location": "Data availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "YOLOv9-C + RepViT",
+    "map50": 68.8,
+    "map50_95": null,
+    "baseline": "Native YOLOv9-C",
+    "baseline_map50": 58.2,
+    "improvement_pp": 10.6,
+    "single_run": null,
+    "evidence": "RepViT | 46.3 | 205.0 | 68.8 | 61.8 | 68.6 | 0.65",
+    "location": "Table 3"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "2300 images, 3563 objects, 10 classes; Lv et al. 2020",
+     "evidence": "It consists of 2300 grayscale images with 3563 labeled objects belonging to ten categories",
+     "location": "3.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "same train/validation ratio as NEU (80/20)",
+     "evidence": "For the GC10-DET dataset, the same training-validation split ratio is applied",
+     "location": "3.2"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "ambiguous",
+     "value": "as NEU",
+     "evidence": "Benefiting from extensive pretraining, ResNet50 improves detection accuracy across diverse defect types.",
+     "location": "2.2.1"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "validation implied; text says 'Validation results'",
+     "evidence": "Validation results obtained from ResNet50, StarNet, GhostNet, MobileNetV4, FasterNet, and RepViT confirm this pattern.",
+     "location": "3.5"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": ""
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F10": {
+     "status": "reported",
+     "value": "100 epochs (protocol same as NEU)",
+     "evidence": "For the experiments, the batch size was set to 16, the epoch was set to 100.",
+     "location": "3.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "For the experiments, the batch size was set to 16, the epoch was set to 100.",
+     "location": "3.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "The training and evaluation protocols are kept consistent with those used for NEU-DET to ensure a fair comparison.",
+     "location": "3.5"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "as NEU",
+     "evidence": "Our deployment-oriented analysis further incorporates GFLOPs and batch-1 latency metrics",
+     "location": "4"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "YOLOv9-C + RepViT",
+    "map50": 56.0,
+    "map50_95": null,
+    "baseline": "Native YOLOv9-C",
+    "baseline_map50": 49.9,
+    "improvement_pp": 6.1,
+    "single_run": null,
+    "evidence": "RepViT | 46.4 | 205.0 | 56.0 | 60.4 | 57.1 | 0.58",
+    "location": "Table 4"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Benchmark study, not a new detector. Baseline is inconsistent: abstract says YOLOv9-C is the baseline, while 3.4.1/3.5 'adopt ResNet50 as the baseline backbone' (ResNet50: NEU 58.6, GC10 51.0). improvement_pp computed vs native YOLOv9-C. Text claims 'reproducible selection framework' but no code link. Only train/val split; no test set."
+}

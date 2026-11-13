@@ -1,0 +1,12 @@
+{
+ "idx": 375,
+ "pmcid": "PMC9185267",
+ "eligibility": "exclude",
+ "exclusion_code": "E3",
+ "eligibility_reason": "Evaluates defect detection on the Severstal steel dataset without experiments on NEU-DET or GC10-DET.",
+ "detector_family": "",
+ "is_preprint_or_version_note": "",
+ "datasets": [],
+ "code_links": [],
+ "coder_notes": "Exclusively evaluates on Severstal Kaggle competition dataset."
+}

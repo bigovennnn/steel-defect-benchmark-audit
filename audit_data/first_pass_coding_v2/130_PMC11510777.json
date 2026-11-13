@@ -1,0 +1,131 @@
+{
+ "idx": 130,
+ "pmcid": "PMC11510777",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research training and evaluating YOLOv8n and YOLOv8x bounding-box detectors on NEU-DET as a benchmark comparison against their USW weld defect dataset (Section 4.4, Table 4).",
+ "detector_family": "YOLOv8",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 grayscale images, 6 classes (300 per class), Northeastern University",
+     "evidence": "The database includes 1800 grayscale images, comprising 300 (split into 240 images for training and 60 for testing) samples per defect category.",
+     "location": "4.2"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/test 80:20 (240 training and 60 testing per class; 1440/360 total)",
+     "evidence": "The database includes 1800 grayscale images, comprising 300 (split into 240 images for training and 60 for testing) samples per defect category.",
+     "location": "4.2"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "reported",
+     "value": "Pretrained YOLOv8n and YOLOv8x models from Ultralytics",
+     "evidence": "The YOLOv8 training was completed using the pre-trained models YOLOv8n and YOLOv8x, downloaded from Ultralytics, Python-3.8.19, torch-2.3.1 on CUDA 12.1, NVIDIA GeForce RTX 3080, 10001MiB.",
+     "location": "3.2.2, 4.1, 4.4"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "4.2 defines only training (240/class) and testing (60/class) sets, while Fig. 16a plots validation losses; Table 4 does not explicitly name the evaluation split",
+     "evidence": "The database includes 1800 grayscale images, comprising 300 (split into 240 images for training and 60 for testing) samples per defect category.",
+     "location": "4.2, 4.4, Table 4"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "4.2, 4.4"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text (224x224 in 3.1.1 is only for the CAE on USW images, not YOLOv8 detection)"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "350 epochs",
+     "evidence": "However, YOLOv8 on the NEU-DET dataset was trained for 350 epochs because of the comparably larger size of the dataset.",
+     "location": "4.4"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "For better comparison, a publicly available surface defect detection dataset, NEU-DET, was used to repeat the training experiments with all the above-mentioned deep learning models.",
+     "location": "4.4"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text (no FPS or latency reported)"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv8n",
+    "map50": 59.0,
+    "map50_95": 29.0,
+    "baseline": "YOLOv8x",
+    "baseline_map50": 58.0,
+    "improvement_pp": 1.0,
+    "single_run": null,
+    "evidence": "NEU-DET | YOLOv8x | 0.54 | 0.61 | 0.58 | 0.28 NEU-DET | YOLOv8n | 0.55 | 0.61 | 0.59 | 0.29",
+    "location": "Table 4"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Paper's primary focus is ultrasonic weld strength prediction and USW defect detection, with NEU-DET trained and evaluated on YOLOv8n and YOLOv8x in Section 4.4 (Table 4) for benchmark comparison."
+}

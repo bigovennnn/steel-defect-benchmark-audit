@@ -1,0 +1,131 @@
+{
+ "idx": 321,
+ "pmcid": "PMC9988608",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research evaluating YOLOv5-based defect detection on NEU-DET.",
+ "detector_family": "YOLOv5",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "NEU-DET dataset description",
+     "evidence": "The second dataset is the NEU surface defect dataset, which has small width and height (200, 200).",
+     "location": "§Full text"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "epochs reported",
+     "evidence": "The total number of epochs is 40.",
+     "location": "§Full text"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "batch size reported",
+     "evidence": "The batch size is 1.",
+     "location": "§Full text"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "comparative baseline table",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "hardware reported",
+     "evidence": "# Experimental results\n## Parameter configuration and datasets\nOur proposed FDD is implemented in PyTorch and trained on a single NVIDIA GeForce RTX 2080Ti GPU.",
+     "location": "§Full text"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv5-improved",
+    "map50": 67.5,
+    "map50_95": null,
+    "baseline": "YOLOv5 baseline",
+    "baseline_map50": 65.5,
+    "improvement_pp": 2.0,
+    "single_run": null,
+    "evidence": "5% and an mAP of 67.5%.",
+    "location": "Table/§Results"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Automated evidence extraction compliant with Coding Manual v1.4. Single_run set to null in accordance with Manual v1.2."
+}

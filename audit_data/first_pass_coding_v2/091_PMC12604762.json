@@ -1,0 +1,253 @@
+{
+ "idx": 91,
+ "pmcid": "PMC12604762",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing SH-DETR and evaluating bounding-box defect detection on NEU-DET and GC10-DET.",
+ "detector_family": "RT-DETR / DETR (SH-DETR)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, 200x200 pixels, Kaggle source link",
+     "evidence": "In this research, the dataset comprises 1,800 images depicting various steel surface defects, all at a resolution of 200×200 pixels. It includes six unique categories of steel surface defects",
+     "location": "Dataset details"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "80% training, 20% validation",
+     "evidence": "we often apply an 80-20% data division approach, dedicating 80% of the data for training and the remaining 20% for validation.",
+     "location": "Training equipment and testing procedure"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Experiment"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Experiment"
+    },
+    "F05": {
+     "status": "ambiguous",
+     "value": "mentions transfer learning without specifying pretrained weight source",
+     "evidence": "Moreover, we applied transfer learning to enhance the model further, leading to a substantial increase in the precision of the optimized version.",
+     "location": "Experiment"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Training equipment and testing procedure"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "states assessed with test dataset but divided 80-20% into training and validation",
+     "evidence": "The model underwent training using the training dataset and was subsequently assessed with the test dataset to evaluate its effectiveness.",
+     "location": "Training equipment and testing procedure"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "Training equipment and testing procedure"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "200x200",
+     "evidence": "In the experimental setup, the NEU-DET dataset was trained with an input size of 200×200, while the GC10-DET dataset used an input size of 640×640.",
+     "location": "Training equipment and testing procedure"
+    },
+    "F10": {
+     "status": "ambiguous",
+     "value": "250 epochs in text vs 500 epochs in Table 1",
+     "evidence": "In the experimental setup, the NEU-DET dataset was trained with an input size of 200×200, while the GC10-DET dataset used an input size of 640×640. Both datasets were trained for 250 epochs.",
+     "location": "Training equipment and testing procedure, Table 1"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Training equipment and testing procedure, Table 1"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Experiment"
+    },
+    "F13": {
+     "status": "ambiguous",
+     "value": "repeated experiments shown as histogram ranges (81.05-83.14) without total run count or mean±SD",
+     "evidence": "Because the experimental results may be affected by randomness, we conducted repeated experiments and constructed a normal histogram, as shown in Fig 15.",
+     "location": "Result"
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Comparison experiment"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "RTX 3090 hardware reported; batch size and precision for FPS not reported",
+     "evidence": "All deep learning models were executed on a workstation equipped with an Intel(R) Xeon(R) Silver 4214R CPU running at 2.40 GHz with dual processors, 128 GB of RAM, and an NVIDIA GeForce RTX 3090 GPU.",
+     "location": "Training equipment and testing procedure"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Data Availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Data Availability"
+    }
+   },
+   "main_result": {
+    "model": "SH-DETR (Ours)",
+    "map50": 83.03,
+    "map50_95": 45.55,
+    "baseline": "Model A (Resnet18 + transformer)",
+    "baseline_map50": 79.4,
+    "improvement_pp": 3.63,
+    "single_run": null,
+    "evidence": "Specifically, the model registers a classification accuracy of 91.72%, an mAP@0.5 of 83.03%, and an mAP@0.5:0.95 of 45.55% on the NEU-DET dataset.",
+    "location": "Abstract, Table 3, Table 6, Table 9"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "3570 images, 10 classes, 2048x1000 pixels, Kaggle source link",
+     "evidence": "This dataset contains 3,570 images with a resolution of 2048 x 1000 pixels, partitioned into training and validation sets in an 80:20 ratio.",
+     "location": "Result - Model performance on the GC10-DE dataset and welding defect dataset"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "training:validation = 80:20",
+     "evidence": "This dataset contains 3,570 images with a resolution of 2048 x 1000 pixels, partitioned into training and validation sets in an 80:20 ratio.",
+     "location": "Result - Model performance on the GC10-DE dataset and welding defect dataset"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Experiment"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Experiment"
+    },
+    "F05": {
+     "status": "ambiguous",
+     "value": "mentions transfer learning without specifying pretrained weight source",
+     "evidence": "Moreover, we applied transfer learning to enhance the model further, leading to a substantial increase in the precision of the optimized version.",
+     "location": "Experiment"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Training equipment and testing procedure"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "states assessed with test dataset in setup, but GC10-DET is partitioned into training and validation sets (80:20)",
+     "evidence": "This dataset contains 3,570 images with a resolution of 2048 x 1000 pixels, partitioned into training and validation sets in an 80:20 ratio.",
+     "location": "Result - Model performance on the GC10-DE dataset and welding defect dataset"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "Experiment"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "In the experimental setup, the NEU-DET dataset was trained with an input size of 200×200, while the GC10-DET dataset used an input size of 640×640.",
+     "location": "Training equipment and testing procedure"
+    },
+    "F10": {
+     "status": "ambiguous",
+     "value": "250 epochs in text vs 500 epochs in Table 1",
+     "evidence": "In the experimental setup, the NEU-DET dataset was trained with an input size of 200×200, while the GC10-DET dataset used an input size of 640×640. Both datasets were trained for 250 epochs.",
+     "location": "Training equipment and testing procedure, Table 1"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Training equipment and testing procedure, Table 1"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Experiment"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Result"
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Comparison experiment"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "RTX 3090 hardware reported; batch size and precision for FPS not reported",
+     "evidence": "All deep learning models were executed on a workstation equipped with an Intel(R) Xeon(R) Silver 4214R CPU running at 2.40 GHz with dual processors, 128 GB of RAM, and an NVIDIA GeForce RTX 3090 GPU.",
+     "location": "Training equipment and testing procedure"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Data Availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Data Availability"
+    }
+   },
+   "main_result": {
+    "model": "SH-DETR (Ours)",
+    "map50": 65.03,
+    "map50_95": 32.46,
+    "baseline": "PMSA-DETR",
+    "baseline_map50": 65.0,
+    "improvement_pp": 0.03,
+    "single_run": null,
+    "evidence": "On the GC10-DE dataset, it achieves a classification precision of 76.73%, an mAP@0.5 of 65.03%, and an mAP@0.5:0.95 of 32.46%.",
+    "location": "Abstract, Table 3, Table 8"
+   }
+  }
+ ],
+ "code_links": [
+  "https://www.kaggle.com/datasets/alex000kim/gc10det",
+  "https://www.kaggle.com/datasets/kaustubhdikshit/neu-surface-defect-database",
+  "https://www.kaggle.com/datasets/sukmaadhiwijaya/welding-defect-object-detection"
+ ],
+ "coder_notes": "Text states 250 epochs in three places while Table 1 lists Epoch 500. Fig 15 shows a histogram of repeated runs on NEU-DET (81.05-83.14%) without stating total run count or whether Table 3/6/9 values are single-run or summary. Ablation baseline Model A (79.40%) is only reported on NEU-DET; on GC10-DET Table 8 compares against SOTA detectors (best baseline PMSA-DETR 65.0%, YOLOv11 64.2%)."
+}

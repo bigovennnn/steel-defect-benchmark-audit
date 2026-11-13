@@ -1,0 +1,205 @@
+{
+  "audit_name": "NEU-DET 349-Pair Targeted Candidate Pool Double-Blind Human Verification",
+  "date": "2026-11-08",
+  "total_candidate_pairs": 349,
+  "overall_irr": {
+    "n": 349,
+    "n_agree": 270,
+    "percent_agreement": 77.36,
+    "cohen_kappa": 0.1659,
+    "gwet_ac1": 0.6893,
+    "pe_cohen": 0.7286,
+    "pe_gwet": 0.2714,
+    "prevalence_index": 0.6762,
+    "bias_index": 0.0029,
+    "contingency_table": {
+      "both_positive_n11": 253,
+      "coder1_pos_coder2_neg_n10": 40,
+      "coder1_neg_coder2_pos_n01": 39,
+      "both_negative_n00": 17
+    }
+  },
+  "per_pool_results": {
+    "Pool_A_Registration_High_NCC_ge_085": {
+      "n_pairs": 223,
+      "coder1_positive": 192,
+      "coder1_positive_pct": 86.1,
+      "coder2_positive": 212,
+      "coder2_positive_pct": 95.07,
+      "unanimous_positive_both_1": 184,
+      "unanimous_positive_pct": 82.51,
+      "union_positive_either_1": 220,
+      "union_positive_pct": 98.65,
+      "unanimous_negative_both_0": 3,
+      "unanimous_negative_pct": 1.35,
+      "irr": {
+        "n": 223,
+        "n_agree": 187,
+        "percent_agreement": 83.86,
+        "cohen_kappa": 0.0755,
+        "gwet_ac1": 0.8054,
+        "pe_cohen": 0.8254,
+        "pe_gwet": 0.1706,
+        "prevalence_index": 0.8117,
+        "bias_index": 0.0897,
+        "contingency_table": {
+          "both_positive_n11": 184,
+          "coder1_pos_coder2_neg_n10": 8,
+          "coder1_neg_coder2_pos_n01": 28,
+          "both_negative_n00": 3
+        }
+      }
+    },
+    "Pool_C_ResNet50_Cosine_Top50": {
+      "n_pairs": 50,
+      "coder1_positive": 36,
+      "coder1_positive_pct": 72.0,
+      "coder2_positive": 19,
+      "coder2_positive_pct": 38.0,
+      "unanimous_positive_both_1": 16,
+      "unanimous_positive_pct": 32.0,
+      "union_positive_either_1": 39,
+      "union_positive_pct": 78.0,
+      "unanimous_negative_both_0": 11,
+      "unanimous_negative_pct": 22.0,
+      "irr": {
+        "n": 50,
+        "n_agree": 27,
+        "percent_agreement": 54.0,
+        "cohen_kappa": 0.1679,
+        "gwet_ac1": 0.0891,
+        "pe_cohen": 0.4472,
+        "pe_gwet": 0.495,
+        "prevalence_index": 0.1,
+        "bias_index": 0.34,
+        "contingency_table": {
+          "both_positive_n11": 16,
+          "coder1_pos_coder2_neg_n10": 20,
+          "coder1_neg_coder2_pos_n01": 3,
+          "both_negative_n00": 11
+        }
+      }
+    },
+    "Pool_C_ORB_RANSAC_Top50": {
+      "n_pairs": 50,
+      "coder1_positive": 44,
+      "coder1_positive_pct": 88.0,
+      "coder2_positive": 49,
+      "coder2_positive_pct": 98.0,
+      "unanimous_positive_both_1": 43,
+      "unanimous_positive_pct": 86.0,
+      "union_positive_either_1": 50,
+      "union_positive_pct": 100.0,
+      "unanimous_negative_both_0": 0,
+      "unanimous_negative_pct": 0.0,
+      "irr": {
+        "n": 50,
+        "n_agree": 43,
+        "percent_agreement": 86.0,
+        "cohen_kappa": -0.0355,
+        "gwet_ac1": 0.839,
+        "pe_cohen": 0.8648,
+        "pe_gwet": 0.1302,
+        "prevalence_index": 0.86,
+        "bias_index": 0.1,
+        "contingency_table": {
+          "both_positive_n11": 43,
+          "coder1_pos_coder2_neg_n10": 1,
+          "coder1_neg_coder2_pos_n01": 6,
+          "both_negative_n00": 0
+        }
+      }
+    },
+    "Pool_B_Registration_Boundary_070_085": {
+      "n_pairs": 26,
+      "coder1_positive": 21,
+      "coder1_positive_pct": 80.77,
+      "coder2_positive": 12,
+      "coder2_positive_pct": 46.15,
+      "unanimous_positive_both_1": 10,
+      "unanimous_positive_pct": 38.46,
+      "union_positive_either_1": 23,
+      "union_positive_pct": 88.46,
+      "unanimous_negative_both_0": 3,
+      "unanimous_negative_pct": 11.54,
+      "irr": {
+        "n": 26,
+        "n_agree": 13,
+        "percent_agreement": 50.0,
+        "cohen_kappa": 0.0452,
+        "gwet_ac1": 0.0676,
+        "pe_cohen": 0.4763,
+        "pe_gwet": 0.4638,
+        "prevalence_index": 0.2692,
+        "bias_index": 0.3462,
+        "contingency_table": {
+          "both_positive_n11": 10,
+          "coder1_pos_coder2_neg_n10": 11,
+          "coder1_neg_coder2_pos_n01": 2,
+          "both_negative_n00": 3
+        }
+      }
+    }
+  },
+  "similarity_method_evaluation": {
+    "coder1": {
+      "total_positives": 293,
+      "pixel_ncc_ap": 0.8356,
+      "joint_ncc_ap": 0.8565,
+      "joint_ncc_085_precision": 0.861,
+      "joint_ncc_085_recall": 0.6553,
+      "joint_ncc_085_f1": 0.7442,
+      "confusion_at_085": {
+        "tp": 192,
+        "fp": 31,
+        "fn": 101
+      }
+    },
+    "coder2": {
+      "total_positives": 292,
+      "pixel_ncc_ap": 0.9266,
+      "joint_ncc_ap": 0.9371,
+      "joint_ncc_085_precision": 0.9507,
+      "joint_ncc_085_recall": 0.726,
+      "joint_ncc_085_f1": 0.8233,
+      "confusion_at_085": {
+        "tp": 212,
+        "fp": 11,
+        "fn": 80
+      }
+    },
+    "unanimous_consensus": {
+      "total_positives": 253,
+      "pixel_ncc_ap": 0.7909,
+      "joint_ncc_ap": 0.8118,
+      "joint_ncc_085_precision": 0.8251,
+      "joint_ncc_085_recall": 0.7273,
+      "joint_ncc_085_f1": 0.7731,
+      "confusion_at_085": {
+        "tp": 184,
+        "fp": 39,
+        "fn": 69
+      }
+    },
+    "union": {
+      "total_positives": 332,
+      "pixel_ncc_ap": 0.9691,
+      "joint_ncc_ap": 0.9808,
+      "joint_ncc_085_precision": 0.9865,
+      "joint_ncc_085_recall": 0.6627,
+      "joint_ncc_085_f1": 0.7928,
+      "confusion_at_085": {
+        "tp": 220,
+        "fp": 3,
+        "fn": 112
+      }
+    }
+  },
+  "benchmark_implications": {
+    "pool_a_mip_edges_total": 223,
+    "pool_a_unanimously_confirmed": 184,
+    "pool_a_unanimous_confirmation_rate_pct": 82.51,
+    "pool_a_union_confirmation_rate_pct": 98.65,
+    "key_finding": "Human verification confirms that 82.51% (unanimous agreement) to 98.65% (union of coders) of the 223 registration-derived candidate edges in our frozen MIP partition are genuine visual/physical near-duplicates, ruling out registration artifacts."
+  }
+}

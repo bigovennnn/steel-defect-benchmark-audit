@@ -1,0 +1,133 @@
+{
+  "idx": 230,
+  "pmcid": "PMC12899597",
+  "eligibility": "include",
+  "exclusion_code": "",
+  "eligibility_reason": "Original research training and evaluating a Faster R-CNN (ResNet-50 FPN) bounding box detector on GC10-DET for explainable AI analysis.",
+  "detector_family": "Faster R-CNN",
+  "is_preprint_or_version_note": "",
+  "datasets": [
+    {
+      "dataset": "GC10-DET",
+      "fields": {
+        "F01": {
+          "status": "reported",
+          "value": "2300 images (2280 annotated defect instances in .xml format), 10 classes, Kaggle link provided",
+          "evidence": "The GC10-DET dataset [18] significantly extends the capabilities of automated visual inspection by offering a comprehensive collection of 2300 steel surface images that encompass 2280 annotated defect instances stored in .xml format.",
+          "location": "§4.2, Table 3"
+        },
+        "F02": {
+          "status": "reported",
+          "value": "80% training / 20% validation stratified by defect class (with oversampling of under-represented classes)",
+          "evidence": "The dataset was divided into training and validation subsets using an 80/20 split, stratified by defect class.",
+          "location": "§6.2"
+        },
+        "F03": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§6.2, full text checked"
+        },
+        "F04": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§6.2, full text checked"
+        },
+        "F05": {
+          "status": "reported",
+          "value": "ResNet-50 FPN backbone initialised with weights pretrained on COCO",
+          "evidence": "A ResNet-50 backbone with Feature Pyramid Network (FPN) was adopted, initialised with weights pretrained on COCO.",
+          "location": "§6.2"
+        },
+        "F06": {
+          "status": "ambiguous",
+          "value": "Algorithm 2 states 'Save the best-performing model checkpoint', but selection metric and split are not explicitly specified",
+          "evidence": "Optimise multi-task loss L=Lcls+λLbox11:Save the best-performing model checkpoint12:For each test image, compute visual explanations",
+          "location": "§6.2, Algorithm 2"
+        },
+        "F07": {
+          "status": "ambiguous",
+          "value": "Dataset is split 80/20 into training and validation subsets; text reports 'peak localisation performance' without explicitly stating whether evaluated on the 20% validation set",
+          "evidence": "The dataset was divided into training and validation subsets using an 80/20 split, stratified by defect class.",
+          "location": "§6.2"
+        },
+        "F08": {
+          "status": "reported",
+          "value": "same_set",
+          "evidence": "The dataset was divided into training and validation subsets using an 80/20 split, stratified by defect class.",
+          "location": "§6.2"
+        },
+        "F09": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§6.2, full text checked"
+        },
+        "F10": {
+          "status": "reported",
+          "value": "50 epochs",
+          "evidence": "Training was conducted for fifty epochs with a batch size of four.",
+          "location": "§6.2"
+        },
+        "F11": {
+          "status": "reported",
+          "value": "4",
+          "evidence": "Training was conducted for fifty epochs with a batch size of four.",
+          "location": "§6.2"
+        },
+        "F12": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§6.2, full text checked"
+        },
+        "F13": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§6.2, §7.1, full text checked"
+        },
+        "F14": {
+          "status": "not_applicable",
+          "value": "",
+          "evidence": "",
+          "location": "§6, §6.2"
+        },
+        "F15": {
+          "status": "not_applicable",
+          "value": "",
+          "evidence": "",
+          "location": "§6.2, §7.1"
+        },
+        "F16": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "Data Availability Statement, full text checked"
+        },
+        "F17": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "Data Availability Statement, full text checked"
+        }
+      },
+      "main_result": {
+        "model": "Faster R-CNN (ResNet-50 FPN)",
+        "map50": 61.0,
+        "map50_95": null,
+        "baseline": "",
+        "baseline_map50": null,
+        "improvement_pp": null,
+        "single_run": null,
+        "evidence": "In this study, predicted bounding boxes produced by the Faster R-CNN model are quantitatively evaluated against ground-truth annotations, achieving peak localisation performance of approximately mIoU=0.44 and mAP@0.5=0.61",
+        "location": "§6.2"
+      }
+    }
+  ],
+  "code_links": [
+    "https://www.kaggle.com/datasets/zhangyunsheng/defects-class-and-location"
+  ],
+  "coder_notes": "This paper evaluates three separate manufacturing tasks: (1) Casting Product binary image classification with YOLOv8n-cls (§6.1), (2) GC10-DET ('Defects Class and Location') bounding box object detection with Faster R-CNN ResNet-50 FPN (§6.2, reporting peak mIoU=0.44 and mAP@0.5=0.61), and (3) MIMII acoustic anomaly detection with Isolation Forest (§6.3). In §6.2, it is unclear whether oversampling of under-represented classes was performed before or after the 80/20 stratified train/val split (Algorithm 2 lists split at step 5 and oversampling at step 6, whereas prose §6.2 mentions both without clarifying whether validation was oversampled). No baseline comparison or speed evaluation is performed on GC10-DET."
+}

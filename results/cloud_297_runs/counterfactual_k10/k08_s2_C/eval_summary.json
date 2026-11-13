@@ -1,0 +1,123 @@
+{
+  "suite": "counterfactual_k10",
+  "split_k": 8,
+  "seed": 2,
+  "condition": "C",
+  "epochs": 100,
+  "val": {
+    "precision": 0.6754093526616188,
+    "recall": 0.7038464529089529,
+    "map50": 0.7379248947781857,
+    "map50_95": 0.41620252981452743,
+    "per_class_ap50": {
+      "crazing": 0.36284308434538753,
+      "inclusion": 0.8780787100323073,
+      "patches": 0.9075405703175626,
+      "pitted_surface": 0.7030637272536702,
+      "rolled-in_scale": 0.6197368480950475,
+      "scratches": 0.9562864286251385
+    },
+    "per_class_ap50_95": {
+      "crazing": 0.16526572209163598,
+      "inclusion": 0.4917566069358993,
+      "patches": 0.566949377543607,
+      "pitted_surface": 0.3860043047258817,
+      "rolled-in_scale": 0.316997378546746,
+      "scratches": 0.5702417890433943
+    },
+    "speed_ms_per_image": {
+      "preprocess": 4.510797966095443,
+      "inference": 8.576045862109577,
+      "loss": 0.0057591210320793295,
+      "postprocess": 11.465123588710117
+    }
+  },
+  "test_all": {
+    "precision": 0.7340128453945853,
+    "recall": 0.7070916306160603,
+    "map50": 0.7649738808499849,
+    "map50_95": 0.4648599329897181,
+    "per_class_ap50": {
+      "crazing": 0.4187252444869171,
+      "inclusion": 0.7892255868112406,
+      "patches": 0.9709435792364807,
+      "pitted_surface": 0.8161112422593606,
+      "rolled-in_scale": 0.6359273878321644,
+      "scratches": 0.9589102444737454
+    },
+    "per_class_ap50_95": {
+      "crazing": 0.1737989950848941,
+      "inclusion": 0.4535658681320668,
+      "patches": 0.6833483306699197,
+      "pitted_surface": 0.5345066585799332,
+      "rolled-in_scale": 0.31964145334259786,
+      "scratches": 0.624298292128897
+    },
+    "speed_ms_per_image": {
+      "preprocess": 6.698996198570562,
+      "inference": 8.626241839697792,
+      "loss": 0.005608000275161532,
+      "postprocess": 14.344499198098976
+    }
+  },
+  "test_leaked": {
+    "precision": 0.6029463023099874,
+    "recall": 0.8327830044202367,
+    "map50": 0.7952007024869093,
+    "map50_95": 0.5193373931742707,
+    "per_class_ap50": {
+      "crazing": 0.5929589934762348,
+      "inclusion": 0.6153846153846154,
+      "patches": 0.995,
+      "pitted_surface": 0.92,
+      "rolled-in_scale": 0.695,
+      "scratches": 0.952860606060606
+    },
+    "per_class_ap50_95": {
+      "crazing": 0.19713525122400466,
+      "inclusion": 0.44135897435897437,
+      "patches": 0.7443470588235295,
+      "pitted_surface": 0.6955,
+      "rolled-in_scale": 0.39699999999999996,
+      "scratches": 0.6406830746391161
+    },
+    "speed_ms_per_image": {
+      "preprocess": 3.0426397279370576,
+      "inference": 7.980349493057778,
+      "loss": 0.005562062142416835,
+      "postprocess": 9.761710893750811
+    }
+  },
+  "test_clean": {
+    "precision": 0.7324670382566966,
+    "recall": 0.7143882867827945,
+    "map50": 0.7683999764132251,
+    "map50_95": 0.4609742174357397,
+    "per_class_ap50": {
+      "crazing": 0.41996679942611,
+      "inclusion": 0.8063346109437775,
+      "patches": 0.9702520771967803,
+      "pitted_surface": 0.8012838443452647,
+      "rolled-in_scale": 0.6492311565381474,
+      "scratches": 0.963331370029271
+    },
+    "per_class_ap50_95": {
+      "crazing": 0.17672549741595286,
+      "inclusion": 0.4561851188426466,
+      "patches": 0.6813849138409112,
+      "pitted_surface": 0.5166285409006236,
+      "rolled-in_scale": 0.3240555464414192,
+      "scratches": 0.6108656871728855
+    },
+    "speed_ms_per_image": {
+      "preprocess": 6.204857874530344,
+      "inference": 8.778743863774416,
+      "loss": 0.005529262125492096,
+      "postprocess": 14.452303673188466
+    }
+  },
+  "train_seconds": 3518.3,
+  "torch": "2.12.1+cu130",
+  "cuda": "13.0",
+  "gpu": "NVIDIA GeForce RTX 3090"
+}

@@ -1,0 +1,131 @@
+{
+ "idx": 108,
+ "pmcid": "PMC13517169",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing YOLOv13-ADR for wind turbine blade defect detection and evaluating it on NEU-DET in Section 5.4 (Table 5).",
+ "detector_family": "YOLOv13 (YOLOv13-ADR)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "4527 images (modified/expanded NEU-DET), 6 classes, Northeastern University",
+     "evidence": "This dataset comprises 4527 high-resolution images with six typical industrial defect categories: Crack, Inclusion, Patches, Pitted Surface, Rolled in Scale, and Scratches.",
+     "location": "5.4"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/test/val 3212/805/510 images",
+     "evidence": "It is divided into 3212 training images, 805 testing images, and 510 validation images, with a sample distribution reflecting real-world industrial inspection scenarios.",
+     "location": "5.4"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; validation set exists (510 images) but checkpoint selection criterion not stated"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "test set",
+     "evidence": "Table 5 Testing results of YOLOv13-ADR on the NEU-DET steel surface defect dataset.",
+     "location": "5.4, Table 5"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "5.4; validation and testing sets are separate (510 and 805 images), but checkpoint selection rule is not stated"
+    },
+    "F09": {
+     "status": "ambiguous",
+     "value": "640x640 stated for inference latency measurement in 5.5; training input resolution not explicitly stated",
+     "evidence": "Inference latency is measured on an RTX 4060 GPU using an input resolution of 640 × 640 and a batch size of 1.",
+     "location": "5.5"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs",
+     "evidence": "YOLOv13-ADR | 200 | 32 | SGD | 0.01 | 0.825 | 0.002",
+     "location": "5.2 Table 2, 5.4"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "YOLOv13-ADR | 200 | 32 | SGD | 0.01 | 0.825 | 0.002",
+     "location": "5.2 Table 2, 5.4"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "reported",
+     "value": "mean ± standard deviation reported in Table 5 (83.10 ± 0.29%); Section 5.5 states 5 independent experiments",
+     "evidence": "YOLOv13-ADR | 79.21 ± 0.49 | 84.36 ± 0.38 | 82.08 ± 0.42 | 82.58 ± 0.39 | 83.16 ± 0.36 | 81.23 ± 0.51 | 83.10 ± 0.29",
+     "location": "5.4 Table 5, 5.5"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "Under unified experimental settings, YOLOv13-ADR consistently outperforms the comparative methods on both datasets.",
+     "location": "5.4, Table 2"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "RTX 4060 GPU, 640x640 input, batch size 1 (reported for ablation latency in Section 5.5 Table 6)",
+     "evidence": "Inference latency is measured on an RTX 4060 GPU using an input resolution of 640 × 640 and a batch size of 1.",
+     "location": "5.5, Table 6"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Data Availability Statement"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv13-ADR",
+    "map50": 83.1,
+    "map50_95": null,
+    "baseline": "YOLOv13n",
+    "baseline_map50": 79.68,
+    "improvement_pp": 3.42,
+    "single_run": false,
+    "evidence": "YOLOv13-ADR | 79.21 ± 0.49 | 84.36 ± 0.38 | 82.08 ± 0.42 | 82.58 ± 0.39 | 83.16 ± 0.36 | 81.23 ± 0.51 | 83.10 ± 0.29",
+    "location": "5.4, Table 5"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "NEU-DET in Section 5.4 is described as comprising 4527 images split into 3212 training, 805 testing, and 510 validation images (likely an augmented/expanded version rather than the standard 1800-image NEU-DET). Table 5 reports mean ± SD for all AP50 and mAP50 values across runs (Section 5.5 notes 5 independent experiments)."
+}

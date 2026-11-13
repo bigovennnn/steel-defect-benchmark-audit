@@ -1,0 +1,43 @@
+{
+  "total_evaluations": 182,
+  "f04_counts": {
+    "not_reported_in_paper": 179,
+    "reported": 2,
+    "ambiguous": 1
+  },
+  "f04_percentages": {
+    "not_reported_in_paper": 98.35,
+    "reported": 1.1,
+    "ambiguous": 0.55
+  },
+  "positive_and_ambiguous_evidence": [
+    {
+      "file": "066_PMC13505926.json",
+      "pmcid": "PMC13505926",
+      "dataset": "NEU-DET",
+      "status": "reported",
+      "value": "Checked near-duplicates between 1800 generated and 1260 real training images and among pairs of real training images using minimum pixelwise and VGG19 conv4_4 feature Euclidean distances",
+      "evidence": "indicating that the generated images are diverse and are not near-duplicates of the real training images.",
+      "location": "4.3"
+    },
+    {
+      "file": "066_PMC13505926.json",
+      "pmcid": "PMC13505926",
+      "dataset": "GC10-DET",
+      "status": "reported",
+      "value": "Removed 6 unlabeled images and 12 duplicate images (exact filenames listed in Sec 6.6) and standardized label typos",
+      "evidence": "Removal of unlabeled and duplicate images: Unlabeled images: img_08_4406743300_00407, img_05_425382900_00002, img_06_425614600_0042, img_06_425614600_00438, img_07_3436814000_00020, and img_07_436164700_01539.",
+      "location": "6.6"
+    },
+    {
+      "file": "157_PMC10813068.json",
+      "pmcid": "PMC10813068",
+      "dataset": "NEU-DET",
+      "status": "ambiguous",
+      "value": "offline SSIE preprocessing expands 1,800 images to 18,000 (9 augmented copies per image) before random 8:1:1 partitioning, creating near-duplicate leakage across splits (mAP50 jumps from 60.4% to 97.5%)",
+      "evidence": "The data are processed in seven ways: cropping, panning, changing brightness, adding noise, rotating angle, mirroring, and cutout, and each image is increased by 9 processed images each, and the total number of images in the dataset is increased from 1800 to 18,000.",
+      "location": "3.1.1, 4.3.1"
+    }
+  ],
+  "discrepancy_explanation": "Table 2 reports F04 as Reported: 2 (1.1%), Ambiguous: 1 (0.5%), Not Reported: 179 (98.4%). The 2 reported instances arise from PMC13505926 (evaluated on both NEU-DET and GC10-DET; checked generated-vs-real near-duplicates and purged 12 duplicate GC10 images). The 1 ambiguous instance arises from PMC10813068 (documented 9-fold augmentation before random split, amplifying near-duplicate leakage without an explicit deduplication protocol). Figure 1 formerly displayed 0.0% due to downward zero-truncation of 1.1%; it is hereby reconciled across Table 2, Figure 1, and text to exact values: Reported 1.1% (2/182), Ambiguous 0.5% (1/182)."
+}

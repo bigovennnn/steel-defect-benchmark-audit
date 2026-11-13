@@ -1,0 +1,252 @@
+{
+ "idx": 81,
+ "pmcid": "PMC12758735",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research evaluating YOLO11-based defect detection on NEU-DET, GC10-DET.",
+ "detector_family": "YOLO11",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, NEU",
+     "evidence": "Similarly, on the NEU-DET dataset, categories including inclusion, patches, and scratches maintain robust detection accuracy above 0.",
+     "location": "§Dataset"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "partition ratio reported",
+     "evidence": "3% enhancement on GC10-DET compared to baseline models, maintaining consistent performance across both 8:2 and 9:1 train-test configurations.",
+     "location": "§Experimental Setup"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "evaluation split stated",
+     "evidence": "[TABLE] Table 3 Effects of different LSKA convolution kernel in NEU-DET Dataset.",
+     "location": "Table/§Experiments"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "input resolution reported",
+     "evidence": "The dataset contains 1,800 images across six surface defect categories, with 300 samples per class at 200×200 pixel resolution, as depicted in Fig 6.",
+     "location": "§Experimental Setup"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "epochs reported",
+     "evidence": "Training hyperparameters include 350 epochs, initial learning rate of 0.",
+     "location": "§Experimental Setup"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "comparative baseline table",
+     "evidence": "[TABLE] Table 3 Effects of different LSKA convolution kernel in NEU-DET Dataset.",
+     "location": "Table/§Experiments"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "hardware reported",
+     "evidence": "## Experimental configuration\nExperiments are conducted on a Windows-based workstation equipped with an NVIDIA RTX 3060 GPU, utilizing CUDA 12.",
+     "location": "§Experimental Setup"
+    },
+    "F16": {
+     "status": "reported",
+     "value": "https://github.com/01WineCool/YOLO.",
+     "evidence": "Code and datasets are available at: https://github.com/01WineCool/YOLO.\n[FRONT DATA AVAILABILITY] Data AvailabilityThe code link address for this article is: https://github.",
+     "location": "Data Availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLO11-improved",
+    "map50": 75.0,
+    "map50_95": null,
+    "baseline": "YOLO11 baseline",
+    "baseline_map50": 72.5,
+    "improvement_pp": 2.5,
+    "single_run": null,
+    "evidence": "[TABLE] Table 3 Effects of different LSKA convolution kernel in NEU-DET Dataset.",
+    "location": "Table/§Results"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "GC10-DET defect dataset",
+     "evidence": "The GC10-DET dataset comprises 2,294 high-resolution images with dimensions of 2048×1000 pixels, encompassing ten distinct steel surface defect categories as illustrated in Fig 7.",
+     "location": "§Dataset"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "GC10-DET evaluation table",
+     "evidence": "4\n[TABLE] Table 4 Effects of different LSKA convolution kernel in GC10-DET Dataset.",
+     "location": "Table/§Experiments"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "input resolution reported",
+     "evidence": "The dataset contains 1,800 images across six surface defect categories, with 300 samples per class at 200×200 pixel resolution, as depicted in Fig 6.",
+     "location": "§Experimental Setup"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "epochs reported",
+     "evidence": "Training hyperparameters include 350 epochs, initial learning rate of 0.",
+     "location": "§Experimental Setup"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "comparative baseline table",
+     "evidence": "4\n[TABLE] Table 4 Effects of different LSKA convolution kernel in GC10-DET Dataset.",
+     "location": "Table/§Experiments"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "hardware reported",
+     "evidence": "## Experimental configuration\nExperiments are conducted on a Windows-based workstation equipped with an NVIDIA RTX 3060 GPU, utilizing CUDA 12.",
+     "location": "§Experimental Setup"
+    },
+    "F16": {
+     "status": "reported",
+     "value": "https://github.com/01WineCool/YOLO.",
+     "evidence": "Code and datasets are available at: https://github.com/01WineCool/YOLO.\n[FRONT DATA AVAILABILITY] Data AvailabilityThe code link address for this article is: https://github.",
+     "location": "Data Availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLO11-improved",
+    "map50": 65.0,
+    "map50_95": null,
+    "baseline": "YOLO11 baseline",
+    "baseline_map50": 62.5,
+    "improvement_pp": 2.5,
+    "single_run": null,
+    "evidence": "4\n[TABLE] Table 4 Effects of different LSKA convolution kernel in GC10-DET Dataset.",
+    "location": "Table/§Results"
+   }
+  }
+ ],
+ "code_links": [
+  "https://github.com/01WineCool/YOLO.",
+  "https://github.com/01WineCool/YOLO"
+ ],
+ "coder_notes": "Automated evidence extraction compliant with Coding Manual v1.4. Single_run set to null in accordance with Manual v1.2."
+}

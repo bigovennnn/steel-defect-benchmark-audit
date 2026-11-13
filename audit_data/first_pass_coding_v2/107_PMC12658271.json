@@ -1,0 +1,134 @@
+{
+ "idx": 107,
+ "pmcid": "PMC12658271",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research training and evaluating an improved YOLOv5s bounding-box detector (YOLOv5s-SDF) on NEU-DET.",
+ "detector_family": "YOLOv5s (YOLOv5s-SDF)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 grayscale images, 6 classes (300 each), 200x200 pixels, NEU source link",
+     "evidence": "Each type of defect has 300 images of 200 pixel * 200 pixel, for a total of 1800 images.",
+     "location": "Experiments and results analysis / Experimental dataset"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/test 8:2 (1440 training, 360 testing images; 240/60 per class)",
+     "evidence": "In this experiment, the dataset was randomly split into a training set and a testing set at an 8:2 ratio, comprising 1,440 training images and 360 testing images.",
+     "location": "Experiments and results analysis / Experimental dataset, Table 1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "ambiguous",
+     "value": "Early Stopping mechanism mentioned, but validation set and selection criterion not stated",
+     "evidence": "the training epochs are set to 300, and the Early Stopping mechanism is used.",
+     "location": "Experiments and results analysis / Experimental environment and parameter settings"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "test set (only train/test split defined; Table 8 caption states test set with 0.754 mAP50 vs 76.32% in Tables 5-6)",
+     "evidence": "Table 8 Per-class detection performance on test set.",
+     "location": "Table 8, Table 5, Table 6"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "Experimental dataset, Experimental environment and parameter settings"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "The input image is adjusted to 640 * 640, with an initial learning rate of 0.01 and a final learning rate of 0.0001.",
+     "location": "Experiments and results analysis / Experimental environment and parameter settings"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs (with Early Stopping)",
+     "evidence": "the training epochs are set to 300, and the Early Stopping mechanism is used.",
+     "location": "Experiments and results analysis / Experimental environment and parameter settings"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "rerun",
+     "evidence": "In order to better validate the performance of the YOLOv5s-SDF model, comparative experiments are conducted with SSD, Faster-RCNN, YOLOv7 series models, and YOLOv8 series models to obtain the performance results of each model.",
+     "location": "Experiments and results analysis / Model comparison experimental results and analysis, Table 6"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "NVIDIA GeForce RTX 3080 Ti GPU reported; batch size, precision, and pre/post-processing for FPS not specified",
+     "evidence": "The computer hardware environment used in the experiment is CPU: AMD Ryzen 9 3900XT 12 Core Processor 3.80GHz 32GB, equipped with NVIDIA GeForce RTX 3080 Ti GPU.",
+     "location": "Experimental environment and parameter settings, Table 5, Table 6"
+    },
+    "F16": {
+     "status": "ambiguous",
+     "value": "https://github.com/liukun6606/YOLOv5s-SDF (link stated in Data availability; repo accessibility and training code pending verification)",
+     "evidence": "Experimental dataset: http://faculty.neu.edu.cn/songkechen/zh_CN/zdylm/263270/list; YOLOv5s-SDF model source code: https://github.com/liukun6606/YOLOv5s-SDF.",
+     "location": "Data availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv5s-SDF",
+    "map50": 76.32,
+    "map50_95": 38.6,
+    "baseline": "YOLOv5s",
+    "baseline_map50": 72.75,
+    "improvement_pp": 3.57,
+    "single_run": null,
+    "evidence": "6 | A+B+C+D(ours) | 69.37 | 74.21 | 76.32 | 38.60 | 16.5 | 168.40 | 7324827",
+    "location": "Table 5, Table 6, Abstract"
+   }
+  }
+ ],
+ "code_links": [
+  "http://faculty.neu.edu.cn/songkechen/zh_CN/zdylm/263270/list",
+  "https://github.com/liukun6606/YOLOv5s-SDF"
+ ],
+ "coder_notes": "Table 5 and Table 6 report YOLOv5s-SDF mAP50=76.32% and mAP50:95=38.60% (baseline YOLOv5s mAP50=72.75%, mAP50:95=37.76%), whereas Table 8 ('Per-class detection performance on test set') reports All mAP50=0.754 and mAP50:95=0.394 without explaining the discrepancy. Batch size is not reported in the paper."
+}

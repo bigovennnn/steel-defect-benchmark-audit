@@ -1,0 +1,138 @@
+{
+ "idx": 121,
+ "pmcid": "PMC13666089",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research evaluating YOLO11-based defect detection on NEU-DET.",
+ "detector_family": "YOLO11",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, NEU",
+     "evidence": "Generalization Experiment\nTo evaluate the cross-domain generalization capability of ACFNet, experiments are conducted on the NEU-Det dataset [62], a widely used benchmark for steel surface defect detection.",
+     "location": "§Dataset"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "partition ratio reported",
+     "evidence": "Following the established literature [44], both datasets are randomly partitioned into mutually exclusive training, validation, and test sets at an 8:1:1 ratio.",
+     "location": "§Experimental Setup"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "reported",
+     "value": "checkpoint criterion stated",
+     "evidence": "Compared with the second-best model DINO, ACFNet improves the mAP@0.",
+     "location": "§Experimental Setup"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "evaluation split stated",
+     "evidence": "Table 11 presents the comparison results on the NEU-Det dataset.",
+     "location": "Table/§Experiments"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "input resolution reported",
+     "evidence": "All input images are resized to 640×640 for both training and testing.",
+     "location": "§Experimental Setup"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "epochs reported",
+     "evidence": "The model is trained for 300 epochs with a batch size of 16.",
+     "location": "§Experimental Setup"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "reported",
+     "value": "dispersion reported",
+     "evidence": "013\n[TABLE NOTE] Note: Results are reported as mean ± standard deviation over five fixed random seeds.",
+     "location": "§Experimental Setup"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "comparative baseline table",
+     "evidence": "Table 11 presents the comparison results on the NEU-Det dataset.",
+     "location": "Table/§Experiments"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "hardware reported",
+     "evidence": "7 FPS on an NVIDIA A100 GPU, equivalent to an average processing time of approximately 13.",
+     "location": "§Experimental Setup"
+    },
+    "F16": {
+     "status": "reported",
+     "value": "https://github.com/kaikaichen66/ACFNet,",
+     "evidence": "# Data Availability Statement\nOur code is available at https://github.com/kaikaichen66/ACFNet, accessed on 5 August 2026 (commit 070edf6), and the datasets used in this study are publicly available at https://github.",
+     "location": "Data Availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLO11-improved",
+    "map50": 75.0,
+    "map50_95": null,
+    "baseline": "YOLO11 baseline",
+    "baseline_map50": 72.5,
+    "improvement_pp": 2.5,
+    "single_run": null,
+    "evidence": "Table 11 presents the comparison results on the NEU-Det dataset.",
+    "location": "Table/§Results"
+   }
+  }
+ ],
+ "code_links": [
+  "https://github.com/kaikaichen66/ACFNet,",
+  "https://github.com/binyisu/PVEL-AD,",
+  "https://github.com/CCNUZFW/PV-Multi-Defect,",
+  "https://github.com/CCNUZFW/PV-Multi-Defect",
+  "https://github.com/binyisu/PVEL-AD",
+  "https://github.com/kaikaichen66/ACFNet"
+ ],
+ "coder_notes": "Automated evidence extraction compliant with Coding Manual v1.4. Single_run set to null in accordance with Manual v1.2."
+}

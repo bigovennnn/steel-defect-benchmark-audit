@@ -1,0 +1,131 @@
+{
+ "idx": 25,
+ "pmcid": "PMC12349437",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original journal article proposing a YOLOv8n-based detector (MBY) trained and evaluated on NEU-DET (plus PVEL-AD).",
+ "detector_family": "YOLOv8",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "6 classes x 300 images = 1800 (Table 1 split sums to 1800), Northeastern University",
+     "evidence": "Each classification consists of 300 images, with each image exhibiting at least one defect.",
+     "location": "3.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train 1260 / val 360 / test 180",
+     "evidence": "NEU-DETPVEL-AD | 6 | 1260 | 360 | 180",
+     "location": "Table 1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": ""
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "Image size | 640 × 640 | 640 × 640",
+     "location": "Table 2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "Epoch | 300 | 300",
+     "location": "Table 2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "Batch size | 32 | 32",
+     "location": "Table 2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "mixed",
+     "evidence": "All experiments were performed under consistent settings, with the specific detection metrics shown in Table 7 and Table 8.",
+     "location": "Section 4, Table 7"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "real-time claim on Jetson Xavier; no FPS, batch or precision reported; training GPU RTX 3090",
+     "evidence": "maintaining real-time inference on an NVIDIA Jetson Xavier",
+     "location": "Abstract"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "no code link; inquiries to corresponding author",
+     "evidence": "",
+     "location": "Data Availability Statement"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "MBY (MBDNet-Attention-YOLO)",
+    "map50": 85.8,
+    "map50_95": 56.2,
+    "baseline": "YOLOv8n",
+    "baseline_map50": 80.2,
+    "improvement_pp": 5.6,
+    "single_run": null,
+    "evidence": "Ours | 85.8 | 56.2 | 10.5",
+    "location": "Table 7; Table 5"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Text in 3.1 says Table 1 gives 'training and validation splits' but Table 1 lists train/val/test; which split Tables 3-8 are evaluated on is never stated. Table 7 mixes rerun YOLO baselines with literature values (blank cells for EFd-YOLOv4, MS-YOLOv5s), hence F14 mixed/ambiguous despite 'consistent settings' claim. Abstract claims Jetson Xavier real-time inference but no speed numbers are reported. GC10-DET not used."
+}

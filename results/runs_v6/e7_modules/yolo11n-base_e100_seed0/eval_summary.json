@@ -1,0 +1,72 @@
+{
+  "suite": "e7_modules",
+  "arch": "yolo11n-base",
+  "seed": 0,
+  "epochs": 100,
+  "imgsz": 640,
+  "batch": 8,
+  "workers": 2,
+  "pretrained_tensors_transferred": 448,
+  "split_name": "neu_grouped_v6",
+  "split_design_sha256": "1a635ccfc6a61b3bdeb8f198f4812dc7693ef93954bc138ff9294f01ec11ce85",
+  "val": {
+    "precision": 0.7343120622400482,
+    "recall": 0.698177996089257,
+    "map50": 0.768959295224586,
+    "map50_95": 0.4068088068611972,
+    "per_class_ap50": {
+      "crazing": 0.4355331882304367,
+      "inclusion": 0.771359793770371,
+      "patches": 0.966075430287216,
+      "pitted_surface": 0.8557113691674141,
+      "rolled-in_scale": 0.6892874148042923,
+      "scratches": 0.8957885750877856
+    },
+    "per_class_ap50_95": {
+      "crazing": 0.1728586455752075,
+      "inclusion": 0.42885933178898467,
+      "patches": 0.6487237036854391,
+      "pitted_surface": 0.44162769248677886,
+      "rolled-in_scale": 0.335122632872842,
+      "scratches": 0.4136608347579312
+    },
+    "speed_ms_per_image": {
+      "preprocess": 0.5022983333522765,
+      "inference": 7.8467399999479115,
+      "loss": 0.005238333283664865,
+      "postprocess": 0.9773377777593042
+    }
+  },
+  "test": {
+    "precision": 0.7297192535907207,
+    "recall": 0.654363534986392,
+    "map50": 0.7315441816483504,
+    "map50_95": 0.37787941241442985,
+    "per_class_ap50": {
+      "crazing": 0.30854976898956654,
+      "inclusion": 0.7802775503182308,
+      "patches": 0.9553963183622018,
+      "pitted_surface": 0.773264563220343,
+      "rolled-in_scale": 0.6671537241726047,
+      "scratches": 0.9046231648271553
+    },
+    "per_class_ap50_95": {
+      "crazing": 0.12446506352976028,
+      "inclusion": 0.419625858111508,
+      "patches": 0.6355985321736167,
+      "pitted_surface": 0.4293666312033665,
+      "rolled-in_scale": 0.3138153097372939,
+      "scratches": 0.3444050797310336
+    },
+    "speed_ms_per_image": {
+      "preprocess": 0.5446222222720584,
+      "inference": 8.773075555533675,
+      "loss": 0.00603277781515822,
+      "postprocess": 1.1790161110790602
+    }
+  },
+  "train_seconds": 1700.0,
+  "torch": "2.7.1+cu118",
+  "cuda": "11.8",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+}

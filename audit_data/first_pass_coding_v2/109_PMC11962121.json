@@ -1,0 +1,135 @@
+{
+ "idx": 109,
+ "pmcid": "PMC11962121",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research training and evaluating SLF-YOLO (an improved YOLOv8s bounding-box detector) on NEU-DET and AL10-DET.",
+ "detector_family": "YOLOv8s (SLF-YOLO)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 grayscale images (6 classes, 300 each), Northeastern University; Kaggle link provided",
+     "evidence": "It includes six common defect types: Crazing (Cr), Patches (Pa), Inclusion (In), Pitted Surface (PS), Rolled-in Scale (RS) and Scratches (Sc). Each defect category consists of 300 grayscale images",
+     "location": "Experiments / Datasets and experimental environment, Data availability"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 8:1:1",
+     "evidence": "The dataset is divided into training, validation and testing sets in an 8:1:1 ratio, with the category distribution illustrated in Fig. 10(a).",
+     "location": "Experiments / Datasets and experimental environment"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; code link https://github.com/zacianfans/SLF-YOLO and Kaggle link given (pending repo check)"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; validation set exists (8:1:1) but checkpoint selection criterion not stated"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Tables 2, 4, 6, 8, 10, 12 do not specify whether results are evaluated on validation or testing set"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "Experiments"
+    },
+    "F09": {
+     "status": "ambiguous",
+     "value": "input size stated as adaptively adjusted, but numeric value is missing from inline math extraction in txt_v2",
+     "evidence": "To improve the model’s detection capability across scales, particularly for small objects, the input sizes were adaptively adjusted to pixels, significantly optimizing model performance.",
+     "location": "Experiments / Datasets and experimental environment"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs (close mosaic 10)",
+     "evidence": "Epochs | 300",
+     "location": "Experiments / Datasets and experimental environment, Table 1"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "Batch size | 32",
+     "location": "Experiments / Datasets and experimental environment, Table 1"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "Table 8 and Table 9 present the comparative results of the SLF-YOLO against several representative methods-SSD, Faster-RCNN, RTDETR, YOLOv3-tiny, YOLOv4, YOLOv5s, YOLOv6s and YOLOv7-on the NEU-DET and AL10-DET datasets, using consistent experimental settings and environments.",
+     "location": "Experiments / Comparative analysis with other models"
+    },
+    "F15": {
+     "status": "not_applicable",
+     "value": "no FPS or inference latency metric reported (only Params and FLOPs)",
+     "evidence": "",
+     "location": "Experiments, Tables 2, 6, 10, 12"
+    },
+    "F16": {
+     "status": "ambiguous",
+     "value": "https://github.com/zacianfans/SLF-YOLO (link in Abstract; accessibility and training code pending verification)",
+     "evidence": "The source code is available at https://github.com/zacianfans/SLF-YOLO.",
+     "location": "Abstract"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "SLF-YOLO",
+    "map50": 80.0,
+    "map50_95": 49.0,
+    "baseline": "YOLOv8s",
+    "baseline_map50": 75.9,
+    "improvement_pp": 4.1,
+    "single_run": null,
+    "evidence": "On the NEU-DET dataset, SLF-YOLO achieved the highest mAP50 of 80.0% and mAP50:95 of 49.0%, significantly outperforming YOLOv8s, which reached only 75.9% and 41.1%, respectively.",
+    "location": "Table 6, Table 10, Comparative analysis with other models"
+   }
+  }
+ ],
+ "code_links": [
+  "https://github.com/zacianfans/SLF-YOLO",
+  "https://www.kaggle.com/datasets/arcanine9/net-det",
+  "https://www.kaggle.com/datasets/arcanine9/al10-det"
+ ],
+ "coder_notes": "Paper evaluates on NEU-DET and AL10-DET (aluminum surface defects). In Section 'Datasets and experimental environment', the inline math for image resolution (200x200 for NEU-DET and input resolution in 'adaptively adjusted to pixels') was omitted in XML math extraction. No FPS/latency values are reported in the tables."
+}

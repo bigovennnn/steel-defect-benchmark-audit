@@ -1,0 +1,253 @@
+{
+ "idx": 54,
+ "pmcid": "PMC13614541",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing EMamba (YOLO11n-based detector with state-space and MoE modules) evaluated for bounding-box detection on NEU-DET and GC10-DET.",
+ "detector_family": "YOLO11 (Mamba/MoE-enhanced)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, 300/class, 200x200; Kaggle mirror link",
+     "evidence": "The dataset is available at https://www.kaggle.com/datasets/mazilishanglx/neu-det.",
+     "location": "4.1; Table 1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train 1440 / val 180 / test 180",
+     "evidence": "NEU-DET | 6 | 1800 | 1440 | 180 | 180",
+     "location": "Table 1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "Kaggle mirror link given but not stated to contain the split",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.2"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "test set implied (failure cases and domain-shift clean score 80.4 on test set equal Table 3), not stated for Table 3",
+     "evidence": "we further analyze representative failure cases on the NEU-DET test set",
+     "location": "4.5; 4.8; Table 3; Table 6"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": ""
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640 train and inference",
+     "evidence": "all input images are resized to 640 × 640 during training. The same input resolution is maintained during inference",
+     "location": "4.2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs",
+     "evidence": "The model is trained for 200 epochs with a batch size of 8",
+     "location": "4.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "8",
+     "evidence": "The model is trained for 200 epochs with a batch size of 8",
+     "location": "4.2"
+    },
+    "F12": {
+     "status": "ambiguous",
+     "value": "different random seeds used, values not given",
+     "evidence": "YOLO11n and EMamba were independently trained five times using different random seeds",
+     "location": "4.3 Statistical Analysis"
+    },
+    "F13": {
+     "status": "reported",
+     "value": "5 runs, mean ± SD (EMamba and YOLO11n; Table 8 per-run values)",
+     "evidence": "The detection performance was summarized using the mean and standard deviation (SD) across the five independent runs.",
+     "location": "4.3; Table 3; Table 8"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "mixed (steel-specific methods with '–' cells and citations appear copied; YOLO/DETR baselines apparently rerun); not stated",
+     "evidence": "MSC-DNet [61] | – | – | 79.4 | – | – | – | – | 34.1 | 14.1",
+     "location": "Table 3"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "FPS reported; hardware RTX 3090 given; timing batch/precision not given",
+     "evidence": "the experimental platform is equipped with an Intel i9-13900K 3.00 GHz CPU and an NVIDIA GeForce RTX 3090 GPU (24 GB memory)",
+     "location": "4.2; Table 3"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "EMamba",
+    "map50": 80.4,
+    "map50_95": 48.6,
+    "baseline": "YOLO11n",
+    "baseline_map50": 73.9,
+    "improvement_pp": 6.5,
+    "single_run": false,
+    "evidence": "Emamba (ours) | 0.742± 0.003 | 0.731± 0.004 | 80.4± 0.2 | 48.6± 0.2",
+    "location": "Table 3"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "2,291 images, 10 classes; Kaggle mirror link",
+     "evidence": "comprising 10 defect categories and a total of 2,291 images",
+     "location": "4.1; Table 1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train 1832 / val 229 / test 230",
+     "evidence": "GC10-DET | 10 | 2291 | 1832 | 229 | 230",
+     "location": "Table 1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Table 4"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": ""
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "all input images are resized to 640 × 640 during training. The same input resolution is maintained during inference",
+     "location": "4.2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs (consistent across datasets)",
+     "evidence": "The model is trained for 200 epochs with a batch size of 8",
+     "location": "4.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "8",
+     "evidence": "The model is trained for 200 epochs with a batch size of 8",
+     "location": "4.2"
+    },
+    "F12": {
+     "status": "ambiguous",
+     "value": "different seeds, values not given",
+     "evidence": "YOLO11n and EMamba were independently trained five times using different random seeds",
+     "location": "4.3"
+    },
+    "F13": {
+     "status": "reported",
+     "value": "mean ± SD shown for EMamba and YOLO11n on GC10 (5 runs per general statement)",
+     "evidence": "Emamba (ours) | 0.648± 0.005 | 0.596± 0.006 | 64.9± 0.4 | 39.1 ± 0.3",
+     "location": "Table 4; 4.3"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "mixed likely; not stated",
+     "evidence": "TD-Net | 0.612 | 0.563 | 60.8 | 36.5 | 7.06 | – | –",
+     "location": "Table 4"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "FPS; hardware only",
+     "evidence": "the experimental platform is equipped with an Intel i9-13900K 3.00 GHz CPU and an NVIDIA GeForce RTX 3090 GPU (24 GB memory)",
+     "location": "4.2; Table 4"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "EMamba",
+    "map50": 64.9,
+    "map50_95": 39.1,
+    "baseline": "YOLO11n",
+    "baseline_map50": 59.1,
+    "improvement_pp": 5.8,
+    "single_run": false,
+    "evidence": "Emamba (ours) | 0.648± 0.005 | 0.596± 0.006 | 64.9± 0.4 | 39.1 ± 0.3",
+    "location": "Table 4"
+   }
+  }
+ ],
+ "code_links": [
+  "https://www.kaggle.com/datasets/mazilishanglx/neu-det",
+  "https://www.kaggle.com/datasets/mazilishanglx/gc10-det",
+  "https://www.kaggle.com/datasets/mazilishanglx/severstal"
+ ],
+ "coder_notes": "code_links are dataset mirrors only, no code. Internal inconsistencies: Statistical Analysis says Welch's t-test, results say paired t-test; YOLO11n mAP50 in Table 3 written '73.9± 0.004' (unit mismatch); Table 9 cross-attention 75.9 vs text 75.6; Table 12 ES-MoE-only mAP50-95 51.9 exceeds full model 48.6; Table 4 GC10 baseline YOLO11n precision 0.740 > EMamba 0.648. Optimizer was chosen via ablation on NEU (Table 2) without stating which split. Text says Adam 'decoupled weight decay' (that is AdamW)."
+}

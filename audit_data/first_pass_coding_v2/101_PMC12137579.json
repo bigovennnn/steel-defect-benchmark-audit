@@ -1,0 +1,252 @@
+{
+ "idx": 101,
+ "pmcid": "PMC12137579",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research evaluating YOLOv10-based defect detection on NEU-DET, GC10-DET.",
+ "detector_family": "YOLOv10",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, NEU",
+     "evidence": "The NEU-DET dataset contains 1800 grayscale images with a resolution of 200 × 200 collected in the production environment, consisting of six types of surface defects, each of which consists of 300 images, including cracks (cr), inclusions (in), patches (p",
+     "location": "§Dataset"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "partition ratio reported",
+     "evidence": "The dataset is randomly partitioned into training, test and validation sets using a ratio of 8:1:1.",
+     "location": "§Experimental Setup"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "evaluation split stated",
+     "evidence": "[TABLE] Table 1 Detection values on the NEU-DET dataset.",
+     "location": "Table/§Experiments"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "input resolution reported",
+     "evidence": "The NEU-DET dataset contains 1800 grayscale images with a resolution of 200 × 200 collected in the production environment, consisting of six types of surface defects, each of which consists of 300 images, including cracks",
+     "location": "§Experimental Setup"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "epochs reported",
+     "evidence": "All models were trained for 200 epochs using the Adam optimizer with an initial learning rate of 0.",
+     "location": "§Experimental Setup"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "comparative baseline table",
+     "evidence": "[TABLE] Table 1 Detection values on the NEU-DET dataset.",
+     "location": "Table/§Experiments"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "hardware reported",
+     "evidence": "80 GHz, and Nvidia GeForce RTX3060 GPU with 12 GB memory.",
+     "location": "§Experimental Setup"
+    },
+    "F16": {
+     "status": "reported",
+     "value": "https://github.com/lvxiaomin2019/GC10-DET-Metallic-Surface-Defect-Datasets.",
+     "evidence": "htm, and [GC10-DET] at https://github.com/lvxiaomin2019/GC10-DET-Metallic-Surface-Defect-Datasets. All data generated or analysed during this study are included in this published article.",
+     "location": "Data Availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv10-improved",
+    "map50": 79.3,
+    "map50_95": null,
+    "baseline": "YOLOv10 baseline",
+    "baseline_map50": 76.8,
+    "improvement_pp": 2.5,
+    "single_run": null,
+    "evidence": "The results show that our proposed method attains the highest detection accuracy, achieving an mAP of 79.3% and 73.",
+    "location": "Table/§Results"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "GC10-DET defect dataset",
+     "evidence": "The GC10-DET dataset contains a total of 2294 grayscale images with a resolution of 2048 × 1000 collected in the production environment.",
+     "location": "§Dataset"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "partition ratio reported",
+     "evidence": "The dataset is randomly partitioned into training, test and validation sets using a ratio of 8:1:1.",
+     "location": "§Experimental Setup"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "GC10-DET evaluation table",
+     "evidence": "[TABLE] Table 2 Detection values on the GC10-DET dataset.",
+     "location": "Table/§Experiments"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "input resolution reported",
+     "evidence": "The NEU-DET dataset contains 1800 grayscale images with a resolution of 200 × 200 collected in the production environment, consisting of six types of surface defects, each of which consists of 300 images, including cracks",
+     "location": "§Experimental Setup"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "epochs reported",
+     "evidence": "All models were trained for 200 epochs using the Adam optimizer with an initial learning rate of 0.",
+     "location": "§Experimental Setup"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "comparative baseline table",
+     "evidence": "[TABLE] Table 2 Detection values on the GC10-DET dataset.",
+     "location": "Table/§Experiments"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "hardware reported",
+     "evidence": "80 GHz, and Nvidia GeForce RTX3060 GPU with 12 GB memory.",
+     "location": "§Experimental Setup"
+    },
+    "F16": {
+     "status": "reported",
+     "value": "https://github.com/lvxiaomin2019/GC10-DET-Metallic-Surface-Defect-Datasets.",
+     "evidence": "htm, and [GC10-DET] at https://github.com/lvxiaomin2019/GC10-DET-Metallic-Surface-Defect-Datasets. All data generated or analysed during this study are included in this published article.",
+     "location": "Data Availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv10-improved",
+    "map50": 65.0,
+    "map50_95": null,
+    "baseline": "YOLOv10 baseline",
+    "baseline_map50": 62.5,
+    "improvement_pp": 2.5,
+    "single_run": null,
+    "evidence": "[TABLE] Table 2 Detection values on the GC10-DET dataset.",
+    "location": "Table/§Results"
+   }
+  }
+ ],
+ "code_links": [
+  "https://github.com/lvxiaomin2019/GC10-DET-Metallic-Surface-Defect-Datasets.",
+  "https://github.com/lvxiaomin2019/GC10-DET-Metallic-Surface-Defect-Datasets"
+ ],
+ "coder_notes": "Automated evidence extraction compliant with Coding Manual v1.4. Single_run set to null in accordance with Manual v1.2."
+}

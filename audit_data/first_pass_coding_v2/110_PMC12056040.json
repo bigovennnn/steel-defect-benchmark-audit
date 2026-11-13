@@ -1,0 +1,249 @@
+{
+ "idx": 110,
+ "pmcid": "PMC12056040",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing EPSC-YOLO (based on YOLOv9c) and evaluating bounding-box defect detection on both NEU-DET and GC10-DET.",
+ "detector_family": "YOLOv9c (EPSC-YOLO)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images (6 classes, 300 each), 200x200 pixels, Northeastern University",
+     "evidence": "It includes six typical types of defects found on steel surfaces, with 300 images for each type. Each image has a resolution of 200×200 pixels64.",
+     "location": "Experiments and results / Experimental datasets"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 7:2:1",
+     "evidence": "The datasets were split into training, validation, test sets in a 7:2:1 ratio and converted labels to numerical values, see Table 1 for details.",
+     "location": "Experiments and results / Experimental datasets"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "reported",
+     "value": "official pre-trained weights for all networks",
+     "evidence": "Additionally, all networks in the experiments utilized the official pre-trained weights.",
+     "location": "Experiments and results / Experimental environment"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "unclear whether validation or test set is reported (text mentions 'During the model validation process, we compared the ... performance of different methods over 300 training epochs')",
+     "evidence": "During the model validation process, we compared the and performance of different methods over 300 training epochs.",
+     "location": "Comparative experiments and results, Tables 2, 4, 6"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "Experimental datasets, Comparative experiments and results"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "The input image sizes were all resized to 640 × 640 pixels.",
+     "location": "Experiments and results / Experimental environment"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "During the training process, the number of epochs was set to 300, and the batch size was 64.",
+     "location": "Experiments and results / Experimental environment"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "64 (distributed across 8 NVIDIA A30 GPUs)",
+     "evidence": "During the training process, the number of epochs was set to 300, and the batch size was 64.",
+     "location": "Experiments and results / Experimental environment"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "mixed",
+     "evidence": "All models were trained using distributed training across eight NVIDIA A30 24GB GPUs.",
+     "location": "Experimental environment, Table 4 (rerun classic YOLO models), Table 6 (cited improved literature models)"
+    },
+    "F15": {
+     "status": "not_applicable",
+     "value": "no FPS or inference latency reported",
+     "evidence": "",
+     "location": "Tables 2, 4, 6"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Data availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "EPSC-YOLO",
+    "map50": 77.6,
+    "map50_95": 50.0,
+    "baseline": "YOLOv9c",
+    "baseline_map50": 75.6,
+    "improvement_pp": 2.0,
+    "single_run": null,
+    "evidence": "EPSC-YOLO (ours) | 74.50 | 74.30 | 77.60 | 50",
+    "location": "Table 2, Table 4, Conclusion"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "14,300 images (10 classes, ~1,430 each), 256x256 pixels",
+     "evidence": "The GC10-DET (GongChang Surface Defect Database for Detection) dataset consists of 14,300 images depicting steel surface defects from real industrial scenarios. It covers 10 common types of metal surface defects, with approximately 1,430 images for each type.",
+     "location": "Experiments and results / Experimental datasets"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 7:2:1",
+     "evidence": "The datasets were split into training, validation, test sets in a 7:2:1 ratio and converted labels to numerical values, see Table 1 for details.",
+     "location": "Experiments and results / Experimental datasets"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "reported",
+     "value": "official pre-trained weights for all networks",
+     "evidence": "Additionally, all networks in the experiments utilized the official pre-trained weights.",
+     "location": "Experiments and results / Experimental environment"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "unclear whether validation or test set is reported (text mentions 'During the model validation process, we compared the ... performance of different methods over 300 training epochs')",
+     "evidence": "During the model validation process, we compared the and performance of different methods over 300 training epochs.",
+     "location": "Comparative experiments and results, Tables 3, 5, 7"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "Experimental datasets, Comparative experiments and results"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "The input image sizes were all resized to 640 × 640 pixels.",
+     "location": "Experiments and results / Experimental environment"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "During the training process, the number of epochs was set to 300, and the batch size was 64.",
+     "location": "Experiments and results / Experimental environment"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "64 (distributed across 8 NVIDIA A30 GPUs)",
+     "evidence": "During the training process, the number of epochs was set to 300, and the batch size was 64.",
+     "location": "Experiments and results / Experimental environment"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "mixed",
+     "evidence": "All models were trained using distributed training across eight NVIDIA A30 24GB GPUs.",
+     "location": "Experimental environment, Table 5 (rerun classic YOLO models), Table 7 (cited improved literature models)"
+    },
+    "F15": {
+     "status": "not_applicable",
+     "value": "no FPS or inference latency reported",
+     "evidence": "",
+     "location": "Tables 3, 5, 7"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Data availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "EPSC-YOLO",
+    "map50": 73.0,
+    "map50_95": 39.9,
+    "baseline": "YOLOv9c",
+    "baseline_map50": 70.6,
+    "improvement_pp": 2.4,
+    "single_run": null,
+    "evidence": "EPSC-YOLO (ours) | 74.50 | 70.10 | 73 | 39.9",
+    "location": "Table 3, Table 5, Conclusion"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "GC10-DET is described as having 14,300 images (likely an augmented version, ~1,430 per class, 256x256). Classic models in Tables 4-5 are retrained for 300 epochs using official pretrained weights (Fig. 12), whereas Tables 6-7 compare against cited literature methods."
+}

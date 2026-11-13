@@ -1,0 +1,249 @@
+{
+ "idx": 9,
+ "pmcid": "PMC13040021",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research training and evaluating YOLO-based bounding-box detectors (DCBS-YOLO, Fusion YOLO, CAD framework) on NEU-DET and GC10-DET.",
+ "detector_family": "YOLOv9 (DCBS-YOLO on YOLOv9c) + WBF fusion of YOLOv8s/YOLOv9c, two-stage with CNN+ViT classifier",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1,800 images, 6 classes, Northeastern University",
+     "evidence": "The data set consists of a total of 1,800 grayscale images, each with a size of 640 × 640 pixels and includes 300 images for each defect type.",
+     "location": "Dataset section"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "70/10/20 train/val/test; 1260/180/360",
+     "evidence": "For this study, the dataset was split into 70% training, 10% validation and 20% testing sets, resulting in 1,260 images for training, 180 images for validation and 360 images for testing.",
+     "location": "Dataset section"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "Detector pretraining not stated; only the ViT in the classifier is stated as pretrained",
+     "evidence": "",
+     "location": ""
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "Validation set exists but checkpoint/hyperparameter selection set not stated",
+     "evidence": "",
+     "location": ""
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "Test split defined but main tables do not state evaluation set",
+     "evidence": "Figure 17 illustrates the heat map for a test image where the proposed CAD Framework did not detect any defects.",
+     "location": "Analysis of missed defects; Tables 4-11"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": ""
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "Specifically, the framework takes an RGB image with 640 × 640 pixel as input",
+     "location": "Methodology, proposed framework"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "50 epochs (YOLOv9c and DCBS-YOLO, Table 2)",
+     "evidence": "The proposedDCBS-YOLO20500.072520.9SGD0.00176.9",
+     "location": "Table 2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "DCBS-YOLO batch 20; YOLOv9c batch 8; other detectors predefined hyperparameters",
+     "evidence": "The proposedDCBS-YOLO20500.072520.9SGD0.00176.9",
+     "location": "Table 2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "single run",
+     "evidence": "",
+     "location": ""
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "mixed",
+     "evidence": "We trained and evaluated the detection models used in our experiments, including all versions (n, m, s, l, x) of YOLOv5, YOLOv8 and YOLOv9 (t, s, m, c, e).",
+     "location": "Table 4 (rerun YOLO); Table 11 (recent methods, source of values not stated)"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "RTX 3090 stated; inference batch/precision not stated",
+     "evidence": "the experiments were conducted on a server equipped with a CPU (Intel i5-13,500) and a GPU (NVIDIA GeForce RTX 3090)",
+     "location": "Execution environment; Table 15"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "Data available from corresponding author upon request; no code link",
+     "evidence": "",
+     "location": ""
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "Proposed CAD Framework (Fusion YOLO + Ensemble CNN+ViT)",
+    "map50": 82.3,
+    "map50_95": null,
+    "baseline": "YOLOv9c (hyperparameter-tuned)",
+    "baseline_map50": 75.8,
+    "improvement_pp": 6.5,
+    "single_run": null,
+    "evidence": "It achieves an mAP@0.5 of 82.3%, outperforming the YOLOv9c (75.8%) by a substantial margin of 6.5%.",
+    "location": "Computational efficiency section; Table 15"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "2280 images, 10 classes",
+     "evidence": "The data set consists of a total of 2280 grayscale images, each with a size of 2048 × 1000 pixels.",
+     "location": "Dataset section"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "70/10/20 train/val/test; 1594/230/456",
+     "evidence": "the dataset was split into 70% training, 10% validation and 20% testing sets, resulting in 1,594 images for training, 230 images for validation and 456 images for testing.",
+     "location": "Dataset section"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "Evaluation set for Table 16 not stated",
+     "evidence": "",
+     "location": ""
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": ""
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640 (framework input; GC10 follows NEU settings)",
+     "evidence": "The experimental configuration followed the settings derived from the NEU-DET dataset experiments.",
+     "location": "Generalization section"
+    },
+    "F10": {
+     "status": "ambiguous",
+     "value": "Said to follow NEU settings (50 epochs) but not stated explicitly for GC10",
+     "evidence": "The experimental configuration followed the settings derived from the NEU-DET dataset experiments.",
+     "location": "Generalization section"
+    },
+    "F11": {
+     "status": "ambiguous",
+     "value": "Said to follow NEU settings but not stated explicitly for GC10",
+     "evidence": "The experimental configuration followed the settings derived from the NEU-DET dataset experiments.",
+     "location": "Generalization section"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "single run",
+     "evidence": "",
+     "location": ""
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "rerun",
+     "evidence": "we additionally trained and evaluated it on the GC10-DET dataset",
+     "location": "Table 16"
+    },
+    "F15": {
+     "status": "not_applicable",
+     "value": "No speed reported on GC10-DET",
+     "evidence": "",
+     "location": ""
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "Proposed CAD Framework",
+    "map50": 71.5,
+    "map50_95": null,
+    "baseline": "YOLOv9c",
+    "baseline_map50": 66.8,
+    "improvement_pp": 4.7,
+    "single_run": null,
+    "evidence": "the proposed CAD Framework achieves an mAP@0.5 of 71.5%, which is 4.7 percentage points higher than YOLOv9c (66.8%)",
+    "location": "Table 16"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "F09 for GC10 coded reported because the framework input size (640x640) is stated for the framework generally; evidence is the 'followed NEU settings' sentence. Table 2 batch/epoch evidence is a concatenated table row. Detection results are two-stage CAD outputs; main baseline chosen is tuned YOLOv9c as named by the paper. Table 9 omits the CAD row in the extracted text; 82.3 taken from text. Table 19 text says CAD 75.8 with preprocessing for GC10, inconsistent with 71.5 in Table 16/19 (internal inconsistency)."
+}

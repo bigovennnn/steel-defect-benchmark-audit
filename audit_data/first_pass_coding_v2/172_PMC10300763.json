@@ -1,0 +1,131 @@
+{
+ "idx": 172,
+ "pmcid": "PMC10300763",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing DAssd-Net and evaluating bounding-box object detection on the NEU-DET dataset.",
+ "detector_family": "other (DAssd-Net: MobileNetv2 + DCAM FPN + decoupled head)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes (300 each), 200x200 pixels",
+     "evidence": "This paper uses the steel surface defect detection public dataset NEU-DET [72], which includes a total of 1800 images of six types of defects, 300 images of each defect type, and the size of the image is 200 × 200 pixels.",
+     "location": "4.1.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train 1440, verification (val) 180, test 180 (8:1:1)",
+     "evidence": "The number of training data sets is 1440, the number of verification data sets is 180, and the number of test data sets is 180.",
+     "location": "4.1.2"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "3.1, 4.1.2"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1.2; validation set exists (180 images) but checkpoint selection criterion not stated"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "test",
+     "evidence": "For each category, all test images are sorted by confidence, and then each detection box is regarded as a positive example according to the confidence level from high to low",
+     "location": "4.2"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "4.1.2, 4.2"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1; only raw dataset resolution 200x200 mentioned, network input size not reported"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "For the simulations, the initial learning rate is set to 0.01, the Adam optimizer is used, the momentum is set to 0.937, the cosine function learning rate decay method is used, and the total epoch is 300 rounds.",
+     "location": "4.1.2"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1.2"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "The experiments are conducted using the same equipment and training strategy to compare the performance of steel surface defect detection in terms of accuracy and lightweight on the NEU-DET dataset.",
+     "location": "4.4"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1.2, Table 5; no FPS or inference latency reported"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Data Availability Statement"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "DAssd-Net (ours)",
+    "map50": 81.97,
+    "map50_95": null,
+    "baseline": "YOLOv8-s",
+    "baseline_map50": 77.28,
+    "improvement_pp": 4.69,
+    "single_run": null,
+    "evidence": "Compared with the newly proposed YOLOv8 model, our model has a 4.69% accuracy improvement.",
+    "location": "4.4, Table 4"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "In Table 3 (ablation), the baseline model (with Mosaic) has mAP 77.86% (improvement 4.11 pp), and in Table 1 the baseline without data augmentation has mAP 74.30%. In Abstract, Introduction, Section 4.4, and Conclusion, the main highlighted comparison is against YOLOv8-s (77.28%, +4.69 pp). GitHub links in references (yolov5) are reference citations only."
+}

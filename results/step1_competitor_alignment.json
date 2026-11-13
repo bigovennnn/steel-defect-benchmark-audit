@@ -1,0 +1,54 @@
+{
+  "competitor_doi": "10.6084/m9.figshare.34070919.v2",
+  "competitor_name": "Zehao Li (2026-10-28, Figshare v2)",
+  "our_frozen_images": 1797,
+  "competitor_images": 1797,
+  "shared_images": 1797,
+  "only_in_our_dataset": [],
+  "only_in_competitor_dataset": [],
+  "our_total_boxes": 4180,
+  "competitor_total_boxes": 4177,
+  "box_comparison_by_class": [
+    {
+      "category": "crazing",
+      "our_boxes": 689,
+      "competitor_boxes": 688,
+      "diff": 1
+    },
+    {
+      "category": "inclusion",
+      "our_boxes": 1011,
+      "competitor_boxes": 1010,
+      "diff": 1
+    },
+    {
+      "category": "patches",
+      "our_boxes": 876,
+      "competitor_boxes": 875,
+      "diff": 1
+    },
+    {
+      "category": "pitted_surface",
+      "our_boxes": 430,
+      "competitor_boxes": 430,
+      "diff": 0
+    },
+    {
+      "category": "rolled-in_scale",
+      "our_boxes": 628,
+      "competitor_boxes": 628,
+      "diff": 0
+    },
+    {
+      "category": "scratches",
+      "our_boxes": 546,
+      "competitor_boxes": 546,
+      "diff": 0
+    }
+  ],
+  "competitor_folds_summary": {
+    "k": 5,
+    "seed": 0,
+    "total_assigned": 1797
+  }
+}

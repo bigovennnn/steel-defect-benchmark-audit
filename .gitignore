@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+.runtime/
+*.pt
+*.onnx
+*.zip
+*.tar.gz
+*.log
+/benchmark/datasets/*/images/
+/benchmark/datasets/*/labels/
+/benchmark/datasets/*/*.yaml
+/benchmark/runs/
+/benchmark/runs_v6/
+/runs/

@@ -1,0 +1,251 @@
+{
+ "idx": 86,
+ "pmcid": "PMC12422516",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original study training and evaluating a YOLOv11-based detector on NEU-DET and GC10-DET.",
+ "detector_family": "YOLOv11",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, NEU [22]",
+     "evidence": "The NEU-DET dataset is an open-source metal surface defect dataset published by Northeastern University, containing 1800 images of hot-rolled steel strip surfaces.",
+     "location": "4.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "random 8:1:1, 1440/180/180",
+     "evidence": "It was randomly divided into a training set (1440 images), validation set (180 images), and test set (180 images) in an 8:1:1 ratio.",
+     "location": "4.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "reported",
+     "value": "no pretrained weights (from scratch)",
+     "evidence": "To ensure fairness and comparability of experimental results, no pre-trained weights were used.",
+     "location": "4.2"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "\"full\" dataset and validation-set curves; test set use for Tables 2/3 not stated",
+     "evidence": "The average precision (AP) for various defect detections by YOLOv11n and YOLOv11n-WBD on the full NEU-DET dataset and full GC10-DET dataset is shown in Fig 11.",
+     "location": "4.3.1"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": ""
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs",
+     "evidence": "The Adam optimizer was adopted with 200 epochs, an initial learning rate of 0.001",
+     "location": "4.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "During the training phase, only Mosaic data augmentation was employed with a batch size set to 32.",
+     "location": "4.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "not stated; only YOLOv5n row in NEU Table 2 carries a citation [28]",
+     "evidence": "",
+     "location": ""
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F16": {
+     "status": "ambiguous",
+     "value": "Zenodo DOI appears only in the extracted link list; content (code/data) not described in text",
+     "evidence": "https://doi.org/10.5281/zenodo.16882077",
+     "location": "[LINKS]"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "YOLOv11n-WBD",
+    "map50": 89.1,
+    "map50_95": null,
+    "baseline": "YOLOv11n",
+    "baseline_map50": 84.2,
+    "improvement_pp": 4.9,
+    "single_run": null,
+    "evidence": "YOLOv11n-WBD | 79.8 | 80.2 | 89.1 | 4.8 | 10.7",
+    "location": "Table 2, Table 5"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "2294 images, 10 classes, GC10-DET [23]",
+     "evidence": "containing 2294 images of steel plate surface defects from real industrial scenarios.",
+     "location": "4.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "random 8:1:1, 1836/229/229",
+     "evidence": "It was also randomly divided into a training set (1836 images), validation set (229 images), and test set (229 images) in an 8:1:1 ratio.",
+     "location": "4.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "reported",
+     "value": "no pretrained weights (from scratch)",
+     "evidence": "To ensure fairness and comparability of experimental results, no pre-trained weights were used.",
+     "location": "4.2"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "\"full\" dataset and validation-set curves; test set use for Tables 2/3 not stated",
+     "evidence": "The average precision (AP) for various defect detections by YOLOv11n and YOLOv11n-WBD on the full NEU-DET dataset and full GC10-DET dataset is shown in Fig 11.",
+     "location": "4.3.1"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": ""
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs",
+     "evidence": "The Adam optimizer was adopted with 200 epochs, an initial learning rate of 0.001",
+     "location": "4.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "During the training phase, only Mosaic data augmentation was employed with a batch size set to 32.",
+     "location": "4.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "not stated; only YOLOv5n row in NEU Table 2 carries a citation [28]",
+     "evidence": "",
+     "location": ""
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F16": {
+     "status": "ambiguous",
+     "value": "Zenodo DOI appears only in the extracted link list; content (code/data) not described in text",
+     "evidence": "https://doi.org/10.5281/zenodo.16882077",
+     "location": "[LINKS]"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "YOLOv11n-WBD",
+    "map50": 72.4,
+    "map50_95": null,
+    "baseline": "YOLOv11n",
+    "baseline_map50": 70.4,
+    "improvement_pp": 2.0,
+    "single_run": null,
+    "evidence": "YOLOv11n-WBD | 70.1 | 68.2 | 72.4 | 4.8 | 10.7",
+    "location": "Table 3, Table 6"
+   }
+  }
+ ],
+ "code_links": [
+  "https://doi.org/10.5281/zenodo.16882077"
+ ],
+ "coder_notes": "Paper-claimed gains \"5.8%\" and \"2.8%\" are relative; absolute pp from tables are 4.9 (89.1 vs 84.2) and 2.0 (72.4 vs 70.4). Input size not reported. Zenodo DOI only in link list (no data/code availability text extracted) - main agent should check its content. GC10 uses 2294 images (not the 3570 version). Fig 9/10 show validation-set metrics; reported set for tables unclear."
+}

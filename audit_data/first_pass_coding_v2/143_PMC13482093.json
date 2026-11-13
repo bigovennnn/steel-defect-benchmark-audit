@@ -1,0 +1,131 @@
+{
+ "idx": 143,
+ "pmcid": "PMC13482093",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing L1-norm structured pruning and BFCD-KD knowledge distillation on SAF-YOLOv8n and evaluating bounding-box defect detection on GC10-DET.",
+ "detector_family": "YOLOv8n (SAF-YOLOv8n with pruning + BFCD-KD)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "not_reported_in_paper",
+     "value": "mentions GC10-DET has 10 defect types and cites Lv et al. 2020, but total image count and direct dataset link are not stated",
+     "evidence": "",
+     "location": "SAF-YOLOv8 model, Simulation experiments based on lightweight model"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "reported",
+     "value": "teacher is pre-pruned SAF-YOLOv8n; student is L1-pruned SAF-YOLOv8n fine-tuned and distilled (initial pretraining of SAF-YOLOv8n/YOLOv8n not stated)",
+     "evidence": "To address the accuracy drop caused by pruning, a knowledge distillation method named BFCD-KD is proposed, where the pre-pruned SAF-YOLOv8n serves as the teacher and the post-pruned model as the student.",
+     "location": "Knowledge distillation-based metal surface defect detection method"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Tables 2-4"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "The basic parameters of pruning training are as follows: cross-layer global pruning is enabled, the SGD optimizer is adopted, the input image size is 640×640, the batch size is 16, and the total training epoch is 300.",
+     "location": "Experimental results and analysis of model pruning"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "The basic parameters of pruning training are as follows: cross-layer global pruning is enabled, the SGD optimizer is adopted, the input image size is 640×640, the batch size is 16, and the total training epoch is 300.",
+     "location": "Experimental results and analysis of model pruning"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "The basic parameters of pruning training are as follows: cross-layer global pruning is enabled, the SGD optimizer is adopted, the input image size is 640×640, the batch size is 16, and the total training epoch is 300.",
+     "location": "Experimental results and analysis of model pruning"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "not explicitly stated whether all YOLO models in Table 4 were rerun in this study",
+     "evidence": "",
+     "location": "Analysis of comparative experimental results, Table 4"
+    },
+    "F15": {
+     "status": "not_applicable",
+     "value": "no inference speed (FPS/latency) reported in tables (only Parameters, FLOPs, and Model Size)",
+     "evidence": "",
+     "location": "Tables 2-4"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "datasets available from corresponding author on reasonable request; no code link",
+     "evidence": "",
+     "location": "Data availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "BFCD-KD (50% pruned + distilled SAF-YOLOv8n)",
+    "map50": 70.6,
+    "map50_95": 34.8,
+    "baseline": "YOLOv8n (base: 67.2%) / SAF-YOLOv8n (unpruned teacher: 70.8%)",
+    "baseline_map50": 67.2,
+    "improvement_pp": 3.4,
+    "single_run": null,
+    "evidence": "The mAP@0.50 and mAP@0.50-0.95 are 70.6% and 34.8% respectively, which are only 0.2 and 0.6 percentage points lower than those of SAF-YOLOv8n.",
+    "location": "Experimental results and analysis of knowledge distillation, Table 3, Table 4"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "NEU-DET is only mentioned in the Introduction related work. On GC10-DET, the unpruned teacher SAF-YOLOv8n has 70.8% mAP50 (35.4% mAP50:95), 50%-pruned SAF-YOLOv8n has 67.5% mAP50 (32.4% mAP50:95), base YOLOv8n has 67.2% mAP50 (33.0% mAP50:95), and the proposed BFCD-KD achieves 70.6% mAP50 (34.8% mAP50:95) (+3.4 pp vs YOLOv8n, +3.1 pp vs pruned model, -0.2 pp vs unpruned teacher)."
+}

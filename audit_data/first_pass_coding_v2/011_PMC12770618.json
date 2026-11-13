@@ -1,0 +1,249 @@
+{
+ "idx": 11,
+ "pmcid": "PMC12770618",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research training and evaluating a YOLO11n-based bounding-box detector (YOLO-MFD) on NEU-DET and GC10-DET.",
+ "detector_family": "YOLO11",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1,800 images, 6 classes, 300 per class, 200x200 grayscale; released by Northeastern University",
+     "evidence": "each defect type includes 300 sample images, totaling 1,800 images",
+     "location": "Experimental setup > Datasets"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Datasets; Experimental setup"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "reported",
+     "value": "pretraining closed (trained from scratch)",
+     "evidence": "Pretrain | closed",
+     "location": "Table 1"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Table 3"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": ""
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "Input images size | 640640",
+     "location": "Table 1"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "Epoch | 300",
+     "location": "Table 1"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "Batch size | 32",
+     "location": "Table 1"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "single run implied",
+     "evidence": "",
+     "location": ""
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "mixed (likely: YOLO/SSD/Faster R-CNN/RT-DETR rerun; PEYOLO, DSAT, Improved YOLOv5s apparently from literature with missing cells); not stated",
+     "evidence": "Together with recently developed improved models such as PEYOLO 27, DSAT 28, and Improved YOLOv5s 29.",
+     "location": "Comparative experiments; Table 3"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "FPS reported in Table 7; only training hardware RTX 3090 given, no batch/precision for timing",
+     "evidence": "utilizing an NVIDIA RTX 3090 GPU with 32 GB of memory",
+     "location": "Environmental parameters; Table 7"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "no code link; data availability says inquiries to corresponding author",
+     "evidence": "",
+     "location": "Data availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "YOLO-MFD",
+    "map50": 83.8,
+    "map50_95": 50.8,
+    "baseline": "YOLO11n",
+    "baseline_map50": 77.9,
+    "improvement_pp": 5.9,
+    "single_run": null,
+    "evidence": "NEU-DET | 1800 | 77.9 | 47.7 | 83.8 | 50.8",
+    "location": "Table 2; Table 3"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "2,294 images, 10 classes; released by Wang et al. 2021",
+     "evidence": "with a total of 2,294 samples",
+     "location": "Experimental setup > Datasets"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "reported",
+     "value": "pretraining closed (same Table 1 settings for all experiments)",
+     "evidence": "Pretrain | closed",
+     "location": "Table 1"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Table 6"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": ""
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "Input images size | 640640",
+     "location": "Table 1"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "Epoch | 300",
+     "location": "Table 1"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "Batch size | 32",
+     "location": "Table 1"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "mixed (likely); not stated",
+     "evidence": "comparative experiments were also conducted between the proposed model and the same two-stage and one-stage object detection algorithms mentioned above on the GC10-DET dataset",
+     "location": "Table 6"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "FPS in Table 8; only training hardware given",
+     "evidence": "utilizing an NVIDIA RTX 3090 GPU with 32 GB of memory",
+     "location": "Environmental parameters; Table 8"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Data availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "YOLO-MFD",
+    "map50": 65.0,
+    "map50_95": null,
+    "baseline": "YOLO11n",
+    "baseline_map50": 62.5,
+    "improvement_pp": 2.5,
+    "single_run": null,
+    "evidence": "Ours | 66.1 | 61.7 | 65.0 | 1.9 | 5.9 | 4.4",
+    "location": "Table 6"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "GC10 result inconsistent across tables: Table 6 comparison 65.0, Table 2 and Table 8 ablation 65.7 (mAP50:95 33.3, below baseline 33.9), Table 10 per-class 65.4; text says '4.9% higher'. Main result uses Table 6 (65.0, +2.5 pp); with Table 2 it would be 65.7, +3.2 pp. NEU per-class Table 9 gives 83.6 vs 83.8. No train/val/test split described at all. Evidence '640640' is the txt rendering of 640x640."
+}

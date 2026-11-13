@@ -1,0 +1,131 @@
+{
+  "idx": 241,
+  "pmcid": "PMC12464263",
+  "eligibility": "include",
+  "exclusion_code": "",
+  "eligibility_reason": "Original research proposing LAM-YOLOv10n and evaluating bounding box defect detection on an augmented NEU-DET dataset (PRO-DataSet).",
+  "detector_family": "YOLOv10",
+  "is_preprint_or_version_note": "",
+  "datasets": [
+    {
+      "dataset": "NEU-DET",
+      "fields": {
+        "F01": {
+          "status": "reported",
+          "value": "NEU-DET (Kechen Song's team, Northeastern University [35]), 6 classes, augmented to 2750 images (PRO-DataSet: Crazing 402, Inclusion 510, Patches 323, Rolled-in_scale 478, Pitted_surface 501, scratches 536)",
+          "evidence": "The source of data for this experiment is the defect dataset of steel surface defects produced by Kechen Song’s team at Northeastern University35, which has six types of defects",
+          "location": "§Dataset and preprocessing, Table 1"
+        },
+        "F02": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§Dataset and preprocessing, full text checked"
+        },
+        "F03": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§Dataset and preprocessing, full text checked"
+        },
+        "F04": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§Dataset and preprocessing, full text checked"
+        },
+        "F05": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§Evaluation indicators and experimental parameters, full text checked"
+        },
+        "F06": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§Experimental results and analysis, full text checked"
+        },
+        "F07": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§Experimental results and analysis, Table 2, Table 3, full text checked"
+        },
+        "F08": {
+          "status": "not_reported_in_paper",
+          "value": "unclear",
+          "evidence": "",
+          "location": "§Experimental results and analysis, full text checked"
+        },
+        "F09": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§Evaluation indicators and experimental parameters, full text checked"
+        },
+        "F10": {
+          "status": "reported",
+          "value": "100 epochs",
+          "evidence": "all models were trained for 100 epochs with batch size of 16, learning rate of 0.001, optimizer of Adam, confidence score of 0.35, IoU threshold of 0.7, and momentum of 0.9.",
+          "location": "§Evaluation indicators and experimental parameters"
+        },
+        "F11": {
+          "status": "reported",
+          "value": "16",
+          "evidence": "all models were trained for 100 epochs with batch size of 16, learning rate of 0.001, optimizer of Adam, confidence score of 0.35, IoU threshold of 0.7, and momentum of 0.9.",
+          "location": "§Evaluation indicators and experimental parameters"
+        },
+        "F12": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§Evaluation indicators and experimental parameters, full text checked"
+        },
+        "F13": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§Experimental results and analysis, Table 2, Table 3, full text checked"
+        },
+        "F14": {
+          "status": "reported",
+          "value": "rerun",
+          "evidence": "all models were trained for 100 epochs with batch size of 16, learning rate of 0.001, optimizer of Adam, confidence score of 0.35, IoU threshold of 0.7, and momentum of 0.9.",
+          "location": "§Evaluation indicators and experimental parameters, §Comparison experiment"
+        },
+        "F15": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§Evaluation indicators and experimental parameters, Table 3, full text checked"
+        },
+        "F16": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§Data availability, full text checked"
+        },
+        "F17": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§Data availability, full text checked"
+        }
+      },
+      "main_result": {
+        "model": "LAM-YOLOv10n",
+        "map50": 94.39,
+        "map50_95": null,
+        "baseline": "YOLOv10n",
+        "baseline_map50": null,
+        "improvement_pp": null,
+        "single_run": null,
+        "evidence": "RT-DETR43 | 94.65 | 92.53 | 93.08 | 124 LAM-YOLOv10n | 96.96 | 93.73 | 94.39 | 154",
+        "location": "Table 3"
+      }
+    }
+  ],
+  "code_links": [],
+  "coder_notes": "The authors augmented NEU-DET to 2750 images ('PRO-DataSet', Table 1) without reporting any train/val/test split ratio. In Table 2 (ablation study), only Precision (93.49% -> 96.96%, +3.47 pp) and Recall (91.02% -> 93.73%) are tabulated for baseline YOLOv10n vs LAM-YOLOv10n; in Table 3 (comparative experiment), Map@0.5 is reported for LAM-YOLOv10n (94.39%) and 8 other detectors (highest baseline in Table 3 is RT-DETR at 93.08%, YOLOv8n is 89.35%, YOLOv5s is 84.27%), while YOLOv10n's Map@0.5 is only plotted in Figures 7c and 8 without an exact numerical value in text or tables."
+}

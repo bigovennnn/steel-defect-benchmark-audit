@@ -1,0 +1,12 @@
+{
+  "idx": 297,
+  "pmcid": "PMC11054537",
+  "eligibility": "exclude",
+  "exclusion_code": "E2",
+  "eligibility_reason": "Evaluates image generation/classification on NEU-CLS-64 defect classification dataset without bounding-box object detection.",
+  "detector_family": "",
+  "is_preprint_or_version_note": "",
+  "datasets": [],
+  "code_links": [],
+  "coder_notes": "Evaluates PE-GAN image generation and classification on NEU-CLS-64 (9 classes) rather than bounding box detection on NEU-DET."
+}

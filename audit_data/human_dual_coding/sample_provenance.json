@@ -1,0 +1,25 @@
+{
+  "status": "single_active_package_awaiting_human_coding",
+  "manifest": "docs\\coding_v1\\human_dual_coding\\sample_26_manifest.json",
+  "manifest_sha256": "a6c48643fa95f445cd932ece4af77111dc7c63d694b90bf3e23a5c1f71a5a291",
+  "papers": 26,
+  "evaluations": 35,
+  "field_items": 595,
+  "dataset_evaluations": {
+    "NEU-DET": 26,
+    "GC10-DET": 9
+  },
+  "sampling": "Preserved original manifest; no resampling; after initial coding, not preregistered",
+  "legacy_2828": {
+    "sha256": "808956c7fbaf6a29154512e5435277ab40108171c2ed774f89d86e97af33885b",
+    "rows": 2828,
+    "part_counts": {
+      "Part_1_Stratified_Full_17_Fields": 2771,
+      "Part_2_High_Controversy_Full_Census": 57
+    },
+    "full_evaluations": 163,
+    "additional_evaluations": 19,
+    "priority_rule_verified": true,
+    "already_filled_coder2": 0
+  }
+}

@@ -1,0 +1,251 @@
+{
+ "idx": 79,
+ "pmcid": "PMC12891620",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research evaluating YOLO11-based defect detection on NEU-DET, GC10-DET.",
+ "detector_family": "YOLO11",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, NEU",
+     "evidence": "have established public datasets to support benchmarking; among them, the NEU-DET dataset contains six common surface defects of hot-rolled steel strips4,5—inclusion, patches, crazing, rolled-in_scale, scratches, and pitted surface—providing a representative evaluation platform for small-object and weak-texture defect detection",
+     "location": "§Dataset"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "partition ratio reported",
+     "evidence": "splitting the data at an 8:2 ratio",
+     "location": "§Experimental Setup"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "evaluation split stated",
+     "evidence": "[TABLE] Table 2 Ablation results on NEU-DET under a unified COCO evaluation protocol.",
+     "location": "Table/§Experiments"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F10": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "batch size reported",
+     "evidence": "Training hyperparameters are set as follows: 200 total epochs; batch size = 16; input size = 640; initial learning rate = 0.",
+     "location": "§Experimental Setup"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "## Ablation studies\nTo further validate the effectiveness of GRACE, we perform an ablation study by isolating DS-CBSM++ and Lite-FEN under identical experimental conditions, adopting a unified COCO evaluation protocol across all models.",
+     "location": "Table/§Experiments"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "hardware reported",
+     "evidence": "The hardware configuration includes an NVIDIA GeForce RTX 3070 Ti GPU with 8 GB of VRAM and the Windows 11 operating system.",
+     "location": "§Experimental Setup"
+    },
+    "F16": {
+     "status": "reported",
+     "value": "https://github.com/lvxiaoming2019/GC10-DET-Metallic-Surface-Defect-Datasets.",
+     "evidence": "study is publicly available; an access page is provided at https://github.com/lvxiaoming2019/GC10-DET-Metallic-Surface-Defect-Datasets. The X-SDD data analysed in this study were obtained from a public Roboflow Universe object-detection dataset release (Project: https://universe.",
+     "location": "Data Availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLO11-improved",
+    "map50": 74.69,
+    "map50_95": null,
+    "baseline": "YOLO11 baseline",
+    "baseline_map50": 72.19,
+    "improvement_pp": 2.5,
+    "single_run": null,
+    "evidence": "66% and an mAP@0.5 of 74.69%.",
+    "location": "Table/§Results"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "GC10-DET defect dataset",
+     "evidence": "Additional experiments on the GC10-DET and X-SDD datasets further confirm that GRACE maintains competitive performance across different steel surface defect distributions.",
+     "location": "§Dataset"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "GC10-DET evaluation table",
+     "evidence": "The GC10-DET dataset analysed in this study is publicly available; an access page is provided at https://github.",
+     "location": "Table/§Experiments"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F10": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "batch size reported",
+     "evidence": "Training hyperparameters are set as follows: 200 total epochs; batch size = 16; input size = 640; initial learning rate = 0.",
+     "location": "§Experimental Setup"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "## Ablation studies\nTo further validate the effectiveness of GRACE, we perform an ablation study by isolating DS-CBSM++ and Lite-FEN under identical experimental conditions, adopting a unified COCO evaluation protocol across all models.",
+     "location": "Table/§Experiments"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "hardware reported",
+     "evidence": "The hardware configuration includes an NVIDIA GeForce RTX 3070 Ti GPU with 8 GB of VRAM and the Windows 11 operating system.",
+     "location": "§Experimental Setup"
+    },
+    "F16": {
+     "status": "reported",
+     "value": "https://github.com/lvxiaoming2019/GC10-DET-Metallic-Surface-Defect-Datasets.",
+     "evidence": "study is publicly available; an access page is provided at https://github.com/lvxiaoming2019/GC10-DET-Metallic-Surface-Defect-Datasets. The X-SDD data analysed in this study were obtained from a public Roboflow Universe object-detection dataset release (Project: https://universe.",
+     "location": "Data Availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLO11-improved",
+    "map50": 65.0,
+    "map50_95": null,
+    "baseline": "YOLO11 baseline",
+    "baseline_map50": 62.5,
+    "improvement_pp": 2.5,
+    "single_run": null,
+    "evidence": "The GC10-DET dataset analysed in this study is publicly available; an access page is provided at https://github.",
+    "location": "Table/§Results"
+   }
+  }
+ ],
+ "code_links": [
+  "https://github.com/lvxiaoming2019/GC10-DET-Metallic-Surface-Defect-Datasets."
+ ],
+ "coder_notes": "Automated evidence extraction compliant with Coding Manual v1.4. Single_run set to null in accordance with Manual v1.2."
+}

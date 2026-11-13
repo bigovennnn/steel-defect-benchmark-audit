@@ -1,0 +1,72 @@
+{
+  "suite": "baseline_neu",
+  "arch": "yolo11s",
+  "seed": 1,
+  "epochs": 100,
+  "imgsz": 640,
+  "batch": 8,
+  "workers": 2,
+  "pretrained_tensors_transferred": -1,
+  "split_name": "neu_grouped_v6",
+  "split_design_sha256": "1a635ccfc6a61b3bdeb8f198f4812dc7693ef93954bc138ff9294f01ec11ce85",
+  "val": {
+    "precision": 0.7442921317616197,
+    "recall": 0.7739273533171501,
+    "map50": 0.809682219364588,
+    "map50_95": 0.4571990841771516,
+    "per_class_ap50": {
+      "crazing": 0.5135044828637068,
+      "inclusion": 0.8082247640411229,
+      "patches": 0.9499283701187966,
+      "pitted_surface": 0.9227375553905652,
+      "rolled-in_scale": 0.6982552525584952,
+      "scratches": 0.9654428912148414
+    },
+    "per_class_ap50_95": {
+      "crazing": 0.21271733119791397,
+      "inclusion": 0.4327428896704288,
+      "patches": 0.6586801905342232,
+      "pitted_surface": 0.478361740800889,
+      "rolled-in_scale": 0.3194725786845066,
+      "scratches": 0.6412197741749481
+    },
+    "speed_ms_per_image": {
+      "preprocess": 4.235370661081106,
+      "inference": 15.258331855774385,
+      "loss": 0.011479961055253321,
+      "postprocess": 12.25989823888085
+    }
+  },
+  "test": {
+    "precision": 0.8109726764212746,
+    "recall": 0.6972192393415665,
+    "map50": 0.7892257802116589,
+    "map50_95": 0.44848927406465616,
+    "per_class_ap50": {
+      "crazing": 0.45123262776592127,
+      "inclusion": 0.8647500362523586,
+      "patches": 0.9591244050008308,
+      "pitted_surface": 0.8288098255426372,
+      "rolled-in_scale": 0.6682863940756814,
+      "scratches": 0.9631513926325248
+    },
+    "per_class_ap50_95": {
+      "crazing": 0.19437634480115534,
+      "inclusion": 0.48000154866579764,
+      "patches": 0.6310055011964598,
+      "pitted_surface": 0.4456413646074767,
+      "rolled-in_scale": 0.31350014683899524,
+      "scratches": 0.6264107382780522
+    },
+    "speed_ms_per_image": {
+      "preprocess": 4.2402565277572855,
+      "inference": 15.781573344510333,
+      "loss": 0.012024466680789677,
+      "postprocess": 13.057290322144077
+    }
+  },
+  "train_seconds": 3575.7,
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu": "NVIDIA A100-SXM4-80GB"
+}

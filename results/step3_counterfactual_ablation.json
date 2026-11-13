@@ -1,0 +1,518 @@
+{
+  "status": "completed",
+  "n_pairs": 24,
+  "completed_pair_ids": [
+    "m0_s0",
+    "m0_s1",
+    "m0_s2",
+    "m0_s3",
+    "m0_s4",
+    "m0_s5",
+    "m0_s6",
+    "m0_s7",
+    "m1_s0",
+    "m1_s1",
+    "m1_s2",
+    "m1_s3",
+    "m1_s4",
+    "m1_s5",
+    "m1_s6",
+    "m1_s7",
+    "m2_s0",
+    "m2_s1",
+    "m2_s2",
+    "m2_s3",
+    "m2_s4",
+    "m2_s5",
+    "m2_s6",
+    "m2_s7"
+  ],
+  "metrics": {
+    "map50": {
+      "cond_L_test_leaked": {
+        "n": 24,
+        "mean": 81.39,
+        "std": 2.09,
+        "ci95_low": 80.5,
+        "ci95_high": 82.27,
+        "median": 81.71,
+        "min": 77.23,
+        "max": 84.93
+      },
+      "cond_C_test_leaked": {
+        "n": 24,
+        "mean": 78.14,
+        "std": 2.7,
+        "ci95_low": 77.0,
+        "ci95_high": 79.28,
+        "median": 78.19,
+        "min": 74.51,
+        "max": 81.33
+      },
+      "cond_L_test_clean": {
+        "n": 24,
+        "mean": 74.39,
+        "std": 1.26,
+        "ci95_low": 73.86,
+        "ci95_high": 74.92,
+        "median": 74.38,
+        "min": 71.97,
+        "max": 77.09
+      },
+      "cond_C_test_clean": {
+        "n": 24,
+        "mean": 74.04,
+        "std": 1.42,
+        "ci95_low": 73.44,
+        "ci95_high": 74.64,
+        "median": 73.81,
+        "min": 72.63,
+        "max": 77.4
+      },
+      "cond_L_test_all": {
+        "n": 24,
+        "mean": 75.55,
+        "std": 1.12,
+        "ci95_low": 75.08,
+        "ci95_high": 76.02,
+        "median": 75.61,
+        "min": 73.17,
+        "max": 77.72
+      },
+      "cond_C_test_all": {
+        "n": 24,
+        "mean": 74.63,
+        "std": 1.16,
+        "ci95_low": 74.14,
+        "ci95_high": 75.12,
+        "median": 74.55,
+        "min": 73.19,
+        "max": 77.24
+      },
+      "delta_leak_paired_25": {
+        "n": 24,
+        "mean": 3.25,
+        "std": 2.68,
+        "ci95_low": 2.11,
+        "ci95_high": 4.38,
+        "median": 3.18,
+        "min": -2.42,
+        "max": 8.35
+      },
+      "delta_clean_paired_155": {
+        "n": 24,
+        "mean": 0.35,
+        "std": 2.16,
+        "ci95_low": -0.56,
+        "ci95_high": 1.26,
+        "median": 0.39,
+        "min": -5.19,
+        "max": 3.58
+      },
+      "delta_did_net": {
+        "n": 24,
+        "mean": 2.89,
+        "std": 3.83,
+        "ci95_low": 1.28,
+        "ci95_high": 4.51,
+        "median": 3.43,
+        "min": -3.02,
+        "max": 11.63
+      },
+      "delta_difficulty_clean_model": {
+        "n": 24,
+        "mean": 4.1,
+        "std": 3.42,
+        "ci95_low": 2.66,
+        "ci95_high": 5.55,
+        "median": 5.22,
+        "min": -0.83,
+        "max": 7.59
+      },
+      "delta_observed_leaked_model": {
+        "n": 24,
+        "mean": 7.0,
+        "std": 2.15,
+        "ci95_low": 6.09,
+        "ci95_high": 7.91,
+        "median": 7.03,
+        "min": 3.84,
+        "max": 11.04
+      }
+    },
+    "map50_95": {
+      "cond_L_test_leaked": {
+        "n": 24,
+        "mean": 52.75,
+        "std": 1.6,
+        "ci95_low": 52.08,
+        "ci95_high": 53.43,
+        "median": 52.61,
+        "min": 50.07,
+        "max": 56.54
+      },
+      "cond_C_test_leaked": {
+        "n": 24,
+        "mean": 50.35,
+        "std": 1.94,
+        "ci95_low": 49.53,
+        "ci95_high": 51.16,
+        "median": 50.77,
+        "min": 46.5,
+        "max": 52.58
+      },
+      "cond_L_test_clean": {
+        "n": 24,
+        "mean": 42.14,
+        "std": 0.73,
+        "ci95_low": 41.84,
+        "ci95_high": 42.45,
+        "median": 42.29,
+        "min": 40.93,
+        "max": 43.33
+      },
+      "cond_C_test_clean": {
+        "n": 24,
+        "mean": 42.33,
+        "std": 0.7,
+        "ci95_low": 42.03,
+        "ci95_high": 42.62,
+        "median": 41.99,
+        "min": 41.51,
+        "max": 43.35
+      },
+      "cond_L_test_all": {
+        "n": 24,
+        "mean": 44.08,
+        "std": 0.68,
+        "ci95_low": 43.79,
+        "ci95_high": 44.36,
+        "median": 44.16,
+        "min": 43.07,
+        "max": 45.27
+      },
+      "cond_C_test_all": {
+        "n": 24,
+        "mean": 43.76,
+        "std": 0.78,
+        "ci95_low": 43.43,
+        "ci95_high": 44.09,
+        "median": 43.58,
+        "min": 42.47,
+        "max": 44.91
+      },
+      "delta_leak_paired_25": {
+        "n": 24,
+        "mean": 2.41,
+        "std": 2.35,
+        "ci95_low": 1.42,
+        "ci95_high": 3.4,
+        "median": 1.68,
+        "min": -0.78,
+        "max": 7.68
+      },
+      "delta_clean_paired_155": {
+        "n": 24,
+        "mean": -0.18,
+        "std": 1.02,
+        "ci95_low": -0.61,
+        "ci95_high": 0.25,
+        "median": -0.44,
+        "min": -1.75,
+        "max": 1.56
+      },
+      "delta_did_net": {
+        "n": 24,
+        "mean": 2.59,
+        "std": 2.39,
+        "ci95_low": 1.58,
+        "ci95_high": 3.6,
+        "median": 2.67,
+        "min": -1.95,
+        "max": 6.48
+      },
+      "delta_difficulty_clean_model": {
+        "n": 24,
+        "mean": 8.02,
+        "std": 1.83,
+        "ci95_low": 7.25,
+        "ci95_high": 8.8,
+        "median": 8.05,
+        "min": 4.98,
+        "max": 10.45
+      },
+      "delta_observed_leaked_model": {
+        "n": 24,
+        "mean": 10.61,
+        "std": 1.49,
+        "ci95_low": 9.98,
+        "ci95_high": 11.24,
+        "median": 10.45,
+        "min": 8.5,
+        "max": 13.44
+      }
+    },
+    "precision": {
+      "cond_L_test_leaked": {
+        "n": 24,
+        "mean": 78.59,
+        "std": 4.29,
+        "ci95_low": 76.78,
+        "ci95_high": 80.4,
+        "median": 78.28,
+        "min": 70.22,
+        "max": 86.91
+      },
+      "cond_C_test_leaked": {
+        "n": 24,
+        "mean": 77.18,
+        "std": 7.39,
+        "ci95_low": 74.05,
+        "ci95_high": 80.3,
+        "median": 79.26,
+        "min": 65.91,
+        "max": 85.7
+      },
+      "cond_L_test_clean": {
+        "n": 24,
+        "mean": 72.42,
+        "std": 3.6,
+        "ci95_low": 70.9,
+        "ci95_high": 73.94,
+        "median": 72.52,
+        "min": 64.85,
+        "max": 79.75
+      },
+      "cond_C_test_clean": {
+        "n": 24,
+        "mean": 72.85,
+        "std": 5.24,
+        "ci95_low": 70.64,
+        "ci95_high": 75.07,
+        "median": 74.66,
+        "min": 63.41,
+        "max": 78.4
+      },
+      "cond_L_test_all": {
+        "n": 24,
+        "mean": 72.6,
+        "std": 2.96,
+        "ci95_low": 71.35,
+        "ci95_high": 73.85,
+        "median": 72.51,
+        "min": 65.59,
+        "max": 77.48
+      },
+      "cond_C_test_all": {
+        "n": 24,
+        "mean": 72.44,
+        "std": 5.17,
+        "ci95_low": 70.26,
+        "ci95_high": 74.63,
+        "median": 74.31,
+        "min": 64.09,
+        "max": 78.11
+      },
+      "delta_leak_paired_25": {
+        "n": 24,
+        "mean": 1.42,
+        "std": 8.98,
+        "ci95_low": -2.37,
+        "ci95_high": 5.21,
+        "median": 1.25,
+        "min": -10.67,
+        "max": 18.82
+      },
+      "delta_clean_paired_155": {
+        "n": 24,
+        "mean": -0.43,
+        "std": 6.19,
+        "ci95_low": -3.05,
+        "ci95_high": 2.18,
+        "median": 0.4,
+        "min": -9.95,
+        "max": 10.05
+      },
+      "delta_did_net": {
+        "n": 24,
+        "mean": 1.85,
+        "std": 8.27,
+        "ci95_low": -1.64,
+        "ci95_high": 5.35,
+        "median": 1.49,
+        "min": -13.84,
+        "max": 18.47
+      },
+      "delta_difficulty_clean_model": {
+        "n": 24,
+        "mean": 4.32,
+        "std": 6.52,
+        "ci95_low": 1.57,
+        "ci95_high": 7.07,
+        "median": 3.93,
+        "min": -8.08,
+        "max": 14.26
+      },
+      "delta_observed_leaked_model": {
+        "n": 24,
+        "mean": 6.18,
+        "std": 5.47,
+        "ci95_low": 3.86,
+        "ci95_high": 8.49,
+        "median": 5.94,
+        "min": -1.71,
+        "max": 15.84
+      }
+    },
+    "recall": {
+      "cond_L_test_leaked": {
+        "n": 24,
+        "mean": 77.01,
+        "std": 3.99,
+        "ci95_low": 75.32,
+        "ci95_high": 78.7,
+        "median": 77.8,
+        "min": 65.92,
+        "max": 84.91
+      },
+      "cond_C_test_leaked": {
+        "n": 24,
+        "mean": 72.2,
+        "std": 4.26,
+        "ci95_low": 70.4,
+        "ci95_high": 73.99,
+        "median": 72.21,
+        "min": 64.5,
+        "max": 78.43
+      },
+      "cond_L_test_clean": {
+        "n": 24,
+        "mean": 68.06,
+        "std": 2.46,
+        "ci95_low": 67.03,
+        "ci95_high": 69.1,
+        "median": 67.63,
+        "min": 63.95,
+        "max": 73.43
+      },
+      "cond_C_test_clean": {
+        "n": 24,
+        "mean": 67.14,
+        "std": 2.47,
+        "ci95_low": 66.1,
+        "ci95_high": 68.18,
+        "median": 66.05,
+        "min": 63.43,
+        "max": 70.94
+      },
+      "cond_L_test_all": {
+        "n": 24,
+        "mean": 69.79,
+        "std": 2.05,
+        "ci95_low": 68.93,
+        "ci95_high": 70.66,
+        "median": 69.38,
+        "min": 66.63,
+        "max": 74.72
+      },
+      "cond_C_test_all": {
+        "n": 24,
+        "mean": 68.67,
+        "std": 2.15,
+        "ci95_low": 67.76,
+        "ci95_high": 69.58,
+        "median": 69.12,
+        "min": 65.35,
+        "max": 71.23
+      },
+      "delta_leak_paired_25": {
+        "n": 24,
+        "mean": 4.81,
+        "std": 6.0,
+        "ci95_low": 2.28,
+        "ci95_high": 7.35,
+        "median": 4.73,
+        "min": -12.51,
+        "max": 15.3
+      },
+      "delta_clean_paired_155": {
+        "n": 24,
+        "mean": 0.92,
+        "std": 3.95,
+        "ci95_low": -0.75,
+        "ci95_high": 2.59,
+        "median": 0.89,
+        "min": -6.99,
+        "max": 9.99
+      },
+      "delta_did_net": {
+        "n": 24,
+        "mean": 3.89,
+        "std": 6.51,
+        "ci95_low": 1.14,
+        "ci95_high": 6.64,
+        "median": 5.33,
+        "min": -14.38,
+        "max": 10.4
+      },
+      "delta_difficulty_clean_model": {
+        "n": 24,
+        "mean": 5.05,
+        "std": 4.83,
+        "ci95_low": 3.02,
+        "ci95_high": 7.09,
+        "median": 5.05,
+        "min": -1.56,
+        "max": 12.38
+      },
+      "delta_observed_leaked_model": {
+        "n": 24,
+        "mean": 8.95,
+        "std": 4.25,
+        "ci95_low": 7.15,
+        "ci95_high": 10.74,
+        "median": 9.47,
+        "min": -2.0,
+        "max": 16.75
+      }
+    }
+  },
+  "component_cluster_bootstrap": {
+    "n_leaked_test_images": 25,
+    "n_connected_component_clusters": 24,
+    "cluster_sizes": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "bootstrap_replicates_B": 2000,
+    "delta_leak_map50_cluster_boot_mean": 1.8,
+    "delta_leak_map50_cluster_boot_se": 1.88,
+    "delta_leak_map50_cluster_boot_ci95": [
+      -1.87,
+      5.38
+    ]
+  },
+  "algebraic_identity_verified": true
+}

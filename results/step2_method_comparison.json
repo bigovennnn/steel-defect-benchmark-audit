@@ -1,0 +1,46 @@
+{
+  "evaluation_dataset": "NEU-DET Targeted Candidate Pool",
+  "total_pairs_evaluated": 349,
+  "ground_truth_positives": 223,
+  "ground_truth_source": "pool_membership_proxy",
+  "label_mode": "proxy",
+  "candidate_pool_size": 349,
+  "human_labels_available": 0,
+  "human_label_coverage": 0.0,
+  "human_labels_used": 0,
+  "proxy_labels_used": 349,
+  "supports_method_superiority": false,
+  "limitations": [
+    "Pool selected by registered NCC and ResNet/ORB; lacks thumbnail-method top candidates and random controls.",
+    "Proxy labels are derived from pool construction and are circular for NCC evaluation.",
+    "Even human-only metrics describe this selected pool, not population recall or comparative method superiority."
+  ],
+  "average_precision": {
+    "method1_li2026_thumbnail_corr": 0.7108,
+    "method2_registered_pixel_ncc": 0.9988,
+    "method3_registered_joint_ncc_ours": 1.0
+  },
+  "recall_at_precision_95pct": {
+    "method1_li2026": 0.009,
+    "method2_pixel_ncc": 1.0,
+    "method3_joint_ncc_ours": 1.0
+  },
+  "default_threshold_metrics": {
+    "li2026_threshold_099": {
+      "threshold": 0.99,
+      "detected_count": 0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "ours_threshold_085": {
+      "threshold": 0.85,
+      "detected_count": 223,
+      "true_positives": 223,
+      "false_positives": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    }
+  }
+}

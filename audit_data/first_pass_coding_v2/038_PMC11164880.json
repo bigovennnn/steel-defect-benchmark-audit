@@ -1,0 +1,131 @@
+{
+ "idx": 38,
+ "pmcid": "PMC11164880",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research training and evaluating an improved YOLOv7 detector (SS-YOLO) on NEU-DET.",
+ "detector_family": "YOLOv7 (SS-YOLO)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, 300 per class, 200x200; offline-augmented to 18,000 images",
+     "evidence": "The NEU-DET dataset contains 300 images for each type of defect, resulting in a total of 1800 images. Each image has a size of 200 × 200 pixels.",
+     "location": "Datasets and data enhancement; Data availability"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "random train/test/val 8:1:1 of the 18,000 augmented images",
+     "evidence": "the experiment randomly generated the training, test, and validation sets at an 8:1:1 ratio",
+     "location": "Datasets and data enhancement"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "no duplicate check; augmentation to 18,000 images was applied before the random split, so augmented copies of the same image can fall into different splits",
+     "evidence": "",
+     "location": "Datasets and data enhancement"
+    },
+    "F05": {
+     "status": "reported",
+     "value": "yolov7.pt pretrained weights",
+     "evidence": "the yolov7.pt weights are utilized for pre-training the model",
+     "location": "Experimental environment and setup"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; test set mentioned only for qualitative figures 9-14"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "the image resolution is set to 640 × 640, the batch size is set to 16, and the number of epochs is set to 300",
+     "location": "Experimental environment and setup"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "the image resolution is set to 640 × 640, the batch size is set to 16, and the number of epochs is set to 300",
+     "location": "Experimental environment and setup"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "the image resolution is set to 640 × 640, the batch size is set to 16, and the number of epochs is set to 300",
+     "location": "Experimental environment and setup"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "rerun for YOLOv7 stated; other comparison models (Table 6) described as comparative experiments with citations, training not stated",
+     "evidence": "we conducted comparative experiments between SS-YOLO and several mainstream defect detection algorithms such as Faster R-CNN11, SSD3, YOLOv35, YOLOv46, YOLOv57 and YOLOv79 on the NEU-DET dataset",
+     "location": "Performance comparison of different detection algorithms; Table 6"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "only module-level inference times (Table 4); environment GPU RTX3060; no FPS, batch or timing scope",
+     "evidence": "GPUNVIDIA RTX3060",
+     "location": "Table 1, Table 4"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; only dataset link"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "SS-YOLO",
+    "map50": 97.0,
+    "map50_95": null,
+    "baseline": "YOLOv7",
+    "baseline_map50": 92.5,
+    "improvement_pp": 4.5,
+    "single_run": null,
+    "evidence": "The enhanced SS-YOLO model achieves an mAP of 97%, representing a notable improvement of 4.5 percentage points compared to YOLOv7.",
+    "location": "Analysis of the experimental results; Table 2, Table 5"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Dataset offline-augmented 10x (crop, pan, brightness, noise, rotation, mirror, cutout) to 18,000 images before a random 8:1:1 split: high leakage risk; very high mAP (97%) likely reflects this. Evaluation set for tables not stated. github.com/ultralytics/yolov5 release link appears only in reference list, not as authors' code. Table 6 baseline values partly match per-class APs of YOLOv7 rerun; others unclear."
+}

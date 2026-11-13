@@ -1,0 +1,252 @@
+{
+ "idx": 179,
+ "pmcid": "PMC13013599",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing MFDH-Net and evaluating bounding-box object detection on both NEU-DET and GC10-DET.",
+ "detector_family": "YOLOv8 (custom MFDH-Net on YOLOv8s baseline)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "6 defect categories, 200x200 pixels, expanded via augmentation to 3350 images (Table 1)",
+     "evidence": "Our experiments utilize Northeastern University’s public NEU-DET dataset45, containing six defect categories characterized by high inter-class similarity and significant background interference",
+     "location": "Experiment - Experiments with the NEU-DET dataset, Table 1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train:test 8:2 random split on expanded dataset",
+     "evidence": "The expanded dataset’s category distribution is shown in Table 1, with an 8:2 random split between training and testing sets, the pixel size of the defect image is 200 200.",
+     "location": "Experiment - Experiments with the NEU-DET dataset"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Experiment - Experiments with the NEU-DET dataset"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Experiment - Experiments with the NEU-DET dataset; offline augmentation precedes or accompanies the 8:2 random split without mention of leakage prevention"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Experiment - Experimental parameter settings"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Experiment - Experimental parameter settings"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Experiment - Experiments with the NEU-DET dataset"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "Experiment - Experiments with the NEU-DET dataset"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "The SGD optimizer was used for training with Num-workers of 8, 300 rounds of loops, momentum of 0.937,image size of 640640, and decay coefficient of 0.0005.",
+     "location": "Experiment - Experimental parameter settings"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "The learning rate for the training was initialized at 0.001, with the training process involving 300 iterations and a batch size of 32.",
+     "location": "Experiment - Experimental parameter settings"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "The learning rate for the training was initialized at 0.001, with the training process involving 300 iterations and a batch size of 32.",
+     "location": "Experiment - Experimental parameter settings"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Experiment - Experimental parameter settings"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Experiment"
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "not_reported_in_paper",
+     "evidence": "",
+     "location": "Experiment - Comparative tests, Table 5"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "RTX 4090 GPU stated for all evaluations and FPS reported in Tables 4-5, but batch size and precision for FPS measurement not reported",
+     "evidence": "",
+     "location": "Experiment - Experimental parameter settings, Table 5"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "datasets available from the corresponding author on reasonable request",
+     "evidence": "",
+     "location": "Data availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "MFDH-Net",
+    "map50": 94.3,
+    "map50_95": null,
+    "baseline": "YOLOv8s",
+    "baseline_map50": 90.1,
+    "improvement_pp": 4.2,
+    "single_run": null,
+    "evidence": "YOLOv8s | 86.44 | 87.5 | 90.1 | 85.2 | 86.97 | 11.2 | 47",
+    "location": "Table 2, Table 5"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "10 steel defect classes, 2220 images total in Table 10",
+     "evidence": "The GC10-DET dataset63 comprises ten steel defect classes, with Table 10 displaying their categorical distribution following an 8:2 train-test split.",
+     "location": "Experiment - Experimental analysis of GC10-DET, Table 10"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train:test 8:2 split",
+     "evidence": "The GC10-DET dataset63 comprises ten steel defect classes, with Table 10 displaying their categorical distribution following an 8:2 train-test split.",
+     "location": "Experiment - Experimental analysis of GC10-DET"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Experiment - Experimental analysis of GC10-DET"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Experiment - Experimental analysis of GC10-DET"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Experiment - Experimental parameter settings"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Experiment - Experimental parameter settings"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Experiment - Experimental analysis of GC10-DET"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "Experiment - Experimental analysis of GC10-DET"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "The SGD optimizer was used for training with Num-workers of 8, 300 rounds of loops, momentum of 0.937,image size of 640640, and decay coefficient of 0.0005.",
+     "location": "Experiment - Experimental parameter settings"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "The learning rate for the training was initialized at 0.001, with the training process involving 300 iterations and a batch size of 32.",
+     "location": "Experiment - Experimental parameter settings"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "The learning rate for the training was initialized at 0.001, with the training process involving 300 iterations and a batch size of 32.",
+     "location": "Experiment - Experimental parameter settings"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Experiment - Experimental parameter settings"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Experiment"
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "not_reported_in_paper",
+     "evidence": "",
+     "location": "Experiment - GC10-DET comparative experiment, Table 12"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "RTX 4090 GPU stated for all evaluations and FPS reported in Tables 11-12, but batch size and precision for FPS measurement not reported",
+     "evidence": "",
+     "location": "Experiment - Experimental parameter settings, Table 12"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "datasets available from the corresponding author on reasonable request",
+     "evidence": "",
+     "location": "Data availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "MFDH-Net",
+    "map50": 71.7,
+    "map50_95": null,
+    "baseline": "YOLOv8s",
+    "baseline_map50": 68.4,
+    "improvement_pp": 3.3,
+    "single_run": null,
+    "evidence": "Compared with YOLOv8s and RT-DETR, mAP@.5 is improved by 3.3% and 1.4% respectively, while maintaining the reasoning speed better than RT-DETR.",
+    "location": "Experiment - GC10-DET comparative experiment, Table 12"
+   }
+  }
+ ],
+ "code_links": [
+  "http://faculty.neu.edu.cn/songkechen/zh-CN/zhym/263269/list/index.htm",
+  "https://robotics.pkusz.edu.cn/re-sources/dataset"
+ ],
+ "coder_notes": "NEU-DET was expanded via rotation, random cropping, and Gaussian noise before or with the 8:2 random split (total 3350 in Table 1), which explains the unusually high mAP@.5 (90.1% for YOLOv8s, 94.3% for MFDH-Net). In Experimental parameter settings, '300 iterations' and '300 rounds of loops' refer to 300 epochs (consistent with Fig. 14 and Fig. 21 showing up to 250-300 epochs)."
+}

@@ -1,0 +1,14 @@
+{
+  "transformation_group": "SE(2) (Special Euclidean Group in 2D)",
+  "degrees_of_freedom": 3,
+  "parameters": {
+    "rotation_theta": "Discrete quarter turns {0, 90, 180, 270} degrees CCW (rigid planar, no reflections/mirroring)",
+    "translation_dx_dy": "Continuous 2D translation (dx, dy) within [-50, +50] pixels (25% of image width/height)",
+    "min_overlap_ratio_alpha_min": 0.6
+  },
+  "search_stages": {
+    "coarse": "16x16 FFT phase correlation on downsampled representations across 4 rotation angles",
+    "refine": "64x64 sub-pixel phase correlation with Hanning windowing",
+    "verification": "Original 200x200 resolution joint intensity NCC (>= 0.85) and Sobel gradient field NCC (>= 0.85)"
+  }
+}

@@ -1,0 +1,133 @@
+{
+ "idx": 19,
+ "pmcid": "PMC12738768",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research training and evaluating an improved YOLOv5 detector (ASFRW-YOLO) on NEU-DET.",
+ "detector_family": "YOLOv5",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, 200x200; NEU link",
+     "evidence": "Each category contains 300 samples, yielding a total of 1,800 high-resolution (200 × 200-pixel) images",
+     "location": "Dataset section"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 8:1:1 (1440/180/180)",
+     "evidence": "the dataset was divided into training, validation, and testing subsets in an 8:1:1 ratio, resulting in 1,440 training, 180 validation, and 180 testing images.",
+     "location": "Dataset section"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "train/val/test split exists but evaluation set for Tables 3/6 not named",
+     "evidence": "All models were trained and tested under identical dataset partitioning and image resolution settings.",
+     "location": "Comparison experiments; Table 6"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "processes 640 × 640 input images at about 125 frames per second on an RTX 4060 Laptop GPU (8 GB VRAM)",
+     "location": "Abstract"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "the training process was set to run for 300 epochs with a batch size of 16",
+     "location": "Experimental environment; Table 2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "the training process was set to run for 300 epochs with a batch size of 16",
+     "location": "Experimental environment; Table 2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "single run",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "All models were trained and tested under identical dataset partitioning and image resolution settings.",
+     "location": "Comparison experiments"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "RTX 4060 Laptop GPU; batch/precision not stated",
+     "evidence": "processes 640 × 640 input images at about 125 frames per second on an RTX 4060 Laptop GPU (8 GB VRAM)",
+     "location": "Abstract"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "ASFRW-YOLO",
+    "map50": 83.2,
+    "map50_95": 46.4,
+    "baseline": "YOLOv5s",
+    "baseline_map50": 76.2,
+    "improvement_pp": 7.0,
+    "single_run": null,
+    "evidence": "The mAP@0.5 increased to 0.832, and the mAP@0.5:0.95 rose to 0.464, corresponding to gains of 7.0 and 5.4 percentage points, respectively, compared with the baseline.",
+    "location": "Ablation; Table 3, Table 6"
+   }
+  }
+ ],
+ "code_links": [
+  "http://faculty.neu.edu.cn/songkechen/zh_CN/zdylm/263,270/list"
+ ],
+ "coder_notes": "Link is dataset only. FPS measurement batch size not stated. Evaluation subset (val vs test) for result tables not named."
+}

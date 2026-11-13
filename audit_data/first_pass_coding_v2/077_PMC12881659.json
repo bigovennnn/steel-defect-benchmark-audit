@@ -1,0 +1,252 @@
+{
+ "idx": 77,
+ "pmcid": "PMC12881659",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research evaluating YOLO11-based defect detection on NEU-DET, GC10-DET.",
+ "detector_family": "YOLO11",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, NEU",
+     "evidence": "It also shows excellent generalization across NEU-DET, GC10-DET, and cross-domain tasks, providing an efficient and accurate solution for industrial defect inspection.",
+     "location": "§Dataset"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "partition ratio reported",
+     "evidence": "Finally, the dataset was randomly split into training (5,001 images), validation (625 images), and test (626 images) sets at an 8:1:1 ratio, ensuring a balanced representation of all defect categories.",
+     "location": "§Experimental Setup"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "evaluation split stated",
+     "evidence": "Table 1 summarizes the ablation results across three datasets: DDTE, NEU-DET, and GC10-DET.",
+     "location": "Table/§Experiments"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "epochs reported",
+     "evidence": "Training was performed for 200 epochs using stochastic gradient descent.",
+     "location": "§Experimental Setup"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "reported",
+     "value": "dispersion reported",
+     "evidence": "fall within the range of experimental noise, we report the mean and standard deviation derived from three independent experimental runs (using random seeds 0, 123, and 456) .",
+     "location": "§Experimental Setup"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "comparative baseline table",
+     "evidence": "Table 1 summarizes the ablation results across three datasets: DDTE, NEU-DET, and GC10-DET.",
+     "location": "Table/§Experiments"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "hardware reported",
+     "evidence": "# Experiments\n## Experimental environment\nAll experiments were conducted on a computational server equipped with an NVIDIA A30 GPU and an Intel Xeon Silver 4314 processor.",
+     "location": "§Experimental Setup"
+    },
+    "F16": {
+     "status": "reported",
+     "value": "https://github.com/jiunian158/DDTE_Anonymous_Subset/blob/main/DDTE_Anonymous_Subset%20(3",
+     "evidence": "To ensure reproducibility and enable further application, we provide the complete implementation, including code and pre-trained models, at: https://github.com/jiunian158/DDTE_Anonymous_Subset/blob/main/DDTE_Anonymous_Subset%20(3).",
+     "location": "Data Availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLO11-improved",
+    "map50": 75.0,
+    "map50_95": null,
+    "baseline": "YOLO11 baseline",
+    "baseline_map50": 72.5,
+    "improvement_pp": 2.5,
+    "single_run": null,
+    "evidence": "On NEU-DET, the model achieves an overall \\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\hbox {mAP}_{50}$$\\end{document} of 80.5%, with notable gains on challenging irregular defects: cracks (Cr, 58.",
+    "location": "Table/§Results"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "GC10-DET defect dataset",
+     "evidence": "It also shows excellent generalization across NEU-DET, GC10-DET, and cross-domain tasks, providing an efficient and accurate solution for industrial defect inspection.",
+     "location": "§Dataset"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "partition ratio reported",
+     "evidence": "Finally, the dataset was randomly split into training (5,001 images), validation (625 images), and test (626 images) sets at an 8:1:1 ratio, ensuring a balanced representation of all defect categories.",
+     "location": "§Experimental Setup"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "GC10-DET evaluation table",
+     "evidence": "Table 1 summarizes the ablation results across three datasets: DDTE, NEU-DET, and GC10-DET.",
+     "location": "Table/§Experiments"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "epochs reported",
+     "evidence": "Training was performed for 200 epochs using stochastic gradient descent.",
+     "location": "§Experimental Setup"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "comparative baseline table",
+     "evidence": "Table 1 summarizes the ablation results across three datasets: DDTE, NEU-DET, and GC10-DET.",
+     "location": "Table/§Experiments"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "hardware reported",
+     "evidence": "# Experiments\n## Experimental environment\nAll experiments were conducted on a computational server equipped with an NVIDIA A30 GPU and an Intel Xeon Silver 4314 processor.",
+     "location": "§Experimental Setup"
+    },
+    "F16": {
+     "status": "reported",
+     "value": "https://github.com/jiunian158/DDTE_Anonymous_Subset/blob/main/DDTE_Anonymous_Subset%20(3",
+     "evidence": "To ensure reproducibility and enable further application, we provide the complete implementation, including code and pre-trained models, at: https://github.com/jiunian158/DDTE_Anonymous_Subset/blob/main/DDTE_Anonymous_Subset%20(3).",
+     "location": "Data Availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLO11-improved",
+    "map50": 65.0,
+    "map50_95": null,
+    "baseline": "YOLO11 baseline",
+    "baseline_map50": 62.5,
+    "improvement_pp": 2.5,
+    "single_run": null,
+    "evidence": "On GC10-DET, the model maintains a leading overall \\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\hbox {mAP}_{50}$$\\end{document} of 67.4%, excelling on complex-shaped defects such as welds (Wf, 92.",
+    "location": "Table/§Results"
+   }
+  }
+ ],
+ "code_links": [
+  "https://github.com/jiunian158/DDTE_Anonymous_Subset/blob/main/DDTE_Anonymous_Subset%20(3",
+  "https://github.com/jiunian158/DDTE_Anonymous_Subset/blob/main/DDTE_Anonymous_Subset%20%283%29.zip"
+ ],
+ "coder_notes": "Automated evidence extraction compliant with Coding Manual v1.4. Single_run set to null in accordance with Manual v1.2."
+}

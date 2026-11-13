@@ -1,0 +1,251 @@
+{
+ "idx": 8,
+ "pmcid": "PMC13030490",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original study training and evaluating an improved YOLOv8s bounding-box detector (CTG-YOLO) on NEU-DET and GC10-DET.",
+ "detector_family": "YOLOv8",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "6 classes, 300 images per class (1800); ref [27]",
+     "evidence": "Each type of defect has 300 images, and the sample defect images are shown in Figure 8a–f.",
+     "location": "Sec 4.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "random 8:1:1 train/test/val",
+     "evidence": "In this experiment, for the training set, test set and validation set, a random division of 8:1:1 is adopted.",
+     "location": "Sec 4.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "reported",
+     "value": "VOC2007+2012 pre-trained weights",
+     "evidence": "both the ablation studies and model training utilized pre-trained weights from the VOC2007 + 2012 public datasets",
+     "location": "Sec 4.2"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "a test split exists, but paper says datasets are used for 'training and validation'; reporting set of Table 2 not stated",
+     "evidence": "the NEU-DET dataset [27] and the GC10-DET dataset [28] are used for training and validation to prove the effectiveness of the improved model",
+     "location": "Sec 4.1"
+    },
+    "F08": {
+     "status": "ambiguous",
+     "value": "unclear",
+     "evidence": "the NEU-DET dataset [27] and the GC10-DET dataset [28] are used for training and validation to prove the effectiveness of the improved model",
+     "location": "Sec 4.1"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "input image size of 640 × 640 pixels, batch size of 8, and 200 training epochs",
+     "location": "Sec 4.2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs (50 frozen)",
+     "evidence": "input image size of 640 × 640 pixels, batch size of 8, and 200 training epochs",
+     "location": "Sec 4.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "8",
+     "evidence": "input image size of 640 × 640 pixels, batch size of 8, and 200 training epochs",
+     "location": "Sec 4.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "single run implied",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "Sec 4.3"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "FPS reported; GPU RTX 3080 Ti stated for experiments and performance tests; batch/precision for timing not stated",
+     "evidence": "The experiments and model performance tests in this study were conducted on a Windows 11 operating system.",
+     "location": "Sec 4.2"
+    },
+    "F16": {
+     "status": "reported",
+     "value": "https://github.com/mystery-you/CTG-YOLO (stated as data availability)",
+     "evidence": "The data presented in this study are openly available in CTG-YOLO https://github.com/mystery-you/CTG-YOLO",
+     "location": "Data Availability Statement"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "CTG-YOLO",
+    "map50": 76.55,
+    "map50_95": null,
+    "baseline": "YOLOv8s",
+    "baseline_map50": 72.83,
+    "improvement_pp": 3.72,
+    "single_run": null,
+    "evidence": "mean Average Precision (mAP) scores of 76.55% and 69.94%, respectively, outperforming the original YOLOv8s by 3.72% and 3.14%",
+    "location": "Abstract; Table 2"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "2294 images, 10 classes; ref [28]",
+     "evidence": "contains 2294 defect images and ten types of surface defects of steel plates",
+     "location": "Sec 4.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "random 8:1:1 train/test/val",
+     "evidence": "In this experiment, for the training set, test set and validation set, a random division of 8:1:1 is adopted.",
+     "location": "Sec 4.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "reported",
+     "value": "VOC2007+2012 pre-trained weights",
+     "evidence": "both the ablation studies and model training utilized pre-trained weights from the VOC2007 + 2012 public datasets",
+     "location": "Sec 4.2"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "a test split exists, but paper says datasets are used for 'training and validation'; reporting set of Table 3 not stated",
+     "evidence": "the NEU-DET dataset [27] and the GC10-DET dataset [28] are used for training and validation to prove the effectiveness of the improved model",
+     "location": "Sec 4.1"
+    },
+    "F08": {
+     "status": "ambiguous",
+     "value": "unclear",
+     "evidence": "the NEU-DET dataset [27] and the GC10-DET dataset [28] are used for training and validation to prove the effectiveness of the improved model",
+     "location": "Sec 4.1"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "input image size of 640 × 640 pixels, batch size of 8, and 200 training epochs",
+     "location": "Sec 4.2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs (50 frozen)",
+     "evidence": "input image size of 640 × 640 pixels, batch size of 8, and 200 training epochs",
+     "location": "Sec 4.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "8",
+     "evidence": "input image size of 640 × 640 pixels, batch size of 8, and 200 training epochs",
+     "location": "Sec 4.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "single run implied",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "unclear; some compared algorithms chosen because they report GC10 results, suggesting copied values for some",
+     "evidence": "considering that some models do not have verification results on the GC10-DET dataset, some improved algorithms with excellent performance are also introduced for comparison",
+     "location": "Sec 4.4"
+    },
+    "F15": {
+     "status": "not_applicable",
+     "value": "no speed reported for GC10-DET in text (Table 3 uses AP and mAP); table body not in text",
+     "evidence": "",
+     "location": "Sec 4.4"
+    },
+    "F16": {
+     "status": "reported",
+     "value": "https://github.com/mystery-you/CTG-YOLO (stated as data availability)",
+     "evidence": "The data presented in this study are openly available in CTG-YOLO https://github.com/mystery-you/CTG-YOLO",
+     "location": "Data Availability Statement"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "CTG-YOLO",
+    "map50": 69.94,
+    "map50_95": null,
+    "baseline": "YOLOv8s",
+    "baseline_map50": 66.8,
+    "improvement_pp": 3.14,
+    "single_run": null,
+    "evidence": "mean Average Precision (mAP) scores of 76.55% and 69.94%, respectively, outperforming the original YOLOv8s by 3.72% and 3.14%",
+    "location": "Abstract; Table 3"
+   }
+  }
+ ],
+ "code_links": [
+  "https://github.com/mystery-you/CTG-YOLO"
+ ],
+ "coder_notes": "mAP IoU threshold not explicitly stated for main mAP (IoU 0.5 stated only for class-wise analysis); treated as mAP50. Baseline mAP derived as proposed minus stated gain (table bodies absent in txt). Repo described as data availability; whether it contains training code to be checked."
+}

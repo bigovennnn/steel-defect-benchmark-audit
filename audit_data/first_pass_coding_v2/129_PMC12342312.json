@@ -1,0 +1,133 @@
+{
+ "idx": 129,
+ "pmcid": "PMC12342312",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing LMHD (based on YOLOv9c) and evaluating it on NEU-DET.",
+ "detector_family": "YOLOv9 (custom LMHD)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, 200x200 pixels, Northeastern University / Baidu AI Studio link",
+     "evidence": "The dataset contains a total of 1,800 images in JPG format to validate the accuracy of the proposed model. The dataset includes six common types of surface defects",
+     "location": "4.1, Data Availability"
+    },
+    "F02": {
+     "status": "ambiguous",
+     "value": "9:1 (1620 training / 180 test or validation; text inconsistently calls the 180 images both test set and validation images)",
+     "evidence": "The dataset is randomly divided into training and test sets in a 9:1 ratio. It consists of 1,620 training images and 180 validation images.",
+     "location": "4.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "Table 2 is titled 'Test results comparison', but 4.1 defines a two-way 9:1 split of 1620 training and 180 validation/test images",
+     "evidence": "The dataset is randomly divided into training and test sets in a 9:1 ratio. It consists of 1,620 training images and 180 validation images.",
+     "location": "4.1, Table 2"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "4.1"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "We set the batch size to 10 and the image input size to 640 × 640 pixels.",
+     "location": "4.2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "220 epochs",
+     "evidence": "epochs | 220",
+     "location": "Table 1"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "10",
+     "evidence": "We set the batch size to 10 and the image input size to 640 × 640 pixels.",
+     "location": "4.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "compares the model with current mainstream detectors, including the first-order detector SSD and the YOLO series (YOLOv5s, YOLOv5l, YOLOv7tiny, YOLOv8n, YOLOv8m, EfficientDet, YOLOv10l, YOLOv11l, YOLOv9c) as well as two-stage detectors (Faster R-CNN, Mask R-CNN), under consistent experimental conditions.",
+     "location": "4.4"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "NVIDIA GeForce RTX 4090D (24 GB) reported; batch size, precision, and pre/post-processing for FPS not reported",
+     "evidence": "The experimental environment included an NVIDIA GeForce RTX 4090D with 24 GB VRAM, Ubuntu 20.04 operating system, and Python 3.8.",
+     "location": "4.2, Table 2"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "LMHD",
+    "map50": 87.0,
+    "map50_95": null,
+    "baseline": "YOLOv9c",
+    "baseline_map50": 79.2,
+    "improvement_pp": 7.8,
+    "single_run": null,
+    "evidence": "YOLOv9c | 73.5 | 25.4 | 79.2 | 103.2 | 71.9 LMHD(ours) | 76.8 | 17.9 | 87.0 | 58.9 | 70.4",
+    "location": "Table 2, Table 3"
+   }
+  }
+ ],
+ "code_links": [
+  "https://aistudio.baidu.com/datasetdetail/195425"
+ ],
+ "coder_notes": "Link is dataset link only. Section 4.1 states a small target remote sensing dataset was also selected for secondary verification, but only NEU-DET results are reported in the paper."
+}

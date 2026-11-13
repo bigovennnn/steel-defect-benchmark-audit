@@ -1,0 +1,133 @@
+{
+  "idx": 233,
+  "pmcid": "PMC10386349",
+  "eligibility": "include",
+  "exclusion_code": "",
+  "eligibility_reason": "Original research proposing LSD-YOLOv5 and evaluating bounding box defect detection on GC10-DET.",
+  "detector_family": "YOLOv5",
+  "is_preprint_or_version_note": "",
+  "datasets": [
+    {
+      "dataset": "GC10-DET",
+      "fields": {
+        "F01": {
+          "status": "reported",
+          "value": "2312 gray-level images (filtered to 2136 images after removing non-conforming images), 10 classes, GitHub link provided",
+          "evidence": "GC10-DET is a dataset of steel strip surface defects collected in a real-world manufacturing environment, with a total of 2312 gray-level images.",
+          "location": "§2.2"
+        },
+        "F02": {
+          "status": "reported",
+          "value": "8:1:1 random split of 2136 filtered images into training set (1709 images), validation set, and test set",
+          "evidence": "The dataset was split randomly into three subsets: training set, validation set, and test set in the ratio of 8:1:1 to ensure optimal training results.",
+          "location": "§2.2"
+        },
+        "F03": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§2.2, full text checked"
+        },
+        "F04": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§2.2, full text checked"
+        },
+        "F05": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§3.1, full text checked"
+        },
+        "F06": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§3.1, §3.3, full text checked"
+        },
+        "F07": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§3.3, §3.4, Table 1, Table 2, full text checked"
+        },
+        "F08": {
+          "status": "not_reported_in_paper",
+          "value": "unclear",
+          "evidence": "",
+          "location": "§2.2, §3, full text checked"
+        },
+        "F09": {
+          "status": "reported",
+          "value": "640x640",
+          "evidence": "To enhance the efficiency of the defect recognition model training, the 1709 raw images in the training set were resized to 640×640.",
+          "location": "§2.2"
+        },
+        "F10": {
+          "status": "reported",
+          "value": "200 epochs (including 5 warm-up epochs)",
+          "evidence": "The batch size was set to 32 and the training process was conducted for a total of 200 epochs.",
+          "location": "§3.1"
+        },
+        "F11": {
+          "status": "reported",
+          "value": "32",
+          "evidence": "The batch size was set to 32 and the training process was conducted for a total of 200 epochs.",
+          "location": "§3.1"
+        },
+        "F12": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§3.1, full text checked"
+        },
+        "F13": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§3.3, §3.4, Table 1, Table 2, full text checked"
+        },
+        "F14": {
+          "status": "reported",
+          "value": "rerun",
+          "evidence": "To validate the effectiveness of each module incorporated into our proposed LSD-YOLOv5 model, we conducted ablation experiments using the GC10-DET dataset and employed YOLOv5s in version 6.1 of YOLOv5 as the baseline algorithm for comparison.",
+          "location": "§3.3, §3.4, §3.5"
+        },
+        "F15": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§3.1, §3.2, Table 1, Table 2, full text checked"
+        },
+        "F16": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "Data Availability Statement, full text checked"
+        },
+        "F17": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "Data Availability Statement, full text checked"
+        }
+      },
+      "main_result": {
+        "model": "LSD-YOLOv5",
+        "map50": 67.9,
+        "map50_95": null,
+        "baseline": "YOLOv5s",
+        "baseline_map50": 65.5,
+        "improvement_pp": 2.4,
+        "single_run": null,
+        "evidence": "LSD-YOLOv5 | 69.8 | 67.9 | 66.8",
+        "location": "Table 1"
+      }
+    }
+  ],
+  "code_links": [
+    "https://github.com/lvxiaoming2019/GC10-DET-Metallic-Surface-Defect-Datasets"
+  ],
+  "coder_notes": "In §2.2, the authors removed 176 'non-conforming defect images' from the 2312 raw GC10-DET images and used 2136 images (split 8:1:1 with 1709 training images). Table 1 and Table 2 report 'mAP (%)' without explicitly writing @0.5, which follows standard YOLOv5 mAP@0.5 convention."
+}

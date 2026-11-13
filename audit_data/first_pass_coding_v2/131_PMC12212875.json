@@ -1,0 +1,134 @@
+{
+ "idx": 131,
+ "pmcid": "PMC12212875",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing SAMF-YOLO (based on YOLOv11s) and evaluating it on NEU-DET (Table 7).",
+ "detector_family": "YOLOv11 (custom SAMF-YOLO)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 grayscale images, 6 classes, Northeastern University [34]",
+     "evidence": "NEU-DET focuses specifically on steel surface defects, containing 1,800 grayscale images classified into six typical defect categories: crazing, patches, inclusion, pitted surface, rolled-in scale, and scratches.",
+     "location": "Experimental results and analyses"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 70%/20%/10%",
+     "evidence": "Additionally, to improve the consistency of training and evaluation, the datasets were split into 70% for training, 20% for validation, and 10% for testing.",
+     "location": "Experimental results and analyses"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text (self-supervised contrastive learning is described for UniRepLKNet, but pretrained weight initialization for NEU-DET and baselines is not specified)"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Comparative experiment, Table 7"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "Experimental results and analyses"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "All images were resized to 640×640 before being fed into the model to maintain consistency and reduce computational load.",
+     "location": "Experimental results and analyses, Table 2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "250 epochs",
+     "evidence": "Epochs | 250",
+     "location": "Table 2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "64",
+     "evidence": "Batch size | 64",
+     "location": "Table 2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "Detailed hyper-parameters listed in Table 2 were uniformly used across all models evaluated, ensuring fairness and consistency throughout the experimental comparisons.",
+     "location": "Experimental results and analyses"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "NVIDIA RTX 4080 Super (16 GB) reported; batch size, precision, and pre/post-processing for FPS not reported",
+     "evidence": "GPU | NVIDIA 4080 Super",
+     "location": "Table 1, Table 7"
+    },
+    "F16": {
+     "status": "not_assessed",
+     "value": "https://github.com/Missing24ff/SAMF-YOLO.git ; https://github.com/Missing24ff/SAMF-YOLO/tree/master (link stated in paper; accessibility and training code to be verified in step 2)",
+     "evidence": "All datasets and code files are available from the github database (https://github.com/Missing24ff/SAMF-YOLO/tree/master).",
+     "location": "Abstract, Data Availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "SAMF-YOLO",
+    "map50": 76.32,
+    "map50_95": 39.17,
+    "baseline": "YOLOv11s",
+    "baseline_map50": 74.62,
+    "improvement_pp": 1.7,
+    "single_run": null,
+    "evidence": "YOLOv11s | 78.03 | 74.62 | 38.74 | 21.3 | 70.1 Ours | 79.46 | 76.32 | 39.17 | 12.4 | 85.7",
+    "location": "Table 7"
+   }
+  }
+ ],
+ "code_links": [
+  "https://github.com/Missing24ff/SAMF-YOLO.git",
+  "https://github.com/Missing24ff/SAMF-YOLO/tree/master"
+ ],
+ "coder_notes": "GitHub repository URL is provided in both Abstract and Data Availability Statement; per v1.1/v1.4, marked not_assessed pending online verification."
+}

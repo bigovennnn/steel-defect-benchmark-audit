@@ -1,0 +1,131 @@
+{
+ "idx": 242,
+ "pmcid": "PMC13342500",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research evaluating YOLO11-based defect detection on NEU-DET.",
+ "detector_family": "YOLO11",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "NEU-DET dataset description",
+     "evidence": "768\nWe tested BCKD on the Northeastern University Steel Surface Defect Dataset (NEU Surface Defect Dataset) and the Shanghai Jiao Tong University DeepPCB Defect Dataset.",
+     "location": "§Full text"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "split ratio reported",
+     "evidence": "These images were randomly divided into training, validation, and test sets in an 8:1:1 ratio.",
+     "location": "§Full text"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "input resolution reported",
+     "evidence": "Parameter | Configurations\nInput imagesize | 640 x 640\nTraining epochs | 100\nBatch size | 4\nInitial learning rate | 0.",
+     "location": "§Full text"
+    },
+    "F10": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "comparative baseline table",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "hardware reported",
+     "evidence": "Type | Arrangement\nCPU | Inter(R) Core(TM) i7-7820X\nGPU | NVIDIA GeForce RTX 2080 11G\nOperation System | Windows 10\nFramework | PyTorch1.",
+     "location": "§Full text"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLO11-improved",
+    "map50": 96.6,
+    "map50_95": null,
+    "baseline": "YOLO11 baseline",
+    "baseline_map50": 94.6,
+    "improvement_pp": 2.0,
+    "single_run": null,
+    "evidence": "The proposed MBDANet achieves a high mAP of 96.6% with only 2.",
+    "location": "Table/§Results"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Automated evidence extraction compliant with Coding Manual v1.4. Single_run set to null in accordance with Manual v1.2."
+}

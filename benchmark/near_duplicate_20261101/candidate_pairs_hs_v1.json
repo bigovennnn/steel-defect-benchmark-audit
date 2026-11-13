@@ -1,0 +1,1343 @@
+{
+  "total_edges": 223,
+  "candidates": [
+    {
+      "img_a": "pitted_surface_202.jpg",
+      "img_b": "pitted_surface_204.jpg",
+      "pixel_ncc": 1.0,
+      "gradient_ncc": 1.0
+    },
+    {
+      "img_a": "rolled-in_scale_193.jpg",
+      "img_b": "rolled-in_scale_205.jpg",
+      "pixel_ncc": 1.0,
+      "gradient_ncc": 1.0
+    },
+    {
+      "img_a": "rolled-in_scale_64.jpg",
+      "img_b": "rolled-in_scale_65.jpg",
+      "pixel_ncc": 1.0,
+      "gradient_ncc": 1.0
+    },
+    {
+      "img_a": "scratches_254.jpg",
+      "img_b": "scratches_249.jpg",
+      "pixel_ncc": 1.0,
+      "gradient_ncc": 1.0
+    },
+    {
+      "img_a": "scratches_34.jpg",
+      "img_b": "scratches_35.jpg",
+      "pixel_ncc": 1.0,
+      "gradient_ncc": 0.9999999999999998
+    },
+    {
+      "img_a": "scratches_110.jpg",
+      "img_b": "scratches_111.jpg",
+      "pixel_ncc": 0.999253037592878,
+      "gradient_ncc": 0.9922610509027742
+    },
+    {
+      "img_a": "scratches_257.jpg",
+      "img_b": "scratches_183.jpg",
+      "pixel_ncc": 0.9992413330230698,
+      "gradient_ncc": 0.9941165025865704
+    },
+    {
+      "img_a": "scratches_136.jpg",
+      "img_b": "scratches_137.jpg",
+      "pixel_ncc": 0.9991796200218224,
+      "gradient_ncc": 0.9910003869073242
+    },
+    {
+      "img_a": "scratches_180.jpg",
+      "img_b": "scratches_259.jpg",
+      "pixel_ncc": 0.9991773474470588,
+      "gradient_ncc": 0.9954230304125344
+    },
+    {
+      "img_a": "scratches_181.jpg",
+      "img_b": "scratches_258.jpg",
+      "pixel_ncc": 0.9991633898312824,
+      "gradient_ncc": 0.9954058822201644
+    },
+    {
+      "img_a": "scratches_116.jpg",
+      "img_b": "scratches_118.jpg",
+      "pixel_ncc": 0.9991596865084222,
+      "gradient_ncc": 0.9944082551397682
+    },
+    {
+      "img_a": "scratches_157.jpg",
+      "img_b": "scratches_279.jpg",
+      "pixel_ncc": 0.9990380951950532,
+      "gradient_ncc": 0.9961078478568792
+    },
+    {
+      "img_a": "scratches_178.jpg",
+      "img_b": "scratches_185.jpg",
+      "pixel_ncc": 0.9990198521327268,
+      "gradient_ncc": 0.9945961438441422
+    },
+    {
+      "img_a": "scratches_118.jpg",
+      "img_b": "scratches_119.jpg",
+      "pixel_ncc": 0.9990030583316696,
+      "gradient_ncc": 0.9933581728996732
+    },
+    {
+      "img_a": "scratches_147.jpg",
+      "img_b": "scratches_146.jpg",
+      "pixel_ncc": 0.998955232934664,
+      "gradient_ncc": 0.9920122665883362
+    },
+    {
+      "img_a": "pitted_surface_222.jpg",
+      "img_b": "pitted_surface_224.jpg",
+      "pixel_ncc": 0.9988916402321556,
+      "gradient_ncc": 0.969380096335062
+    },
+    {
+      "img_a": "scratches_116.jpg",
+      "img_b": "scratches_119.jpg",
+      "pixel_ncc": 0.9988477562610024,
+      "gradient_ncc": 0.9926393145241154
+    },
+    {
+      "img_a": "scratches_26.jpg",
+      "img_b": "scratches_300.jpg",
+      "pixel_ncc": 0.9987283403899456,
+      "gradient_ncc": 0.992392251310601
+    },
+    {
+      "img_a": "scratches_24.jpg",
+      "img_b": "scratches_298.jpg",
+      "pixel_ncc": 0.9987050901633658,
+      "gradient_ncc": 0.992417951374719
+    },
+    {
+      "img_a": "patches_57.jpg",
+      "img_b": "patches_59.jpg",
+      "pixel_ncc": 0.998688828914045,
+      "gradient_ncc": 0.9955005677227564
+    },
+    {
+      "img_a": "patches_227.jpg",
+      "img_b": "patches_231.jpg",
+      "pixel_ncc": 0.9986755070087748,
+      "gradient_ncc": 0.9957623696295896
+    },
+    {
+      "img_a": "scratches_5.jpg",
+      "img_b": "scratches_6.jpg",
+      "pixel_ncc": 0.9986572738325166,
+      "gradient_ncc": 0.9948014497495
+    },
+    {
+      "img_a": "pitted_surface_170.jpg",
+      "img_b": "pitted_surface_296.jpg",
+      "pixel_ncc": 0.9986246697660004,
+      "gradient_ncc": 0.9945642223743676
+    },
+    {
+      "img_a": "pitted_surface_158.jpg",
+      "img_b": "pitted_surface_159.jpg",
+      "pixel_ncc": 0.9985480411153048,
+      "gradient_ncc": 0.985894088068289
+    },
+    {
+      "img_a": "pitted_surface_223.jpg",
+      "img_b": "pitted_surface_224.jpg",
+      "pixel_ncc": 0.998546436572374,
+      "gradient_ncc": 0.9727248307335828
+    },
+    {
+      "img_a": "patches_5.jpg",
+      "img_b": "patches_2.jpg",
+      "pixel_ncc": 0.9985367951460622,
+      "gradient_ncc": 0.9945699242557388
+    },
+    {
+      "img_a": "scratches_166.jpg",
+      "img_b": "scratches_280.jpg",
+      "pixel_ncc": 0.9984895300786876,
+      "gradient_ncc": 0.9945247716543832
+    },
+    {
+      "img_a": "scratches_278.jpg",
+      "img_b": "scratches_156.jpg",
+      "pixel_ncc": 0.998478456915779,
+      "gradient_ncc": 0.9942538452915493
+    },
+    {
+      "img_a": "patches_19.jpg",
+      "img_b": "patches_21.jpg",
+      "pixel_ncc": 0.998456245395314,
+      "gradient_ncc": 0.9919748807838202
+    },
+    {
+      "img_a": "pitted_surface_222.jpg",
+      "img_b": "pitted_surface_223.jpg",
+      "pixel_ncc": 0.9984441266666936,
+      "gradient_ncc": 0.9691447679846013
+    },
+    {
+      "img_a": "scratches_160.jpg",
+      "img_b": "scratches_264.jpg",
+      "pixel_ncc": 0.9984409396175132,
+      "gradient_ncc": 0.9953268666570598
+    },
+    {
+      "img_a": "pitted_surface_175.jpg",
+      "img_b": "pitted_surface_296.jpg",
+      "pixel_ncc": 0.9984405403815576,
+      "gradient_ncc": 0.9946006498671032
+    },
+    {
+      "img_a": "pitted_surface_224.jpg",
+      "img_b": "pitted_surface_221.jpg",
+      "pixel_ncc": 0.9984172879221648,
+      "gradient_ncc": 0.9709186097814262
+    },
+    {
+      "img_a": "scratches_292.jpg",
+      "img_b": "scratches_6.jpg",
+      "pixel_ncc": 0.998415851773436,
+      "gradient_ncc": 0.9944725159797216
+    },
+    {
+      "img_a": "scratches_292.jpg",
+      "img_b": "scratches_9.jpg",
+      "pixel_ncc": 0.9983840920488124,
+      "gradient_ncc": 0.9944533529502638
+    },
+    {
+      "img_a": "patches_199.jpg",
+      "img_b": "patches_201.jpg",
+      "pixel_ncc": 0.9983815521794404,
+      "gradient_ncc": 0.9958712295520497
+    },
+    {
+      "img_a": "scratches_264.jpg",
+      "img_b": "scratches_272.jpg",
+      "pixel_ncc": 0.998363453988756,
+      "gradient_ncc": 0.9951942490137144
+    },
+    {
+      "img_a": "scratches_292.jpg",
+      "img_b": "scratches_299.jpg",
+      "pixel_ncc": 0.9983603450365608,
+      "gradient_ncc": 0.9946447117100732
+    },
+    {
+      "img_a": "inclusion_244.jpg",
+      "img_b": "inclusion_245.jpg",
+      "pixel_ncc": 0.9983556820690797,
+      "gradient_ncc": 0.9446807635994392
+    },
+    {
+      "img_a": "pitted_surface_203.jpg",
+      "img_b": "pitted_surface_215.jpg",
+      "pixel_ncc": 0.9983544205548736,
+      "gradient_ncc": 0.9808640310808782
+    },
+    {
+      "img_a": "scratches_4.jpg",
+      "img_b": "scratches_5.jpg",
+      "pixel_ncc": 0.9983073145832146,
+      "gradient_ncc": 0.9927655018067556
+    },
+    {
+      "img_a": "scratches_25.jpg",
+      "img_b": "scratches_294.jpg",
+      "pixel_ncc": 0.9982755858887872,
+      "gradient_ncc": 0.9955901123173612
+    },
+    {
+      "img_a": "scratches_49.jpg",
+      "img_b": "scratches_64.jpg",
+      "pixel_ncc": 0.9982670896758774,
+      "gradient_ncc": 0.9817083216935096
+    },
+    {
+      "img_a": "patches_193.jpg",
+      "img_b": "patches_189.jpg",
+      "pixel_ncc": 0.9982643951052528,
+      "gradient_ncc": 0.994393190033234
+    },
+    {
+      "img_a": "pitted_surface_165.jpg",
+      "img_b": "pitted_surface_291.jpg",
+      "pixel_ncc": 0.9982532441407034,
+      "gradient_ncc": 0.995430126235754
+    },
+    {
+      "img_a": "pitted_surface_222.jpg",
+      "img_b": "pitted_surface_221.jpg",
+      "pixel_ncc": 0.9982395853037483,
+      "gradient_ncc": 0.968518785405764
+    },
+    {
+      "img_a": "patches_88.jpg",
+      "img_b": "patches_89.jpg",
+      "pixel_ncc": 0.9982344541143496,
+      "gradient_ncc": 0.9919651518298376
+    },
+    {
+      "img_a": "scratches_152.jpg",
+      "img_b": "scratches_277.jpg",
+      "pixel_ncc": 0.9981458043857788,
+      "gradient_ncc": 0.9903504746104296
+    },
+    {
+      "img_a": "scratches_299.jpg",
+      "img_b": "scratches_9.jpg",
+      "pixel_ncc": 0.9981013266103324,
+      "gradient_ncc": 0.9933851219154552
+    },
+    {
+      "img_a": "scratches_299.jpg",
+      "img_b": "scratches_8.jpg",
+      "pixel_ncc": 0.9980603665173904,
+      "gradient_ncc": 0.9933669207979609
+    },
+    {
+      "img_a": "scratches_62.jpg",
+      "img_b": "scratches_58.jpg",
+      "pixel_ncc": 0.9980577244191976,
+      "gradient_ncc": 0.9726280910598294
+    },
+    {
+      "img_a": "scratches_9.jpg",
+      "img_b": "scratches_8.jpg",
+      "pixel_ncc": 0.998049893847944,
+      "gradient_ncc": 0.993331438195875
+    },
+    {
+      "img_a": "scratches_276.jpg",
+      "img_b": "scratches_151.jpg",
+      "pixel_ncc": 0.9980137780075184,
+      "gradient_ncc": 0.9891689413822896
+    },
+    {
+      "img_a": "pitted_surface_207.jpg",
+      "img_b": "pitted_surface_276.jpg",
+      "pixel_ncc": 0.9980112132024136,
+      "gradient_ncc": 0.9923995851866726
+    },
+    {
+      "img_a": "pitted_surface_298.jpg",
+      "img_b": "pitted_surface_153.jpg",
+      "pixel_ncc": 0.99797907777256,
+      "gradient_ncc": 0.9590008265982386
+    },
+    {
+      "img_a": "scratches_176.jpg",
+      "img_b": "scratches_262.jpg",
+      "pixel_ncc": 0.9979580786134526,
+      "gradient_ncc": 0.987755915677864
+    },
+    {
+      "img_a": "scratches_158.jpg",
+      "img_b": "scratches_163.jpg",
+      "pixel_ncc": 0.9978953345523096,
+      "gradient_ncc": 0.994649990663554
+    },
+    {
+      "img_a": "scratches_59.jpg",
+      "img_b": "scratches_54.jpg",
+      "pixel_ncc": 0.9978624815879602,
+      "gradient_ncc": 0.9850047526201028
+    },
+    {
+      "img_a": "scratches_172.jpg",
+      "img_b": "scratches_283.jpg",
+      "pixel_ncc": 0.9978044561638112,
+      "gradient_ncc": 0.985400003408472
+    },
+    {
+      "img_a": "pitted_surface_2.jpg",
+      "img_b": "pitted_surface_3.jpg",
+      "pixel_ncc": 0.9978041751145124,
+      "gradient_ncc": 0.9798902669226148
+    },
+    {
+      "img_a": "scratches_41.jpg",
+      "img_b": "scratches_45.jpg",
+      "pixel_ncc": 0.997763288656164,
+      "gradient_ncc": 0.9846329389303038
+    },
+    {
+      "img_a": "pitted_surface_237.jpg",
+      "img_b": "pitted_surface_236.jpg",
+      "pixel_ncc": 0.9976557954824906,
+      "gradient_ncc": 0.98168594923018
+    },
+    {
+      "img_a": "scratches_189.jpg",
+      "img_b": "scratches_188.jpg",
+      "pixel_ncc": 0.9976204747481152,
+      "gradient_ncc": 0.9934462661869948
+    },
+    {
+      "img_a": "scratches_158.jpg",
+      "img_b": "scratches_271.jpg",
+      "pixel_ncc": 0.9975808651154892,
+      "gradient_ncc": 0.9939927409064514
+    },
+    {
+      "img_a": "scratches_49.jpg",
+      "img_b": "scratches_63.jpg",
+      "pixel_ncc": 0.997576533760138,
+      "gradient_ncc": 0.9780850444180972
+    },
+    {
+      "img_a": "scratches_262.jpg",
+      "img_b": "scratches_175.jpg",
+      "pixel_ncc": 0.9975155789652476,
+      "gradient_ncc": 0.9832829798040406
+    },
+    {
+      "img_a": "scratches_250.jpg",
+      "img_b": "scratches_254.jpg",
+      "pixel_ncc": 0.9974392030168316,
+      "gradient_ncc": 0.99358753998273
+    },
+    {
+      "img_a": "scratches_154.jpg",
+      "img_b": "scratches_275.jpg",
+      "pixel_ncc": 0.9972031444069992,
+      "gradient_ncc": 0.9932589309113276
+    },
+    {
+      "img_a": "scratches_290.jpg",
+      "img_b": "scratches_97.jpg",
+      "pixel_ncc": 0.9971555268005852,
+      "gradient_ncc": 0.982890662934206
+    },
+    {
+      "img_a": "scratches_269.jpg",
+      "img_b": "scratches_275.jpg",
+      "pixel_ncc": 0.997110726727603,
+      "gradient_ncc": 0.9929950394596254
+    },
+    {
+      "img_a": "scratches_290.jpg",
+      "img_b": "scratches_93.jpg",
+      "pixel_ncc": 0.9970953836058928,
+      "gradient_ncc": 0.9828557593052264
+    },
+    {
+      "img_a": "scratches_107.jpg",
+      "img_b": "scratches_287.jpg",
+      "pixel_ncc": 0.997031056953114,
+      "gradient_ncc": 0.9578855944994056
+    },
+    {
+      "img_a": "pitted_surface_287.jpg",
+      "img_b": "pitted_surface_192.jpg",
+      "pixel_ncc": 0.9969780002650174,
+      "gradient_ncc": 0.9774151221010496
+    },
+    {
+      "img_a": "scratches_29.jpg",
+      "img_b": "scratches_30.jpg",
+      "pixel_ncc": 0.9969646243954372,
+      "gradient_ncc": 0.9917747788410028
+    },
+    {
+      "img_a": "pitted_surface_8.jpg",
+      "img_b": "pitted_surface_7.jpg",
+      "pixel_ncc": 0.9969413332655116,
+      "gradient_ncc": 0.9876796860422102
+    },
+    {
+      "img_a": "scratches_48.jpg",
+      "img_b": "scratches_63.jpg",
+      "pixel_ncc": 0.9969314156776642,
+      "gradient_ncc": 0.9753188934580892
+    },
+    {
+      "img_a": "scratches_192.jpg",
+      "img_b": "scratches_250.jpg",
+      "pixel_ncc": 0.996926926833322,
+      "gradient_ncc": 0.9920320719564404
+    },
+    {
+      "img_a": "scratches_296.jpg",
+      "img_b": "scratches_30.jpg",
+      "pixel_ncc": 0.9969042842700544,
+      "gradient_ncc": 0.9923710957261443
+    },
+    {
+      "img_a": "scratches_253.jpg",
+      "img_b": "scratches_188.jpg",
+      "pixel_ncc": 0.996887693219004,
+      "gradient_ncc": 0.992406728790252
+    },
+    {
+      "img_a": "scratches_192.jpg",
+      "img_b": "scratches_254.jpg",
+      "pixel_ncc": 0.9968392950716418,
+      "gradient_ncc": 0.992262626484444
+    },
+    {
+      "img_a": "scratches_252.jpg",
+      "img_b": "scratches_188.jpg",
+      "pixel_ncc": 0.996789309782356,
+      "gradient_ncc": 0.9916838042004248
+    },
+    {
+      "img_a": "scratches_154.jpg",
+      "img_b": "scratches_269.jpg",
+      "pixel_ncc": 0.9967745394079518,
+      "gradient_ncc": 0.9921529959270022
+    },
+    {
+      "img_a": "scratches_170.jpg",
+      "img_b": "scratches_285.jpg",
+      "pixel_ncc": 0.996736708118276,
+      "gradient_ncc": 0.9778243741320092
+    },
+    {
+      "img_a": "pitted_surface_164.jpg",
+      "img_b": "pitted_surface_291.jpg",
+      "pixel_ncc": 0.9966171446101308,
+      "gradient_ncc": 0.9956237788217864
+    },
+    {
+      "img_a": "scratches_93.jpg",
+      "img_b": "scratches_95.jpg",
+      "pixel_ncc": 0.9966044379448687,
+      "gradient_ncc": 0.9771787891763164
+    },
+    {
+      "img_a": "scratches_290.jpg",
+      "img_b": "scratches_95.jpg",
+      "pixel_ncc": 0.9965555977896268,
+      "gradient_ncc": 0.977732738394862
+    },
+    {
+      "img_a": "pitted_surface_8.jpg",
+      "img_b": "pitted_surface_6.jpg",
+      "pixel_ncc": 0.9965484436653766,
+      "gradient_ncc": 0.9856674659948038
+    },
+    {
+      "img_a": "scratches_200.jpg",
+      "img_b": "scratches_199.jpg",
+      "pixel_ncc": 0.9964843795904632,
+      "gradient_ncc": 0.9845112893531164
+    },
+    {
+      "img_a": "inclusion_232.jpg",
+      "img_b": "inclusion_233.jpg",
+      "pixel_ncc": 0.9964700214901188,
+      "gradient_ncc": 0.9613552142512244
+    },
+    {
+      "img_a": "scratches_216.jpg",
+      "img_b": "scratches_238.jpg",
+      "pixel_ncc": 0.9964198004855,
+      "gradient_ncc": 0.9924017172842916
+    },
+    {
+      "img_a": "scratches_243.jpg",
+      "img_b": "scratches_221.jpg",
+      "pixel_ncc": 0.9964127300553018,
+      "gradient_ncc": 0.9817903336602302
+    },
+    {
+      "img_a": "scratches_218.jpg",
+      "img_b": "scratches_239.jpg",
+      "pixel_ncc": 0.996404839225728,
+      "gradient_ncc": 0.9920688485774088
+    },
+    {
+      "img_a": "scratches_189.jpg",
+      "img_b": "scratches_253.jpg",
+      "pixel_ncc": 0.9963331704823916,
+      "gradient_ncc": 0.9911450944188048
+    },
+    {
+      "img_a": "scratches_238.jpg",
+      "img_b": "scratches_214.jpg",
+      "pixel_ncc": 0.996289718716336,
+      "gradient_ncc": 0.9917601990971716
+    },
+    {
+      "img_a": "pitted_surface_191.jpg",
+      "img_b": "pitted_surface_288.jpg",
+      "pixel_ncc": 0.9962817918477758,
+      "gradient_ncc": 0.9844245403287376
+    },
+    {
+      "img_a": "scratches_189.jpg",
+      "img_b": "scratches_251.jpg",
+      "pixel_ncc": 0.9962613539558834,
+      "gradient_ncc": 0.9904178048052829
+    },
+    {
+      "img_a": "pitted_surface_230.jpg",
+      "img_b": "pitted_surface_231.jpg",
+      "pixel_ncc": 0.9960812043828876,
+      "gradient_ncc": 0.989675941363115
+    },
+    {
+      "img_a": "scratches_234.jpg",
+      "img_b": "scratches_199.jpg",
+      "pixel_ncc": 0.9960197530482878,
+      "gradient_ncc": 0.982961647791157
+    },
+    {
+      "img_a": "scratches_213.jpg",
+      "img_b": "scratches_241.jpg",
+      "pixel_ncc": 0.9960110456836518,
+      "gradient_ncc": 0.9917634981510318
+    },
+    {
+      "img_a": "scratches_213.jpg",
+      "img_b": "scratches_215.jpg",
+      "pixel_ncc": 0.995954314314236,
+      "gradient_ncc": 0.991166823316373
+    },
+    {
+      "img_a": "scratches_215.jpg",
+      "img_b": "scratches_241.jpg",
+      "pixel_ncc": 0.9959511617337632,
+      "gradient_ncc": 0.9908531412187102
+    },
+    {
+      "img_a": "crazing_123.jpg",
+      "img_b": "crazing_125.jpg",
+      "pixel_ncc": 0.9959446375289804,
+      "gradient_ncc": 0.989285127729901
+    },
+    {
+      "img_a": "pitted_surface_177.jpg",
+      "img_b": "pitted_surface_290.jpg",
+      "pixel_ncc": 0.9959141898582536,
+      "gradient_ncc": 0.987318883060296
+    },
+    {
+      "img_a": "scratches_291.jpg",
+      "img_b": "scratches_91.jpg",
+      "pixel_ncc": 0.9958362477290814,
+      "gradient_ncc": 0.9759628483951056
+    },
+    {
+      "img_a": "pitted_surface_203.jpg",
+      "img_b": "pitted_surface_204.jpg",
+      "pixel_ncc": 0.99583404451978,
+      "gradient_ncc": 0.9823415467370104
+    },
+    {
+      "img_a": "scratches_268.jpg",
+      "img_b": "scratches_153.jpg",
+      "pixel_ncc": 0.995629027734298,
+      "gradient_ncc": 0.9883645800302044
+    },
+    {
+      "img_a": "scratches_236.jpg",
+      "img_b": "scratches_206.jpg",
+      "pixel_ncc": 0.9955852109857236,
+      "gradient_ncc": 0.9897536342317312
+    },
+    {
+      "img_a": "inclusion_5.jpg",
+      "img_b": "inclusion_6.jpg",
+      "pixel_ncc": 0.9955651365033495,
+      "gradient_ncc": 0.9510175831862838
+    },
+    {
+      "img_a": "crazing_201.jpg",
+      "img_b": "crazing_203.jpg",
+      "pixel_ncc": 0.9955295936771054,
+      "gradient_ncc": 0.9958467797361912
+    },
+    {
+      "img_a": "crazing_273.jpg",
+      "img_b": "crazing_271.jpg",
+      "pixel_ncc": 0.9955281110198232,
+      "gradient_ncc": 0.9959248754943764
+    },
+    {
+      "img_a": "pitted_surface_259.jpg",
+      "img_b": "pitted_surface_269.jpg",
+      "pixel_ncc": 0.9953999809653936,
+      "gradient_ncc": 0.99417239679832
+    },
+    {
+      "img_a": "pitted_surface_173.jpg",
+      "img_b": "pitted_surface_293.jpg",
+      "pixel_ncc": 0.9953493671458102,
+      "gradient_ncc": 0.9953534927963622
+    },
+    {
+      "img_a": "scratches_53.jpg",
+      "img_b": "scratches_65.jpg",
+      "pixel_ncc": 0.995328044567109,
+      "gradient_ncc": 0.979787410733808
+    },
+    {
+      "img_a": "scratches_60.jpg",
+      "img_b": "scratches_65.jpg",
+      "pixel_ncc": 0.995274205417666,
+      "gradient_ncc": 0.980373190597227
+    },
+    {
+      "img_a": "scratches_227.jpg",
+      "img_b": "scratches_241.jpg",
+      "pixel_ncc": 0.9951774507039256,
+      "gradient_ncc": 0.9895928993438105
+    },
+    {
+      "img_a": "scratches_78.jpg",
+      "img_b": "scratches_79.jpg",
+      "pixel_ncc": 0.9951663671428314,
+      "gradient_ncc": 0.9925001949084378
+    },
+    {
+      "img_a": "scratches_215.jpg",
+      "img_b": "scratches_227.jpg",
+      "pixel_ncc": 0.995155450839038,
+      "gradient_ncc": 0.9894386246035278
+    },
+    {
+      "img_a": "inclusion_1.jpg",
+      "img_b": "inclusion_5.jpg",
+      "pixel_ncc": 0.9951242755944252,
+      "gradient_ncc": 0.9527640190733628
+    },
+    {
+      "img_a": "pitted_surface_242.jpg",
+      "img_b": "pitted_surface_271.jpg",
+      "pixel_ncc": 0.9950648677728546,
+      "gradient_ncc": 0.9912164282993752
+    },
+    {
+      "img_a": "scratches_196.jpg",
+      "img_b": "scratches_233.jpg",
+      "pixel_ncc": 0.9949632467980682,
+      "gradient_ncc": 0.9855838576959546
+    },
+    {
+      "img_a": "scratches_53.jpg",
+      "img_b": "scratches_60.jpg",
+      "pixel_ncc": 0.9948476662029084,
+      "gradient_ncc": 0.9789965236528392
+    },
+    {
+      "img_a": "inclusion_162.jpg",
+      "img_b": "inclusion_163.jpg",
+      "pixel_ncc": 0.9948105159873962,
+      "gradient_ncc": 0.9647743104963462
+    },
+    {
+      "img_a": "scratches_225.jpg",
+      "img_b": "scratches_242.jpg",
+      "pixel_ncc": 0.994720561353734,
+      "gradient_ncc": 0.9858034968398574
+    },
+    {
+      "img_a": "inclusion_233.jpg",
+      "img_b": "inclusion_234.jpg",
+      "pixel_ncc": 0.9946246369110066,
+      "gradient_ncc": 0.9666931349478712
+    },
+    {
+      "img_a": "inclusion_1.jpg",
+      "img_b": "inclusion_6.jpg",
+      "pixel_ncc": 0.9945731382979338,
+      "gradient_ncc": 0.9525258503510576
+    },
+    {
+      "img_a": "inclusion_1.jpg",
+      "img_b": "inclusion_10.jpg",
+      "pixel_ncc": 0.9945129997454878,
+      "gradient_ncc": 0.9463128238373678
+    },
+    {
+      "img_a": "inclusion_151.jpg",
+      "img_b": "inclusion_162.jpg",
+      "pixel_ncc": 0.9944176656802736,
+      "gradient_ncc": 0.9632542795177056
+    },
+    {
+      "img_a": "scratches_297.jpg",
+      "img_b": "scratches_31.jpg",
+      "pixel_ncc": 0.9944032751011608,
+      "gradient_ncc": 0.972812847484636
+    },
+    {
+      "img_a": "pitted_surface_249.jpg",
+      "img_b": "pitted_surface_270.jpg",
+      "pixel_ncc": 0.9942744869744804,
+      "gradient_ncc": 0.9933009585884286
+    },
+    {
+      "img_a": "pitted_surface_255.jpg",
+      "img_b": "pitted_surface_259.jpg",
+      "pixel_ncc": 0.9940955212338304,
+      "gradient_ncc": 0.9936845218097036
+    },
+    {
+      "img_a": "inclusion_151.jpg",
+      "img_b": "inclusion_163.jpg",
+      "pixel_ncc": 0.9940769394683848,
+      "gradient_ncc": 0.960247843934692
+    },
+    {
+      "img_a": "crazing_97.jpg",
+      "img_b": "crazing_98.jpg",
+      "pixel_ncc": 0.9940435197502768,
+      "gradient_ncc": 0.9958158616405552
+    },
+    {
+      "img_a": "crazing_260.jpg",
+      "img_b": "crazing_261.jpg",
+      "pixel_ncc": 0.99398964371256,
+      "gradient_ncc": 0.9961693084129116
+    },
+    {
+      "img_a": "crazing_258.jpg",
+      "img_b": "crazing_259.jpg",
+      "pixel_ncc": 0.9937766440087972,
+      "gradient_ncc": 0.996238986048094
+    },
+    {
+      "img_a": "crazing_239.jpg",
+      "img_b": "crazing_240.jpg",
+      "pixel_ncc": 0.993775961575612,
+      "gradient_ncc": 0.9963241461743264
+    },
+    {
+      "img_a": "pitted_surface_19.jpg",
+      "img_b": "pitted_surface_20.jpg",
+      "pixel_ncc": 0.993683833944854,
+      "gradient_ncc": 0.9902671014270192
+    },
+    {
+      "img_a": "crazing_16.jpg",
+      "img_b": "crazing_18.jpg",
+      "pixel_ncc": 0.993638391280166,
+      "gradient_ncc": 0.9948111527512232
+    },
+    {
+      "img_a": "crazing_175.jpg",
+      "img_b": "crazing_177.jpg",
+      "pixel_ncc": 0.9935763843454036,
+      "gradient_ncc": 0.9952313485278405
+    },
+    {
+      "img_a": "inclusion_113.jpg",
+      "img_b": "inclusion_111.jpg",
+      "pixel_ncc": 0.9935699501264148,
+      "gradient_ncc": 0.915970979904332
+    },
+    {
+      "img_a": "inclusion_113.jpg",
+      "img_b": "inclusion_115.jpg",
+      "pixel_ncc": 0.9934806929304336,
+      "gradient_ncc": 0.930887361754947
+    },
+    {
+      "img_a": "scratches_197.jpg",
+      "img_b": "scratches_203.jpg",
+      "pixel_ncc": 0.993471671501864,
+      "gradient_ncc": 0.9745064295500632
+    },
+    {
+      "img_a": "crazing_149.jpg",
+      "img_b": "crazing_148.jpg",
+      "pixel_ncc": 0.9934367294014528,
+      "gradient_ncc": 0.9952871618951116
+    },
+    {
+      "img_a": "scratches_197.jpg",
+      "img_b": "scratches_235.jpg",
+      "pixel_ncc": 0.9934027889267472,
+      "gradient_ncc": 0.9783246418586716
+    },
+    {
+      "img_a": "inclusion_85.jpg",
+      "img_b": "inclusion_87.jpg",
+      "pixel_ncc": 0.9933052043649871,
+      "gradient_ncc": 0.9218879783378984
+    },
+    {
+      "img_a": "inclusion_85.jpg",
+      "img_b": "inclusion_86.jpg",
+      "pixel_ncc": 0.9932235645953628,
+      "gradient_ncc": 0.91345810098613
+    },
+    {
+      "img_a": "inclusion_113.jpg",
+      "img_b": "inclusion_114.jpg",
+      "pixel_ncc": 0.9931269245220484,
+      "gradient_ncc": 0.9241526170311132
+    },
+    {
+      "img_a": "inclusion_166.jpg",
+      "img_b": "inclusion_155.jpg",
+      "pixel_ncc": 0.9931084410022278,
+      "gradient_ncc": 0.9338688391577996
+    },
+    {
+      "img_a": "crazing_193.jpg",
+      "img_b": "crazing_194.jpg",
+      "pixel_ncc": 0.9931059124937196,
+      "gradient_ncc": 0.9922009146834788
+    },
+    {
+      "img_a": "crazing_30.jpg",
+      "img_b": "crazing_31.jpg",
+      "pixel_ncc": 0.992975057781358,
+      "gradient_ncc": 0.9955228736273491
+    },
+    {
+      "img_a": "pitted_surface_275.jpg",
+      "img_b": "pitted_surface_213.jpg",
+      "pixel_ncc": 0.9929397594408734,
+      "gradient_ncc": 0.9824996306713903
+    },
+    {
+      "img_a": "crazing_232.jpg",
+      "img_b": "crazing_238.jpg",
+      "pixel_ncc": 0.992737820236666,
+      "gradient_ncc": 0.9951831219770598
+    },
+    {
+      "img_a": "scratches_106.jpg",
+      "img_b": "scratches_289.jpg",
+      "pixel_ncc": 0.9925005595932972,
+      "gradient_ncc": 0.9158250592051008
+    },
+    {
+      "img_a": "scratches_84.jpg",
+      "img_b": "scratches_85.jpg",
+      "pixel_ncc": 0.992478904495914,
+      "gradient_ncc": 0.9559906375778188
+    },
+    {
+      "img_a": "scratches_203.jpg",
+      "img_b": "scratches_235.jpg",
+      "pixel_ncc": 0.9924122871183416,
+      "gradient_ncc": 0.9685750649924856
+    },
+    {
+      "img_a": "inclusion_7.jpg",
+      "img_b": "inclusion_8.jpg",
+      "pixel_ncc": 0.9923306075611558,
+      "gradient_ncc": 0.9443347146003944
+    },
+    {
+      "img_a": "rolled-in_scale_83.jpg",
+      "img_b": "rolled-in_scale_82.jpg",
+      "pixel_ncc": 0.992276263710096,
+      "gradient_ncc": 0.9898289446081632
+    },
+    {
+      "img_a": "scratches_40.jpg",
+      "img_b": "scratches_46.jpg",
+      "pixel_ncc": 0.9922519260009812,
+      "gradient_ncc": 0.9686601975408198
+    },
+    {
+      "img_a": "pitted_surface_26.jpg",
+      "img_b": "pitted_surface_33.jpg",
+      "pixel_ncc": 0.9921165186731384,
+      "gradient_ncc": 0.9912821546998416
+    },
+    {
+      "img_a": "inclusion_4.jpg",
+      "img_b": "inclusion_9.jpg",
+      "pixel_ncc": 0.9920817031817282,
+      "gradient_ncc": 0.931354774402188
+    },
+    {
+      "img_a": "rolled-in_scale_80.jpg",
+      "img_b": "rolled-in_scale_81.jpg",
+      "pixel_ncc": 0.9920756365132588,
+      "gradient_ncc": 0.9900737233677168
+    },
+    {
+      "img_a": "pitted_surface_20.jpg",
+      "img_b": "pitted_surface_27.jpg",
+      "pixel_ncc": 0.9920366395226422,
+      "gradient_ncc": 0.9887241551645366
+    },
+    {
+      "img_a": "scratches_87.jpg",
+      "img_b": "scratches_88.jpg",
+      "pixel_ncc": 0.9919842136743529,
+      "gradient_ncc": 0.9494634555569552
+    },
+    {
+      "img_a": "inclusion_3.jpg",
+      "img_b": "inclusion_8.jpg",
+      "pixel_ncc": 0.9919011919587256,
+      "gradient_ncc": 0.9375403677672722
+    },
+    {
+      "img_a": "pitted_surface_254.jpg",
+      "img_b": "pitted_surface_258.jpg",
+      "pixel_ncc": 0.9914613701341682,
+      "gradient_ncc": 0.9939199583433324
+    },
+    {
+      "img_a": "inclusion_69.jpg",
+      "img_b": "inclusion_72.jpg",
+      "pixel_ncc": 0.9913965080687316,
+      "gradient_ncc": 0.9557787346402998
+    },
+    {
+      "img_a": "scratches_14.jpg",
+      "img_b": "scratches_293.jpg",
+      "pixel_ncc": 0.9913441369492288,
+      "gradient_ncc": 0.982293818662016
+    },
+    {
+      "img_a": "pitted_surface_185.jpg",
+      "img_b": "pitted_surface_187.jpg",
+      "pixel_ncc": 0.9912850210506342,
+      "gradient_ncc": 0.9930454580155504
+    },
+    {
+      "img_a": "inclusion_116.jpg",
+      "img_b": "inclusion_119.jpg",
+      "pixel_ncc": 0.9912615701298956,
+      "gradient_ncc": 0.9422992146942696
+    },
+    {
+      "img_a": "rolled-in_scale_78.jpg",
+      "img_b": "rolled-in_scale_80.jpg",
+      "pixel_ncc": 0.9910888452190748,
+      "gradient_ncc": 0.988835375380345
+    },
+    {
+      "img_a": "inclusion_60.jpg",
+      "img_b": "inclusion_62.jpg",
+      "pixel_ncc": 0.9910763369098512,
+      "gradient_ncc": 0.9119850971794926
+    },
+    {
+      "img_a": "crazing_133.jpg",
+      "img_b": "crazing_135.jpg",
+      "pixel_ncc": 0.9909374317045564,
+      "gradient_ncc": 0.994221046039122
+    },
+    {
+      "img_a": "inclusion_3.jpg",
+      "img_b": "inclusion_7.jpg",
+      "pixel_ncc": 0.99088376698198,
+      "gradient_ncc": 0.942195871017498
+    },
+    {
+      "img_a": "crazing_143.jpg",
+      "img_b": "crazing_144.jpg",
+      "pixel_ncc": 0.9907750383604566,
+      "gradient_ncc": 0.9944908762548076
+    },
+    {
+      "img_a": "inclusion_118.jpg",
+      "img_b": "inclusion_119.jpg",
+      "pixel_ncc": 0.990610831004212,
+      "gradient_ncc": 0.9429526449058284
+    },
+    {
+      "img_a": "pitted_surface_25.jpg",
+      "img_b": "pitted_surface_26.jpg",
+      "pixel_ncc": 0.990536048358296,
+      "gradient_ncc": 0.9920501848370552
+    },
+    {
+      "img_a": "scratches_167.jpg",
+      "img_b": "scratches_174.jpg",
+      "pixel_ncc": 0.9903314626366332,
+      "gradient_ncc": 0.9414245861488572
+    },
+    {
+      "img_a": "pitted_surface_179.jpg",
+      "img_b": "pitted_surface_290.jpg",
+      "pixel_ncc": 0.990199708523474,
+      "gradient_ncc": 0.9880401188825448
+    },
+    {
+      "img_a": "crazing_76.jpg",
+      "img_b": "crazing_73.jpg",
+      "pixel_ncc": 0.9900379252959794,
+      "gradient_ncc": 0.989799809161024
+    },
+    {
+      "img_a": "inclusion_116.jpg",
+      "img_b": "inclusion_118.jpg",
+      "pixel_ncc": 0.9898905510095274,
+      "gradient_ncc": 0.9381810954014984
+    },
+    {
+      "img_a": "inclusion_152.jpg",
+      "img_b": "inclusion_168.jpg",
+      "pixel_ncc": 0.989818848831082,
+      "gradient_ncc": 0.9479796712649668
+    },
+    {
+      "img_a": "pitted_surface_183.jpg",
+      "img_b": "pitted_surface_184.jpg",
+      "pixel_ncc": 0.989711153686501,
+      "gradient_ncc": 0.9872068765771206
+    },
+    {
+      "img_a": "crazing_132.jpg",
+      "img_b": "crazing_134.jpg",
+      "pixel_ncc": 0.9894267931923584,
+      "gradient_ncc": 0.9940885794656724
+    },
+    {
+      "img_a": "crazing_105.jpg",
+      "img_b": "crazing_109.jpg",
+      "pixel_ncc": 0.9882479213730128,
+      "gradient_ncc": 0.9932426210207608
+    },
+    {
+      "img_a": "pitted_surface_180.jpg",
+      "img_b": "pitted_surface_284.jpg",
+      "pixel_ncc": 0.9880447621030268,
+      "gradient_ncc": 0.9875569215943792
+    },
+    {
+      "img_a": "inclusion_201.jpg",
+      "img_b": "inclusion_202.jpg",
+      "pixel_ncc": 0.9878568155805753,
+      "gradient_ncc": 0.9057347394251948
+    },
+    {
+      "img_a": "inclusion_102.jpg",
+      "img_b": "inclusion_104.jpg",
+      "pixel_ncc": 0.987532550199124,
+      "gradient_ncc": 0.9245344435726746
+    },
+    {
+      "img_a": "scratches_205.jpg",
+      "img_b": "scratches_246.jpg",
+      "pixel_ncc": 0.9871861842670872,
+      "gradient_ncc": 0.9584415121120812
+    },
+    {
+      "img_a": "rolled-in_scale_59.jpg",
+      "img_b": "rolled-in_scale_60.jpg",
+      "pixel_ncc": 0.9869618143765418,
+      "gradient_ncc": 0.988275827932547
+    },
+    {
+      "img_a": "scratches_196.jpg",
+      "img_b": "scratches_202.jpg",
+      "pixel_ncc": 0.9869293584104092,
+      "gradient_ncc": 0.948718508345546
+    },
+    {
+      "img_a": "inclusion_16.jpg",
+      "img_b": "inclusion_19.jpg",
+      "pixel_ncc": 0.9864253764384584,
+      "gradient_ncc": 0.938057447932086
+    },
+    {
+      "img_a": "scratches_216.jpg",
+      "img_b": "scratches_214.jpg",
+      "pixel_ncc": 0.986077293263761,
+      "gradient_ncc": 0.9543877736240044
+    },
+    {
+      "img_a": "inclusion_44.jpg",
+      "img_b": "inclusion_31.jpg",
+      "pixel_ncc": 0.9852874163707268,
+      "gradient_ncc": 0.9374752591745472
+    },
+    {
+      "img_a": "rolled-in_scale_68.jpg",
+      "img_b": "rolled-in_scale_69.jpg",
+      "pixel_ncc": 0.983706571349373,
+      "gradient_ncc": 0.9763313580216024
+    },
+    {
+      "img_a": "rolled-in_scale_35.jpg",
+      "img_b": "rolled-in_scale_36.jpg",
+      "pixel_ncc": 0.983321021841351,
+      "gradient_ncc": 0.9750237241805436
+    },
+    {
+      "img_a": "rolled-in_scale_4.jpg",
+      "img_b": "rolled-in_scale_5.jpg",
+      "pixel_ncc": 0.9832593285718624,
+      "gradient_ncc": 0.9808291494315576
+    },
+    {
+      "img_a": "rolled-in_scale_103.jpg",
+      "img_b": "rolled-in_scale_104.jpg",
+      "pixel_ncc": 0.9832481767811706,
+      "gradient_ncc": 0.9706396470245868
+    },
+    {
+      "img_a": "rolled-in_scale_43.jpg",
+      "img_b": "rolled-in_scale_42.jpg",
+      "pixel_ncc": 0.9812566925482312,
+      "gradient_ncc": 0.9804924739541172
+    },
+    {
+      "img_a": "rolled-in_scale_20.jpg",
+      "img_b": "rolled-in_scale_21.jpg",
+      "pixel_ncc": 0.9809756173958718,
+      "gradient_ncc": 0.9788951258679176
+    },
+    {
+      "img_a": "rolled-in_scale_37.jpg",
+      "img_b": "rolled-in_scale_36.jpg",
+      "pixel_ncc": 0.9807475607381968,
+      "gradient_ncc": 0.9772373492187816
+    },
+    {
+      "img_a": "inclusion_260.jpg",
+      "img_b": "inclusion_261.jpg",
+      "pixel_ncc": 0.980268979416573,
+      "gradient_ncc": 0.9195722049648318
+    },
+    {
+      "img_a": "inclusion_177.jpg",
+      "img_b": "inclusion_180.jpg",
+      "pixel_ncc": 0.9797543993320182,
+      "gradient_ncc": 0.9345647781488524
+    },
+    {
+      "img_a": "rolled-in_scale_39.jpg",
+      "img_b": "rolled-in_scale_40.jpg",
+      "pixel_ncc": 0.97789285990352,
+      "gradient_ncc": 0.9789148454411756
+    },
+    {
+      "img_a": "rolled-in_scale_199.jpg",
+      "img_b": "rolled-in_scale_208.jpg",
+      "pixel_ncc": 0.9772144662096186,
+      "gradient_ncc": 0.9823903489758696
+    },
+    {
+      "img_a": "rolled-in_scale_48.jpg",
+      "img_b": "rolled-in_scale_52.jpg",
+      "pixel_ncc": 0.9749745590310016,
+      "gradient_ncc": 0.9770305938770214
+    },
+    {
+      "img_a": "rolled-in_scale_64.jpg",
+      "img_b": "rolled-in_scale_67.jpg",
+      "pixel_ncc": 0.9748040916249464,
+      "gradient_ncc": 0.9723124127984945
+    },
+    {
+      "img_a": "rolled-in_scale_65.jpg",
+      "img_b": "rolled-in_scale_67.jpg",
+      "pixel_ncc": 0.9724879687206076,
+      "gradient_ncc": 0.9722569715645624
+    },
+    {
+      "img_a": "scratches_112.jpg",
+      "img_b": "scratches_143.jpg",
+      "pixel_ncc": 0.9701148795292844,
+      "gradient_ncc": 0.9193737263354004
+    },
+    {
+      "img_a": "scratches_117.jpg",
+      "img_b": "scratches_145.jpg",
+      "pixel_ncc": 0.9672548043639289,
+      "gradient_ncc": 0.9164914052705774
+    },
+    {
+      "img_a": "rolled-in_scale_190.jpg",
+      "img_b": "rolled-in_scale_191.jpg",
+      "pixel_ncc": 0.9656458029203484,
+      "gradient_ncc": 0.9763265864766388
+    },
+    {
+      "img_a": "scratches_117.jpg",
+      "img_b": "scratches_144.jpg",
+      "pixel_ncc": 0.961547758776024,
+      "gradient_ncc": 0.913329147357544
+    },
+    {
+      "img_a": "scratches_116.jpg",
+      "img_b": "scratches_145.jpg",
+      "pixel_ncc": 0.96109220191153,
+      "gradient_ncc": 0.9094014494047172
+    },
+    {
+      "img_a": "scratches_114.jpg",
+      "img_b": "scratches_142.jpg",
+      "pixel_ncc": 0.9560191555924662,
+      "gradient_ncc": 0.9025065658965492
+    },
+    {
+      "img_a": "scratches_114.jpg",
+      "img_b": "scratches_144.jpg",
+      "pixel_ncc": 0.951962139402333,
+      "gradient_ncc": 0.9089456349774072
+    },
+    {
+      "img_a": "scratches_253.jpg",
+      "img_b": "scratches_190.jpg",
+      "pixel_ncc": 0.9968679415367924,
+      "gradient_ncc": 0.9925927054914756
+    },
+    {
+      "img_a": "scratches_171.jpg",
+      "img_b": "scratches_284.jpg",
+      "pixel_ncc": 0.994943191194746,
+      "gradient_ncc": 0.9688023868142296
+    },
+    {
+      "img_a": "pitted_surface_169.jpg",
+      "img_b": "pitted_surface_293.jpg",
+      "pixel_ncc": 0.9944576044005669,
+      "gradient_ncc": 0.9951748120357372
+    },
+    {
+      "img_a": "crazing_69.jpg",
+      "img_b": "crazing_70.jpg",
+      "pixel_ncc": 0.9923500531422051,
+      "gradient_ncc": 0.9954375316270884
+    },
+    {
+      "img_a": "crazing_290.jpg",
+      "img_b": "crazing_291.jpg",
+      "pixel_ncc": 0.9916306603284852,
+      "gradient_ncc": 0.995116340722714
+    },
+    {
+      "img_a": "pitted_surface_141.jpg",
+      "img_b": "pitted_surface_146.jpg",
+      "pixel_ncc": 0.9807345180196044,
+      "gradient_ncc": 0.988412618485244
+    },
+    {
+      "img_a": "scratches_27.jpg",
+      "img_b": "scratches_295.jpg",
+      "pixel_ncc": 0.9980585895833785,
+      "gradient_ncc": 0.9954242675055024
+    },
+    {
+      "img_a": "scratches_220.jpg",
+      "img_b": "scratches_240.jpg",
+      "pixel_ncc": 0.9958420381828532,
+      "gradient_ncc": 0.9849206569698028
+    },
+    {
+      "img_a": "crazing_96.jpg",
+      "img_b": "crazing_93.jpg",
+      "pixel_ncc": 0.991190992207092,
+      "gradient_ncc": 0.9951297575500212
+    },
+    {
+      "img_a": "crazing_115.jpg",
+      "img_b": "crazing_118.jpg",
+      "pixel_ncc": 0.9883570596437892,
+      "gradient_ncc": 0.993734305557226
+    }
+  ]
+}

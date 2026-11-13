@@ -1,0 +1,1205 @@
+{
+  "total_pairs": 595,
+  "total_agreements": 497,
+  "po": 0.8352941176470589,
+  "pe": 0.4084033613445378,
+  "kappa": 0.7215909090909092,
+  "kappa_str": "0.722",
+  "field_stats": {
+    "F01": {
+      "agree": 34,
+      "total": 35,
+      "v2_counts": {
+        "reported": 34,
+        "ambiguous": 1
+      },
+      "retest_counts": {
+        "reported": 34,
+        "not_reported_in_paper": 1
+      },
+      "matrix": {
+        "reported -> reported": 34,
+        "ambiguous -> not_reported_in_paper": 1
+      }
+    },
+    "F02": {
+      "agree": 32,
+      "total": 35,
+      "v2_counts": {
+        "reported": 26,
+        "not_reported_in_paper": 9
+      },
+      "retest_counts": {
+        "reported": 29,
+        "not_reported_in_paper": 6
+      },
+      "matrix": {
+        "reported -> reported": 26,
+        "not_reported_in_paper -> not_reported_in_paper": 6,
+        "not_reported_in_paper -> reported": 3
+      }
+    },
+    "F03": {
+      "agree": 35,
+      "total": 35,
+      "v2_counts": {
+        "not_reported_in_paper": 35
+      },
+      "retest_counts": {
+        "not_reported_in_paper": 35
+      },
+      "matrix": {
+        "not_reported_in_paper -> not_reported_in_paper": 35
+      }
+    },
+    "F04": {
+      "agree": 35,
+      "total": 35,
+      "v2_counts": {
+        "not_reported_in_paper": 35
+      },
+      "retest_counts": {
+        "not_reported_in_paper": 35
+      },
+      "matrix": {
+        "not_reported_in_paper -> not_reported_in_paper": 35
+      }
+    },
+    "F05": {
+      "agree": 32,
+      "total": 35,
+      "v2_counts": {
+        "not_reported_in_paper": 23,
+        "reported": 8,
+        "ambiguous": 4
+      },
+      "retest_counts": {
+        "not_reported_in_paper": 21,
+        "reported": 8,
+        "ambiguous": 6
+      },
+      "matrix": {
+        "not_reported_in_paper -> not_reported_in_paper": 21,
+        "reported -> reported": 7,
+        "not_reported_in_paper -> reported": 1,
+        "reported -> ambiguous": 1,
+        "ambiguous -> ambiguous": 4,
+        "not_reported_in_paper -> ambiguous": 1
+      }
+    },
+    "F06": {
+      "agree": 32,
+      "total": 35,
+      "v2_counts": {
+        "not_reported_in_paper": 30,
+        "reported": 4,
+        "ambiguous": 1
+      },
+      "retest_counts": {
+        "not_reported_in_paper": 31,
+        "ambiguous": 2,
+        "reported": 2
+      },
+      "matrix": {
+        "not_reported_in_paper -> not_reported_in_paper": 30,
+        "reported -> ambiguous": 2,
+        "reported -> reported": 2,
+        "ambiguous -> not_reported_in_paper": 1
+      }
+    },
+    "F07": {
+      "agree": 19,
+      "total": 35,
+      "v2_counts": {
+        "reported": 6,
+        "not_reported_in_paper": 14,
+        "ambiguous": 15
+      },
+      "retest_counts": {
+        "reported": 13,
+        "not_reported_in_paper": 5,
+        "ambiguous": 17
+      },
+      "matrix": {
+        "reported -> reported": 6,
+        "not_reported_in_paper -> not_reported_in_paper": 5,
+        "ambiguous -> ambiguous": 8,
+        "not_reported_in_paper -> ambiguous": 9,
+        "ambiguous -> reported": 7
+      }
+    },
+    "F08": {
+      "agree": 9,
+      "total": 35,
+      "v2_counts": {
+        "not_reported_in_paper": 31,
+        "ambiguous": 2,
+        "reported": 2
+      },
+      "retest_counts": {
+        "ambiguous": 26,
+        "not_reported_in_paper": 5,
+        "reported": 4
+      },
+      "matrix": {
+        "not_reported_in_paper -> ambiguous": 24,
+        "not_reported_in_paper -> not_reported_in_paper": 5,
+        "ambiguous -> ambiguous": 2,
+        "not_reported_in_paper -> reported": 2,
+        "reported -> reported": 2
+      }
+    },
+    "F09": {
+      "agree": 31,
+      "total": 35,
+      "v2_counts": {
+        "reported": 31,
+        "ambiguous": 1,
+        "not_reported_in_paper": 3
+      },
+      "retest_counts": {
+        "reported": 35
+      },
+      "matrix": {
+        "reported -> reported": 31,
+        "ambiguous -> reported": 1,
+        "not_reported_in_paper -> reported": 3
+      }
+    },
+    "F10": {
+      "agree": 30,
+      "total": 35,
+      "v2_counts": {
+        "reported": 30,
+        "ambiguous": 3,
+        "not_reported_in_paper": 2
+      },
+      "retest_counts": {
+        "reported": 35
+      },
+      "matrix": {
+        "reported -> reported": 30,
+        "ambiguous -> reported": 3,
+        "not_reported_in_paper -> reported": 2
+      }
+    },
+    "F11": {
+      "agree": 31,
+      "total": 35,
+      "v2_counts": {
+        "reported": 26,
+        "ambiguous": 4,
+        "not_reported_in_paper": 5
+      },
+      "retest_counts": {
+        "reported": 30,
+        "not_reported_in_paper": 3,
+        "ambiguous": 2
+      },
+      "matrix": {
+        "reported -> reported": 26,
+        "ambiguous -> reported": 2,
+        "not_reported_in_paper -> not_reported_in_paper": 3,
+        "ambiguous -> ambiguous": 2,
+        "not_reported_in_paper -> reported": 2
+      }
+    },
+    "F12": {
+      "agree": 34,
+      "total": 35,
+      "v2_counts": {
+        "ambiguous": 3,
+        "not_reported_in_paper": 32
+      },
+      "retest_counts": {
+        "reported": 1,
+        "not_reported_in_paper": 32,
+        "ambiguous": 2
+      },
+      "matrix": {
+        "ambiguous -> reported": 1,
+        "not_reported_in_paper -> not_reported_in_paper": 32,
+        "ambiguous -> ambiguous": 2
+      }
+    },
+    "F13": {
+      "agree": 35,
+      "total": 35,
+      "v2_counts": {
+        "reported": 5,
+        "not_reported_in_paper": 30
+      },
+      "retest_counts": {
+        "reported": 5,
+        "not_reported_in_paper": 30
+      },
+      "matrix": {
+        "reported -> reported": 5,
+        "not_reported_in_paper -> not_reported_in_paper": 30
+      }
+    },
+    "F14": {
+      "agree": 18,
+      "total": 35,
+      "v2_counts": {
+        "reported": 18,
+        "not_reported_in_paper": 3,
+        "ambiguous": 14
+      },
+      "retest_counts": {
+        "reported": 27,
+        "ambiguous": 3,
+        "not_reported_in_paper": 5
+      },
+      "matrix": {
+        "reported -> reported": 18,
+        "not_reported_in_paper -> ambiguous": 3,
+        "ambiguous -> reported": 9,
+        "ambiguous -> not_reported_in_paper": 5
+      }
+    },
+    "F15": {
+      "agree": 23,
+      "total": 35,
+      "v2_counts": {
+        "reported": 12,
+        "ambiguous": 13,
+        "not_reported_in_paper": 10
+      },
+      "retest_counts": {
+        "reported": 4,
+        "not_reported_in_paper": 10,
+        "ambiguous": 21
+      },
+      "matrix": {
+        "reported -> reported": 4,
+        "reported -> not_reported_in_paper": 2,
+        "ambiguous -> ambiguous": 12,
+        "not_reported_in_paper -> not_reported_in_paper": 7,
+        "reported -> ambiguous": 6,
+        "ambiguous -> not_reported_in_paper": 1,
+        "not_reported_in_paper -> ambiguous": 3
+      }
+    },
+    "F16": {
+      "agree": 32,
+      "total": 35,
+      "v2_counts": {
+        "not_reported_in_paper": 26,
+        "reported": 7,
+        "ambiguous": 2
+      },
+      "retest_counts": {
+        "not_reported_in_paper": 26,
+        "reported": 9
+      },
+      "matrix": {
+        "not_reported_in_paper -> not_reported_in_paper": 25,
+        "reported -> reported": 7,
+        "ambiguous -> reported": 1,
+        "ambiguous -> not_reported_in_paper": 1,
+        "not_reported_in_paper -> reported": 1
+      }
+    },
+    "F17": {
+      "agree": 35,
+      "total": 35,
+      "v2_counts": {
+        "not_reported_in_paper": 34,
+        "reported": 1
+      },
+      "retest_counts": {
+        "not_reported_in_paper": 34,
+        "reported": 1
+      },
+      "matrix": {
+        "not_reported_in_paper -> not_reported_in_paper": 34,
+        "reported -> reported": 1
+      }
+    }
+  },
+  "discrepancies": [
+    {
+      "file": "000_PMC13708875.json",
+      "dataset": "NEU-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "000_PMC13708875.json",
+      "dataset": "NEU-DET",
+      "field": "F12",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "seed 0 stated in 4.3, but Table 1 note states 10 runs with different seeds",
+      "coder2_val": "0"
+    },
+    {
+      "file": "005_PMC13004511.json",
+      "dataset": "NEU-DET",
+      "field": "F15",
+      "coder1_status": "reported",
+      "coder2_status": "not_reported_in_paper",
+      "coder1_val": "NVIDIA RTX 3090 GPU",
+      "coder2_val": "not applicable"
+    },
+    {
+      "file": "005_PMC13004511.json",
+      "dataset": "GC10-DET",
+      "field": "F15",
+      "coder1_status": "reported",
+      "coder2_status": "not_reported_in_paper",
+      "coder1_val": "NVIDIA RTX 3090 GPU",
+      "coder2_val": "not applicable"
+    },
+    {
+      "file": "008_PMC13030490.json",
+      "dataset": "NEU-DET",
+      "field": "F14",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "008_PMC13030490.json",
+      "dataset": "GC10-DET",
+      "field": "F14",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "unclear; some compared algorithms chosen because they report GC10 results, suggesting copied values for some",
+      "coder2_val": "copied"
+    },
+    {
+      "file": "009_PMC13040021.json",
+      "dataset": "NEU-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "009_PMC13040021.json",
+      "dataset": "NEU-DET",
+      "field": "F14",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "mixed",
+      "coder2_val": "rerun"
+    },
+    {
+      "file": "009_PMC13040021.json",
+      "dataset": "GC10-DET",
+      "field": "F07",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "Evaluation set for Table 16 not stated",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "009_PMC13040021.json",
+      "dataset": "GC10-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "009_PMC13040021.json",
+      "dataset": "GC10-DET",
+      "field": "F10",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "Said to follow NEU settings (50 epochs) but not stated explicitly for GC10",
+      "coder2_val": "50"
+    },
+    {
+      "file": "009_PMC13040021.json",
+      "dataset": "GC10-DET",
+      "field": "F11",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "Said to follow NEU settings but not stated explicitly for GC10",
+      "coder2_val": "20"
+    },
+    {
+      "file": "009_PMC13040021.json",
+      "dataset": "GC10-DET",
+      "field": "F14",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "rerun",
+      "coder2_val": "rerun"
+    },
+    {
+      "file": "016_PMC12533008.json",
+      "dataset": "NEU-DET",
+      "field": "F07",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "016_PMC12533008.json",
+      "dataset": "NEU-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "016_PMC12533008.json",
+      "dataset": "GC10-DET",
+      "field": "F01",
+      "coder1_status": "ambiguous",
+      "coder2_status": "not_reported_in_paper",
+      "coder1_val": "10 classes stated; no image count or source link",
+      "coder2_val": "not reported"
+    },
+    {
+      "file": "016_PMC12533008.json",
+      "dataset": "GC10-DET",
+      "field": "F09",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "640x640 stated in general environment section after NEU description; not explicitly for all datasets",
+      "coder2_val": "640x640"
+    },
+    {
+      "file": "016_PMC12533008.json",
+      "dataset": "GC10-DET",
+      "field": "F11",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "16 stated in general environment section; not explicitly for GC10",
+      "coder2_val": "16"
+    },
+    {
+      "file": "020_PMC12129336.json",
+      "dataset": "NEU-DET",
+      "field": "F07",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "020_PMC12129336.json",
+      "dataset": "NEU-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "020_PMC12129336.json",
+      "dataset": "NEU-DET",
+      "field": "F09",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "reported",
+      "coder1_val": "",
+      "coder2_val": "200x200"
+    },
+    {
+      "file": "020_PMC12129336.json",
+      "dataset": "NEU-DET",
+      "field": "F14",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "mixed (inferred: YOLOv8n rerun; DF-YOLOv7/BiCCFM/GLF-NET with missing values appear copied)",
+      "coder2_val": "mixed"
+    },
+    {
+      "file": "020_PMC12129336.json",
+      "dataset": "NEU-DET",
+      "field": "F16",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "https://osf.io/w6jsc/ (only in article link list; content not described)",
+      "coder2_val": "https://osf.io/w6jsc/"
+    },
+    {
+      "file": "021_PMC13029871.json",
+      "dataset": "NEU-DET",
+      "field": "F05",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "reported",
+      "coder1_val": "not stated for NEU (GC10 stated from scratch); Table 1 missing from XML",
+      "coder2_val": "from scratch"
+    },
+    {
+      "file": "021_PMC13029871.json",
+      "dataset": "NEU-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "021_PMC13029871.json",
+      "dataset": "NEU-DET",
+      "field": "F14",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "not stated whether comparison models were retrained",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "021_PMC13029871.json",
+      "dataset": "GC10-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "021_PMC13029871.json",
+      "dataset": "GC10-DET",
+      "field": "F14",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "not stated whether comparison models were retrained",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "023_PMC12061413.json",
+      "dataset": "NEU-DET",
+      "field": "F02",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "reported",
+      "coder1_val": "",
+      "coder2_val": "train:val:test = 8:1:1"
+    },
+    {
+      "file": "023_PMC12061413.json",
+      "dataset": "NEU-DET",
+      "field": "F05",
+      "coder1_status": "reported",
+      "coder2_status": "ambiguous",
+      "coder1_val": "transfer learning with pre-trained weights",
+      "coder2_val": "transfer learning with pre-trained weight parameters loaded, source weights unspecified"
+    },
+    {
+      "file": "023_PMC12061413.json",
+      "dataset": "NEU-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "023_PMC12061413.json",
+      "dataset": "NEU-DET",
+      "field": "F15",
+      "coder1_status": "reported",
+      "coder2_status": "ambiguous",
+      "coder1_val": "NVIDIA GeForce RTX2060 GPU 6 GB, batch 16",
+      "coder2_val": "RTX 2060 GPU 6 GB, batch size not specified for FPS"
+    },
+    {
+      "file": "025_PMC12349437.json",
+      "dataset": "NEU-DET",
+      "field": "F07",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "025_PMC12349437.json",
+      "dataset": "NEU-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "025_PMC12349437.json",
+      "dataset": "NEU-DET",
+      "field": "F14",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "mixed",
+      "coder2_val": "rerun"
+    },
+    {
+      "file": "025_PMC12349437.json",
+      "dataset": "NEU-DET",
+      "field": "F15",
+      "coder1_status": "ambiguous",
+      "coder2_status": "not_reported_in_paper",
+      "coder1_val": "real-time claim on Jetson Xavier; no FPS, batch or precision reported; training GPU RTX 3090",
+      "coder2_val": "not applicable"
+    },
+    {
+      "file": "034_PMC11849088.json",
+      "dataset": "NEU-DET",
+      "field": "F06",
+      "coder1_status": "reported",
+      "coder2_status": "ambiguous",
+      "coder1_val": "best epoch and last epoch weights recorded",
+      "coder2_val": "best epoch recorded, metric/split not explicitly specified"
+    },
+    {
+      "file": "034_PMC11849088.json",
+      "dataset": "NEU-DET",
+      "field": "F07",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "test split exists in F02, but Table 10 does not specify val vs test",
+      "coder2_val": "validation set"
+    },
+    {
+      "file": "034_PMC11849088.json",
+      "dataset": "NEU-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "reported",
+      "coder1_val": "unclear",
+      "coder2_val": "same_set"
+    },
+    {
+      "file": "034_PMC11849088.json",
+      "dataset": "NEU-DET",
+      "field": "F15",
+      "coder1_status": "reported",
+      "coder2_status": "ambiguous",
+      "coder1_val": "NVIDIA Tesla T4 GPU, Google Colab",
+      "coder2_val": "NVIDIA Tesla T4 GPU, batch size not specified for inference"
+    },
+    {
+      "file": "034_PMC11849088.json",
+      "dataset": "GC10-DET",
+      "field": "F06",
+      "coder1_status": "reported",
+      "coder2_status": "ambiguous",
+      "coder1_val": "best epoch and last epoch weights recorded",
+      "coder2_val": "best epoch recorded, metric/split not explicitly specified"
+    },
+    {
+      "file": "034_PMC11849088.json",
+      "dataset": "GC10-DET",
+      "field": "F07",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "test split exists in F02, but Table 10 does not specify val vs test",
+      "coder2_val": "validation set"
+    },
+    {
+      "file": "034_PMC11849088.json",
+      "dataset": "GC10-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "reported",
+      "coder1_val": "unclear",
+      "coder2_val": "same_set"
+    },
+    {
+      "file": "034_PMC11849088.json",
+      "dataset": "GC10-DET",
+      "field": "F15",
+      "coder1_status": "reported",
+      "coder2_status": "ambiguous",
+      "coder1_val": "NVIDIA Tesla T4 GPU, Google Colab",
+      "coder2_val": "NVIDIA Tesla T4 GPU, batch size not specified for inference"
+    },
+    {
+      "file": "042_PMC10675464.json",
+      "dataset": "NEU-DET",
+      "field": "F10",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "150 frozen + 100 unfrozen epochs, but termination also by test-set convergence rule",
+      "coder2_val": "250 (150 frozen + 100 unfrozen)"
+    },
+    {
+      "file": "042_PMC10675464.json",
+      "dataset": "GC10-DET",
+      "field": "F10",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "150 frozen + 100 unfrozen epochs, but termination also by test-set convergence rule",
+      "coder2_val": "250 (150 frozen + 100 unfrozen)"
+    },
+    {
+      "file": "044_PMC11001973.json",
+      "dataset": "NEU-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "054_PMC13614541.json",
+      "dataset": "NEU-DET",
+      "field": "F07",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "test set implied (failure cases and domain-shift clean score 80.4 on test set equal Table 3), not stated for Table 3",
+      "coder2_val": "test set (180 images)"
+    },
+    {
+      "file": "054_PMC13614541.json",
+      "dataset": "NEU-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "054_PMC13614541.json",
+      "dataset": "NEU-DET",
+      "field": "F14",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "mixed (steel-specific methods with '–' cells and citations appear copied; YOLO/DETR baselines apparently rerun); not stated",
+      "coder2_val": "mixed"
+    },
+    {
+      "file": "054_PMC13614541.json",
+      "dataset": "GC10-DET",
+      "field": "F07",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "054_PMC13614541.json",
+      "dataset": "GC10-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "054_PMC13614541.json",
+      "dataset": "GC10-DET",
+      "field": "F14",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "mixed likely; not stated",
+      "coder2_val": "mixed"
+    },
+    {
+      "file": "064_PMC13568295.json",
+      "dataset": "NEU-DET",
+      "field": "F07",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "NEU Table 5 evaluation set not stated",
+      "coder2_val": "unclear whether validation or test set"
+    },
+    {
+      "file": "064_PMC13568295.json",
+      "dataset": "NEU-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "064_PMC13568295.json",
+      "dataset": "NEU-DET",
+      "field": "F14",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "text says all models trained under same settings, but NEU table rows carry citations [32],[43]-[46]",
+      "coder2_val": "rerun"
+    },
+    {
+      "file": "071_PMC13208663.json",
+      "dataset": "NEU-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "071_PMC13208663.json",
+      "dataset": "GC10-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "087_PMC13421597.json",
+      "dataset": "NEU-DET",
+      "field": "F07",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "evaluation split stated",
+      "coder2_val": "test set"
+    },
+    {
+      "file": "087_PMC13421597.json",
+      "dataset": "NEU-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "087_PMC13421597.json",
+      "dataset": "NEU-DET",
+      "field": "F10",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "reported",
+      "coder1_val": "",
+      "coder2_val": "300 cycles"
+    },
+    {
+      "file": "087_PMC13421597.json",
+      "dataset": "NEU-DET",
+      "field": "F11",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "reported",
+      "coder1_val": "",
+      "coder2_val": "32"
+    },
+    {
+      "file": "087_PMC13421597.json",
+      "dataset": "NEU-DET",
+      "field": "F14",
+      "coder1_status": "ambiguous",
+      "coder2_status": "not_reported_in_paper",
+      "coder1_val": "comparative baseline table",
+      "coder2_val": "not reported"
+    },
+    {
+      "file": "087_PMC13421597.json",
+      "dataset": "NEU-DET",
+      "field": "F15",
+      "coder1_status": "reported",
+      "coder2_status": "ambiguous",
+      "coder1_val": "hardware reported",
+      "coder2_val": "NVIDIA GeForce RTX3080 GPU (inference batch size not specified)"
+    },
+    {
+      "file": "096_PMC12899440.json",
+      "dataset": "NEU-DET",
+      "field": "F07",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "",
+      "coder2_val": "unclear whether validation or test set"
+    },
+    {
+      "file": "096_PMC12899440.json",
+      "dataset": "NEU-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "096_PMC12899440.json",
+      "dataset": "NEU-DET",
+      "field": "F14",
+      "coder1_status": "ambiguous",
+      "coder2_status": "not_reported_in_paper",
+      "coder1_val": "rerun",
+      "coder2_val": "not reported"
+    },
+    {
+      "file": "107_PMC12658271.json",
+      "dataset": "NEU-DET",
+      "field": "F06",
+      "coder1_status": "ambiguous",
+      "coder2_status": "not_reported_in_paper",
+      "coder1_val": "Early Stopping mechanism mentioned, but validation set and selection criterion not stated",
+      "coder2_val": "not reported"
+    },
+    {
+      "file": "107_PMC12658271.json",
+      "dataset": "NEU-DET",
+      "field": "F07",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "test set (only train/test split defined; Table 8 caption states test set with 0.754 mAP50 vs 76.32% in Tables 5-6)",
+      "coder2_val": "testing set"
+    },
+    {
+      "file": "107_PMC12658271.json",
+      "dataset": "NEU-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "107_PMC12658271.json",
+      "dataset": "NEU-DET",
+      "field": "F14",
+      "coder1_status": "ambiguous",
+      "coder2_status": "not_reported_in_paper",
+      "coder1_val": "rerun",
+      "coder2_val": "not reported"
+    },
+    {
+      "file": "107_PMC12658271.json",
+      "dataset": "NEU-DET",
+      "field": "F16",
+      "coder1_status": "ambiguous",
+      "coder2_status": "not_reported_in_paper",
+      "coder1_val": "https://github.com/liukun6606/YOLOv5s-SDF (link stated in Data availability; repo accessibility and training code pending verification)",
+      "coder2_val": "not reported"
+    },
+    {
+      "file": "118_PMC12358517.json",
+      "dataset": "NEU-DET",
+      "field": "F02",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "reported",
+      "coder1_val": "",
+      "coder2_val": "5:1 ratio (1,500 training and 300 test images)"
+    },
+    {
+      "file": "118_PMC12358517.json",
+      "dataset": "NEU-DET",
+      "field": "F07",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "evaluation split stated",
+      "coder2_val": "test set"
+    },
+    {
+      "file": "118_PMC12358517.json",
+      "dataset": "NEU-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "118_PMC12358517.json",
+      "dataset": "NEU-DET",
+      "field": "F10",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "reported",
+      "coder1_val": "",
+      "coder2_val": "100"
+    },
+    {
+      "file": "118_PMC12358517.json",
+      "dataset": "NEU-DET",
+      "field": "F11",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "reported",
+      "coder1_val": "",
+      "coder2_val": "4"
+    },
+    {
+      "file": "118_PMC12358517.json",
+      "dataset": "NEU-DET",
+      "field": "F14",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "comparative baseline table",
+      "coder2_val": "mixed"
+    },
+    {
+      "file": "118_PMC12358517.json",
+      "dataset": "NEU-DET",
+      "field": "F15",
+      "coder1_status": "reported",
+      "coder2_status": "ambiguous",
+      "coder1_val": "hardware reported",
+      "coder2_val": "NVIDIA Geforce RTX 3050 laptop GPU (inference batch size not specified)"
+    },
+    {
+      "file": "123_PMC12431288.json",
+      "dataset": "NEU-DET",
+      "field": "F14",
+      "coder1_status": "ambiguous",
+      "coder2_status": "not_reported_in_paper",
+      "coder1_val": "rerun",
+      "coder2_val": "not reported"
+    },
+    {
+      "file": "131_PMC12212875.json",
+      "dataset": "NEU-DET",
+      "field": "F05",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "",
+      "coder2_val": "UniRepLknet uses self-supervised contrastive learning; baselines not specified"
+    },
+    {
+      "file": "131_PMC12212875.json",
+      "dataset": "NEU-DET",
+      "field": "F07",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "",
+      "coder2_val": "unclear whether validation or test set"
+    },
+    {
+      "file": "131_PMC12212875.json",
+      "dataset": "NEU-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "131_PMC12212875.json",
+      "dataset": "NEU-DET",
+      "field": "F16",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "reported",
+      "coder1_val": "https://github.com/Missing24ff/SAMF-YOLO.git ; https://github.com/Missing24ff/SAMF-YOLO/tree/master (link stated in paper; accessibility and training code to be verified in step 2)",
+      "coder2_val": "https://github.com/Missing24ff/SAMF-YOLO.git"
+    },
+    {
+      "file": "150_PMC11085271.json",
+      "dataset": "NEU-DET",
+      "field": "F07",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "",
+      "coder2_val": "unclear whether validation or test set"
+    },
+    {
+      "file": "150_PMC11085271.json",
+      "dataset": "NEU-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "150_PMC11085271.json",
+      "dataset": "NEU-DET",
+      "field": "F09",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "reported",
+      "coder1_val": "raw image resolution 200x200 stated, but network input resize resolution not reported",
+      "coder2_val": "200x200"
+    },
+    {
+      "file": "150_PMC11085271.json",
+      "dataset": "NEU-DET",
+      "field": "F15",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "RTX 3070 8 GB and timing scope (preprocessing + inference + post-processing) reported, but inference batch size and precision not stated",
+      "coder2_val": "NVIDIA GeForce RTX 3070 8 GB GPU (inference batch size not specified)"
+    },
+    {
+      "file": "169_PMC10096323.json",
+      "dataset": "NEU-DET",
+      "field": "F02",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "reported",
+      "coder1_val": "",
+      "coder2_val": "90% training and 10% test (1620 training, 180 test)"
+    },
+    {
+      "file": "169_PMC10096323.json",
+      "dataset": "NEU-DET",
+      "field": "F07",
+      "coder1_status": "ambiguous",
+      "coder2_status": "reported",
+      "coder1_val": "evaluation split stated",
+      "coder2_val": "test set"
+    },
+    {
+      "file": "169_PMC10096323.json",
+      "dataset": "NEU-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "169_PMC10096323.json",
+      "dataset": "NEU-DET",
+      "field": "F14",
+      "coder1_status": "ambiguous",
+      "coder2_status": "not_reported_in_paper",
+      "coder1_val": "comparative baseline table",
+      "coder2_val": "not reported"
+    },
+    {
+      "file": "169_PMC10096323.json",
+      "dataset": "NEU-DET",
+      "field": "F15",
+      "coder1_status": "reported",
+      "coder2_status": "ambiguous",
+      "coder1_val": "hardware reported",
+      "coder2_val": "NVIDIA GeForce RTX 3090 GPU (inference batch size not specified)"
+    },
+    {
+      "file": "172_PMC10300763.json",
+      "dataset": "NEU-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "172_PMC10300763.json",
+      "dataset": "NEU-DET",
+      "field": "F09",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "reported",
+      "coder1_val": "",
+      "coder2_val": "200x200"
+    },
+    {
+      "file": "183_PMC9720119.json",
+      "dataset": "NEU-DET",
+      "field": "F08",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "unclear",
+      "coder2_val": "unclear"
+    },
+    {
+      "file": "183_PMC9720119.json",
+      "dataset": "NEU-DET",
+      "field": "F15",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "NVIDIA RTX 2060 6G GPU stated as test GPU and FPS reported in Tables 1 and 3, but test batch size and precision not stated",
+      "coder2_val": "NVIDIA RTX 2060 6G GPU (test batch size not specified)"
+    },
+    {
+      "file": "188_PMC10346955.json",
+      "dataset": "NEU-DET",
+      "field": "F15",
+      "coder1_status": "not_reported_in_paper",
+      "coder2_status": "ambiguous",
+      "coder1_val": "Nvidia A100-SXM4 40GB GPU stated in 5.1 and FPS reported in Table 3, but inference batch size and precision not stated",
+      "coder2_val": "Nvidia A100-SXM4 GPU (inference batch size not specified)"
+    }
+  ]
+}

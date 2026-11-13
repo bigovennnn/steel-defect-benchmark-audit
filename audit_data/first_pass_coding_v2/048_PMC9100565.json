@@ -1,0 +1,131 @@
+{
+ "idx": 48,
+ "pmcid": "PMC9100565",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original study proposing MSFT-YOLO (YOLOv5l-based) and reporting bounding-box detection results on NEU-DET.",
+ "detector_family": "YOLOv5",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 grayscale images, 6 classes, 300 per class",
+     "evidence": "The database includes 1800 grayscale images of six different types of typical surface defects, with each type of defect containing 300 samples",
+     "location": "Sec 4.1"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "only 'test results on the NEU-DET dataset'; no split defined",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "3 warm-up epochs then 200 epochs",
+     "evidence": "After that, the model is trained for 200 epochs.",
+     "location": "Sec 4.3"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "single run implied",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "Table 2"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "FPS reported but hardware and batch not stated",
+     "evidence": "",
+     "location": "Sec 4.2, Table 2"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "no code link; data 'available on request from the corresponding author'",
+     "evidence": "",
+     "location": "Data Availability Statement"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "MSFT-YOLO",
+    "map50": null,
+    "map50_95": 75.2,
+    "baseline": "YOLOv5l",
+    "baseline_map50": null,
+    "improvement_pp": 7.0,
+    "single_run": null,
+    "evidence": "MSFT-YOLO achieves 0.752 mAP, a 7.5% improvement over the baseline, while the FPS is 30.6",
+    "location": "Table 2 (mAP 0.752 vs YOLOv5 0.682); Conclusions"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Metric ambiguity: Sec 4.2 defines mAP as average over IoU 0.50:0.95, so 75.2 is coded as map50_95, but the value is implausibly high for mAP50:95 on NEU-DET and may actually be mAP50. Baseline YOLOv5l mAP 68.2 (same metric) -> +7.0 pp; paper text inconsistently claims 7.5% and also 75.7 (Table 3 with multi-step training) vs 75.2 (Table 2). Multi-step training adds defect-free samples as an extra class."
+}

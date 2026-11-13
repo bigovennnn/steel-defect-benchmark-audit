@@ -1,0 +1,133 @@
+{
+ "idx": 20,
+ "pmcid": "PMC12129336",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Primary dataset is PKU-Market-PCB, but YOLOv8n-based detector is also trained and evaluated on NEU-DET for generalization.",
+ "detector_family": "YOLOv8",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 200x200, 6 classes",
+     "evidence": "This dataset contains a total of 1800 images with a size of 200 × 200 pixels, covering six types of defects",
+     "location": "Model generalization verification"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 6:2:2 = 1080/360/360",
+     "evidence": "The dataset is divided into a training set, a validation set, and a testing set in a ratio of 6:2:2, with 1080 images in the training set, 360 images in the validation set",
+     "location": "Model generalization verification"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs (general Table 3)",
+     "evidence": "Epoch | 300",
+     "location": "Table 3"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16 (general Table 3)",
+     "evidence": "Batchsize | 16",
+     "location": "Table 3"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "mixed (inferred: YOLOv8n rerun; DF-YOLOv7/BiCCFM/GLF-NET with missing values appear copied)",
+     "evidence": "Compared PCB-YOLO, YOLOv8n, MD-YOLO [58], Mask-DINO, YOLO -World, DF-YOLOv7 [59], BiCCFM [60],GLF-NET [61].",
+     "location": "Model generalization verification, Table 9"
+    },
+    "F15": {
+     "status": "not_applicable",
+     "value": "no speed reported on NEU-DET",
+     "evidence": "",
+     "location": "Table 9"
+    },
+    "F16": {
+     "status": "ambiguous",
+     "value": "https://osf.io/w6jsc/ (only in article link list; content not described)",
+     "evidence": "https://osf.io/w6jsc/",
+     "location": "[LINKS]"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "PCB-YOLO",
+    "map50": 79.2,
+    "map50_95": null,
+    "baseline": "YOLOv8n",
+    "baseline_map50": 73.7,
+    "improvement_pp": 5.5,
+    "single_run": null,
+    "evidence": "PCB-YOLO | 2.6 | 6.9 | 78.3 | 70.7 | 79.2",
+    "location": "Table 9"
+   }
+  }
+ ],
+ "code_links": [
+  "https://osf.io/w6jsc/"
+ ],
+ "coder_notes": "NEU-DET is a secondary generalization experiment. Text claims 5.7% mAP gain over YOLOv8n on NEU but Table 9 gives 79.2 vs 73.7 (5.5 pp); 5.7% matches the PCB result elsewhere. Training hyperparameters (Table 3) are given once generally; applying them to NEU is inferred. No image size given anywhere. OSF link appears only in the extracted link list (likely data availability); whether it holds code/weights unknown."
+}

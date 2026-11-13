@@ -1,0 +1,249 @@
+{
+ "idx": 111,
+ "pmcid": "PMC12350654",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing RT-DETR-LGA and evaluating bounding-box defect detection on a filter defect dataset as well as NEU-DET and GC10-DET.",
+ "detector_family": "RT-DETR (RT-DETR-LGA)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images (6 classes, 300 each), Northeastern University",
+     "evidence": "The NEU-DET dataset, provided by Northeastern University19, comprises six defect categories: Crazing, Inclusion, Patches, Pitted Surface, Rolled-in Scale, and Scratches. Each category contains 300 samples, totaling 1800 images.",
+     "location": "Results / Experimental setup and evaluation metrics / NEU-DET dataset"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "NEU-DET dataset, Generalization Verification on the NEU-DET Dataset (split is only stated for the proprietary filter dataset)"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Table 3, Table 4"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Experimental setup and evaluation metrics"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "400 epochs",
+     "evidence": "The model was trained for 400 epochs with a batch size of 4.",
+     "location": "Results / Experimental setup and evaluation metrics"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "4",
+     "evidence": "The model was trained for 400 epochs with a batch size of 4.",
+     "location": "Results / Experimental setup and evaluation metrics"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "reported",
+     "value": "5 independent runs, mean ± standard deviation reported for RT-DETR-LGA (mAP@0.5 = 80.28 ± 0.53%, mAP@0.5:0.95 = 41.52 ± 0.71%)",
+     "evidence": "Table 3 Performance comparison on the NEU-DET dataset. Results are reported as mean ± standard deviation over 5 independent runs to ensure statistical robustness.",
+     "location": "Generalization Verification on the NEU-DET Dataset, Table 3"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "mixed",
+     "evidence": "We compared our improved model, RT-DETR-LGA, against the original RT-DETR baseline and several recently improved algorithms for steel surface defect detection.",
+     "location": "Table 3 (rerun RT-DETR baseline), Table 4 (cited literature methods Li et al. and Tian et al.)"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "NVIDIA GeForce RTX 4090D Laptop GPU reported; inference batch size and precision for FPS not specified",
+     "evidence": "Experiments were conducted on a Windows 11 system equipped with an AMD Ryzen 7 6800H with Radeon Graphics (3.20 GHz) as the central processing unit (CPU), paired with an NVIDIA GeForce RTX 4090D Laptop GPU running CUDA version 12.1.",
+     "location": "Experimental setup and evaluation metrics, Table 3"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Data availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "RT-DETR-LGA",
+    "map50": 80.28,
+    "map50_95": 41.52,
+    "baseline": "RT-DETR",
+    "baseline_map50": 74.54,
+    "improvement_pp": 5.74,
+    "single_run": false,
+    "evidence": "Our RT-DETR-LGA model achieves an average mAP@0.5 of 80.28%, representing a substantial increase of 5.74 percentage points over the baseline.",
+    "location": "Table 3, Generalization Verification on the NEU-DET Dataset"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "ambiguous",
+     "value": "10 classes stated and reference [20] cited, but total image count and source URL not stated",
+     "evidence": "It comprises ten categories of steel surface defects: Crescent gap, Welding line, Water spot, Silk spot, Inclusion, Oil spot, Crease, Punching, Waist folding, and Rolled pit.",
+     "location": "Results / Experimental setup and evaluation metrics / GC10-DET dataset"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "GC10-DET dataset, Robustness verification on the GC10-DET dataset"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Table 5"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Experimental setup and evaluation metrics"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "400 epochs",
+     "evidence": "The model was trained for 400 epochs with a batch size of 4.",
+     "location": "Results / Experimental setup and evaluation metrics"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "4",
+     "evidence": "The model was trained for 400 epochs with a batch size of 4.",
+     "location": "Results / Experimental setup and evaluation metrics"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Table 5 (only single point values reported for GC10-DET)"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "mixed",
+     "evidence": "RT-DETR-LGA achieves an overall mAP of 73.40%, which is a substantial improvement of 7.92 percentage points over the baseline RT-DETR and also surpasses the 71.00% mAP of the specialized EC-YOLO23.",
+     "location": "Table 5, Robustness verification on the GC10-DET dataset"
+    },
+    "F15": {
+     "status": "not_applicable",
+     "value": "no FPS or latency reported for GC10-DET in Table 5",
+     "evidence": "",
+     "location": "Table 5"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Data availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "RT-DETR-LGA",
+    "map50": 73.4,
+    "map50_95": null,
+    "baseline": "RT-DETR",
+    "baseline_map50": 65.48,
+    "improvement_pp": 7.92,
+    "single_run": null,
+    "evidence": "RT-DETR-LGA achieves an overall mAP of 73.40%, which is a substantial improvement of 7.92 percentage points over the baseline RT-DETR and also surpasses the 71.00% mAP of the specialized EC-YOLO23.",
+    "location": "Table 5, Robustness verification on the GC10-DET dataset"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Table 5 reports GC10-DET mAP@0.5 = 73.40% for RT-DETR-LGA vs 65.48% for RT-DETR, whereas the Discussion text (line 144) writes 78.4% mAP@0.5 for GC10-DET; Table 5 value (73.40%) is recorded. For NEU-DET, Table 3 reports 5-run mean ± SD for RT-DETR-LGA, while the baseline RT-DETR row in Table 3 has no ± SD values despite text saying both were run five times."
+}

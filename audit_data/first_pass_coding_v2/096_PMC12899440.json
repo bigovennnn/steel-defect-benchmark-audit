@@ -1,0 +1,133 @@
+{
+ "idx": 96,
+ "pmcid": "PMC12899440",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing LESSDD-Net (based on YOLO11n) and evaluating bounding-box defect detection on augmented NEU-DET.",
+ "detector_family": "YOLO11n (LESSDD-Net)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 grayscale images, 6 classes, 300 per class, 200x200 pixels, augmented to 7200 images; NEU link",
+     "evidence": "Each image in the dataset is a 200 × 200 pixel grayscale image, with a total of 300 images for each defect type, resulting in an overall total of 1800 images.",
+     "location": "4.1, Data Availability Statement"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "8:1:1 training/validation/test on augmented 7200 images (5760/720/720)",
+     "evidence": "The dataset is divided into training, validation, and test sets in an 8:1:1 ratio. After this division, the training set contains 5760 images, while both the validation and test sets consist of 720 images each.",
+     "location": "4.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.2"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.2"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.4, 4.5"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "4.1, 4.4, 4.5"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "The input image size is standardized to 640 × 640 pixels.",
+     "location": "4.2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "150 epochs",
+     "evidence": "The training is conducted over 150 epochs with a batch size of 32.",
+     "location": "4.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "The training is conducted over 150 epochs with a batch size of 32.",
+     "location": "4.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.2"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.4, 4.5"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "rerun",
+     "evidence": "Table 3 reports the experimental results of LESSDD-Net alongside eight mainstream lightweight object detection models on the augmented NEU-DET dataset.",
+     "location": "4.5"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "RTX 4090D hardware reported; batch size and precision for FPS not reported",
+     "evidence": "The hardware configuration featured an Intel (R) Xeon (R) Platinum 8474C CPU, an RTX 4090D GPU with 24 GB of VRAM, and 80 GB of RAM.",
+     "location": "4.2"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Data Availability Statement"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Data Availability Statement"
+    }
+   },
+   "main_result": {
+    "model": "LESSDD-Net",
+    "map50": 75.37,
+    "map50_95": null,
+    "baseline": "YOLO11n",
+    "baseline_map50": 73.04,
+    "improvement_pp": 2.33,
+    "single_run": null,
+    "evidence": "YOLO11n [18] | 2.58 | 6.3 | 137.39 | 73.04 YOLOv12n [14] | 2.51 | 5.8 | 72.38 | 72.53 LESSDD-Net | 1.55 | 5.0 | 131.09 | 75.37",
+    "location": "Table 2, Table 3"
+   }
+  }
+ ],
+ "code_links": [
+  "http://faculty.neu.edu.cn/songkechen/zh_CN/zdylm/263270/list/index.htm"
+ ],
+ "coder_notes": "NEU-DET is first expanded via offline mosaic augmentation from 1800 to 7200 images prior to the 8:1:1 train/val/test split (potential cross-split leakage). Paper reports +3.19% relative improvement, which corresponds to +2.33 percentage points (75.37% vs 73.04%)."
+}

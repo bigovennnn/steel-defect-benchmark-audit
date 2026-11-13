@@ -1,0 +1,249 @@
+{
+ "idx": 26,
+ "pmcid": "PMC12328634",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original study proposing PEYOLO (YOLOv8n-based) and reporting bounding-box detection results on NEU-DET and GC10-DET (plus Severstal, PCB-DET).",
+ "detector_family": "YOLOv8",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "6 classes, 1800 images",
+     "evidence": "Images for trainImages for valImages for testNEU-DET618001440180180",
+     "location": "Table 1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train 1440 / val 180 / test 180",
+     "evidence": "Images for trainImages for valImages for testNEU-DET618001440180180",
+     "location": "Table 1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "validation set",
+     "evidence": "Tables 7 and 8 present the performance of these methods on the NEU-DET and GC10-DET validation datasets",
+     "location": "Comparison with the latest techniques; also Table 4/12"
+    },
+    "F08": {
+     "status": "ambiguous",
+     "value": "unclear (results on validation set; checkpoint selection set not stated; test split defined but no test results)",
+     "evidence": "a quantitative analysis was conducted on the NEU-DET validation set",
+     "location": "Comparison of PEYOLO with YOLOv8, YOLOv9, and YOLOv10 series"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "During model training, the image size was set to 640 × 640.",
+     "location": "Training strategies and implementation details"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs",
+     "evidence": "Total epochs200",
+     "location": "Table 2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "8",
+     "evidence": "a batch size of 8 was selected to enable efficient training without excessive memory consumption",
+     "location": "Training strategies and implementation details"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "single run implied",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "Tables 4-9"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "RTX 4050, batch 1, 640x640",
+     "evidence": "FPS measurements were conducted on an NVIDIA GeForce RTX 4050, with input image resolution set to 640 × 640 pixels",
+     "location": "Training strategies and implementation details"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "no code link; datasets 'available from the corresponding authors upon reasonable request'",
+     "evidence": "",
+     "location": "Data availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "PEYOLO",
+    "map50": 78.1,
+    "map50_95": null,
+    "baseline": "YOLOv8n",
+    "baseline_map50": 74.6,
+    "improvement_pp": 3.5,
+    "single_run": null,
+    "evidence": "Ultimately, compared to the baseline method, PEYOLO achieves an improvement of 3.5% in recall, 3.5% in mAP50, and 4.1% in precision.",
+    "location": "Ablation analysis; Table 7, Table 12"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "10 classes, 2291 images",
+     "evidence": "GC10-DET1022911832229230",
+     "location": "Table 1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train 1832 / val 229 / test 230",
+     "evidence": "GC10-DET1022911832229230",
+     "location": "Table 1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "validation set",
+     "evidence": "Tables 7 and 8 present the performance of these methods on the NEU-DET and GC10-DET validation datasets",
+     "location": "Comparison with the latest techniques; Table 8"
+    },
+    "F08": {
+     "status": "ambiguous",
+     "value": "unclear (results on validation set; checkpoint selection set not stated)",
+     "evidence": "Tables 7 and 8 present the performance of these methods on the NEU-DET and GC10-DET validation datasets",
+     "location": "Comparison with the latest techniques"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "During model training, the image size was set to 640 × 640.",
+     "location": "Training strategies and implementation details"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs",
+     "evidence": "Total epochs200",
+     "location": "Table 2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "8",
+     "evidence": "a batch size of 8 was selected to enable efficient training without excessive memory consumption",
+     "location": "Training strategies and implementation details"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "single run implied",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "Table 8"
+    },
+    "F15": {
+     "status": "not_applicable",
+     "value": "no FPS reported on GC10-DET (Table 8 gives GFLOPs only)",
+     "evidence": "",
+     "location": "Table 8"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "no code link; datasets 'available from the corresponding authors upon reasonable request'",
+     "evidence": "",
+     "location": "Data availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "PEYOLO",
+    "map50": 62.3,
+    "map50_95": null,
+    "baseline": "YOLOv8n",
+    "baseline_map50": 53.2,
+    "improvement_pp": 9.1,
+    "single_run": null,
+    "evidence": "PEYOLO achieved precision, mAP50, and F1 scores of 64.3%, 62.3%, and 61%, respectively",
+    "location": "Table 8"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Severstal and PCB-DET also used (not coded). Hyperparameters (lr, weight decay, optimizer) reported as tuned via 'experiments' but tuning set not stated. Baseline mAP50 values from Table 8 (YOLOv8n 53.2) and Table 7 (74.6); abstract gains 3.5 and 9.1 match."
+}

@@ -1,0 +1,131 @@
+{
+  "idx": 213,
+  "pmcid": "PMC12252334",
+  "eligibility": "include",
+  "exclusion_code": "",
+  "eligibility_reason": "Original research proposing the ZoomHead detection head for YOLOv10 and YOLO11 and evaluating bounding box defect detection on NEU-DET.",
+  "detector_family": "YOLOv10 / YOLO11",
+  "is_preprint_or_version_note": "",
+  "datasets": [
+    {
+      "dataset": "NEU-DET",
+      "fields": {
+        "F01": {
+          "status": "reported",
+          "value": "1800 images, 6 classes, 300 per class (200x200x1), Northeastern University",
+          "evidence": "There were 300 defect images for each category, totaling 1800 defect images, each image with a size of (200 × 200 × 1).",
+          "location": "§4.1.1"
+        },
+        "F02": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§4.1.1, full text checked"
+        },
+        "F03": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§4.1.1, full text checked"
+        },
+        "F04": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§4.1.1, full text checked"
+        },
+        "F05": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§4.1.2, Table 2, full text checked"
+        },
+        "F06": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§4.1, §4.2, full text checked"
+        },
+        "F07": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§4.2.2, Table 5, Table 11, full text checked"
+        },
+        "F08": {
+          "status": "not_reported_in_paper",
+          "value": "unclear",
+          "evidence": "",
+          "location": "§4.1, §4.2, full text checked"
+        },
+        "F09": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§4.1.2, Table 2, full text checked"
+        },
+        "F10": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§4.1.2, Table 2, full text checked"
+        },
+        "F11": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§4.1.2, Table 2, full text checked"
+        },
+        "F12": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§4.1.2, Table 2, full text checked"
+        },
+        "F13": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§4.2, Table 5, Table 11, full text checked"
+        },
+        "F14": {
+          "status": "reported",
+          "value": "rerun",
+          "evidence": "Then, they are deployed sequentially in the head structure of the YOLO11n model or perform overall replacement, using the same hyperparameters to train and reason for each model.",
+          "location": "§4.1.4, §4.4"
+        },
+        "F15": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§4.1.2, §4.2.2, Table 2, full text checked"
+        },
+        "F16": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "Data Availability Statement, full text checked"
+        },
+        "F17": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "Data Availability Statement, full text checked"
+        }
+      },
+      "main_result": {
+        "model": "YOLO11n-ZoomHead",
+        "map50": 76.2,
+        "map50_95": 42.2,
+        "baseline": "YOLO11n",
+        "baseline_map50": 74.8,
+        "improvement_pp": 1.4,
+        "single_run": null,
+        "evidence": "YOLO11n | 0.695 | 0.744 | 0.748 | 0.416 YOLO11n-ZoomHead | 0.734 (↑0.039) | 0.762 (↑0.018) | 0.762 (↑0.014) | 0.422 (↑0.006)",
+        "location": "Table 5"
+      }
+    }
+  ],
+  "code_links": [],
+  "coder_notes": "§4.1.1 gives a 9:0.5:0.5 train/val/test split only for the 2000-image rail surface micro-crack dataset (item 1), not for NEU-DET (item 2). Table 2 only lists hardware and software versions without training hyperparameters (epochs, batch size, learning rate, input resolution). Table 5 evaluates ZoomHead across YOLOv10n/s/m/b/l/x and YOLO11n/s/m/l/x on NEU-DET (highest mAP@50 is YOLO11l-ZoomHead at 77.9% vs 76.5% for YOLO11l; YOLOv10n-ZoomHead achieves 76.7% vs 73.5% for YOLOv10n). Note an internal discrepancy between Table 5 (YOLO11n-ZoomHead mAP@50 = 0.762) and Table 11 (YOLOv11n-ZoomHead mAP@50 = 0.772, while text §4.4.2 says YOLO11n-ZoomHead is slightly inferior to YOLO11n-DyHead at 0.755, likely a typo in Table 11)."
+}

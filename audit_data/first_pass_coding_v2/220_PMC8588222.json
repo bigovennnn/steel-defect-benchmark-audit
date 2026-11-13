@@ -1,0 +1,131 @@
+{
+  "idx": 220,
+  "pmcid": "PMC8588222",
+  "eligibility": "include",
+  "exclusion_code": "",
+  "eligibility_reason": "Original research proposing Smoothing Complete Feature Pyramid Networks (SCFPN) and evaluating bounding box defect detection on NEU-DET.",
+  "detector_family": "Faster R-CNN / FPN (SCFPN)",
+  "is_preprint_or_version_note": "",
+  "datasets": [
+    {
+      "dataset": "NEU-DET",
+      "fields": {
+        "F01": {
+          "status": "reported",
+          "value": "1200 samples, 6 classes (Cr, In, RS, PS, Pa, Sc), 200x200 resolution",
+          "evidence": "such as NEU-Det (1200 samples with the resolution of 200 × 200), which is widely used among peers.",
+          "location": "§1, Table 3"
+        },
+        "F02": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§3.3, full text checked"
+        },
+        "F03": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§3.3, full text checked"
+        },
+        "F04": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§3, full text checked"
+        },
+        "F05": {
+          "status": "reported",
+          "value": "ResNet101 backbone pre-trained on ImageNet for FPN series (FPN, CFPN, SCFPN); not specified for other baselines",
+          "evidence": "The FPN series networks (FPN, CFPN, and SCFPN) employ ResNet101 which pre-trained on ImageNet as backbones.",
+          "location": "§3"
+        },
+        "F06": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§3.3, full text checked"
+        },
+        "F07": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§3.3, §4.2, Table 3, full text checked"
+        },
+        "F08": {
+          "status": "not_reported_in_paper",
+          "value": "unclear",
+          "evidence": "",
+          "location": "§3.3, full text checked"
+        },
+        "F09": {
+          "status": "ambiguous",
+          "value": "200x200 dataset image resolution stated and SCFPN accepts arbitrary single-scale size, but unclear if resized during training/testing",
+          "evidence": "In addition, the image resolution of DeepPCB and NEU datasets are 640 × 640 and 200 × 200, respectively.",
+          "location": "§2, §5"
+        },
+        "F10": {
+          "status": "reported",
+          "value": "150,000 iterations",
+          "evidence": "Hyper-Parameters | Learning Rate | MaxIteration | Momentum | Lr Decay | Batch Size | Weight Decay Value | 0.001 | 150,000 | 0.9 | 60,000, 120,000 | 4 | 0.0001",
+          "location": "Table 1"
+        },
+        "F11": {
+          "status": "reported",
+          "value": "4",
+          "evidence": "Hyper-Parameters | Learning Rate | MaxIteration | Momentum | Lr Decay | Batch Size | Weight Decay Value | 0.001 | 150,000 | 0.9 | 60,000, 120,000 | 4 | 0.0001",
+          "location": "Table 1"
+        },
+        "F12": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§3, Table 1, full text checked"
+        },
+        "F13": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§4.2, Table 3, full text checked"
+        },
+        "F14": {
+          "status": "reported",
+          "value": "mixed",
+          "evidence": "Experimental results from methods without “*” are rerun by ourselves, and experimental results from methods with “*” are cited from published papers.",
+          "location": "Table 3"
+        },
+        "F15": {
+          "status": "reported",
+          "value": "12 GB NVidia Titan Xp GPU, 2.2 GHz Intel Xeon E5-2630 CPU, single image processing time (batch=1); precision and pre/post-processing not specified",
+          "evidence": "Processing time, namely the time requirement for network to process a single image, is adapted to evaluate the real-time performance of defect detection of the model.",
+          "location": "§3, §3.2"
+        },
+        "F16": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "full text checked"
+        },
+        "F17": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "full text checked"
+        }
+      },
+      "main_result": {
+        "model": "SCFPN",
+        "map50": 82.8,
+        "map50_95": null,
+        "baseline": "FPN",
+        "baseline_map50": 77.3,
+        "improvement_pp": 5.5,
+        "single_run": null,
+        "evidence": "SCFPN | 0.087 | 82.8 | 69.1 | 83.1 | 74.9 | 80.4 | 93.1 | 96.4",
+        "location": "Table 3"
+      }
+    }
+  ],
+  "code_links": [],
+  "coder_notes": "§3.3 states 'Each database is divided into a training set and test set by hand-out method' without reporting split counts or ratio, so F02 is not_reported_in_paper. Table 3 explicitly distinguishes rerun baselines (SSD, Faster R-CNN, YOLOv3, YOLOv4, FPN, CFPN) from cited baselines marked with '*' (RAF-SSD, SCN, DIN, DDN)."
+}

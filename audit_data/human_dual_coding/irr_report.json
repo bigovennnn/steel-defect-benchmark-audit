@@ -1,0 +1,1317 @@
+{
+  "status": "awaiting_independent_labels",
+  "total_planned_items": 595,
+  "total_coder2_labels": 0,
+  "total_filled_pairs": 0,
+  "comparison": "source-verified primary paper-layer raw status vs independent coder2 paper-layer raw status",
+  "legacy_first_codes_used_for_irr": false,
+  "adjudicated_labels_used": false,
+  "historical_retest_fallback_used": false,
+  "independence_and_human_identity_verified_by_script": false,
+  "limitations": [
+    "Source verification and human independence require process records; a script cannot certify them.",
+    "Legacy AI-assisted primary codes remain preserved in the key and are not silently treated as verified human labels.",
+    "Not-assessed and blank labels are excluded; not-applicable remains its own category.",
+    "Pooled heterogeneous fields are descriptive; inspect field-specific results.",
+    "Paper-cluster intervals describe this preserved convenience-source sample, not all benchmark literature.",
+    "Low agreement alone does not identify whether disagreement arose from papers, the manual, or coders."
+  ],
+  "overall": {
+    "n_samples": 0,
+    "observed_agreement_Po": null,
+    "cohen_expected_Pe": null,
+    "cohen_kappa": null,
+    "cohen_kappa_reason": "no_assessed_pairs",
+    "gwet_expected_Pe": null,
+    "gwet_ac1": null,
+    "confusion_matrix": {
+      "reported": {
+        "reported": 0,
+        "ambiguous": 0,
+        "not_reported_in_paper": 0,
+        "not_applicable": 0
+      },
+      "ambiguous": {
+        "reported": 0,
+        "ambiguous": 0,
+        "not_reported_in_paper": 0,
+        "not_applicable": 0
+      },
+      "not_reported_in_paper": {
+        "reported": 0,
+        "ambiguous": 0,
+        "not_reported_in_paper": 0,
+        "not_applicable": 0
+      },
+      "not_applicable": {
+        "reported": 0,
+        "ambiguous": 0,
+        "not_reported_in_paper": 0,
+        "not_applicable": 0
+      }
+    },
+    "n_papers": 0,
+    "categories": [
+      "reported",
+      "ambiguous",
+      "not_reported_in_paper",
+      "not_applicable"
+    ],
+    "observed_agreement_Po_ci95": null,
+    "cohen_kappa_ci95": null,
+    "gwet_ac1_ci95": null,
+    "bootstrap": {
+      "unit": "paper",
+      "requested_replicates": 1000,
+      "completed_replicates": 0,
+      "seed": 42,
+      "undefined_replicates": {
+        "observed_agreement_Po": 0,
+        "cohen_kappa": 0,
+        "gwet_ac1": 0
+      },
+      "status": "fewer_than_two_papers"
+    },
+    "total_planned_items": 595,
+    "coder2_status_counts": {
+      "blank": 595
+    },
+    "primary_paper_status_counts": {
+      "blank": 595
+    },
+    "primary_source_verified_labels": 0,
+    "coder2_labels_missing_evidence": 0,
+    "primary_labels_missing_evidence": 0,
+    "excluded_from_irr": 595
+  },
+  "per_field": {
+    "F01": {
+      "n_samples": 0,
+      "observed_agreement_Po": null,
+      "cohen_expected_Pe": null,
+      "cohen_kappa": null,
+      "cohen_kappa_reason": "no_assessed_pairs",
+      "gwet_expected_Pe": null,
+      "gwet_ac1": null,
+      "confusion_matrix": {
+        "reported": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "ambiguous": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_reported_in_paper": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_applicable": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        }
+      },
+      "n_papers": 0,
+      "categories": [
+        "reported",
+        "ambiguous",
+        "not_reported_in_paper",
+        "not_applicable"
+      ],
+      "observed_agreement_Po_ci95": null,
+      "cohen_kappa_ci95": null,
+      "gwet_ac1_ci95": null,
+      "bootstrap": {
+        "unit": "paper",
+        "requested_replicates": 1000,
+        "completed_replicates": 0,
+        "seed": 42,
+        "undefined_replicates": {
+          "observed_agreement_Po": 0,
+          "cohen_kappa": 0,
+          "gwet_ac1": 0
+        },
+        "status": "fewer_than_two_papers"
+      },
+      "total_planned_items": 35,
+      "coder2_status_counts": {
+        "blank": 35
+      },
+      "primary_paper_status_counts": {
+        "blank": 35
+      },
+      "primary_source_verified_labels": 0,
+      "coder2_labels_missing_evidence": 0,
+      "primary_labels_missing_evidence": 0,
+      "excluded_from_irr": 35
+    },
+    "F02": {
+      "n_samples": 0,
+      "observed_agreement_Po": null,
+      "cohen_expected_Pe": null,
+      "cohen_kappa": null,
+      "cohen_kappa_reason": "no_assessed_pairs",
+      "gwet_expected_Pe": null,
+      "gwet_ac1": null,
+      "confusion_matrix": {
+        "reported": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "ambiguous": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_reported_in_paper": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_applicable": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        }
+      },
+      "n_papers": 0,
+      "categories": [
+        "reported",
+        "ambiguous",
+        "not_reported_in_paper",
+        "not_applicable"
+      ],
+      "observed_agreement_Po_ci95": null,
+      "cohen_kappa_ci95": null,
+      "gwet_ac1_ci95": null,
+      "bootstrap": {
+        "unit": "paper",
+        "requested_replicates": 1000,
+        "completed_replicates": 0,
+        "seed": 42,
+        "undefined_replicates": {
+          "observed_agreement_Po": 0,
+          "cohen_kappa": 0,
+          "gwet_ac1": 0
+        },
+        "status": "fewer_than_two_papers"
+      },
+      "total_planned_items": 35,
+      "coder2_status_counts": {
+        "blank": 35
+      },
+      "primary_paper_status_counts": {
+        "blank": 35
+      },
+      "primary_source_verified_labels": 0,
+      "coder2_labels_missing_evidence": 0,
+      "primary_labels_missing_evidence": 0,
+      "excluded_from_irr": 35
+    },
+    "F03": {
+      "n_samples": 0,
+      "observed_agreement_Po": null,
+      "cohen_expected_Pe": null,
+      "cohen_kappa": null,
+      "cohen_kappa_reason": "no_assessed_pairs",
+      "gwet_expected_Pe": null,
+      "gwet_ac1": null,
+      "confusion_matrix": {
+        "reported": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "ambiguous": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_reported_in_paper": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_applicable": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        }
+      },
+      "n_papers": 0,
+      "categories": [
+        "reported",
+        "ambiguous",
+        "not_reported_in_paper",
+        "not_applicable"
+      ],
+      "observed_agreement_Po_ci95": null,
+      "cohen_kappa_ci95": null,
+      "gwet_ac1_ci95": null,
+      "bootstrap": {
+        "unit": "paper",
+        "requested_replicates": 1000,
+        "completed_replicates": 0,
+        "seed": 42,
+        "undefined_replicates": {
+          "observed_agreement_Po": 0,
+          "cohen_kappa": 0,
+          "gwet_ac1": 0
+        },
+        "status": "fewer_than_two_papers"
+      },
+      "total_planned_items": 35,
+      "coder2_status_counts": {
+        "blank": 35
+      },
+      "primary_paper_status_counts": {
+        "blank": 35
+      },
+      "primary_source_verified_labels": 0,
+      "coder2_labels_missing_evidence": 0,
+      "primary_labels_missing_evidence": 0,
+      "excluded_from_irr": 35
+    },
+    "F04": {
+      "n_samples": 0,
+      "observed_agreement_Po": null,
+      "cohen_expected_Pe": null,
+      "cohen_kappa": null,
+      "cohen_kappa_reason": "no_assessed_pairs",
+      "gwet_expected_Pe": null,
+      "gwet_ac1": null,
+      "confusion_matrix": {
+        "reported": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "ambiguous": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_reported_in_paper": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_applicable": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        }
+      },
+      "n_papers": 0,
+      "categories": [
+        "reported",
+        "ambiguous",
+        "not_reported_in_paper",
+        "not_applicable"
+      ],
+      "observed_agreement_Po_ci95": null,
+      "cohen_kappa_ci95": null,
+      "gwet_ac1_ci95": null,
+      "bootstrap": {
+        "unit": "paper",
+        "requested_replicates": 1000,
+        "completed_replicates": 0,
+        "seed": 42,
+        "undefined_replicates": {
+          "observed_agreement_Po": 0,
+          "cohen_kappa": 0,
+          "gwet_ac1": 0
+        },
+        "status": "fewer_than_two_papers"
+      },
+      "total_planned_items": 35,
+      "coder2_status_counts": {
+        "blank": 35
+      },
+      "primary_paper_status_counts": {
+        "blank": 35
+      },
+      "primary_source_verified_labels": 0,
+      "coder2_labels_missing_evidence": 0,
+      "primary_labels_missing_evidence": 0,
+      "excluded_from_irr": 35
+    },
+    "F05": {
+      "n_samples": 0,
+      "observed_agreement_Po": null,
+      "cohen_expected_Pe": null,
+      "cohen_kappa": null,
+      "cohen_kappa_reason": "no_assessed_pairs",
+      "gwet_expected_Pe": null,
+      "gwet_ac1": null,
+      "confusion_matrix": {
+        "reported": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "ambiguous": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_reported_in_paper": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_applicable": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        }
+      },
+      "n_papers": 0,
+      "categories": [
+        "reported",
+        "ambiguous",
+        "not_reported_in_paper",
+        "not_applicable"
+      ],
+      "observed_agreement_Po_ci95": null,
+      "cohen_kappa_ci95": null,
+      "gwet_ac1_ci95": null,
+      "bootstrap": {
+        "unit": "paper",
+        "requested_replicates": 1000,
+        "completed_replicates": 0,
+        "seed": 42,
+        "undefined_replicates": {
+          "observed_agreement_Po": 0,
+          "cohen_kappa": 0,
+          "gwet_ac1": 0
+        },
+        "status": "fewer_than_two_papers"
+      },
+      "total_planned_items": 35,
+      "coder2_status_counts": {
+        "blank": 35
+      },
+      "primary_paper_status_counts": {
+        "blank": 35
+      },
+      "primary_source_verified_labels": 0,
+      "coder2_labels_missing_evidence": 0,
+      "primary_labels_missing_evidence": 0,
+      "excluded_from_irr": 35
+    },
+    "F06": {
+      "n_samples": 0,
+      "observed_agreement_Po": null,
+      "cohen_expected_Pe": null,
+      "cohen_kappa": null,
+      "cohen_kappa_reason": "no_assessed_pairs",
+      "gwet_expected_Pe": null,
+      "gwet_ac1": null,
+      "confusion_matrix": {
+        "reported": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "ambiguous": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_reported_in_paper": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_applicable": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        }
+      },
+      "n_papers": 0,
+      "categories": [
+        "reported",
+        "ambiguous",
+        "not_reported_in_paper",
+        "not_applicable"
+      ],
+      "observed_agreement_Po_ci95": null,
+      "cohen_kappa_ci95": null,
+      "gwet_ac1_ci95": null,
+      "bootstrap": {
+        "unit": "paper",
+        "requested_replicates": 1000,
+        "completed_replicates": 0,
+        "seed": 42,
+        "undefined_replicates": {
+          "observed_agreement_Po": 0,
+          "cohen_kappa": 0,
+          "gwet_ac1": 0
+        },
+        "status": "fewer_than_two_papers"
+      },
+      "total_planned_items": 35,
+      "coder2_status_counts": {
+        "blank": 35
+      },
+      "primary_paper_status_counts": {
+        "blank": 35
+      },
+      "primary_source_verified_labels": 0,
+      "coder2_labels_missing_evidence": 0,
+      "primary_labels_missing_evidence": 0,
+      "excluded_from_irr": 35
+    },
+    "F07": {
+      "n_samples": 0,
+      "observed_agreement_Po": null,
+      "cohen_expected_Pe": null,
+      "cohen_kappa": null,
+      "cohen_kappa_reason": "no_assessed_pairs",
+      "gwet_expected_Pe": null,
+      "gwet_ac1": null,
+      "confusion_matrix": {
+        "reported": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "ambiguous": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_reported_in_paper": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_applicable": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        }
+      },
+      "n_papers": 0,
+      "categories": [
+        "reported",
+        "ambiguous",
+        "not_reported_in_paper",
+        "not_applicable"
+      ],
+      "observed_agreement_Po_ci95": null,
+      "cohen_kappa_ci95": null,
+      "gwet_ac1_ci95": null,
+      "bootstrap": {
+        "unit": "paper",
+        "requested_replicates": 1000,
+        "completed_replicates": 0,
+        "seed": 42,
+        "undefined_replicates": {
+          "observed_agreement_Po": 0,
+          "cohen_kappa": 0,
+          "gwet_ac1": 0
+        },
+        "status": "fewer_than_two_papers"
+      },
+      "total_planned_items": 35,
+      "coder2_status_counts": {
+        "blank": 35
+      },
+      "primary_paper_status_counts": {
+        "blank": 35
+      },
+      "primary_source_verified_labels": 0,
+      "coder2_labels_missing_evidence": 0,
+      "primary_labels_missing_evidence": 0,
+      "excluded_from_irr": 35
+    },
+    "F08": {
+      "n_samples": 0,
+      "observed_agreement_Po": null,
+      "cohen_expected_Pe": null,
+      "cohen_kappa": null,
+      "cohen_kappa_reason": "no_assessed_pairs",
+      "gwet_expected_Pe": null,
+      "gwet_ac1": null,
+      "confusion_matrix": {
+        "reported": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "ambiguous": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_reported_in_paper": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_applicable": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        }
+      },
+      "n_papers": 0,
+      "categories": [
+        "reported",
+        "ambiguous",
+        "not_reported_in_paper",
+        "not_applicable"
+      ],
+      "observed_agreement_Po_ci95": null,
+      "cohen_kappa_ci95": null,
+      "gwet_ac1_ci95": null,
+      "bootstrap": {
+        "unit": "paper",
+        "requested_replicates": 1000,
+        "completed_replicates": 0,
+        "seed": 42,
+        "undefined_replicates": {
+          "observed_agreement_Po": 0,
+          "cohen_kappa": 0,
+          "gwet_ac1": 0
+        },
+        "status": "fewer_than_two_papers"
+      },
+      "total_planned_items": 35,
+      "coder2_status_counts": {
+        "blank": 35
+      },
+      "primary_paper_status_counts": {
+        "blank": 35
+      },
+      "primary_source_verified_labels": 0,
+      "coder2_labels_missing_evidence": 0,
+      "primary_labels_missing_evidence": 0,
+      "excluded_from_irr": 35
+    },
+    "F09": {
+      "n_samples": 0,
+      "observed_agreement_Po": null,
+      "cohen_expected_Pe": null,
+      "cohen_kappa": null,
+      "cohen_kappa_reason": "no_assessed_pairs",
+      "gwet_expected_Pe": null,
+      "gwet_ac1": null,
+      "confusion_matrix": {
+        "reported": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "ambiguous": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_reported_in_paper": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_applicable": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        }
+      },
+      "n_papers": 0,
+      "categories": [
+        "reported",
+        "ambiguous",
+        "not_reported_in_paper",
+        "not_applicable"
+      ],
+      "observed_agreement_Po_ci95": null,
+      "cohen_kappa_ci95": null,
+      "gwet_ac1_ci95": null,
+      "bootstrap": {
+        "unit": "paper",
+        "requested_replicates": 1000,
+        "completed_replicates": 0,
+        "seed": 42,
+        "undefined_replicates": {
+          "observed_agreement_Po": 0,
+          "cohen_kappa": 0,
+          "gwet_ac1": 0
+        },
+        "status": "fewer_than_two_papers"
+      },
+      "total_planned_items": 35,
+      "coder2_status_counts": {
+        "blank": 35
+      },
+      "primary_paper_status_counts": {
+        "blank": 35
+      },
+      "primary_source_verified_labels": 0,
+      "coder2_labels_missing_evidence": 0,
+      "primary_labels_missing_evidence": 0,
+      "excluded_from_irr": 35
+    },
+    "F10": {
+      "n_samples": 0,
+      "observed_agreement_Po": null,
+      "cohen_expected_Pe": null,
+      "cohen_kappa": null,
+      "cohen_kappa_reason": "no_assessed_pairs",
+      "gwet_expected_Pe": null,
+      "gwet_ac1": null,
+      "confusion_matrix": {
+        "reported": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "ambiguous": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_reported_in_paper": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_applicable": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        }
+      },
+      "n_papers": 0,
+      "categories": [
+        "reported",
+        "ambiguous",
+        "not_reported_in_paper",
+        "not_applicable"
+      ],
+      "observed_agreement_Po_ci95": null,
+      "cohen_kappa_ci95": null,
+      "gwet_ac1_ci95": null,
+      "bootstrap": {
+        "unit": "paper",
+        "requested_replicates": 1000,
+        "completed_replicates": 0,
+        "seed": 42,
+        "undefined_replicates": {
+          "observed_agreement_Po": 0,
+          "cohen_kappa": 0,
+          "gwet_ac1": 0
+        },
+        "status": "fewer_than_two_papers"
+      },
+      "total_planned_items": 35,
+      "coder2_status_counts": {
+        "blank": 35
+      },
+      "primary_paper_status_counts": {
+        "blank": 35
+      },
+      "primary_source_verified_labels": 0,
+      "coder2_labels_missing_evidence": 0,
+      "primary_labels_missing_evidence": 0,
+      "excluded_from_irr": 35
+    },
+    "F11": {
+      "n_samples": 0,
+      "observed_agreement_Po": null,
+      "cohen_expected_Pe": null,
+      "cohen_kappa": null,
+      "cohen_kappa_reason": "no_assessed_pairs",
+      "gwet_expected_Pe": null,
+      "gwet_ac1": null,
+      "confusion_matrix": {
+        "reported": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "ambiguous": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_reported_in_paper": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_applicable": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        }
+      },
+      "n_papers": 0,
+      "categories": [
+        "reported",
+        "ambiguous",
+        "not_reported_in_paper",
+        "not_applicable"
+      ],
+      "observed_agreement_Po_ci95": null,
+      "cohen_kappa_ci95": null,
+      "gwet_ac1_ci95": null,
+      "bootstrap": {
+        "unit": "paper",
+        "requested_replicates": 1000,
+        "completed_replicates": 0,
+        "seed": 42,
+        "undefined_replicates": {
+          "observed_agreement_Po": 0,
+          "cohen_kappa": 0,
+          "gwet_ac1": 0
+        },
+        "status": "fewer_than_two_papers"
+      },
+      "total_planned_items": 35,
+      "coder2_status_counts": {
+        "blank": 35
+      },
+      "primary_paper_status_counts": {
+        "blank": 35
+      },
+      "primary_source_verified_labels": 0,
+      "coder2_labels_missing_evidence": 0,
+      "primary_labels_missing_evidence": 0,
+      "excluded_from_irr": 35
+    },
+    "F12": {
+      "n_samples": 0,
+      "observed_agreement_Po": null,
+      "cohen_expected_Pe": null,
+      "cohen_kappa": null,
+      "cohen_kappa_reason": "no_assessed_pairs",
+      "gwet_expected_Pe": null,
+      "gwet_ac1": null,
+      "confusion_matrix": {
+        "reported": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "ambiguous": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_reported_in_paper": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_applicable": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        }
+      },
+      "n_papers": 0,
+      "categories": [
+        "reported",
+        "ambiguous",
+        "not_reported_in_paper",
+        "not_applicable"
+      ],
+      "observed_agreement_Po_ci95": null,
+      "cohen_kappa_ci95": null,
+      "gwet_ac1_ci95": null,
+      "bootstrap": {
+        "unit": "paper",
+        "requested_replicates": 1000,
+        "completed_replicates": 0,
+        "seed": 42,
+        "undefined_replicates": {
+          "observed_agreement_Po": 0,
+          "cohen_kappa": 0,
+          "gwet_ac1": 0
+        },
+        "status": "fewer_than_two_papers"
+      },
+      "total_planned_items": 35,
+      "coder2_status_counts": {
+        "blank": 35
+      },
+      "primary_paper_status_counts": {
+        "blank": 35
+      },
+      "primary_source_verified_labels": 0,
+      "coder2_labels_missing_evidence": 0,
+      "primary_labels_missing_evidence": 0,
+      "excluded_from_irr": 35
+    },
+    "F13": {
+      "n_samples": 0,
+      "observed_agreement_Po": null,
+      "cohen_expected_Pe": null,
+      "cohen_kappa": null,
+      "cohen_kappa_reason": "no_assessed_pairs",
+      "gwet_expected_Pe": null,
+      "gwet_ac1": null,
+      "confusion_matrix": {
+        "reported": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "ambiguous": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_reported_in_paper": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_applicable": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        }
+      },
+      "n_papers": 0,
+      "categories": [
+        "reported",
+        "ambiguous",
+        "not_reported_in_paper",
+        "not_applicable"
+      ],
+      "observed_agreement_Po_ci95": null,
+      "cohen_kappa_ci95": null,
+      "gwet_ac1_ci95": null,
+      "bootstrap": {
+        "unit": "paper",
+        "requested_replicates": 1000,
+        "completed_replicates": 0,
+        "seed": 42,
+        "undefined_replicates": {
+          "observed_agreement_Po": 0,
+          "cohen_kappa": 0,
+          "gwet_ac1": 0
+        },
+        "status": "fewer_than_two_papers"
+      },
+      "total_planned_items": 35,
+      "coder2_status_counts": {
+        "blank": 35
+      },
+      "primary_paper_status_counts": {
+        "blank": 35
+      },
+      "primary_source_verified_labels": 0,
+      "coder2_labels_missing_evidence": 0,
+      "primary_labels_missing_evidence": 0,
+      "excluded_from_irr": 35
+    },
+    "F14": {
+      "n_samples": 0,
+      "observed_agreement_Po": null,
+      "cohen_expected_Pe": null,
+      "cohen_kappa": null,
+      "cohen_kappa_reason": "no_assessed_pairs",
+      "gwet_expected_Pe": null,
+      "gwet_ac1": null,
+      "confusion_matrix": {
+        "reported": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "ambiguous": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_reported_in_paper": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_applicable": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        }
+      },
+      "n_papers": 0,
+      "categories": [
+        "reported",
+        "ambiguous",
+        "not_reported_in_paper",
+        "not_applicable"
+      ],
+      "observed_agreement_Po_ci95": null,
+      "cohen_kappa_ci95": null,
+      "gwet_ac1_ci95": null,
+      "bootstrap": {
+        "unit": "paper",
+        "requested_replicates": 1000,
+        "completed_replicates": 0,
+        "seed": 42,
+        "undefined_replicates": {
+          "observed_agreement_Po": 0,
+          "cohen_kappa": 0,
+          "gwet_ac1": 0
+        },
+        "status": "fewer_than_two_papers"
+      },
+      "total_planned_items": 35,
+      "coder2_status_counts": {
+        "blank": 35
+      },
+      "primary_paper_status_counts": {
+        "blank": 35
+      },
+      "primary_source_verified_labels": 0,
+      "coder2_labels_missing_evidence": 0,
+      "primary_labels_missing_evidence": 0,
+      "excluded_from_irr": 35
+    },
+    "F15": {
+      "n_samples": 0,
+      "observed_agreement_Po": null,
+      "cohen_expected_Pe": null,
+      "cohen_kappa": null,
+      "cohen_kappa_reason": "no_assessed_pairs",
+      "gwet_expected_Pe": null,
+      "gwet_ac1": null,
+      "confusion_matrix": {
+        "reported": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "ambiguous": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_reported_in_paper": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_applicable": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        }
+      },
+      "n_papers": 0,
+      "categories": [
+        "reported",
+        "ambiguous",
+        "not_reported_in_paper",
+        "not_applicable"
+      ],
+      "observed_agreement_Po_ci95": null,
+      "cohen_kappa_ci95": null,
+      "gwet_ac1_ci95": null,
+      "bootstrap": {
+        "unit": "paper",
+        "requested_replicates": 1000,
+        "completed_replicates": 0,
+        "seed": 42,
+        "undefined_replicates": {
+          "observed_agreement_Po": 0,
+          "cohen_kappa": 0,
+          "gwet_ac1": 0
+        },
+        "status": "fewer_than_two_papers"
+      },
+      "total_planned_items": 35,
+      "coder2_status_counts": {
+        "blank": 35
+      },
+      "primary_paper_status_counts": {
+        "blank": 35
+      },
+      "primary_source_verified_labels": 0,
+      "coder2_labels_missing_evidence": 0,
+      "primary_labels_missing_evidence": 0,
+      "excluded_from_irr": 35
+    },
+    "F16": {
+      "n_samples": 0,
+      "observed_agreement_Po": null,
+      "cohen_expected_Pe": null,
+      "cohen_kappa": null,
+      "cohen_kappa_reason": "no_assessed_pairs",
+      "gwet_expected_Pe": null,
+      "gwet_ac1": null,
+      "confusion_matrix": {
+        "reported": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "ambiguous": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_reported_in_paper": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_applicable": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        }
+      },
+      "n_papers": 0,
+      "categories": [
+        "reported",
+        "ambiguous",
+        "not_reported_in_paper",
+        "not_applicable"
+      ],
+      "observed_agreement_Po_ci95": null,
+      "cohen_kappa_ci95": null,
+      "gwet_ac1_ci95": null,
+      "bootstrap": {
+        "unit": "paper",
+        "requested_replicates": 1000,
+        "completed_replicates": 0,
+        "seed": 42,
+        "undefined_replicates": {
+          "observed_agreement_Po": 0,
+          "cohen_kappa": 0,
+          "gwet_ac1": 0
+        },
+        "status": "fewer_than_two_papers"
+      },
+      "total_planned_items": 35,
+      "coder2_status_counts": {
+        "blank": 35
+      },
+      "primary_paper_status_counts": {
+        "blank": 35
+      },
+      "primary_source_verified_labels": 0,
+      "coder2_labels_missing_evidence": 0,
+      "primary_labels_missing_evidence": 0,
+      "excluded_from_irr": 35
+    },
+    "F17": {
+      "n_samples": 0,
+      "observed_agreement_Po": null,
+      "cohen_expected_Pe": null,
+      "cohen_kappa": null,
+      "cohen_kappa_reason": "no_assessed_pairs",
+      "gwet_expected_Pe": null,
+      "gwet_ac1": null,
+      "confusion_matrix": {
+        "reported": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "ambiguous": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_reported_in_paper": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_applicable": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        }
+      },
+      "n_papers": 0,
+      "categories": [
+        "reported",
+        "ambiguous",
+        "not_reported_in_paper",
+        "not_applicable"
+      ],
+      "observed_agreement_Po_ci95": null,
+      "cohen_kappa_ci95": null,
+      "gwet_ac1_ci95": null,
+      "bootstrap": {
+        "unit": "paper",
+        "requested_replicates": 1000,
+        "completed_replicates": 0,
+        "seed": 42,
+        "undefined_replicates": {
+          "observed_agreement_Po": 0,
+          "cohen_kappa": 0,
+          "gwet_ac1": 0
+        },
+        "status": "fewer_than_two_papers"
+      },
+      "total_planned_items": 35,
+      "coder2_status_counts": {
+        "blank": 35
+      },
+      "primary_paper_status_counts": {
+        "blank": 35
+      },
+      "primary_source_verified_labels": 0,
+      "coder2_labels_missing_evidence": 0,
+      "primary_labels_missing_evidence": 0,
+      "excluded_from_irr": 35
+    }
+  },
+  "per_part": {
+    "fixed_26_paper_sample": {
+      "n_samples": 0,
+      "observed_agreement_Po": null,
+      "cohen_expected_Pe": null,
+      "cohen_kappa": null,
+      "cohen_kappa_reason": "no_assessed_pairs",
+      "gwet_expected_Pe": null,
+      "gwet_ac1": null,
+      "confusion_matrix": {
+        "reported": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "ambiguous": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_reported_in_paper": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        },
+        "not_applicable": {
+          "reported": 0,
+          "ambiguous": 0,
+          "not_reported_in_paper": 0,
+          "not_applicable": 0
+        }
+      },
+      "n_papers": 0,
+      "categories": [
+        "reported",
+        "ambiguous",
+        "not_reported_in_paper",
+        "not_applicable"
+      ],
+      "observed_agreement_Po_ci95": null,
+      "cohen_kappa_ci95": null,
+      "gwet_ac1_ci95": null,
+      "bootstrap": {
+        "unit": "paper",
+        "requested_replicates": 1000,
+        "completed_replicates": 0,
+        "seed": 42,
+        "undefined_replicates": {
+          "observed_agreement_Po": 0,
+          "cohen_kappa": 0,
+          "gwet_ac1": 0
+        },
+        "status": "fewer_than_two_papers"
+      },
+      "total_planned_items": 595,
+      "coder2_status_counts": {
+        "blank": 595
+      },
+      "primary_paper_status_counts": {
+        "blank": 595
+      },
+      "primary_source_verified_labels": 0,
+      "coder2_labels_missing_evidence": 0,
+      "primary_labels_missing_evidence": 0,
+      "excluded_from_irr": 595
+    }
+  },
+  "blind_sheet": "docs\\coding_v1\\human_dual_coding\\blank_dual_coding_sheet.csv",
+  "primary_key": "docs\\coding_v1\\human_dual_coding\\coder1_key.csv"
+}

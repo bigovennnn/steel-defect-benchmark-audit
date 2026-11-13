@@ -1,0 +1,249 @@
+{
+ "idx": 75,
+ "pmcid": "PMC12944570",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing a semi-supervised bounding-box object detector (TaDP-Det, built on Faster R-CNN with ResNet-50) and evaluating it on NEU-DET and GC10-DET.",
+ "detector_family": "Faster R-CNN (semi-supervised TaDP-Det with ResNet-50)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 grayscale images, 6 classes (300 per class), 200x200, Northeastern University",
+     "evidence": "It contains 1800 grayscale images of size 200×200, evenly distributed over six defect categories: crazing (Cr), inclusion (In), patches (Pa), pitted surface (PS), rolled-in scale (RS), and scratches (Sc), with 300 samples per class.",
+     "location": "4.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val 7:3 (approx. 1260 train / 540 val); semi-supervised protocols with 1% (13), 5% (63), and 10% (126) of train set labeled and remainder unlabeled",
+     "evidence": "We split the dataset into training and validation sets with a 7:3 ratio and then followed a standard semi-supervised protocol by sampling 10%, 5%, and 1% of the training set as labeled data",
+     "location": "4.1, 4.6"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.2 (Faster R-CNN with ResNet-50 backbone stated; pretraining vs scratch not stated)"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.2, 4.4 (states EMA teacher is used for evaluation, but checkpoint selection rule across iterations is not stated)"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "only train/val 7:3 split is defined in 4.1; main tables do not explicitly state validation set",
+     "evidence": "We split the dataset into training and validation sets with a 7:3 ratio and then followed a standard semi-supervised protocol by sampling 10%, 5%, and 1% of the training set as labeled data",
+     "location": "4.1, Table 1"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "4.1, 4.2, 4.4"
+    },
+    "F09": {
+     "status": "ambiguous",
+     "value": "800x800 reported for inference complexity in Sec 4.4; training input size not explicitly stated",
+     "evidence": "We report inference-time complexity in terms of Params (M) and GFLOPs measured on a single deployed detector with an input size of 800×800.",
+     "location": "4.4"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "18k iterations (step decays at 12k and 16k iterations)",
+     "evidence": "Training follows an iteration-based schedule of 18 k iterations with step decays at 12 k and 16 k iterations.",
+     "location": "4.2"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "rerun",
+     "evidence": "FPS is measured under the same inference setting for all methods to reflect practical throughput, while Params (M) and GFLOPs indicate the model size and computational complexity, respectively.",
+     "location": "4.2, 4.3"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "two NVIDIA RTX 3090 GPUs (24 GB) in 4.2, single deployed detector with 800x800 input in 4.4, FPS in Table 2, but inference batch size and numerical precision not stated",
+     "evidence": "All experiments are conducted on Ubuntu 20.04 with PyTorch (1.13.1) and MMDetection (3.3.0), using two NVIDIA RTX 3090 GPU (24 GB)",
+     "location": "4.2, 4.4, Table 2"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "data available on request; no code link",
+     "evidence": "",
+     "location": "Data Availability Statement"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "TaDP-Det (10% labeled)",
+    "map50": 71.8,
+    "map50_95": null,
+    "baseline": "SSOD baseline (Faster R-CNN Teacher-Student, 10% labeled; Faster R-CNN* supervised-only is 56.7, Mix Teacher is 70.6)",
+    "baseline_map50": 65.1,
+    "improvement_pp": 6.7,
+    "single_run": null,
+    "evidence": "TaDP-Det achieves the best accuracy (71.8 mAP0.5) while maintaining competitive throughput (34.3 FPS).",
+    "location": "4.3, 4.4.1, Tables 1, 2, 5"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "2300 grayscale images, 10 classes, 2048x1000",
+     "evidence": "GC10-DET contains 2300 grayscale images with a resolution of 2048×1000, covering 10 defect categories",
+     "location": "4.1"
+    },
+    "F02": {
+     "status": "ambiguous",
+     "value": "10% and 5% of training images labeled and remainder unlabeled, but overall train/val split ratio for GC10-DET is not explicitly stated in 4.1",
+     "evidence": "We adopt a semi-supervised setting with 10% and 5% of the training images used as labeled data, and the remaining training images treated as unlabeled.",
+     "location": "4.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.2"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.2"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1, Table 3"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "4.1, 4.2"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.2 (800x800 stated only in Sec 4.4 NEU-DET ablation)"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "18k iterations (step decays at 12k and 16k iterations)",
+     "evidence": "Training follows an iteration-based schedule of 18 k iterations with step decays at 12 k and 16 k iterations.",
+     "location": "4.2"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "rerun",
+     "evidence": "All metrics are evaluated under the semi-supervised settings specified for each dataset.",
+     "location": "4.2, Table 3"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "FPS not reported on GC10-DET",
+     "evidence": "",
+     "location": "Table 3"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "data available on request; no code link",
+     "evidence": "",
+     "location": "Data Availability Statement"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "TaDP-Det (10% labeled)",
+    "map50": 58.2,
+    "map50_95": null,
+    "baseline": "Mix Teacher (10% labeled; Faster R-CNN* supervised-only is 34.5)",
+    "baseline_map50": 55.7,
+    "improvement_pp": 2.5,
+    "single_run": null,
+    "evidence": "With 10% labeled data, TaDP-Det further improves to 58.2 mAP0.5, outperforming Mix Teacher (55.7) by +2.5 and PseCo (50.9) by +7.3.",
+    "location": "4.3, Table 3"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Semi-supervised object detection (SSOD) evaluated under 1%, 5%, and 10% labeled data ratios on NEU-DET (TaDP-Det mAP0.5: 53.2 / 65.6 / 71.8 vs Faster R-CNN* supervised-only: 13.0 / 41.5 / 56.7 and Mix Teacher: 45.7 / 65.3 / 70.6; SSOD teacher-student baseline in Table 5 at 10% is 65.1) and under 5% and 10% labeled ratios on GC10-DET (TaDP-Det mAP0.5: 50.2 / 58.2 vs Faster R-CNN* supervised-only: 23.4 / 34.5 and Mix Teacher: 45.9 / 55.7)."
+}

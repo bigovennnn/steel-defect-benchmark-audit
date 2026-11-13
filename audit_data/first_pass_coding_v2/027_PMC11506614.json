@@ -1,0 +1,249 @@
+{
+ "idx": 27,
+ "pmcid": "PMC11506614",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing YOLOv5-based YOLO-LFPD detector evaluated with mAP@0.5 on NEU-DET and GC10-DET.",
+ "detector_family": "YOLOv5",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, 200x200, NEU",
+     "evidence": "As shown in Figure 1, the NEU-DET dataset totals 1800, where each class of defects contains 300 images with a size of 200 × 200 pixels.",
+     "location": "Section 2.4"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/test/val random 8:1:1",
+     "evidence": "The training set, test set, and validation set will be randomly generated at 8:1:1 for the experiment.",
+     "location": "Section 2.4"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "Random split, no seed or list",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "Evaluation set for Table 3 not stated",
+     "evidence": "",
+     "location": ""
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": ""
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "Only native image size 200x200 given; training input size not stated",
+     "evidence": "",
+     "location": ""
+    },
+    "F10": {
+     "status": "reported",
+     "value": "400 epochs",
+     "evidence": "The experiment sets the epoch of each model to 400, with the initial learning rate set to 0.1 and then gradually converging to 0.",
+     "location": "Section 4"
+    },
+    "F11": {
+     "status": "ambiguous",
+     "value": "32 vs 64 stated in different places for NEU",
+     "evidence": "The NEU dataset and the PKU-Market-PCB dataset have a training batch size of 32.",
+     "location": "Section 4 vs Section 4.1 ('the batch size is set to 64')"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "single run",
+     "evidence": "",
+     "location": ""
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "mixed",
+     "evidence": "The experiment sets the epoch of each model to 400, with the initial learning rate set to 0.1 and then gradually converging to 0.",
+     "location": "Section 4; Table 3 (many rows cite [39],[41] etc., source not stated)"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "GPU NVIDIA 3060 in environment table; inference batch/precision not stated",
+     "evidence": "GPU | NVIDIA 3060 (12 GB)",
+     "location": "Table 2; Table 7"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "Only dataset links given; no code link",
+     "evidence": "",
+     "location": ""
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "YOLO-LFPD",
+    "map50": 81.2,
+    "map50_95": null,
+    "baseline": "YOLOv5s",
+    "baseline_map50": 77.3,
+    "improvement_pp": 3.9,
+    "single_run": null,
+    "evidence": "Compared with the YOLOv5 baseline, the accuracy is improved by 3.9%, the GFLOPs on the model size is 87% of the original, and the params is 52% of the original.",
+    "location": "Section 4.1, Table 3"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "2294 images, 10 classes, 2048x1000",
+     "evidence": "The GC10-DET dataset consists of a total of 2294 images with an image size of 2048 × 1000 pixels.",
+     "location": "Section 2.4"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/test/val random 7:2:1",
+     "evidence": "The experiment randomly generates the training set, test set, and validation set in 7:2:1, as shown in Figure 3.",
+     "location": "Section 2.4"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": ""
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F10": {
+     "status": "reported",
+     "value": "400 epochs",
+     "evidence": "The experiment sets the epoch of each model to 400, with the initial learning rate set to 0.1 and then gradually converging to 0.",
+     "location": "Section 4"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "the training batch size is set to 16 for both training and testing",
+     "location": "Section 4"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "single run",
+     "evidence": "",
+     "location": ""
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "mixed",
+     "evidence": "LSD-YOLOv5 [16] | 67.9 | 2.7 M params, 9.1 GFLOPs",
+     "location": "Table 4 (cited rows, source not stated; YOLOv5s presumably rerun)"
+    },
+    "F15": {
+     "status": "not_applicable",
+     "value": "No speed reported on GC10-DET",
+     "evidence": "",
+     "location": ""
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "YOLO-LFPD",
+    "map50": 72.8,
+    "map50_95": null,
+    "baseline": "YOLOv5s",
+    "baseline_map50": 65.5,
+    "improvement_pp": 7.3,
+    "single_run": null,
+    "evidence": "YOLO-LFPD achieves 72.8% accuracy, which is a significant improvement over YOLOv5s’ 65.5%.",
+    "location": "Table 4"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "NEU batch size conflicting (32 in Sec 4, 64 in Sec 4.1/4.4). Table 9 reports 'mAP@0.95' 44.3 for YOLO-LFPD; unclear whether mAP@0.5:0.95, so map50_95 left null. Split order written as training/test/validation 7:2:1 for GC10 (test=2?). Abstract claims +3% to 81.2 while text says +3.9 vs YOLOv5s."
+}

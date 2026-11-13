@@ -1,0 +1,249 @@
+{
+ "idx": 4,
+ "pmcid": "PMC13301537",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original study training and evaluating a YOLOv8-based detector on NEU-DET and GC10-DET.",
+ "detector_family": "YOLOv8",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, 300 per class",
+     "evidence": "The dataset consists of 1800 grayscale images with a resolution of 200×200 pixels, where each category includes 300 samples.",
+     "location": "4.1.2"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "3:1:1 train/val/test, ~180/60/60 per class",
+     "evidence": "A class-balanced 3:1:1 hold-out protocol is adopted for NEU-DET. For each defect category, approximately 180 images are used for training, 60 images for validation, and 60 images for testing.",
+     "location": "4.1.2"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "ambiguous",
+     "value": "Ultralytics official pretrained weights \"when available\"; unclear for modified EDEN-YOLO",
+     "evidence": "For the reproduced comparisons, Ultralytics-based detectors are initialized with official pretrained weights provided by the Ultralytics framework when available",
+     "location": "4.1.1"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "\"fixed evaluation split\"; unclear whether val or test",
+     "evidence": "All metrics are computed on the fixed evaluation split with identical input resolution and evaluation settings for fair comparison.",
+     "location": "4.1.3"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": ""
+    },
+    "F09": {
+     "status": "reported",
+     "value": "320x320",
+     "evidence": "Input size | 320×320",
+     "location": "Table 1"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "220 epochs",
+     "evidence": "Epochs | 220",
+     "location": "Table 1"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "8",
+     "evidence": "Batch size | 8",
+     "location": "Table 1"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "Table 3 Controlled comparison of reproduced models on the NEU-DET dataset under the same experimental protocol.",
+     "location": "Table 3"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "RTX 4090; same batch size across models but value not given",
+     "evidence": "All models are evaluated on the same hardware platform. For YOLOv8, YOLOv12, RT-DETR, and EDEN-YOLO, the same input size, batch size, and Ultralytics inference environment are used.",
+     "location": "4.2.2"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "EDEN-YOLO",
+    "map50": 80.5,
+    "map50_95": null,
+    "baseline": "YOLOv8 (reproduced)",
+    "baseline_map50": 75.0,
+    "improvement_pp": 5.5,
+    "single_run": null,
+    "evidence": "EDEN-YOLO improves the YOLOv8 baseline from 75.0% to 80.5% mAP@0.5, corresponding to an absolute gain of 5.5 percentage points.",
+    "location": "Table 3, 4.2"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "not_reported_in_paper",
+     "value": "only \"ten steel surface defect categories\"; no image count or source link",
+     "evidence": "",
+     "location": ""
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "only \"same fixed GC10-DET data partition\"; no roles/ratios",
+     "evidence": "",
+     "location": ""
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "ambiguous",
+     "value": "Ultralytics official pretrained weights \"when available\"; unclear for modified EDEN-YOLO",
+     "evidence": "For the reproduced comparisons, Ultralytics-based detectors are initialized with official pretrained weights provided by the Ultralytics framework when available",
+     "location": "4.1.1"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F07": {
+     "status": "reported",
+     "value": "test split (per Figure 7 caption)",
+     "evidence": "Precision–recall curves of EDEN-YOLO on the GC10-DET test split.",
+     "location": "Figure 7"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": ""
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "The input size is set to 640×640 to better preserve small defect patterns.",
+     "location": "4.1.2, Table 2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs",
+     "evidence": "Epochs | 200",
+     "location": "Table 2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "8",
+     "evidence": "Batch size | 8",
+     "location": "Table 2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "Table 9 Controlled comparison of reproduced models on the GC10-DET dataset under the same experimental protocol.",
+     "location": "Table 9"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "RTX 4090; same batch size across models but value not given",
+     "evidence": "All models are evaluated on the same hardware platform. For YOLOv8, YOLOv12, RT-DETR, and EDEN-YOLO, the same input size, batch size, and Ultralytics inference environment are used.",
+     "location": "4.2.2"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "EDEN-YOLO",
+    "map50": 65.2,
+    "map50_95": null,
+    "baseline": "YOLOv8 (reproduced)",
+    "baseline_map50": 61.0,
+    "improvement_pp": 4.2,
+    "single_run": null,
+    "evidence": "EDEN-YOLO achieves 65.2% mAP@0.5 on GC10-DET, improving over the reproduced YOLOv8 baseline by 4.2 percentage points.",
+    "location": "Table 9, 4.5"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "NEU has a val split but checkpoint-selection criterion not stated; NEU results reported on \"evaluation split\" (val vs test unclear). Runtime table (F15) not dataset-specific. Only GitHub link is for cited YOLOFuse, not this work. Data availability: \"included in the article\"."
+}

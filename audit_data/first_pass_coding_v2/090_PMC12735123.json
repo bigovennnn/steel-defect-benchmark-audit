@@ -1,0 +1,251 @@
+{
+ "idx": 90,
+ "pmcid": "PMC12735123",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing CSSFAN and evaluating bounding-box defect detection on NEU-DET and GC10-DET.",
+ "detector_family": "Faster R-CNN / RPN-based two-stage (CSSFAN)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 grayscale images, 6 classes, 300 per class, 200x200 pixels",
+     "evidence": "It consists of 1800 grayscale images collected from hot-rolled steel strips, covering six typical types of surface defects commonly encountered in industrial production",
+     "location": "4.1.2"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "Train:Test = 8:2",
+     "evidence": "Hyperparameters | Learning Rate | Weight Decay | Momentum Coefficien | Optimizer | Batch Size | Train:Test | Epoch Value | 0.008 | 0.0001 | 0.9 | SGD | 2 | 8:2 | 36",
+     "location": "Table 1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "3.1, 4.1"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1.1, 4.2"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "4.1.1, 4.2"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1.1, 4.1.2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "36 epochs",
+     "evidence": "Hyperparameters | Learning Rate | Weight Decay | Momentum Coefficien | Optimizer | Batch Size | Train:Test | Epoch Value | 0.008 | 0.0001 | 0.9 | SGD | 2 | 8:2 | 36",
+     "location": "Table 1"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "2",
+     "evidence": "Hyperparameters | Learning Rate | Weight Decay | Momentum Coefficien | Optimizer | Batch Size | Train:Test | Epoch Value | 0.008 | 0.0001 | 0.9 | SGD | 2 | 8:2 | 36",
+     "location": "Table 1"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1, 4.2"
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.2"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1, 4.2"
+    },
+    "F16": {
+     "status": "reported",
+     "value": "https://github.com/hpguo1982/CSSFAN",
+     "evidence": "Our code is available at https://github.com/hpguo1982/CSSFAN (accessed on 11 November 2025).",
+     "location": "4.1.1"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1.1, Data Availability Statement"
+    }
+   },
+   "main_result": {
+    "model": "CSSFAN (Ours)",
+    "map50": 81.1,
+    "map50_95": 45.1,
+    "baseline": "Faster-RCNN (Baseline)",
+    "baseline_map50": 78.9,
+    "improvement_pp": 2.2,
+    "single_run": null,
+    "evidence": "Ours | 45.1 | 81.1 | 46.5 | 43.3 | 39.2 | 56.9 | 53.6 | 86.8 | 95.1 | 93.2 | 64.8 | 93.3",
+    "location": "Table 2, Table 4"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "2294 images, 10 classes, varying resolutions",
+     "evidence": "The GC10-DET dataset was collected from real-world hot-rolled steel production lines and contains 2294 images with varying resolutions. It covers ten representative categories of surface defects",
+     "location": "4.1.2"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "Train:Test = 8:2",
+     "evidence": "Hyperparameters | Learning Rate | Weight Decay | Momentum Coefficien | Optimizer | Batch Size | Train:Test | Epoch Value | 0.008 | 0.0001 | 0.9 | SGD | 2 | 8:2 | 36",
+     "location": "Table 1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "3.1, 4.1"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1.1, 4.2"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "4.1.1, 4.2"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1.1, 4.1.2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "36 epochs",
+     "evidence": "Hyperparameters | Learning Rate | Weight Decay | Momentum Coefficien | Optimizer | Batch Size | Train:Test | Epoch Value | 0.008 | 0.0001 | 0.9 | SGD | 2 | 8:2 | 36",
+     "location": "Table 1"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "2",
+     "evidence": "Hyperparameters | Learning Rate | Weight Decay | Momentum Coefficien | Optimizer | Batch Size | Train:Test | Epoch Value | 0.008 | 0.0001 | 0.9 | SGD | 2 | 8:2 | 36",
+     "location": "Table 1"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1, 4.2"
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.2"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1, 4.2"
+    },
+    "F16": {
+     "status": "reported",
+     "value": "https://github.com/hpguo1982/CSSFAN",
+     "evidence": "Our code is available at https://github.com/hpguo1982/CSSFAN (accessed on 11 November 2025).",
+     "location": "4.1.1"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1.1, Data Availability Statement"
+    }
+   },
+   "main_result": {
+    "model": "CSSFAN (Ours)",
+    "map50": 72.3,
+    "map50_95": 35.9,
+    "baseline": "Faster-RCNN",
+    "baseline_map50": 68.0,
+    "improvement_pp": 4.3,
+    "single_run": null,
+    "evidence": "Ours | 35.9 | 72.3 | 30.0 | 14.1 | 31.5 | 40.1 | 97.4 | 98.3 | 88.6 | 78.9 | 67.9 | 67.8 | 43.7 | 50.6 | 56.5 | 72.8",
+    "location": "Table 3"
+   }
+  }
+ ],
+ "code_links": [
+  "https://github.com/hpguo1982/CSSFAN"
+ ],
+ "coder_notes": "Table 1 gives Train:Test = 8:2 with no validation set; no input resize dimensions or inference speed metrics are reported in the paper."
+}

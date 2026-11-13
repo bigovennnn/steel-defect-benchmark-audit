@@ -1,0 +1,249 @@
+{
+ "idx": 71,
+ "pmcid": "PMC13208663",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing YOLOv13n with A2C2f-MSDE module and evaluating bounding-box defect detection on NEU-DET and GC10-DET.",
+ "detector_family": "YOLOv13 (custom YOLOv13n-A2C2f-MSDE)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 grayscale images, 6 classes (300 per class), 200x200 pixels, Northeastern University",
+     "evidence": "The dataset contains a total of 1800 grayscale images, with 300 images per defect type, and the image resolution is uniformly 200 × 200 pixels.",
+     "location": "4.1.2"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 8:1:1 (1440/180/180)",
+     "evidence": "This paper divides the dataset into training, validation, and test sets in an 8:1:1 ratio, with 1440 images for training, 180 for validation, and 180 for testing.",
+     "location": "4.1.2"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "ambiguous",
+     "value": "states all models are initialized before each training session, without specifying random initialization vs pretrained weights",
+     "evidence": "To ensure fairness and reliability in performance comparison experiments, all models are initialized before each training session, and the relevant hyperparameters are strictly kept consistent.",
+     "location": "4.1.1"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.2, Table 1 (Early Stopping Patience = 100 stated, but checkpoint selection split/metric not specified)"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "Sec 4.4 states models are trained and validated and then refers to 'The test results in Table 3'; unclear whether Table 3 is evaluated on test or val split",
+     "evidence": "All comparison models are trained and validated under exactly the same dataset, experimental environment, and training parameters to ensure fairness of the experimental results.",
+     "location": "4.4, Table 3"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "4.1.2, 4.4"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "Input Image Size | 640 × 640",
+     "location": "Table 1"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "400 epochs (Early Stopping Patience = 100)",
+     "evidence": "Epochs | 400",
+     "location": "Table 1"
+    },
+    "F11": {
+     "status": "ambiguous",
+     "value": "states batch size is adjusted according to model size, without giving numerical values",
+     "evidence": "During training, hyperparameters are kept largely consistent, with the batch size adjusted according to model size.",
+     "location": "4.2, Table 1"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "All comparison models are trained and validated under exactly the same dataset, experimental environment, and training parameters to ensure fairness of the experimental results.",
+     "location": "4.4"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "NVIDIA Tesla V100-SXM2-32GB GPU reported in 4.1.1 and FPS in Table 2, but inference batch size, numerical precision, and NMS inclusion not explicitly stated",
+     "evidence": "specific configuration is as follows: CPU is Intel Xeon E5-2698v3 (Intel Corporation, Santa Clara, CA, USA), GPU is NVIDIA Tesla V100-SXM2-32GB",
+     "location": "4.1.1, 4.2, Table 2"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "inquiries can be directed to the corresponding author",
+     "evidence": "",
+     "location": "Data Availability Statement"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv13n-MSDE (Ours)",
+    "map50": 77.4,
+    "map50_95": 45.4,
+    "baseline": "YOLOv13n",
+    "baseline_map50": 74.2,
+    "improvement_pp": 3.2,
+    "single_run": null,
+    "evidence": "Compared with the original YOLOv13n model, mAP50 increased from 0.742 to 0.774, mAP75 increased from 0.391 to 0.466, and mAP50-95 increased from 0.415 to 0.454",
+    "location": "4.3, 4.4, Tables 2-4"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "2292 images (after removing invalid data), 10 classes, 2048x1000 resolution, CASIA",
+     "evidence": "After removing invalid data, the dataset contains a total of 2292 images, which are divided into training, validation, and test sets in the same 8:1:1 ratio as the previous experiments.",
+     "location": "4.1.2"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 8:1:1 (2292 total)",
+     "evidence": "After removing invalid data, the dataset contains a total of 2292 images, which are divided into training, validation, and test sets in the same 8:1:1 ratio as the previous experiments.",
+     "location": "4.1.2"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "mentions removing invalid data (2292 remaining), but duplicate checking not stated",
+     "evidence": "",
+     "location": "4.1.2"
+    },
+    "F05": {
+     "status": "ambiguous",
+     "value": "states all models are initialized before each training session, without specifying random initialization vs pretrained weights",
+     "evidence": "To ensure fairness and reliability in performance comparison experiments, all models are initialized before each training session, and the relevant hyperparameters are strictly kept consistent.",
+     "location": "4.1.1"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.2, Table 1"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "Sec 4.5 refers to 'test images' and 'generalization test results in Table 4', but does not explicitly confirm whether Table 4 metrics are computed on the 10% test split or validation split",
+     "evidence": "Additionally, the test images have higher resolution and more complex background regions, leading the model to introduce more false positives while maintaining high recall.",
+     "location": "4.5, Table 4"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "4.1.2, 4.5"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "Input Image Size | 640 × 640",
+     "location": "4.5, Table 1"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "400 epochs (Early Stopping Patience = 100)",
+     "evidence": "Epochs | 400",
+     "location": "4.5, Table 1"
+    },
+    "F11": {
+     "status": "ambiguous",
+     "value": "states batch size is adjusted according to model size, without giving numerical values",
+     "evidence": "During training, hyperparameters are kept largely consistent, with the batch size adjusted according to model size.",
+     "location": "4.2, Table 1"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "During the test, the model parameters remain exactly the same as those in the NEU-DET experiment, without any fine-tuning or parameter adaptation for the GC10-DET dataset",
+     "location": "4.5"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "FPS not reported for GC10-DET in Table 4",
+     "evidence": "",
+     "location": "Table 4"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "inquiries can be directed to the corresponding author",
+     "evidence": "",
+     "location": "Data Availability Statement"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv13n-MSDE (Ours)",
+    "map50": 70.4,
+    "map50_95": 38.8,
+    "baseline": "YOLOv13n",
+    "baseline_map50": 70.2,
+    "improvement_pp": 0.2,
+    "single_run": null,
+    "evidence": "Compared with the native YOLOv13n baseline model, the A2C2f-MSDE model improves mAP50-95 from 0.369 to 0.388, an absolute gain of 0.019 (relative gain of 5.1%)",
+    "location": "4.5, Table 4"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Table 3 compares feedforward/attention modules (EDFFN, Mona, FMFFN, DFFN, FRFN, DynamicTanh, SpectralEnhancedFFN) embedded into the YOLOv13n baseline on NEU-DET. Table 4 reports YOLOv13n vs MSDE (Ours) on NEU-DET and GC10-DET."
+}

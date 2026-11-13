@@ -1,0 +1,131 @@
+{
+ "idx": 40,
+ "pmcid": "PMC10935385",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing Regularized YOLO and benchmarking detection on NEU-DET.",
+ "detector_family": "YOLOv8",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, six typical visible-light metal surface defects",
+     "evidence": "The NEU-DET dataset contains 1800 images of six typical visible-light metal surface defects",
+     "location": "§4.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val 8:2 (no test set)",
+     "evidence": "The training set to validation set ratio was 8:2, and the number of training rounds was set to 300 with a batch size of 32.",
+     "location": "§4.2"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "val (only train/val partitioned)",
+     "evidence": "The training set to validation set ratio was 8:2, and the number of training rounds was set to 300 with a batch size of 32.",
+     "location": "§4.2"
+    },
+    "F08": {
+     "status": "reported",
+     "value": "same_set",
+     "evidence": "The training set to validation set ratio was 8:2, and the number of training rounds was set to 300 with a batch size of 32.",
+     "location": "§4.2"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300",
+     "evidence": "the number of training rounds was set to 300 with a batch size of 32.",
+     "location": "§4.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "32",
+     "evidence": "the number of training rounds was set to 300 with a batch size of 32.",
+     "location": "§4.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "Table 4 Comparisons with other methods on NEU-DET.",
+     "location": "Table 4"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "NVIDIA GeForce RTX4090 (24 GB), AMD EPYC 7T83, batch 32",
+     "evidence": "The experimental environment of this study was a Windows 11 operating system with 90 GB of RAM, CPU was AMD EPYC 7T83, and GPU was NVIDIA GeForce RTX4090 (24 GB).",
+     "location": "§4.2"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "Regularized YOLO",
+    "map50": 80.77,
+    "map50_95": 47.62,
+    "baseline": "YOLOV8n",
+    "baseline_map50": 78.41,
+    "improvement_pp": 2.36,
+    "single_run": null,
+    "evidence": "Regularized YOLO | 80.77 | 84.0 | 50.6 | 93.4 | 88.6 | 71.2 | 96.9 | 47.62 | 8.3 G | 3.03 M",
+    "location": "Table 4"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Evaluates Regularized YOLO on ECTI and NEU-DET. NEU-DET split 8:2 train/validation without test set."
+}

@@ -1,0 +1,60 @@
+{
+  "solver": "HiGHS (via scipy.optimize.milp)",
+  "scipy_version": "1.15.3",
+  "success": true,
+  "status_code": 0,
+  "status_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "components_count_K": 1593,
+  "max_component_size": 8,
+  "multi_image_components_count": 147,
+  "optimal_objective_value": 0.0225,
+  "capacity_slacks": {
+    "e_train": 0.0,
+    "e_val": 0.0,
+    "e_test": 0.0
+  },
+  "optimized_subset_sizes": {
+    "train": 1437,
+    "val": 180,
+    "test": 180
+  },
+  "category_deviations_matrix_d": [
+    [
+      0.1,
+      0.05,
+      0.05
+    ],
+    [
+      0.1,
+      0.05,
+      0.05
+    ],
+    [
+      0.1,
+      0.05,
+      0.05
+    ],
+    [
+      0.1,
+      0.05,
+      0.05
+    ],
+    [
+      0.1,
+      0.05,
+      0.05
+    ],
+    [
+      0.1,
+      0.05,
+      0.05
+    ]
+  ],
+  "cross_split_edges_mip": 0,
+  "cross_split_edges_neu_v5_frozen": 0,
+  "competitor_li2026_cross_fold_leaked_edges": {
+    "leaked_edges_count": 173,
+    "total_shared_edges": 223,
+    "leakage_percentage": 77.58
+  }
+}

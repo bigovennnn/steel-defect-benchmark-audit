@@ -1,0 +1,252 @@
+{
+ "idx": 34,
+ "pmcid": "PMC11849088",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research evaluating multiple YOLOv5 modifications on NEU-DET and GC10-DET.",
+ "detector_family": "YOLOv5",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "NEU-DET from Northeastern University, Kaggle source",
+     "evidence": "The NEU-DET dataset is sourced from Northeastern University and the GC10-DET dataset is collected from industrial manufacturing facilities.",
+     "location": "§4.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "70% train, 20% val, 10% test (Roboflow)",
+     "evidence": "Both datasets were labeled and annotated using ROBOFLOW and split into 70 % for training, 20 % for validation, and 10 % for testing.",
+     "location": "§4.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "reported",
+     "value": "scratch weights",
+     "evidence": "Scratch weights are used for training.",
+     "location": "§4.3"
+    },
+    "F06": {
+     "status": "reported",
+     "value": "best epoch and last epoch weights recorded",
+     "evidence": "The trained weights are recorded for the best epoch and the last epoch.",
+     "location": "§4.3"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "test split exists in F02, but Table 10 does not specify val vs test",
+     "evidence": "Table 10 Comparison results of different YOLOv5s models.",
+     "location": "Table 10"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "416x416",
+     "evidence": "the input image size is normalized to 416 × 416 for training and validation.",
+     "location": "§4.3"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300",
+     "evidence": "training epochs are set to 300 for improved efficiency.",
+     "location": "§4.3"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "The batch size is set to 16",
+     "location": "§4.3"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "Table 10 Comparison results of different YOLOv5s models.",
+     "location": "Table 10"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "NVIDIA Tesla T4 GPU, Google Colab",
+     "evidence": "leveraging NVIDIA Tesla T4 GPU, Python 3.7.13 and Torch Framework 1.11.0 cu113.",
+     "location": "§4.2"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv5s-CoordAtt",
+    "map50": 76.3,
+    "map50_95": null,
+    "baseline": "YOLOv5s",
+    "baseline_map50": 75.4,
+    "improvement_pp": 0.9,
+    "single_run": null,
+    "evidence": "12. | YOLOv5s-CoordAtt | 0.763 | 0.617",
+    "location": "Table 10"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "GC10-DET from industrial manufacturing facilities, Kaggle link",
+     "evidence": "The NEU-DET dataset is sourced from Northeastern University and the GC10-DET dataset is collected from industrial manufacturing facilities.",
+     "location": "§4.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "70% train, 20% val, 10% test (Roboflow)",
+     "evidence": "Both datasets were labeled and annotated using ROBOFLOW and split into 70 % for training, 20 % for validation, and 10 % for testing.",
+     "location": "§4.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "reported",
+     "value": "scratch weights",
+     "evidence": "Scratch weights are used for training.",
+     "location": "§4.3"
+    },
+    "F06": {
+     "status": "reported",
+     "value": "best epoch and last epoch weights recorded",
+     "evidence": "The trained weights are recorded for the best epoch and the last epoch.",
+     "location": "§4.3"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "test split exists in F02, but Table 10 does not specify val vs test",
+     "evidence": "Table 10 Comparison results of different YOLOv5s models.",
+     "location": "Table 10"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "416x416",
+     "evidence": "the input image size is normalized to 416 × 416 for training and validation.",
+     "location": "§4.3"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300",
+     "evidence": "training epochs are set to 300 for improved efficiency.",
+     "location": "§4.3"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "The batch size is set to 16",
+     "location": "§4.3"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "Table 10 Comparison results of different YOLOv5s models.",
+     "location": "Table 10"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "NVIDIA Tesla T4 GPU, Google Colab",
+     "evidence": "leveraging NVIDIA Tesla T4 GPU, Python 3.7.13 and Torch Framework 1.11.0 cu113.",
+     "location": "§4.2"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv5s-LeakyReLU",
+    "map50": 66.7,
+    "map50_95": null,
+    "baseline": "YOLOv5s",
+    "baseline_map50": 67.6,
+    "improvement_pp": -0.9,
+    "single_run": null,
+    "evidence": "13. | YOLOv5s-LeakyReLU | 0.745 | 0.667",
+    "location": "Table 10"
+   }
+  }
+ ],
+ "code_links": [
+  "https://www.kaggle.com/datasets/kaustubhdikshit/neu-surface-defect-database",
+  "https://www.kaggle.com/datasets/alex000kim/gc10det"
+ ],
+ "coder_notes": "Evaluates YOLOv5 modifications on NEU-DET and GC10-DET. Results in Table 10."
+}

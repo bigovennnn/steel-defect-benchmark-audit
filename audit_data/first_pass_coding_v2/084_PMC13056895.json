@@ -1,0 +1,131 @@
+{
+ "idx": 84,
+ "pmcid": "PMC13056895",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research training and evaluating an improved YOLOv11n detector (YOLO-Air) on a weld dataset and on NEU-DET as a generalization experiment.",
+ "detector_family": "YOLOv11",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, Northeastern University",
+     "evidence": "The dataset includes a total of 1,800 images, with 300 images for each type of defect.",
+     "location": "Datasets"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 1260/360/180 (7:2:1)",
+     "evidence": "Among these, 1,260 images are allocated to the training set, 360 to the validation set, and 180 to the test set.",
+     "location": "Datasets"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Model generalization experiment, Table 4"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "All input images are resized to a resolution of 640×640 pixels.",
+     "location": "Experimental environment & setting"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs (generalization experiments)",
+     "evidence": "The model is trained for 350 epochs (generalization experiments are set to 300 epochs), with a batch size of 16",
+     "location": "Experimental environment & setting"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "The model is trained for 350 epochs (generalization experiments are set to 300 epochs), with a batch size of 16",
+     "location": "Experimental environment & setting"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "reported",
+     "value": "mean ± std for YOLOv11n and YOLO-Air on NEU (number of runs on NEU not explicitly stated; ten runs stated for weld dataset)",
+     "evidence": "the baseline YOLOv11n achieved a mAP0.5 of 77.90 ± 0.11, while the proposed YOLO-Air achieved 78.69 ± 0.10 on the NEU dataset.",
+     "location": "Model generalization experiment, Table 5"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "mixed (likely): settings stated as consistent, but Reference28-31 rows probably taken from cited papers; not explicitly stated",
+     "evidence": "The experimental environment and parameter settings follow the descriptions in Section \"Experimental environment & setting\" to ensure reliability and consistency.",
+     "location": "Model generalization experiment, Table 4"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "RTX 4060 Ti hardware stated; FPS batch/precision not stated",
+     "evidence": "The experimental hardware configuration includes an Intel(R) Core(TM) i5-13400 processor and an Nvidia RTX 4060 Ti (8GB) graphics card.",
+     "location": "Experimental environment & setting"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "YOLO-Air",
+    "map50": 78.7,
+    "map50_95": null,
+    "baseline": "YOLOv11n",
+    "baseline_map50": 77.9,
+    "improvement_pp": 0.8,
+    "single_run": null,
+    "evidence": "YOLO-Air | 78.7 | 2.13 | 445 | 4.3",
+    "location": "Table 4; Table 5"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Table 4 values (78.7 vs 77.9) match rounded means in Table 5, so single_run set false, but Table 4 may be a single run; number of NEU repeats not stated. Data availability: datasets 'available from the corresponding author on reasonable request'. Reference28-31 rows in Table 4 likely copied (has '—' entries). Primary dataset is Welding Defect Test-V2."
+}

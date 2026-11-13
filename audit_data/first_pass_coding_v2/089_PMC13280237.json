@@ -1,0 +1,133 @@
+{
+ "idx": 89,
+ "pmcid": "PMC13280237",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original article on a YOLOv11n-based detector for product damage that also trains and evaluates it on NEU-DET as a generalization experiment.",
+ "detector_family": "YOLOv11",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 grayscale images, 6 classes x 300, Northeastern University",
+     "evidence": "The dataset consists of 1800 grayscale images, with exactly 300 samples provided for each of the six defect categories.",
+     "location": "Generalization study, NEU-DET dataset"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "6:2:2 split stated only for custom dataset",
+     "evidence": "",
+     "location": ""
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": ""
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F10": {
+     "status": "ambiguous",
+     "value": "200 epochs stated in custom-dataset training section; not stated whether applied to NEU-DET",
+     "evidence": "the total number of training epochs was set to 200, and the initial learning rate was set to 0.01",
+     "location": "Model training and convergence analysis"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "no speed reported for NEU-DET (FPS only on custom dataset, RTX 4080)",
+     "evidence": "",
+     "location": ""
+    },
+    "F16": {
+     "status": "reported",
+     "value": "https://github.com/haoranwa/PFL-YOLO",
+     "evidence": "the source code for the proposed PFL-YOLO model are publicly available in the GitHub repository at https://github.com/haoranwa/PFL-YOLO.",
+     "location": "Data availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "PFL-YOLO",
+    "map50": 78.68,
+    "map50_95": 42.26,
+    "baseline": "YOLOv11 (YOLO11n)",
+    "baseline_map50": 76.17,
+    "improvement_pp": 2.51,
+    "single_run": null,
+    "evidence": "mAP@0.5 | 0.7617 | 0.7868 | 3.29",
+    "location": "Table 3"
+   }
+  }
+ ],
+ "code_links": [
+  "https://github.com/haoranwa/PFL-YOLO"
+ ],
+ "coder_notes": "NEU-DET is a secondary generalization experiment; essentially no NEU-specific protocol is given (split, input size, batch). Table 3 '(%)' column is relative change (3.29%), absolute gain is 2.51 pp. Repository should be checked in step 2 for NEU split/config."
+}

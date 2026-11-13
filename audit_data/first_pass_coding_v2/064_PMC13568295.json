@@ -1,0 +1,131 @@
+{
+ "idx": 64,
+ "pmcid": "PMC13568295",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original study whose YOLOv11s-based detector is trained and evaluated on NEU-DET as a secondary generalization benchmark.",
+ "detector_family": "YOLOv11",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, NEU [40]",
+     "evidence": "It comprises 1800 steel plate surface defect images",
+     "location": "4.2.2"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "8:1:1 stratified, 1440/180/180 train/val/test",
+     "evidence": "The dataset was split into training, validation, and test sets at an 8:1:1 ratio using stratified sampling based on the six defect categories, yielding 1440 training, 180 validation, and 180 test images",
+     "location": "4.2.2"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "ambiguous",
+     "value": "\"Baseline Pretrained Weight | Yolov11s.pt\"; unclear whether proposed model/comparators use pretrained weights",
+     "evidence": "Baseline Pretrained Weight | Yolov11s.pt",
+     "location": "Table 1"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "early stopping patience 50 listed but selection set/criterion not stated",
+     "evidence": "",
+     "location": ""
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "NEU Table 5 evaluation set not stated",
+     "evidence": "",
+     "location": ""
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": ""
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "Training Setup | Input Size | 640 × 640",
+     "location": "Table 1"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs (early stopping patience 50)",
+     "evidence": "Every experiment—including ablation, comparative, and generalization tests—shares the same dataset split, hardware environment, batch size of 4, and training budget of 200 epochs.",
+     "location": "4.1"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "4",
+     "evidence": "Every experiment—including ablation, comparative, and generalization tests—shares the same dataset split, hardware environment, batch size of 4, and training budget of 200 epochs.",
+     "location": "4.1"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "seeds 0-4 only for encoded-target dataset",
+     "evidence": "",
+     "location": ""
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "5-seed repeats only on encoded-target dataset, not NEU",
+     "evidence": "",
+     "location": ""
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "text says all models trained under same settings, but NEU table rows carry citations [32],[43]-[46]",
+     "evidence": "All models were trained using the same dataset split, input resolution, batch size, number of epochs, optimizer, learning rate, and data-augmentation settings.",
+     "location": "4.7, Table 5"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "RTX 5070 Ti, batch 1, 5 warm-up, excludes pre/NMS",
+     "evidence": "All FPS measurements were conducted on an NVIDIA GeForce RTX 5070 Ti GPU using PyTorch 2.7.0 and CUDA 12.8. The input images were resized to 640 × 640 pixels, and the inference batch size was set to 1.",
+     "location": "4.3"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "MLGA-CDRF-YOLO",
+    "map50": 77.3,
+    "map50_95": 42.1,
+    "baseline": "YOLOv11s",
+    "baseline_map50": 75.7,
+    "improvement_pp": 1.6,
+    "single_run": null,
+    "evidence": "Our | 77.3 | 42.1 | 73.6 | 3.41 | 14.8 | 97.8",
+    "location": "Table 5"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Primary dataset is a private encoded-target dataset; NEU-DET is a secondary generalization test. Seeded repeats (5 runs, mean±SD) apply only to the encoded-target dataset. NEU Table 5 comparator rows carry citations although text says all were trained under identical settings."
+}

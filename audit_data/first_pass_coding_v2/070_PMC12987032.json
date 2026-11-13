@@ -1,0 +1,131 @@
+{
+ "idx": 70,
+ "pmcid": "PMC12987032",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original article training and evaluating a GFLv1 box detector (class-incremental setting) on NEU-DET with mAP_50.",
+ "detector_family": "GFLv1 (ResNet50-FPN, MMDetection) / other",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "not_reported_in_paper",
+     "value": "only six classes named; no image count or link",
+     "evidence": "",
+     "location": "4.2"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "only class split (3 initial + 3 incremental) given; no image split",
+     "evidence": "",
+     "location": ""
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F05": {
+     "status": "ambiguous",
+     "value": "ResNet50 backbone; pretraining not stated, only MMDetection defaults",
+     "evidence": "Other experimental settings followed the default configurations of the MMDetection 3.0.0 platform.",
+     "location": "4.1"
+    },
+    "F06": {
+     "status": "ambiguous",
+     "value": "reported 63.6 equals peak mAP at epoch 20 of 24, suggesting best-epoch selection on evaluation data",
+     "evidence": "the mAP_50 steadily increased, reaching its peak of 0.636 at epoch 20",
+     "location": "4.4, Figure 4"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F08": {
+     "status": "ambiguous",
+     "value": "same_set",
+     "evidence": "the mAP_50 steadily increased, reaching its peak of 0.636 at epoch 20",
+     "location": "4.4, Figure 4"
+    },
+    "F09": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F10": {
+     "status": "reported",
+     "value": "24 epochs",
+     "evidence": "the batch size was set to 2, the number of epochs was 24",
+     "location": "4.1"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "2",
+     "evidence": "the batch size was set to 2, the number of epochs was 24",
+     "location": "4.1"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    },
+    "F14": {
+     "status": "reported",
+     "value": "mixed",
+     "evidence": "the experimental data for FSCE and IKLF were sourced from reference [44], and the results for ERD were reproduced by this research on NEU-DET and DeepPCB",
+     "location": "4.4"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "no speed measurement",
+     "evidence": "",
+     "location": ""
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "data available on reasonable request; no code link",
+     "evidence": "",
+     "location": "Data Availability Statement"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": ""
+    }
+   },
+   "main_result": {
+    "model": "SD-IDD (mAP_all, 3+3 class-incremental)",
+    "map50": 63.6,
+    "map50_95": null,
+    "baseline": "Fine-tuning (catastrophic forgetting) on GFLv1",
+    "baseline_map50": 42.7,
+    "improvement_pp": 20.9,
+    "single_run": null,
+    "evidence": "SD-IDD (ours) | 58.2% | 69% | 63.6%",
+    "location": "Table 8"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Incremental-learning setting (3 old + 3 new classes), not standard full NEU-DET training; joint-training upper bound 72.9. Paper says hyperparameter runs used identical 'data split' but never describes it. Reported 63.6 coincides with the peak epoch (20) on the training curve rather than final epoch 24, suggesting checkpoint chosen on the evaluation data; coded ambiguous. Baseline for improvement_pp is the paper's own fine-tuning lower bound."
+}

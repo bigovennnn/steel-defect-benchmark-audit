@@ -1,0 +1,133 @@
+{
+ "idx": 184,
+ "pmcid": "PMC8838028",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing Improved MobileNet-YOLOv3 (IMN-YOLOv3) with EFPN, FFM, and IoU-aware loss evaluated on NEU-DET.",
+ "detector_family": "YOLOv3 (IMN-YOLOv3: MobileNetV2 + EFPN + FFM)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 grayscale images, 6 classes (300 each), 200x200 pixels, NEU source link",
+     "evidence": "There were 300 samples for each defect, and a total of 1800 grayscale images, with the original resolution of 200 × 200 pixels.",
+     "location": "4.2, Data Availability Statement"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train:val:test 7:2:1 (1260, 360, 180 images)",
+     "evidence": "So, before the training, we divided the NEU-DET dataset into train set, validation set and test set in a ratio of 7:2:1, containing 1260, 360 and 180 images, respectively.",
+     "location": "4.2"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.2"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.2"
+    },
+    "F05": {
+     "status": "ambiguous",
+     "value": "pre-training operation on MobileNetV2 feature extractor stated for MN-YOLOV3/IMN-YOLOV3, but source dataset and pretraining of other models not specified",
+     "evidence": "MN-YOLOV3 uses anchor clustered by NEU-DET and carries out a pre-training operation on the feature extractor.",
+     "location": "4.4.2, Table 4 Note"
+    },
+    "F06": {
+     "status": "ambiguous",
+     "value": "early-stop strategy on validation set when accuracy decreased or remained flat within 5 epochs",
+     "evidence": "Set the epoch to 300 to start train, and the early-stop strategy was used to terminate the training when the accuracy of validation set decreased or remained flat within 5 epochs.",
+     "location": "4.3"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "test (180 images; speed in 4.4.4 measured on validation set)",
+     "evidence": "The test defect images were detected with a trained network and 180 images were completed within 6 s.",
+     "location": "4.4.1"
+    },
+    "F08": {
+     "status": "reported",
+     "value": "separate",
+     "evidence": "So, before the training, we divided the NEU-DET dataset into train set, validation set and test set in a ratio of 7:2:1, containing 1260, 360 and 180 images, respectively.",
+     "location": "4.2, 4.3, 4.4.1"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "416x416",
+     "evidence": "Size of input images | 416 × 416 | data",
+     "location": "3.1, Table 3"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs max (early stopped/converged at 285, 280, and 260 epochs for YOLOV3, MN-YOLOV3, and IMN-YOLOV3)",
+     "evidence": "The YOLOV3, MN-YOLOV3 and improved MN-YOLOV3(IMN-YOLOV3) finally converge to 8.84, 10.58 and 6.45 when the epoch is 285, 280 and 260, respectively.",
+     "location": "4.3, Table 3"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "Batch size | 16",
+     "location": "Table 3"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.3, Table 3"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "mixed",
+     "evidence": "In addition, the YOLOV3 and MobileNet-YOLOv3 (MN-YOLOv3) were run in the same environment to compare the effects of our model.",
+     "location": "4.3, Table 4 (YOLOV3/MN-YOLOV3 rerun; DDN, DE_RetinaNet, RAF-SSD, ECA+MSMP cited from literature)"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "Tesla V100 GPU, CuDNN 7.5, batch size 1, including data loading, forward execution and post-processing",
+     "evidence": "the inference time of the models in the table is obtained by testing validation sets on the Tesla V100 GPU of the Paddle platform with CuDNN 7.5. Including data loading, network forward execution and post-processing, and batch size is 1.",
+     "location": "4.4.4, Table 6"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "only NEU-DET dataset link provided; no code link",
+     "evidence": "",
+     "location": "Data Availability Statement"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "IMN-YOLOV3",
+    "map50": 86.96,
+    "map50_95": null,
+    "baseline": "YOLOV3",
+    "baseline_map50": 69.1,
+    "improvement_pp": 17.86,
+    "single_run": null,
+    "evidence": "YOLOV3 | DarkNet53 | 69.10 | 44.70 | 60.80 | 84.40 | 74.50 | 61.10 | 87.20\nMN-YOLOV3 1 | MobileNetV2 | 82.90 | 56.42 | 84.93 | 93.78 | 91.74 | 78.32 | 92.19\nIMN-YOLOV3 2 | MobileNetV2 | 86.96",
+    "location": "Table 4"
+   }
+  }
+ ],
+ "code_links": [
+  "http://faculty.neu.edu.cn/songkechen/zh_CN/zhym/263269/list/index.htm"
+ ],
+ "coder_notes": "Section 4.2 mentions 'We use the cross-validation method to train our model... So, before the training, we divided the NEU-DET dataset into train set, validation set and test set in a ratio of 7:2:1', which actually describes a single 7:2:1 train/val/test split rather than k-fold CV. Against intermediate baseline MN-YOLOV3 (82.90%), IMN-YOLOV3 improves by 4.06 pp."
+}

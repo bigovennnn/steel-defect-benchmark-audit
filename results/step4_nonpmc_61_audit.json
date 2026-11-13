@@ -1,0 +1,1026 @@
+{
+  "included_131_composition": {
+    "total_included_reports": 131,
+    "by_publication_type": {
+      "peer_reviewed_journal_article": 131
+    },
+    "note": "All 131 included studies are peer-reviewed journal articles indexed with full-text JATS XML in PubMed Central (0 preprints in the final 131 corpus)."
+  },
+  "outside_xml_61_summary": {
+    "total_outside_xml": 61,
+    "with_oa_metadata_links": 47,
+    "without_oa_metadata_links": 14,
+    "overall_category_breakdown": {
+      "E5_external_preprint_without_epmc_jats_xml": 37,
+      "E5_medline_journal_record_without_epmc_oa_or_xml": 14,
+      "E5_pmc_xml_http_500_download_error": 2,
+      "E4_superseded_preprint_with_published_version_outside_pmc_xml": 3,
+      "E4_superseded_preprint_with_published_version_in_included_131": 3,
+      "E4_duplicate_medline_record_of_included_pmc_article": 2
+    },
+    "among_47_with_oa_links": {
+      "E5_external_preprint_without_epmc_jats_xml": 37,
+      "E5_pmc_xml_http_500_download_error": 2,
+      "E4_superseded_preprint_with_published_version_outside_pmc_xml": 3,
+      "E4_superseded_preprint_with_published_version_in_included_131": 3,
+      "E4_duplicate_medline_record_of_included_pmc_article": 2
+    },
+    "among_14_without_oa_links": {
+      "E5_medline_journal_record_without_epmc_oa_or_xml": 14
+    }
+  },
+  "records_61": [
+    {
+      "idx": "2",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-8234620/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-8234620/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "MTF-YOLO: A Steel Surface Defect Detector with Multiscale Texture Fusion and Variance-Guided Convolution"
+    },
+    {
+      "idx": "3",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-10263001/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-10263001/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "YOLO-LOLG Mamba: Cross-Scale Feature Fusion with State Space Models for Industrial Steel Defect Detection"
+    },
+    {
+      "idx": "6",
+      "source": "MED",
+      "publication_types": "Journal Article",
+      "doi": "10.1038/s41598-026-61060-1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": false,
+      "oa_links": [],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_medline_journal_record_without_epmc_oa_or_xml",
+      "title": "Enhanced YOLOv8n-based steel surface defect detection using adaptive threshold focal loss, swin transformer, and a high-resolution detection head."
+    },
+    {
+      "idx": "13",
+      "source": "MED",
+      "publication_types": "research-article; Journal Article",
+      "doi": "10.3390/s26072132",
+      "pmcid_in_screening": "PMC13074744",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://europepmc.org/articles/PMC13074744",
+        "https://europepmc.org/articles/PMC13074744?pdf=render"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_pmc_xml_http_500_download_error",
+      "title": "Lightweight Visual Localization of Steel Surface Defects for Autonomous Inspection Robots Based on Improved YOLOv10n."
+    },
+    {
+      "idx": "14",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-8741554/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-8741554/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "Improving YOLO Detection Performance for High-Speed Steel Manufacturing via Normalized Statistical Contrast Layers"
+    },
+    {
+      "idx": "22",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.20944/preprints202506.1598.v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://www.preprints.org/frontend/manuscript/b779272282cd7bd509771fc082218d2f/download_pub",
+        "https://doi.org/10.20944/preprints202506.1598.v1"
+      ],
+      "published_version_pmids": [
+        "40807981"
+      ],
+      "matched_included_idx": null,
+      "audit_category": "E4_superseded_preprint_with_published_version_outside_pmc_xml",
+      "title": "Detection of Surface Defects in Steel Based on Dual-Backbone Networks-MBDNet-Attention-YOLO"
+    },
+    {
+      "idx": "24",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-10186752/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-10186752/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "Lightweight Adaptive YOLOv11 for Industrial Defect Perception and Closed-Loop Sorting Cybernetic Control System"
+    },
+    {
+      "idx": "29",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-4580747/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-4580747/v1",
+        "https://doi.org/10.21203/rs.3.rs-4580747/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "CCD-YOLO: An Accurate and Fast Algorithm for Steel Surface Defect Detection"
+    },
+    {
+      "idx": "30",
+      "source": "MED",
+      "publication_types": "Journal Article",
+      "doi": "10.1364/josaa.533407",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": false,
+      "oa_links": [],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_medline_journal_record_without_epmc_oa_or_xml",
+      "title": "ECM-YOLO: a real-time detection method of steel surface defects based on multiscale convolution."
+    },
+    {
+      "idx": "31",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.20944/preprints202407.0783.v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.20944/preprints202407.0783.v1",
+        "https://doi.org/10.20944/preprints202407.0783.v1"
+      ],
+      "published_version_pmids": [
+        "39451813"
+      ],
+      "matched_included_idx": "27",
+      "audit_category": "E4_superseded_preprint_with_published_version_in_included_131",
+      "title": "YOLO-LFPD: A Lightweight Method for Strip Surface Defect Detection"
+    },
+    {
+      "idx": "33",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-4980734/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-4980734/v1",
+        "https://doi.org/10.21203/rs.3.rs-4980734/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "Steel Surface Defect Detection Based on YOLO\u00a0and Multi-Source Heterogeneous Datasets"
+    },
+    {
+      "idx": "35",
+      "source": "MED",
+      "publication_types": "Journal Article",
+      "doi": "",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://europepmc.org/articles/PMC11849088",
+        "https://europepmc.org/articles/PMC11849088?pdf=render"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": "34",
+      "audit_category": "E4_duplicate_medline_record_of_included_pmc_article",
+      "title": "Enhancing surface detection: A comprehensive analysis of various YOLO models"
+    },
+    {
+      "idx": "37",
+      "source": "MED",
+      "publication_types": "Journal Article",
+      "doi": "10.3934/mbe.2024134",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": false,
+      "oa_links": [],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_medline_journal_record_without_epmc_oa_or_xml",
+      "title": "A surface defect detection method for steel pipe based on improved YOLO."
+    },
+    {
+      "idx": "43",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-5345455/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "unclear_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-5345455/v1",
+        "https://doi.org/10.21203/rs.3.rs-5345455/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "Improved Mask R-CNN for Defect Detection in Aluminum Alloy Rims"
+    },
+    {
+      "idx": "46",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-3231635/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "unclear_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://www.researchsquare.com/article/rs-3231635/latest.pdf",
+        "https://doi.org/10.21203/rs.3.rs-3231635/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "Comparative Analysis of Deep Learning Based Steel Surface Defect Detection under Different Lighting Conditions"
+    },
+    {
+      "idx": "50",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-3802774/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://www.researchsquare.com/article/rs-3802774/latest.pdf",
+        "https://doi.org/10.21203/rs.3.rs-3802774/v1"
+      ],
+      "published_version_pmids": [
+        "40140671"
+      ],
+      "matched_included_idx": "39",
+      "audit_category": "E4_superseded_preprint_with_published_version_in_included_131",
+      "title": "Steel Surface Defect Detection Based on Multi-Layer Fusion Networks"
+    },
+    {
+      "idx": "51",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-3449230/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://www.researchsquare.com/article/rs-3449230/latest.pdf",
+        "https://doi.org/10.21203/rs.3.rs-3449230/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "AFF-YOLO: A Real-time Industrial Defect Detection method based on Attention Mechanism and Feature Fusion"
+    },
+    {
+      "idx": "52",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-1815194/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://www.researchsquare.com/article/rs-1815194/latest.pdf",
+        "https://doi.org/10.21203/rs.3.rs-1815194/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "An Analysis of Defect Detection on Steel Strip Surface Using Modified Yolo V5"
+    },
+    {
+      "idx": "57",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-10782672/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "unclear_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-10782672/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "WSL-Det: A Wave-Attention and Strip-Localization Detector for Real-Time Strip Defect Detection"
+    },
+    {
+      "idx": "61",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-11106344/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-11106344/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "LAC-Net: A Lightweight Attention and Category-Aware Reweighting Network for Steel Surface Defect Detection"
+    },
+    {
+      "idx": "65",
+      "source": "MED",
+      "publication_types": "research-article; Journal Article",
+      "doi": "10.1111/nyas.70370",
+      "pmcid_in_screening": "PMC13492231",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://europepmc.org/articles/PMC13492231",
+        "https://europepmc.org/articles/PMC13492231?pdf=render",
+        "https://doi.org/10.1111/nyas.70370"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_pmc_xml_http_500_download_error",
+      "title": "Real-Time Gear Surface Defect Detection via Multi-Order Feature Aggregation and Spatial-Frequency Dual-Domain Enhancement."
+    },
+    {
+      "idx": "67",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-10724970/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-10724970/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "Steel-CGA: Channel-Spatial-Semantic Attention and Grouped Dilated Fusion for Real-Time Steel Surface Defect Detection"
+    },
+    {
+      "idx": "68",
+      "source": "MED",
+      "publication_types": "Journal Article",
+      "doi": "10.3390/s26196075",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://europepmc.org/articles/PMC13667623",
+        "https://europepmc.org/articles/PMC13667623?pdf=render"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": "59",
+      "audit_category": "E4_duplicate_medline_record_of_included_pmc_article",
+      "title": "SA-DETR: Lightweight Structure-Aware Defect Detection Model for Sustainable Low-Carbon Steel Manufacturing Based on RT-DETR-L."
+    },
+    {
+      "idx": "69",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-10944087/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-10944087/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "Intelligent Robotic Vision Systems for Automated Surface Defect Inspection in Advanced Manufacturing"
+    },
+    {
+      "idx": "73",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-10460206/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-10460206/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "High-Accuracy Surface Defect Detection for Metal Strips: Lightweight YOLOv5s-SC2 with LAMP Pruning"
+    },
+    {
+      "idx": "74",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-8087727/v2",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-8087727/v2"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "Label-HyperYOLO: An Improved YOLOv13 Model with Label-Guided Hypergraph Learning and Edge-Aware Enhancement for Steel Surface Defect Detection"
+    },
+    {
+      "idx": "88",
+      "source": "MED",
+      "publication_types": "Journal Article",
+      "doi": "10.1038/s41598-026-60355-7",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": false,
+      "oa_links": [],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_medline_journal_record_without_epmc_oa_or_xml",
+      "title": "WSO-YOLO11: a wavelet-strip-oriented YOLO11 framework for hot-rolled steel strip surface defect detection."
+    },
+    {
+      "idx": "92",
+      "source": "MED",
+      "publication_types": "Journal Article",
+      "doi": "10.1016/j.neunet.2026.109256",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": false,
+      "oa_links": [],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_medline_journal_record_without_epmc_oa_or_xml",
+      "title": "DFIR-DETR: Frequency-domain iterative refinement and dynamic feature aggregation for small object detection."
+    },
+    {
+      "idx": "93",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-6834553/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-6834553/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "Aircraft skin damage detection method integrating multi-scale feature reconstruction and adaptive loss weight"
+    },
+    {
+      "idx": "94",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-8087727/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-8087727/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "Label-HyperYOLO: An Improved YOLOv13 Model with Label-Guided Hypergraph Learning and Edge-Aware Enhancement for Steel Surface Defect Detection"
+    },
+    {
+      "idx": "103",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-8639584/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-8639584/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "RDD-YOLO: A study on an improved valve stem surface defect detection algorithm for YOLOv11"
+    },
+    {
+      "idx": "105",
+      "source": "MED",
+      "publication_types": "Journal Article",
+      "doi": "10.1177/08953996261433937",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": false,
+      "oa_links": [],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_medline_journal_record_without_epmc_oa_or_xml",
+      "title": "Weld defect detection based on improved YOLOv8n."
+    },
+    {
+      "idx": "113",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-7718767/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-7718767/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "Steel Surface Defect Detection Based on Dynamic Receptive Field and Multi-Scale Features Fusion"
+    },
+    {
+      "idx": "116",
+      "source": "MED",
+      "publication_types": "Journal Article",
+      "doi": "10.1111/nyas.70123",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": false,
+      "oa_links": [],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_medline_journal_record_without_epmc_oa_or_xml",
+      "title": "A Real-Time Defect Detector With Content-Guided Feature Extraction and Detail Enhancement."
+    },
+    {
+      "idx": "117",
+      "source": "MED",
+      "publication_types": "Journal Article",
+      "doi": "10.1109/tnnls.2024.3479734",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": false,
+      "oa_links": [],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_medline_journal_record_without_epmc_oa_or_xml",
+      "title": "Representation Learning Based on Co-Evolutionary Combined With Probability Distribution Optimization for Precise Defect Location."
+    },
+    {
+      "idx": "122",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-7197826/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://www.researchsquare.com/article/rs-7197826/latest.pdf",
+        "https://doi.org/10.21203/rs.3.rs-7197826/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "CMH\u2011Net:a structured and optimized network for real-time steel surface defect detection"
+    },
+    {
+      "idx": "124",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-7262085/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-7262085/v1",
+        "https://doi.org/10.21203/rs.3.rs-7262085/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "MHS-DETR: A Railway Frog Defect Detection Model Integrating Multi-Scale Edge Perception and Adaptive Structural Optimization"
+    },
+    {
+      "idx": "125",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.22541/au.174982173.39813096/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "unclear_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.22541/au.174982173.39813096/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "MealySup: A Multi-loss and weakly supervised learning approach for fine-grained object recognition"
+    },
+    {
+      "idx": "127",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-6732066/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://www.researchsquare.com/article/rs-6732066/latest.pdf",
+        "https://doi.org/10.21203/rs.3.rs-6732066/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "A Dual-Backbone Architecture for Lightweight RT-DETR Based Steel Defect Detection"
+    },
+    {
+      "idx": "132",
+      "source": "MED",
+      "publication_types": "Journal Article",
+      "doi": "10.1111/nyas.15332",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": false,
+      "oa_links": [],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_medline_journal_record_without_epmc_oa_or_xml",
+      "title": "A real-time defect detection algorithm for steel plate surfaces: the StarNet-GSConv-RetC3 detection transformer (SSR-DETR)."
+    },
+    {
+      "idx": "141",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-5790775/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-5790775/v1",
+        "https://doi.org/10.21203/rs.3.rs-5790775/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "DCUE-YOLO: A Lightweight Model in Industrial Defect Detection"
+    },
+    {
+      "idx": "152",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-4581669/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-4581669/v1",
+        "https://doi.org/10.21203/rs.3.rs-4581669/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "A Lightweight Network FLA-Detect for Steel Surface Defect Detection"
+    },
+    {
+      "idx": "155",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-4368440/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-4368440/v1",
+        "https://doi.org/10.21203/rs.3.rs-4368440/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "YOLOv8-FCS: A more focused YOLOv8 model for defect detection in images of steel surface"
+    },
+    {
+      "idx": "156",
+      "source": "MED",
+      "publication_types": "Journal Article",
+      "doi": "10.1364/oe.517341",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": false,
+      "oa_links": [],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_medline_journal_record_without_epmc_oa_or_xml",
+      "title": "Deep learning-based method for defect detection in electroluminescent images of polycrystalline silicon solar cells."
+    },
+    {
+      "idx": "159",
+      "source": "MED",
+      "publication_types": "Journal Article",
+      "doi": "10.1109/tnnls.2022.3230426",
+      "pmcid_in_screening": "",
+      "screening_decision": "unclear_ft",
+      "has_oa_link": false,
+      "oa_links": [],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_medline_journal_record_without_epmc_oa_or_xml",
+      "title": "An Adaptive Image Segmentation Network for Surface Defect Detection."
+    },
+    {
+      "idx": "171",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-2358969/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://www.researchsquare.com/article/rs-2358969/latest.pdf",
+        "https://doi.org/10.21203/rs.3.rs-2358969/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "A Real-time and Efficient Surface Defect Detection Method Based on YOLOv4"
+    },
+    {
+      "idx": "176",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-3319646/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://www.researchsquare.com/article/rs-3319646/latest.pdf",
+        "https://doi.org/10.21203/rs.3.rs-3319646/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "The Space to Depth Convolution bundled with Coordinate Attention for detecting surface defects"
+    },
+    {
+      "idx": "190",
+      "source": "MED",
+      "publication_types": "Journal Article",
+      "doi": "10.3934/mbe.2024016",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": false,
+      "oa_links": [],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_medline_journal_record_without_epmc_oa_or_xml",
+      "title": "Improved YOLOv7-based steel surface defect detection algorithm."
+    },
+    {
+      "idx": "231",
+      "source": "MED",
+      "publication_types": "Journal Article",
+      "doi": "10.1109/tnnls.2023.3292512",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": false,
+      "oa_links": [],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_medline_journal_record_without_epmc_oa_or_xml",
+      "title": "A Dynamic Weights-Based Wavelet Attention Neural Network for Defect Detection."
+    },
+    {
+      "idx": "239",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-10158108/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-10158108/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "An Explainable Deep Learning Framework for Integrated Steel Microstructure Classification and Surface Defect Analysis"
+    },
+    {
+      "idx": "244",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.20944/preprints202503.1303.v2",
+      "pmcid_in_screening": "",
+      "screening_decision": "unclear_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://www.preprints.org/frontend/manuscript/9f31742ae51e7ebb3b6fd6b8f3da8380/download_pub",
+        "https://doi.org/10.20944/preprints202503.1303.v2"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "Improved YOLOv8-Based Defect Detection Model for Hot Rolled Strip Steel"
+    },
+    {
+      "idx": "245",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.20944/preprints202503.1303.v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "unclear_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.20944/preprints202503.1303.v1",
+        "https://doi.org/10.20944/preprints202503.1303.v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "Improved YOLOv8-Based Defect Detection Model for Hot Rolled Strip Steel"
+    },
+    {
+      "idx": "248",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-5933201/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "unclear_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-5933201/v1",
+        "https://doi.org/10.21203/rs.3.rs-5933201/v1"
+      ],
+      "published_version_pmids": [
+        "40089561"
+      ],
+      "matched_included_idx": "162",
+      "audit_category": "E4_superseded_preprint_with_published_version_in_included_131",
+      "title": "A Lightweight Algorithm for Steel Surface Defect Detection Using Improved YOLOv8"
+    },
+    {
+      "idx": "251",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-4680873/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "unclear_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-4680873/v1",
+        "https://doi.org/10.21203/rs.3.rs-4680873/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "Improved YOLOv7-Based Algorithm for Detecting Defect on Steel Surface"
+    },
+    {
+      "idx": "254",
+      "source": "MED",
+      "publication_types": "Journal Article",
+      "doi": "10.3934/mbe.2023879",
+      "pmcid_in_screening": "",
+      "screening_decision": "unclear_ft",
+      "has_oa_link": false,
+      "oa_links": [],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_medline_journal_record_without_epmc_oa_or_xml",
+      "title": "Surface defect detection of steel based on improved YOLOv5 algorithm."
+    },
+    {
+      "idx": "255",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-3281494/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "unclear_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://www.researchsquare.com/article/rs-3281494/latest.pdf",
+        "https://doi.org/10.21203/rs.3.rs-3281494/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "Defect Detection and Classification on Hot-Rolled Steel Using Machine Learning and Deep Learning Algorithms: A Comparative Analysis"
+    },
+    {
+      "idx": "256",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-2564770/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "unclear_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://www.researchsquare.com/article/rs-2564770/latest.pdf",
+        "https://doi.org/10.21203/rs.3.rs-2564770/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "A YOLOv5s-GC-based surface defect detection method of strip steel"
+    },
+    {
+      "idx": "257",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-1550068/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "unclear_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://www.researchsquare.com/article/rs-1550068/latest.pdf",
+        "https://doi.org/10.21203/rs.3.rs-1550068/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "Application of GCB-Net based on Defect Detection Algorithm for Steel Plates"
+    },
+    {
+      "idx": "308",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-4665769/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "unclear_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-4665769/v1",
+        "https://doi.org/10.21203/rs.3.rs-4665769/v1"
+      ],
+      "published_version_pmids": [
+        "39952973"
+      ],
+      "matched_included_idx": null,
+      "audit_category": "E4_superseded_preprint_with_published_version_outside_pmc_xml",
+      "title": "Optimal Surface Defect Detector Design Based on Deep Learning for 3D Geometry"
+    },
+    {
+      "idx": "322",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-3798770/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-3798770/v1",
+        "https://doi.org/10.21203/rs.3.rs-3798770/v1"
+      ],
+      "published_version_pmids": [],
+      "matched_included_idx": null,
+      "audit_category": "E5_external_preprint_without_epmc_jats_xml",
+      "title": "FEM-Net: Industrial Surface Defect Detection Network Based on Feature Enhancement and Efficient Multiscale Feature Fusion"
+    },
+    {
+      "idx": "331",
+      "source": "PPR",
+      "publication_types": "Preprint",
+      "doi": "10.21203/rs.3.rs-2168176/v1",
+      "pmcid_in_screening": "",
+      "screening_decision": "include_ft",
+      "has_oa_link": true,
+      "oa_links": [
+        "https://doi.org/10.21203/rs.3.rs-2168176/v1",
+        "https://doi.org/10.21203/rs.3.rs-2168176/v1"
+      ],
+      "published_version_pmids": [
+        "37073280"
+      ],
+      "matched_included_idx": null,
+      "audit_category": "E4_superseded_preprint_with_published_version_outside_pmc_xml",
+      "title": "FDD: The Data Pipeline for Steel Defect Detectors"
+    }
+  ]
+}

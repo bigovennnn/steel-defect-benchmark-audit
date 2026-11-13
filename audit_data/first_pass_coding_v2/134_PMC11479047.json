@@ -1,0 +1,252 @@
+{
+ "idx": 134,
+ "pmcid": "PMC11479047",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing DSL-YOLO (based on YOLOv8n) and evaluating it on GC10-DET and NEU-DET.",
+ "detector_family": "YOLOv8 (custom DSL-YOLO)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "2294 images after screening unlabeled/mislabeled samples, 10 classes, 2024x1000 pixels, GitHub link",
+     "evidence": "Because some samples in the dataset are unlabeled and mislabeled, after manual screening and preprocessing, 2294 defect images with a size of 2024×1000 were obtained.",
+     "location": "4.1, Data Availability Statement"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 8:1:1 (1836/229/229)",
+     "evidence": "Then, according to the ratio of 8:1:1, 1836 images in the training set, 229 images in the validation set and 229 images in the test set were randomly divided.",
+     "location": "4.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text (4.1 mentions manual screening of unlabeled and mislabeled samples, not duplicate images)"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.4, 4.5, Table 2, Table 4 (test sets are mentioned only for qualitative visualization in Fig. 9-10)"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "4.1, 4.4, 4.5"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "Ours | 640 × 640 | 70.5 | 67.8 | 72.5 | 4.21 | 10.3",
+     "location": "Table 4"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs",
+     "evidence": "In this paper, the DSL-YOLO model is trained on the GPU for 200 rounds, the batch size is 8, and the initial learning rate is 0.01.",
+     "location": "4.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "8",
+     "evidence": "In this paper, the DSL-YOLO model is trained on the GPU for 200 rounds, the batch size is 8, and the initial learning rate is 0.01.",
+     "location": "4.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.5, Table 4"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text (no FPS or latency reported)"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "DSL-YOLO",
+    "map50": 72.5,
+    "map50_95": null,
+    "baseline": "YOLOv8n",
+    "baseline_map50": 68.3,
+    "improvement_pp": 4.2,
+    "single_run": null,
+    "evidence": "YOLOV8n | 640 × 640 | 61.9 | 66.5 | 68.3 | 3.01 | 8.1 Ours | 640 × 640 | 70.5 | 67.8 | 72.5 | 4.21 | 10.3",
+    "location": "Table 2, Table 4"
+   }
+  },
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, 200x200 pixels, NEU link",
+     "evidence": "NEU-DET is a dataset of metal surface defects published by Northeastern University. There are 1800 images of 200 × 200, as shown in Figure 7.",
+     "location": "4.1, Data Availability Statement"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 8:1:1 (1440/180/180)",
+     "evidence": "According to the ratio of 8:1:1, 1440 images of the training set, 180 images of the verification set and 180 images of the test set were randomly divided.",
+     "location": "4.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.4, 4.5, Table 3, Table 5"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "4.1, 4.4, 4.5"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "Ours | 640 × 640 | 73.4 | 75.2 | 79.0 | 4.21 | 10.3",
+     "location": "Table 5"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs",
+     "evidence": "In this paper, the DSL-YOLO model is trained on the GPU for 200 rounds, the batch size is 8, and the initial learning rate is 0.01.",
+     "location": "4.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "8",
+     "evidence": "In this paper, the DSL-YOLO model is trained on the GPU for 200 rounds, the batch size is 8, and the initial learning rate is 0.01.",
+     "location": "4.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.5, Table 5"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "DSL-YOLO",
+    "map50": 79.0,
+    "map50_95": null,
+    "baseline": "YOLOv8n",
+    "baseline_map50": 76.4,
+    "improvement_pp": 2.6,
+    "single_run": null,
+    "evidence": "YOLOV8n | 640 × 640 | 72.0 | 71.7 | 76.4 | 3.01 | 8.1 Ours | 640 × 640 | 73.4 | 75.2 | 79.0 | 4.21 | 10.3",
+    "location": "Table 3, Table 5"
+   }
+  }
+ ],
+ "code_links": [
+  "https://github.com/lvxiaoming2019/GC10-DET-Metallic-Surface-Defect-Datasets",
+  "http://faculty.neu.edu.cn/songkechen/zh_CN/zdylm/263270/list/index.htm"
+ ],
+ "coder_notes": "Links are dataset links only."
+}

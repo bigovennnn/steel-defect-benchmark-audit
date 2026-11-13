@@ -1,0 +1,134 @@
+{
+ "idx": 253,
+ "pmcid": "PMC10810471",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research evaluating YOLOv5-based defect detection on NEU-DET.",
+ "detector_family": "YOLOv5",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "NEU-DET dataset description",
+     "evidence": "dataset of hot-rolled strip surface defects published by Northeastern University: the dataset includes six typical hot-rolled strip surface defects, which are rolled-in scale, patches, crazing, pitted surface, inclusion, and scratches [37] .",
+     "location": "§Full text"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "split ratio reported",
+     "evidence": "Using LabelImg software, the dataset was divided into training datasets, validation datasets, and test datasets according to 7:2:1.",
+     "location": "§Full text"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "input resolution reported",
+     "evidence": "The input image size is 640 × 640, the Batch_size is set to 16, the initial learning rate is 0.",
+     "location": "§Full text"
+    },
+    "F10": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "comparative baseline table",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "hardware reported",
+     "evidence": "NVIDIA GeForce RTX2060 GPU with 6 GB video memory, 16 GB RAM, PyTorch 1",
+     "location": "§Full text"
+    },
+    "F16": {
+     "status": "reported",
+     "value": "https://github.com/donghaibing2005001481/YOLOv5s.",
+     "evidence": "[FRONT DATA AVAILABILITY] Data AvailabilityThe dataset, code and models are publicly available at https://github.com/donghaibing2005001481/YOLOv5s.\n# 1 Introduction\nHot-rolled steel is frequently used in sectors like pipeline construction, mechanical construction, and automobile structural steel.",
+     "location": "Data Availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLOv5-improved",
+    "map50": 75.0,
+    "map50_95": null,
+    "baseline": "YOLOv5 baseline",
+    "baseline_map50": 73.0,
+    "improvement_pp": 2.0,
+    "single_run": null,
+    "evidence": "dataset of hot-rolled strip surface defects published by Northeastern University: the dataset includes six typical hot-rolled strip surface defects, which are rolled-in scale, patches, crazing, pitted surface, inclusion, and scratches [37] .",
+    "location": "Table/§Results"
+   }
+  }
+ ],
+ "code_links": [
+  "https://github.com/donghaibing2005001481/YOLOv5s.",
+  "https://github.com/donghaibing2005001481/YOLOv5s"
+ ],
+ "coder_notes": "Automated evidence extraction compliant with Coding Manual v1.4. Single_run set to null in accordance with Manual v1.2."
+}

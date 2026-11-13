@@ -1,0 +1,249 @@
+{
+ "idx": 1,
+ "pmcid": "PMC13469165",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original study training and evaluating YOLOv11n-based detector on NEU-DET and GC10-DET.",
+ "detector_family": "YOLOv11",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, NEU",
+     "evidence": "The dataset comprises a total of 1800 images, with 300 images for each defect category.",
+     "location": "§4.2"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 8:1:1 random",
+     "evidence": "the dataset was randomly partitioned into training, validation, and test sets in a ratio of 8:1:1",
+     "location": "§4.2"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "test set implied only for visualization",
+     "evidence": "representative samples from the NEU-DET test set were selected for visual comparison",
+     "location": "§4.7"
+    },
+    "F08": {
+     "status": "ambiguous",
+     "value": "unclear",
+     "evidence": "representative samples from the NEU-DET test set were selected for visual comparison",
+     "location": "§4.7"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "Image size | 640 × 640",
+     "location": "Table 1, §4.1"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "400 epochs",
+     "evidence": "Epochs | 400",
+     "location": "Table 1, §4.1"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "8",
+     "evidence": "Batch size | 8",
+     "location": "Table 1, §4.1"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "rerun implied (not stated)",
+     "evidence": "comparative experiments were conducted by benchmarking CCP-YOLO against mainstream object detection algorithms across five evaluation metrics",
+     "location": "§4.6"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "RTX 3050, 640x640, batch 1",
+     "evidence": "FPS was measured on an NVIDIA GeForce RTX 3050 GPU using an input resolution of 640 × 640 and a batch size of 1",
+     "location": "§4.3"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "CCP-YOLO",
+    "map50": 80.2,
+    "map50_95": null,
+    "baseline": "YOLOv11n",
+    "baseline_map50": 76.1,
+    "improvement_pp": 4.1,
+    "single_run": null,
+    "evidence": "the mAP50 reaches 80.2%, corresponding to a 4.1 percentage-point improvement over the baseline",
+    "location": "Table 9, §4.6"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "2294 images, 10 classes",
+     "evidence": "The GC10-DET dataset comprises 2294 grayscale images spanning 10 surface defect categories",
+     "location": "§4.8"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train/val/test 8:1:1 random",
+     "evidence": "the dataset was randomly partitioned into training, validation, and test sets in a ratio of 8:1:1",
+     "location": "§4.8"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640 (Table 1 general setup)",
+     "evidence": "Image size | 640 × 640",
+     "location": "Table 1, §4.1"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "400 (Table 1 general setup)",
+     "evidence": "Epochs | 400",
+     "location": "Table 1, §4.1"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "8 (Table 1 general setup)",
+     "evidence": "Batch size | 8",
+     "location": "Table 1, §4.1"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "rerun implied (not stated)",
+     "evidence": "validation experiments were conducted on the GC10-DET dataset",
+     "location": "§4.8"
+    },
+    "F15": {
+     "status": "not_applicable",
+     "value": "no speed reported for GC10",
+     "evidence": "",
+     "location": "Table 10"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "CCP-YOLO",
+    "map50": 71.5,
+    "map50_95": null,
+    "baseline": "YOLOv11n",
+    "baseline_map50": 67.8,
+    "improvement_pp": 3.7,
+    "single_run": null,
+    "evidence": "CCP-YOLO achieves an mAP50 of 71.5% on the GC10-DET dataset, representing a 3.7-percentage-point improvement over the YOLOv11n baseline.",
+    "location": "Table 10, §4.8"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "NEU mAP50-95 of 47.5 for the final model appears only in sensitivity Table 7 (ratio=1.0), not in main Table 9. Table 1 hyperparameters are in the general setup section; applying them to GC10 is inferred. Data available on request only. F08 for NEU coded ambiguous/unclear because only the visualization mentions the test set."
+}

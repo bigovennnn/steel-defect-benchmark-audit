@@ -1,0 +1,131 @@
+{
+ "idx": 178,
+ "pmcid": "PMC9124100",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing an attention-augmented surface defect detector (CSPDarkNet53 + MHSA + PANet + FDS block) evaluated on NEU-DET.",
+ "detector_family": "YOLOv4 (CSPDarkNet53 + SPP + PANet)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 defect types",
+     "evidence": "There are six types of defects from hot-rolled steel plates, including crazing, inclusion, patches, pitted surface, rolled-in scales, and scratches. The dataset has a total of 1800 images.",
+     "location": "4.1.1"
+    },
+    "F02": {
+     "status": "ambiguous",
+     "value": "general statement says 5:2:3 train:val:test, but NEU-DET description specifies 1260 training and 540 test (7:3)",
+     "evidence": "The dataset has a total of 1800 images. This study selects 1260 images as the training set and 540 as the test set.",
+     "location": "4.1.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1.1"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1.1"
+    },
+    "F05": {
+     "status": "ambiguous",
+     "value": "freeze/unfreeze training of backbone used, implying pretrained weights, but pretrained source not stated",
+     "evidence": "This study has two parts during training, which are divided into the freeze training part and the unfreeze training part. Freeze training sees that the backbone is frozen and sees the unchanged feature extraction network.",
+     "location": "4.1.2"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1.2"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "test",
+     "evidence": "This study uses the test set of the NEU-DET dataset to evaluate our model and report mAP (using the metric mAP@.5 of the PASCAL VOC dataset).",
+     "location": "4.2, 4.3.4"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "4.1.1, 4.3.4"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "416x416",
+     "evidence": "In the model in this study, after training and testing images entered into the network, the resolution is unified to 416 × 416.",
+     "location": "4.1.2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "200 epochs (freeze training for 200 epochs)",
+     "evidence": "In order to verify the ability of the model and fit the data faster and better, this study only carries out freeze training for 200 epochs.",
+     "location": "4.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "8",
+     "evidence": "The comparative experiments on the NEU-DET dataset and the NRSD-MN dataset are made on NVIDIA RTX 3080 with batch size 8.",
+     "location": "4.1.2, 4.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4.1.2, 4.2"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "The comparative experiments on the NEU-DET dataset and the NRSD-MN dataset are made on NVIDIA RTX 3080 with batch size 8.",
+     "location": "4.2"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "4; no inference speed/FPS reported"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "dataset can be accessed upon request to the corresponding author",
+     "evidence": "",
+     "location": "Data Availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "Our method",
+    "map50": 74.67,
+    "map50_95": null,
+    "baseline": "CSPDarkNet53 + SPP + PANet (YOLOv4)",
+    "baseline_map50": 70.35,
+    "improvement_pp": 4.32,
+    "single_run": null,
+    "evidence": "A | CSPDarkNet53 + SPP + PANet | 70.35\nB | A + attention block | 72.08 (↑1.73)\nC | A + FDS block | 71.22 (↑0.87)\nD | Our method (B + C) | 74.67 (↑4.32)",
+    "location": "Table 1, Table 5"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Section 4.1.1 initially states 'each dataset is divided into training, validation, and testing, with an amount ratio of 5 : 2 : 3', which matches the counts for RSDDs, BSData, and Internal dataset, but for NEU-DET it states '1260 images as the training set and 540 as the test set' (7:3). Table 1 also compares against YOLOv5x (74.07%)."
+}

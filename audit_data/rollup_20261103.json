@@ -1,0 +1,1201 @@
+{
+  "metadata": {
+    "generated_date": "2026-11-03",
+    "source_dir": "docs\\coding_v1\\out_v2",
+    "total_papers_screened": 135,
+    "included_papers": 131,
+    "excluded_papers": 4,
+    "total_evaluations": 182,
+    "dataset_evaluation_counts": {
+      "NEU-DET": 125,
+      "GC10-DET": 57
+    }
+  },
+  "evaluation_level_stats": {
+    "F01": {
+      "name": "Dataset Version / Source Link",
+      "reported_count": 173,
+      "reported_pct": 95.05,
+      "reported_ci95": [
+        90.87,
+        97.38
+      ],
+      "ambiguous_count": 5,
+      "ambiguous_pct": 2.75,
+      "not_reported_count": 4,
+      "not_reported_pct": 2.2,
+      "not_reported_ci95": [
+        0.86,
+        5.51
+      ]
+    },
+    "F02": {
+      "name": "Split Ratio / Sample Counts",
+      "reported_count": 127,
+      "reported_pct": 69.78,
+      "reported_ci95": [
+        62.76,
+        75.99
+      ],
+      "ambiguous_count": 3,
+      "ambiguous_pct": 1.65,
+      "not_reported_count": 52,
+      "not_reported_pct": 28.57,
+      "not_reported_ci95": [
+        22.5,
+        35.52
+      ]
+    },
+    "F03": {
+      "name": "Split Manifest / Image List Link",
+      "reported_count": 0,
+      "reported_pct": 0.0,
+      "reported_ci95": [
+        0.0,
+        2.07
+      ],
+      "ambiguous_count": 1,
+      "ambiguous_pct": 0.55,
+      "not_reported_count": 181,
+      "not_reported_pct": 99.45,
+      "not_reported_ci95": [
+        96.95,
+        99.9
+      ]
+    },
+    "F04": {
+      "name": "Duplicate Leakage Audit",
+      "reported_count": 2,
+      "reported_pct": 1.1,
+      "reported_ci95": [
+        0.3,
+        3.92
+      ],
+      "ambiguous_count": 1,
+      "ambiguous_pct": 0.55,
+      "not_reported_count": 179,
+      "not_reported_pct": 98.35,
+      "not_reported_ci95": [
+        95.27,
+        99.44
+      ]
+    },
+    "F05": {
+      "name": "Pretraining Weight Source",
+      "reported_count": 39,
+      "reported_pct": 21.43,
+      "reported_ci95": [
+        16.09,
+        27.95
+      ],
+      "ambiguous_count": 16,
+      "ambiguous_pct": 8.79,
+      "not_reported_count": 127,
+      "not_reported_pct": 69.78,
+      "not_reported_ci95": [
+        62.76,
+        75.99
+      ]
+    },
+    "F06": {
+      "name": "Checkpoint Selection Metric",
+      "reported_count": 14,
+      "reported_pct": 7.69,
+      "reported_ci95": [
+        4.64,
+        12.5
+      ],
+      "ambiguous_count": 9,
+      "ambiguous_pct": 4.95,
+      "not_reported_count": 159,
+      "not_reported_pct": 87.36,
+      "not_reported_ci95": [
+        81.75,
+        91.43
+      ]
+    },
+    "F07": {
+      "name": "Evaluation Set Clarity (Val vs. Test)",
+      "reported_count": 29,
+      "reported_pct": 15.93,
+      "reported_ci95": [
+        11.33,
+        21.95
+      ],
+      "ambiguous_count": 77,
+      "ambiguous_pct": 42.31,
+      "not_reported_count": 76,
+      "not_reported_pct": 41.76,
+      "not_reported_ci95": [
+        34.84,
+        49.02
+      ]
+    },
+    "F08": {
+      "name": "Validation vs. Test Separation",
+      "reported_count": 10,
+      "reported_pct": 5.49,
+      "reported_ci95": [
+        3.01,
+        9.82
+      ],
+      "ambiguous_count": 9,
+      "ambiguous_pct": 4.95,
+      "not_reported_count": 163,
+      "not_reported_pct": 89.56,
+      "not_reported_ci95": [
+        84.27,
+        93.21
+      ]
+    },
+    "F09": {
+      "name": "Train & Test Input Dimensions",
+      "reported_count": 116,
+      "reported_pct": 63.74,
+      "reported_ci95": [
+        56.53,
+        70.37
+      ],
+      "ambiguous_count": 11,
+      "ambiguous_pct": 6.04,
+      "not_reported_count": 55,
+      "not_reported_pct": 30.22,
+      "not_reported_ci95": [
+        24.01,
+        37.24
+      ]
+    },
+    "F10": {
+      "name": "Epoch Budget",
+      "reported_count": 150,
+      "reported_pct": 82.42,
+      "reported_ci95": [
+        76.23,
+        87.26
+      ],
+      "ambiguous_count": 7,
+      "ambiguous_pct": 3.85,
+      "not_reported_count": 25,
+      "not_reported_pct": 13.74,
+      "not_reported_ci95": [
+        9.48,
+        19.49
+      ]
+    },
+    "F11": {
+      "name": "Batch Size",
+      "reported_count": 118,
+      "reported_pct": 64.84,
+      "reported_ci95": [
+        57.66,
+        71.4
+      ],
+      "ambiguous_count": 6,
+      "ambiguous_pct": 3.3,
+      "not_reported_count": 58,
+      "not_reported_pct": 31.87,
+      "not_reported_ci95": [
+        25.53,
+        38.95
+      ]
+    },
+    "F12": {
+      "name": "Explicit Random Seed",
+      "reported_count": 5,
+      "reported_pct": 2.75,
+      "reported_ci95": [
+        1.18,
+        6.27
+      ],
+      "ambiguous_count": 5,
+      "ambiguous_pct": 2.75,
+      "not_reported_count": 172,
+      "not_reported_pct": 94.51,
+      "not_reported_ci95": [
+        90.18,
+        96.99
+      ]
+    },
+    "F13": {
+      "name": "Multiple Runs with Dispersion",
+      "reported_count": 18,
+      "reported_pct": 9.89,
+      "reported_ci95": [
+        6.35,
+        15.09
+      ],
+      "ambiguous_count": 2,
+      "ambiguous_pct": 1.1,
+      "not_reported_count": 162,
+      "not_reported_pct": 89.01,
+      "not_reported_ci95": [
+        83.64,
+        92.77
+      ]
+    },
+    "F14": {
+      "name": "Matched Baseline Retraining",
+      "reported_count": 74,
+      "reported_pct": 40.66,
+      "reported_ci95": [
+        33.79,
+        47.92
+      ],
+      "ambiguous_count": 78,
+      "ambiguous_pct": 42.86,
+      "not_reported_count": 30,
+      "not_reported_pct": 16.48,
+      "not_reported_ci95": [
+        11.8,
+        22.56
+      ]
+    },
+    "F15": {
+      "name": "Inference Hardware & Scope",
+      "reported_count": 69,
+      "reported_pct": 37.91,
+      "reported_ci95": [
+        31.18,
+        45.14
+      ],
+      "ambiguous_count": 49,
+      "ambiguous_pct": 26.92,
+      "not_reported_count": 64,
+      "not_reported_pct": 35.16,
+      "not_reported_ci95": [
+        28.6,
+        42.34
+      ]
+    },
+    "F16": {
+      "name": "Functional Open-Source Code Link",
+      "reported_count": 31,
+      "reported_pct": 17.03,
+      "reported_ci95": [
+        12.27,
+        23.16
+      ],
+      "ambiguous_count": 11,
+      "ambiguous_pct": 6.04,
+      "not_reported_count": 140,
+      "not_reported_pct": 76.92,
+      "not_reported_ci95": [
+        70.28,
+        82.45
+      ]
+    },
+    "F17": {
+      "name": "Trained Weights Accessibility",
+      "reported_count": 1,
+      "reported_pct": 0.55,
+      "reported_ci95": [
+        0.1,
+        3.05
+      ],
+      "ambiguous_count": 0,
+      "ambiguous_pct": 0.0,
+      "not_reported_count": 181,
+      "not_reported_pct": 99.45,
+      "not_reported_ci95": [
+        96.95,
+        99.9
+      ]
+    }
+  },
+  "paper_level_stats": {
+    "F01": {
+      "name": "Dataset Version / Source Link",
+      "reported_count": 125,
+      "reported_pct": 95.42,
+      "reported_ci95": [
+        90.37,
+        97.88
+      ],
+      "ambiguous_count": 3,
+      "ambiguous_pct": 2.29,
+      "not_reported_count": 3,
+      "not_reported_pct": 2.29,
+      "not_reported_ci95": [
+        0.78,
+        6.52
+      ]
+    },
+    "F02": {
+      "name": "Split Ratio / Sample Counts",
+      "reported_count": 93,
+      "reported_pct": 70.99,
+      "reported_ci95": [
+        62.71,
+        78.08
+      ],
+      "ambiguous_count": 2,
+      "ambiguous_pct": 1.53,
+      "not_reported_count": 36,
+      "not_reported_pct": 27.48,
+      "not_reported_ci95": [
+        20.56,
+        35.68
+      ]
+    },
+    "F03": {
+      "name": "Split Manifest / Image List Link",
+      "reported_count": 0,
+      "reported_pct": 0.0,
+      "reported_ci95": [
+        0.0,
+        2.85
+      ],
+      "ambiguous_count": 1,
+      "ambiguous_pct": 0.76,
+      "not_reported_count": 130,
+      "not_reported_pct": 99.24,
+      "not_reported_ci95": [
+        95.8,
+        99.87
+      ]
+    },
+    "F04": {
+      "name": "Duplicate Leakage Audit",
+      "reported_count": 1,
+      "reported_pct": 0.76,
+      "reported_ci95": [
+        0.13,
+        4.2
+      ],
+      "ambiguous_count": 1,
+      "ambiguous_pct": 0.76,
+      "not_reported_count": 129,
+      "not_reported_pct": 98.47,
+      "not_reported_ci95": [
+        94.6,
+        99.58
+      ]
+    },
+    "F05": {
+      "name": "Pretraining Weight Source",
+      "reported_count": 27,
+      "reported_pct": 20.61,
+      "reported_ci95": [
+        14.57,
+        28.33
+      ],
+      "ambiguous_count": 11,
+      "ambiguous_pct": 8.4,
+      "not_reported_count": 93,
+      "not_reported_pct": 70.99,
+      "not_reported_ci95": [
+        62.71,
+        78.08
+      ]
+    },
+    "F06": {
+      "name": "Checkpoint Selection Metric",
+      "reported_count": 10,
+      "reported_pct": 7.63,
+      "reported_ci95": [
+        4.2,
+        13.48
+      ],
+      "ambiguous_count": 7,
+      "ambiguous_pct": 5.34,
+      "not_reported_count": 114,
+      "not_reported_pct": 87.02,
+      "not_reported_ci95": [
+        80.2,
+        91.74
+      ]
+    },
+    "F07": {
+      "name": "Evaluation Set Clarity (Val vs. Test)",
+      "reported_count": 22,
+      "reported_pct": 16.79,
+      "reported_ci95": [
+        11.36,
+        24.12
+      ],
+      "ambiguous_count": 54,
+      "ambiguous_pct": 41.22,
+      "not_reported_count": 55,
+      "not_reported_pct": 41.98,
+      "not_reported_ci95": [
+        33.88,
+        50.55
+      ]
+    },
+    "F08": {
+      "name": "Validation vs. Test Separation",
+      "reported_count": 8,
+      "reported_pct": 6.11,
+      "reported_ci95": [
+        3.13,
+        11.59
+      ],
+      "ambiguous_count": 6,
+      "ambiguous_pct": 4.58,
+      "not_reported_count": 117,
+      "not_reported_pct": 89.31,
+      "not_reported_ci95": [
+        82.86,
+        93.53
+      ]
+    },
+    "F09": {
+      "name": "Train & Test Input Dimensions",
+      "reported_count": 83,
+      "reported_pct": 63.36,
+      "reported_ci95": [
+        54.84,
+        71.12
+      ],
+      "ambiguous_count": 8,
+      "ambiguous_pct": 6.11,
+      "not_reported_count": 40,
+      "not_reported_pct": 30.53,
+      "not_reported_ci95": [
+        23.3,
+        38.88
+      ]
+    },
+    "F10": {
+      "name": "Epoch Budget",
+      "reported_count": 106,
+      "reported_pct": 80.92,
+      "reported_ci95": [
+        73.34,
+        86.73
+      ],
+      "ambiguous_count": 4,
+      "ambiguous_pct": 3.05,
+      "not_reported_count": 21,
+      "not_reported_pct": 16.03,
+      "not_reported_ci95": [
+        10.73,
+        23.27
+      ]
+    },
+    "F11": {
+      "name": "Batch Size",
+      "reported_count": 85,
+      "reported_pct": 64.89,
+      "reported_ci95": [
+        56.39,
+        72.53
+      ],
+      "ambiguous_count": 2,
+      "ambiguous_pct": 1.53,
+      "not_reported_count": 44,
+      "not_reported_pct": 33.59,
+      "not_reported_ci95": [
+        26.07,
+        42.04
+      ]
+    },
+    "F12": {
+      "name": "Explicit Random Seed",
+      "reported_count": 3,
+      "reported_pct": 2.29,
+      "reported_ci95": [
+        0.78,
+        6.52
+      ],
+      "ambiguous_count": 3,
+      "ambiguous_pct": 2.29,
+      "not_reported_count": 125,
+      "not_reported_pct": 95.42,
+      "not_reported_ci95": [
+        90.37,
+        97.88
+      ]
+    },
+    "F13": {
+      "name": "Multiple Runs with Dispersion",
+      "reported_count": 14,
+      "reported_pct": 10.69,
+      "reported_ci95": [
+        6.47,
+        17.14
+      ],
+      "ambiguous_count": 1,
+      "ambiguous_pct": 0.76,
+      "not_reported_count": 116,
+      "not_reported_pct": 88.55,
+      "not_reported_ci95": [
+        81.97,
+        92.94
+      ]
+    },
+    "F14": {
+      "name": "Matched Baseline Retraining",
+      "reported_count": 54,
+      "reported_pct": 41.22,
+      "reported_ci95": [
+        33.16,
+        49.78
+      ],
+      "ambiguous_count": 56,
+      "ambiguous_pct": 42.75,
+      "not_reported_count": 21,
+      "not_reported_pct": 16.03,
+      "not_reported_ci95": [
+        10.73,
+        23.27
+      ]
+    },
+    "F15": {
+      "name": "Inference Hardware & Scope",
+      "reported_count": 52,
+      "reported_pct": 39.69,
+      "reported_ci95": [
+        31.72,
+        48.25
+      ],
+      "ambiguous_count": 37,
+      "ambiguous_pct": 28.24,
+      "not_reported_count": 42,
+      "not_reported_pct": 32.06,
+      "not_reported_ci95": [
+        24.68,
+        40.47
+      ]
+    },
+    "F16": {
+      "name": "Functional Open-Source Code Link",
+      "reported_count": 19,
+      "reported_pct": 14.5,
+      "reported_ci95": [
+        9.49,
+        21.54
+      ],
+      "ambiguous_count": 7,
+      "ambiguous_pct": 5.34,
+      "not_reported_count": 105,
+      "not_reported_pct": 80.15,
+      "not_reported_ci95": [
+        72.51,
+        86.08
+      ]
+    },
+    "F17": {
+      "name": "Trained Weights Accessibility",
+      "reported_count": 1,
+      "reported_pct": 0.76,
+      "reported_ci95": [
+        0.13,
+        4.2
+      ],
+      "ambiguous_count": 0,
+      "ambiguous_pct": 0.0,
+      "not_reported_count": 130,
+      "not_reported_pct": 99.24,
+      "not_reported_ci95": [
+        95.8,
+        99.87
+      ]
+    }
+  },
+  "dataset_breakdown": {
+    "NEU-DET": {
+      "evaluation_count": 125,
+      "fields": {
+        "F01": {
+          "name": "Dataset Version / Source Link",
+          "reported_count": 121,
+          "reported_pct": 96.8,
+          "reported_ci95": [
+            92.06,
+            98.75
+          ],
+          "ambiguous_count": 2,
+          "ambiguous_pct": 1.6,
+          "not_reported_count": 2,
+          "not_reported_pct": 1.6,
+          "not_reported_ci95": [
+            0.44,
+            5.65
+          ]
+        },
+        "F02": {
+          "name": "Split Ratio / Sample Counts",
+          "reported_count": 88,
+          "reported_pct": 70.4,
+          "reported_ci95": [
+            61.89,
+            77.7
+          ],
+          "ambiguous_count": 2,
+          "ambiguous_pct": 1.6,
+          "not_reported_count": 35,
+          "not_reported_pct": 28.0,
+          "not_reported_ci95": [
+            20.88,
+            36.44
+          ]
+        },
+        "F03": {
+          "name": "Split Manifest / Image List Link",
+          "reported_count": 0,
+          "reported_pct": 0.0,
+          "reported_ci95": [
+            0.0,
+            2.98
+          ],
+          "ambiguous_count": 1,
+          "ambiguous_pct": 0.8,
+          "not_reported_count": 124,
+          "not_reported_pct": 99.2,
+          "not_reported_ci95": [
+            95.61,
+            99.86
+          ]
+        },
+        "F04": {
+          "name": "Duplicate Leakage Audit",
+          "reported_count": 1,
+          "reported_pct": 0.8,
+          "reported_ci95": [
+            0.14,
+            4.39
+          ],
+          "ambiguous_count": 1,
+          "ambiguous_pct": 0.8,
+          "not_reported_count": 123,
+          "not_reported_pct": 98.4,
+          "not_reported_ci95": [
+            94.35,
+            99.56
+          ]
+        },
+        "F05": {
+          "name": "Pretraining Weight Source",
+          "reported_count": 24,
+          "reported_pct": 19.2,
+          "reported_ci95": [
+            13.26,
+            26.98
+          ],
+          "ambiguous_count": 11,
+          "ambiguous_pct": 8.8,
+          "not_reported_count": 90,
+          "not_reported_pct": 72.0,
+          "not_reported_ci95": [
+            63.56,
+            79.12
+          ]
+        },
+        "F06": {
+          "name": "Checkpoint Selection Metric",
+          "reported_count": 10,
+          "reported_pct": 8.0,
+          "reported_ci95": [
+            4.4,
+            14.1
+          ],
+          "ambiguous_count": 6,
+          "ambiguous_pct": 4.8,
+          "not_reported_count": 109,
+          "not_reported_pct": 87.2,
+          "not_reported_ci95": [
+            80.22,
+            91.97
+          ]
+        },
+        "F07": {
+          "name": "Evaluation Set Clarity (Val vs. Test)",
+          "reported_count": 21,
+          "reported_pct": 16.8,
+          "reported_ci95": [
+            11.26,
+            24.32
+          ],
+          "ambiguous_count": 51,
+          "ambiguous_pct": 40.8,
+          "not_reported_count": 53,
+          "not_reported_pct": 42.4,
+          "not_reported_ci95": [
+            34.09,
+            51.16
+          ]
+        },
+        "F08": {
+          "name": "Validation vs. Test Separation",
+          "reported_count": 7,
+          "reported_pct": 5.6,
+          "reported_ci95": [
+            2.74,
+            11.11
+          ],
+          "ambiguous_count": 5,
+          "ambiguous_pct": 4.0,
+          "not_reported_count": 113,
+          "not_reported_pct": 90.4,
+          "not_reported_ci95": [
+            83.97,
+            94.42
+          ]
+        },
+        "F09": {
+          "name": "Train & Test Input Dimensions",
+          "reported_count": 80,
+          "reported_pct": 64.0,
+          "reported_ci95": [
+            55.28,
+            71.88
+          ],
+          "ambiguous_count": 8,
+          "ambiguous_pct": 6.4,
+          "not_reported_count": 37,
+          "not_reported_pct": 29.6,
+          "not_reported_ci95": [
+            22.3,
+            38.11
+          ]
+        },
+        "F10": {
+          "name": "Epoch Budget",
+          "reported_count": 101,
+          "reported_pct": 80.8,
+          "reported_ci95": [
+            73.02,
+            86.74
+          ],
+          "ambiguous_count": 4,
+          "ambiguous_pct": 3.2,
+          "not_reported_count": 20,
+          "not_reported_pct": 16.0,
+          "not_reported_ci95": [
+            10.6,
+            23.42
+          ]
+        },
+        "F11": {
+          "name": "Batch Size",
+          "reported_count": 79,
+          "reported_pct": 63.2,
+          "reported_ci95": [
+            54.47,
+            71.14
+          ],
+          "ambiguous_count": 3,
+          "ambiguous_pct": 2.4,
+          "not_reported_count": 43,
+          "not_reported_pct": 34.4,
+          "not_reported_ci95": [
+            26.65,
+            43.08
+          ]
+        },
+        "F12": {
+          "name": "Explicit Random Seed",
+          "reported_count": 3,
+          "reported_pct": 2.4,
+          "reported_ci95": [
+            0.82,
+            6.82
+          ],
+          "ambiguous_count": 3,
+          "ambiguous_pct": 2.4,
+          "not_reported_count": 119,
+          "not_reported_pct": 95.2,
+          "not_reported_ci95": [
+            89.92,
+            97.78
+          ]
+        },
+        "F13": {
+          "name": "Multiple Runs with Dispersion",
+          "reported_count": 14,
+          "reported_pct": 11.2,
+          "reported_ci95": [
+            6.79,
+            17.92
+          ],
+          "ambiguous_count": 1,
+          "ambiguous_pct": 0.8,
+          "not_reported_count": 110,
+          "not_reported_pct": 88.0,
+          "not_reported_ci95": [
+            81.14,
+            92.59
+          ]
+        },
+        "F14": {
+          "name": "Matched Baseline Retraining",
+          "reported_count": 51,
+          "reported_pct": 40.8,
+          "reported_ci95": [
+            32.58,
+            49.56
+          ],
+          "ambiguous_count": 55,
+          "ambiguous_pct": 44.0,
+          "not_reported_count": 19,
+          "not_reported_pct": 15.2,
+          "not_reported_ci95": [
+            9.95,
+            22.52
+          ]
+        },
+        "F15": {
+          "name": "Inference Hardware & Scope",
+          "reported_count": 52,
+          "reported_pct": 41.6,
+          "reported_ci95": [
+            33.34,
+            50.36
+          ],
+          "ambiguous_count": 35,
+          "ambiguous_pct": 28.0,
+          "not_reported_count": 38,
+          "not_reported_pct": 30.4,
+          "not_reported_ci95": [
+            23.02,
+            38.95
+          ]
+        },
+        "F16": {
+          "name": "Functional Open-Source Code Link",
+          "reported_count": 19,
+          "reported_pct": 15.2,
+          "reported_ci95": [
+            9.95,
+            22.52
+          ],
+          "ambiguous_count": 7,
+          "ambiguous_pct": 5.6,
+          "not_reported_count": 99,
+          "not_reported_pct": 79.2,
+          "not_reported_ci95": [
+            71.27,
+            85.39
+          ]
+        },
+        "F17": {
+          "name": "Trained Weights Accessibility",
+          "reported_count": 1,
+          "reported_pct": 0.8,
+          "reported_ci95": [
+            0.14,
+            4.39
+          ],
+          "ambiguous_count": 0,
+          "ambiguous_pct": 0.0,
+          "not_reported_count": 124,
+          "not_reported_pct": 99.2,
+          "not_reported_ci95": [
+            95.61,
+            99.86
+          ]
+        }
+      }
+    },
+    "GC10-DET": {
+      "evaluation_count": 57,
+      "fields": {
+        "F01": {
+          "name": "Dataset Version / Source Link",
+          "reported_count": 52,
+          "reported_pct": 91.23,
+          "reported_ci95": [
+            81.06,
+            96.19
+          ],
+          "ambiguous_count": 3,
+          "ambiguous_pct": 5.26,
+          "not_reported_count": 2,
+          "not_reported_pct": 3.51,
+          "not_reported_ci95": [
+            0.97,
+            11.92
+          ]
+        },
+        "F02": {
+          "name": "Split Ratio / Sample Counts",
+          "reported_count": 39,
+          "reported_pct": 68.42,
+          "reported_ci95": [
+            55.52,
+            79.0
+          ],
+          "ambiguous_count": 1,
+          "ambiguous_pct": 1.75,
+          "not_reported_count": 17,
+          "not_reported_pct": 29.82,
+          "not_reported_ci95": [
+            19.53,
+            42.66
+          ]
+        },
+        "F03": {
+          "name": "Split Manifest / Image List Link",
+          "reported_count": 0,
+          "reported_pct": 0.0,
+          "reported_ci95": [
+            0.0,
+            6.31
+          ],
+          "ambiguous_count": 0,
+          "ambiguous_pct": 0.0,
+          "not_reported_count": 57,
+          "not_reported_pct": 100.0,
+          "not_reported_ci95": [
+            93.69,
+            100.0
+          ]
+        },
+        "F04": {
+          "name": "Duplicate Leakage Audit",
+          "reported_count": 1,
+          "reported_pct": 1.75,
+          "reported_ci95": [
+            0.31,
+            9.29
+          ],
+          "ambiguous_count": 0,
+          "ambiguous_pct": 0.0,
+          "not_reported_count": 56,
+          "not_reported_pct": 98.25,
+          "not_reported_ci95": [
+            90.71,
+            99.69
+          ]
+        },
+        "F05": {
+          "name": "Pretraining Weight Source",
+          "reported_count": 15,
+          "reported_pct": 26.32,
+          "reported_ci95": [
+            16.65,
+            38.98
+          ],
+          "ambiguous_count": 5,
+          "ambiguous_pct": 8.77,
+          "not_reported_count": 37,
+          "not_reported_pct": 64.91,
+          "not_reported_ci95": [
+            51.94,
+            76.0
+          ]
+        },
+        "F06": {
+          "name": "Checkpoint Selection Metric",
+          "reported_count": 4,
+          "reported_pct": 7.02,
+          "reported_ci95": [
+            2.76,
+            16.7
+          ],
+          "ambiguous_count": 3,
+          "ambiguous_pct": 5.26,
+          "not_reported_count": 50,
+          "not_reported_pct": 87.72,
+          "not_reported_ci95": [
+            76.75,
+            93.92
+          ]
+        },
+        "F07": {
+          "name": "Evaluation Set Clarity (Val vs. Test)",
+          "reported_count": 8,
+          "reported_pct": 14.04,
+          "reported_ci95": [
+            7.29,
+            25.32
+          ],
+          "ambiguous_count": 26,
+          "ambiguous_pct": 45.61,
+          "not_reported_count": 23,
+          "not_reported_pct": 40.35,
+          "not_reported_ci95": [
+            28.62,
+            53.3
+          ]
+        },
+        "F08": {
+          "name": "Validation vs. Test Separation",
+          "reported_count": 3,
+          "reported_pct": 5.26,
+          "reported_ci95": [
+            1.81,
+            14.37
+          ],
+          "ambiguous_count": 4,
+          "ambiguous_pct": 7.02,
+          "not_reported_count": 50,
+          "not_reported_pct": 87.72,
+          "not_reported_ci95": [
+            76.75,
+            93.92
+          ]
+        },
+        "F09": {
+          "name": "Train & Test Input Dimensions",
+          "reported_count": 36,
+          "reported_pct": 63.16,
+          "reported_ci95": [
+            50.18,
+            74.48
+          ],
+          "ambiguous_count": 3,
+          "ambiguous_pct": 5.26,
+          "not_reported_count": 18,
+          "not_reported_pct": 31.58,
+          "not_reported_ci95": [
+            21.0,
+            44.48
+          ]
+        },
+        "F10": {
+          "name": "Epoch Budget",
+          "reported_count": 49,
+          "reported_pct": 85.96,
+          "reported_ci95": [
+            74.68,
+            92.71
+          ],
+          "ambiguous_count": 3,
+          "ambiguous_pct": 5.26,
+          "not_reported_count": 5,
+          "not_reported_pct": 8.77,
+          "not_reported_ci95": [
+            3.81,
+            18.94
+          ]
+        },
+        "F11": {
+          "name": "Batch Size",
+          "reported_count": 39,
+          "reported_pct": 68.42,
+          "reported_ci95": [
+            55.52,
+            79.0
+          ],
+          "ambiguous_count": 3,
+          "ambiguous_pct": 5.26,
+          "not_reported_count": 15,
+          "not_reported_pct": 26.32,
+          "not_reported_ci95": [
+            16.65,
+            38.98
+          ]
+        },
+        "F12": {
+          "name": "Explicit Random Seed",
+          "reported_count": 2,
+          "reported_pct": 3.51,
+          "reported_ci95": [
+            0.97,
+            11.92
+          ],
+          "ambiguous_count": 2,
+          "ambiguous_pct": 3.51,
+          "not_reported_count": 53,
+          "not_reported_pct": 92.98,
+          "not_reported_ci95": [
+            83.3,
+            97.24
+          ]
+        },
+        "F13": {
+          "name": "Multiple Runs with Dispersion",
+          "reported_count": 4,
+          "reported_pct": 7.02,
+          "reported_ci95": [
+            2.76,
+            16.7
+          ],
+          "ambiguous_count": 1,
+          "ambiguous_pct": 1.75,
+          "not_reported_count": 52,
+          "not_reported_pct": 91.23,
+          "not_reported_ci95": [
+            81.06,
+            96.19
+          ]
+        },
+        "F14": {
+          "name": "Matched Baseline Retraining",
+          "reported_count": 23,
+          "reported_pct": 40.35,
+          "reported_ci95": [
+            28.62,
+            53.3
+          ],
+          "ambiguous_count": 23,
+          "ambiguous_pct": 40.35,
+          "not_reported_count": 11,
+          "not_reported_pct": 19.3,
+          "not_reported_ci95": [
+            11.13,
+            31.34
+          ]
+        },
+        "F15": {
+          "name": "Inference Hardware & Scope",
+          "reported_count": 17,
+          "reported_pct": 29.82,
+          "reported_ci95": [
+            19.53,
+            42.66
+          ],
+          "ambiguous_count": 14,
+          "ambiguous_pct": 24.56,
+          "not_reported_count": 26,
+          "not_reported_pct": 45.61,
+          "not_reported_ci95": [
+            33.37,
+            58.41
+          ]
+        },
+        "F16": {
+          "name": "Functional Open-Source Code Link",
+          "reported_count": 12,
+          "reported_pct": 21.05,
+          "reported_ci95": [
+            12.47,
+            33.29
+          ],
+          "ambiguous_count": 4,
+          "ambiguous_pct": 7.02,
+          "not_reported_count": 41,
+          "not_reported_pct": 71.93,
+          "not_reported_ci95": [
+            59.17,
+            81.92
+          ]
+        },
+        "F17": {
+          "name": "Trained Weights Accessibility",
+          "reported_count": 0,
+          "reported_pct": 0.0,
+          "reported_ci95": [
+            0.0,
+            6.31
+          ],
+          "ambiguous_count": 0,
+          "ambiguous_pct": 0.0,
+          "not_reported_count": 57,
+          "not_reported_pct": 100.0,
+          "not_reported_ci95": [
+            93.69,
+            100.0
+          ]
+        }
+      }
+    }
+  },
+  "single_run_stats": {
+    "counts": {
+      "single_run": 0,
+      "multiple_runs": 11,
+      "not_specified": 171
+    },
+    "single_run_pct": 0.0
+  },
+  "improvement_pp_distribution": {
+    "count": 177,
+    "mean": 3.71,
+    "min": -1.1,
+    "median": 2.5,
+    "max": 20.9
+  }
+}

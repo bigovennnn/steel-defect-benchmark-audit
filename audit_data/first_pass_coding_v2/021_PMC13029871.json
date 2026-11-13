@@ -1,0 +1,251 @@
+{
+  "idx": 21,
+  "pmcid": "PMC13029871",
+  "eligibility": "include",
+  "exclusion_code": "",
+  "eligibility_reason": "Original study training and evaluating a YOLOv12-based lightweight detector on NEU-DET and GC-10 (GC10-DET).",
+  "detector_family": "YOLOv12",
+  "is_preprint_or_version_note": "",
+  "datasets": [
+    {
+      "dataset": "NEU-DET",
+      "fields": {
+        "F01": {
+          "status": "reported",
+          "value": "1800 images, 6 classes, NEU [31]",
+          "evidence": "The dataset consists of 1800 grayscale images with a size of 200 × 200 pixels.",
+          "location": "4.2"
+        },
+        "F02": {
+          "status": "reported",
+          "value": "8:1:1, 1440/180/180 train/val/test",
+          "evidence": "The experiment divides the dataset into a training set of 1440 images, a validation set of 180 images and a test set of 180 images following the ratio of 8:1:1.",
+          "location": "4.2"
+        },
+        "F03": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": ""
+        },
+        "F04": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": ""
+        },
+        "F05": {
+          "status": "not_reported_in_paper",
+          "value": "not stated for NEU (GC10 stated from scratch); Table 1 missing from XML",
+          "evidence": "",
+          "location": ""
+        },
+        "F06": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": ""
+        },
+        "F07": {
+          "status": "ambiguous",
+          "value": "3 random 8:1:1 splits; results averaged; set used for reported metrics not explicitly stated",
+          "evidence": "the images of each dataset were evenly divided into 10 subsets, with 8 randomly selected as the training set, 1 as the validation set, and 1 as the test set.",
+          "location": "4.7"
+        },
+        "F08": {
+          "status": "not_reported_in_paper",
+          "value": "unclear",
+          "evidence": "",
+          "location": ""
+        },
+        "F09": {
+          "status": "reported",
+          "value": "640x640",
+          "evidence": "Image Size | 640 × 640",
+          "location": "Table 1"
+        },
+        "F10": {
+          "status": "reported",
+          "value": "300",
+          "evidence": "Epochs | 300",
+          "location": "Table 1"
+        },
+        "F11": {
+          "status": "reported",
+          "value": "8",
+          "evidence": "Batch Size | 8",
+          "location": "Table 1"
+        },
+        "F12": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "full text checked"
+        },
+        "F13": {
+          "status": "reported",
+          "value": "3 repeats over random splits; SD within 0.3% (Table 5)",
+          "evidence": "This process was repeated three times to obtain three independent experimental results. As shown in Table 5, the proposed model exhibits minimal fluctuations in all metrics on both datasets, with standard deviations controlled within 0.3%",
+          "location": "4.7, Table 5"
+        },
+        "F14": {
+          "status": "not_reported_in_paper",
+          "value": "not stated whether comparison models were retrained",
+          "evidence": "",
+          "location": ""
+        },
+        "F15": {
+          "status": "ambiguous",
+          "value": "RTX 3080ti; FPS defined but batch/precision not given",
+          "evidence": "In the experiment, the hardware configuration comprised an AMD Ryzen 7 5800X@3.4 GHz and an NVIDIA GeForce RTX 3080ti GPU.",
+          "location": "4.1"
+        },
+        "F16": {
+          "status": "reported",
+          "value": "https://github.com/bi11ychan/LHO-net.git",
+          "evidence": "The code has been open sourced on GitHub: https://github.com/bi11ychan/LHO-net.git",
+          "location": "Data Availability Statement"
+        },
+        "F17": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": ""
+        }
+      },
+      "main_result": {
+        "model": "LHO-net",
+        "map50": 75.0,
+        "map50_95": 44.0,
+        "baseline": "YOLOv12n",
+        "baseline_map50": 76.0,
+        "improvement_pp": -1.0,
+        "single_run": false,
+        "evidence": "No replacement | 69.4 | 71.0 | 70.2 | 76.0",
+        "location": "Table 8"
+      }
+    },
+    {
+      "dataset": "GC10-DET",
+      "fields": {
+        "F01": {
+          "status": "reported",
+          "value": "10 classes, 3570 images (2856+357+357), GC-10 [32]",
+          "evidence": "The experiment divided the dataset into a training set (2856 images), a validation set (357 images), and a test set (357 images) in an 8:1:1 ratio.",
+          "location": "4.2"
+        },
+        "F02": {
+          "status": "reported",
+          "value": "8:1:1, 2856/357/357 train/val/test",
+          "evidence": "The experiment divided the dataset into a training set (2856 images), a validation set (357 images), and a test set (357 images) in an 8:1:1 ratio.",
+          "location": "4.2"
+        },
+        "F03": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": ""
+        },
+        "F04": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": ""
+        },
+        "F05": {
+          "status": "reported",
+          "value": "from scratch",
+          "evidence": "LHO-net was re-trained from scratch with the same hyperparameter settings as on the NEU-DET dataset, without leveraging any pre-trained weights from other datasets.",
+          "location": "4.9"
+        },
+        "F06": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": ""
+        },
+        "F07": {
+          "status": "ambiguous",
+          "value": "3 random 8:1:1 splits; results averaged; set used for reported metrics not explicitly stated",
+          "evidence": "the images of each dataset were evenly divided into 10 subsets, with 8 randomly selected as the training set, 1 as the validation set, and 1 as the test set.",
+          "location": "4.7"
+        },
+        "F08": {
+          "status": "not_reported_in_paper",
+          "value": "unclear",
+          "evidence": "",
+          "location": ""
+        },
+        "F09": {
+          "status": "reported",
+          "value": "640x640",
+          "evidence": "Image Size | 640 × 640",
+          "location": "Table 1"
+        },
+        "F10": {
+          "status": "reported",
+          "value": "300",
+          "evidence": "Epochs | 300",
+          "location": "Table 1"
+        },
+        "F11": {
+          "status": "reported",
+          "value": "8",
+          "evidence": "Batch Size | 8",
+          "location": "Table 1"
+        },
+        "F12": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "full text checked"
+        },
+        "F13": {
+          "status": "reported",
+          "value": "3 repeats over random splits; SD within 0.3% (Table 5)",
+          "evidence": "This process was repeated three times to obtain three independent experimental results. As shown in Table 5, the proposed model exhibits minimal fluctuations in all metrics on both datasets, with standard deviations controlled within 0.3%",
+          "location": "4.7, Table 5"
+        },
+        "F14": {
+          "status": "not_reported_in_paper",
+          "value": "not stated whether comparison models were retrained",
+          "evidence": "",
+          "location": ""
+        },
+        "F15": {
+          "status": "ambiguous",
+          "value": "RTX 3080ti; FPS defined but batch/precision not given",
+          "evidence": "In the experiment, the hardware configuration comprised an AMD Ryzen 7 5800X@3.4 GHz and an NVIDIA GeForce RTX 3080ti GPU.",
+          "location": "4.1"
+        },
+        "F16": {
+          "status": "reported",
+          "value": "https://github.com/bi11ychan/LHO-net.git",
+          "evidence": "The code has been open sourced on GitHub: https://github.com/bi11ychan/LHO-net.git",
+          "location": "Data Availability Statement"
+        },
+        "F17": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": ""
+        }
+      },
+      "main_result": {
+        "model": "LHO-net",
+        "map50": 67.2,
+        "map50_95": 35.7,
+        "baseline": "YOLOv12n",
+        "baseline_map50": 64.3,
+        "improvement_pp": 2.9,
+        "single_run": false,
+        "evidence": "YOLOv12n | 66.7 | 59.0 | 62.6 | 64.3",
+        "location": "Table 9"
+      }
+    }
+  ],
+  "code_links": [
+    "https://github.com/bi11ychan/LHO-net.git"
+  ],
+  "coder_notes": "Table 1 (training hyperparameters) and all result tables are not in the XML text, so F09-F12 marked not_assessed and baseline mAP unavailable; check PDF. Results are averages of 3 random 8:1:1 splits (variance across splits, not seeds). Conclusion contains a garbled \"67.1%\" string alongside 67.2% for GC10."
+}

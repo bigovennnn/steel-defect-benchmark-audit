@@ -1,0 +1,88 @@
+{
+  "suite": "baseline_gc10",
+  "arch": "rtdetr-l",
+  "seed": 0,
+  "epochs": 100,
+  "imgsz": 640,
+  "batch": 8,
+  "workers": 2,
+  "pretrained_tensors_transferred": -1,
+  "split_name": "gc10_grouped_v1",
+  "split_design_sha256": "ead84d9fe29c2678a2e30ccd0b2b99d2af1ad8e91452f777b1094cb0a191d7d1",
+  "val": {
+    "precision": 0.5628140021212963,
+    "recall": 0.6788166520399892,
+    "map50": 0.63903188855626,
+    "map50_95": 0.3160086984242048,
+    "per_class_ap50": {
+      "punching_hole": 0.9925,
+      "welding_line": 0.9242783386681837,
+      "crescent_gap": 0.7937227125001606,
+      "water_spot": 0.8096271769659514,
+      "oil_spot": 0.7101147815725234,
+      "silk_spot": 0.24768004294895551,
+      "inclusion": 0.24629349578819998,
+      "rolled_pit": 0.4179427749360614,
+      "crease": 0.5019603174603176,
+      "waist_folding": 0.7461992447222477
+    },
+    "per_class_ap50_95": {
+      "punching_hole": 0.6017173519453258,
+      "welding_line": 0.5028690309952144,
+      "crescent_gap": 0.4361379286035013,
+      "water_spot": 0.4182595913360133,
+      "oil_spot": 0.4064597696942459,
+      "silk_spot": 0.09983147393035176,
+      "inclusion": 0.10302617311713388,
+      "rolled_pit": 0.11810072616002923,
+      "crease": 0.16129484126984128,
+      "waist_folding": 0.31239009719039124
+    },
+    "speed_ms_per_image": {
+      "preprocess": 3.9505007477165908,
+      "inference": 40.915702547736934,
+      "loss": 0.01025096085947513,
+      "postprocess": 9.006045465202593
+    }
+  },
+  "test": {
+    "precision": 0.688724427995567,
+    "recall": 0.6163921609824052,
+    "map50": 0.6192881919259177,
+    "map50_95": 0.32292011845982316,
+    "per_class_ap50": {
+      "punching_hole": 0.9340625,
+      "welding_line": 0.9948076923076924,
+      "crescent_gap": 0.827854256854257,
+      "water_spot": 0.6046472343483891,
+      "oil_spot": 0.7470224097601194,
+      "silk_spot": 0.23671446586443756,
+      "inclusion": 0.3199724756116242,
+      "rolled_pit": 0.4062788380362454,
+      "crease": 0.2970712309820193,
+      "waist_folding": 0.8244508154943936
+    },
+    "per_class_ap50_95": {
+      "punching_hole": 0.5342888415532475,
+      "welding_line": 0.5450041904766963,
+      "crescent_gap": 0.5024274223838977,
+      "water_spot": 0.312289993965446,
+      "oil_spot": 0.35372121325727673,
+      "silk_spot": 0.07542431341853595,
+      "inclusion": 0.1217886144929399,
+      "rolled_pit": 0.20816565956687447,
+      "crease": 0.17310966547108325,
+      "waist_folding": 0.4029812700122338
+    },
+    "speed_ms_per_image": {
+      "preprocess": 4.025685234860841,
+      "inference": 42.32050849571786,
+      "loss": 0.010471726083146083,
+      "postprocess": 9.78613527382233
+    }
+  },
+  "train_seconds": 15501.8,
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu": "NVIDIA A100-SXM4-80GB"
+}

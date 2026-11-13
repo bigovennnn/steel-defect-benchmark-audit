@@ -1,0 +1,136 @@
+{
+ "idx": 41,
+ "pmcid": "PMC12119801",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research on wind-turbine damage detection that also trains and evaluates its YOLOv8n-based detector on NEU-DET as a cross-domain experiment (Table 12).",
+ "detector_family": "YOLOv8",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "ambiguous",
+     "value": "described as 5,200 ultrasonic images with cracks/rust/holes, inconsistent with NEU-DET class names in Table 12; no source link",
+     "evidence": "This dataset consists of 5,200 ultrasonic images of industrial steel plates, covering six common structural defects: cracks, rust, holes, and other types of damage.",
+     "location": "Cross-domain generalization validation, NEUDET subsection"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "split only described for wind turbine dataset",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F06": {
+     "status": "ambiguous",
+     "value": "early stopping on validation loss stated generally; not stated whether applied to NEU-DET runs",
+     "evidence": "training was terminated if the validation loss did not improve for 30 consecutive epochs (i.e., a patience value of 30).",
+     "location": "Experimental environment and parameter configuration"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "NEUDET subsection, Table 12"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F09": {
+     "status": "ambiguous",
+     "value": "640x640 in Table 1, not stated to apply to NEU-DET experiment",
+     "evidence": "Image size | 640 Ÿ× 640",
+     "location": "Table 1"
+    },
+    "F10": {
+     "status": "ambiguous",
+     "value": "max 300 epochs with early stopping, Table 1; scope not stated",
+     "evidence": "Although the maximum number of training epochs was set to 300, most training processes converged earlier due to this stopping criterion.",
+     "location": "Experimental environment"
+    },
+    "F11": {
+     "status": "ambiguous",
+     "value": "16 in Table 1; scope not stated",
+     "evidence": "Batch size | 16",
+     "location": "Table 1"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "single run",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F14": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Table 12; Yolo-sd row cites ref 24, possibly copied"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "no speed reported for NEU-DET; FPS in Table 10 (wind dataset) without hardware/batch statement",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text; Discussion mentions 'open-source architecture' without link"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "YOLO-Wind",
+    "map50": 74.0,
+    "map50_95": null,
+    "baseline": "YOLOv8 (original model)",
+    "baseline_map50": 75.1,
+    "improvement_pp": -1.1,
+    "single_run": null,
+    "evidence": "the improved model achieved an mAP of 74.0% on the NEUDET dataset, which is nearly the same as the original model (75.1%)",
+    "location": "NEUDET subsection, Table 12"
+   }
+  }
+ ],
+ "code_links": [
+  "https://www.kaggle.com/datasets/ajifoster3/yolo-annotated-wind-turbines-586x371/data",
+  "https://blog.csdn.net/m0_56494923/article/details/135284817",
+  "https://www.kaggle.com/datasets/rezeliet/yolo-vegetable-dataset",
+  "https://www.kaggle.com/datasets/pfrmusic/yolo-shot-datasets-with-annots"
+ ],
+ "coder_notes": "NEU-DET is a secondary cross-domain experiment; its description (5,200 ultrasonic images) is inconsistent with NEU-DET; Table 12 lists only 5 per-class APs (no scratches) and YOLOv8 rolled-in scale 0.954 looks anomalous. Possibly the CSDN link is the NEU-DET source but this is not stated. Training settings (Table 1) are not explicitly scoped to NEU-DET. Primary dataset is DTU wind turbine (train/val 7:3, no test). Code: 'open-source architecture' claimed but no link."
+}

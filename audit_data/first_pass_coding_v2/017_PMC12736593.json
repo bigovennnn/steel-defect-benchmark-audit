@@ -1,0 +1,249 @@
+{
+ "idx": 17,
+ "pmcid": "PMC12736593",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing LCED-YOLO and benchmarking detection on NEU-DET and GC10-DET.",
+ "detector_family": "YOLO11 (LCED-YOLO)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "6 categories, 1800 images (1440 train, 180 val, 180 test)",
+     "evidence": "The NEU-DET dataset includes six distinct categories of steel surface defects",
+     "location": "§4.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "8:1:1 train/val/test (1440/180/180)",
+     "evidence": "This study employs an 8:1:1 ratio to partition the dataset. There are 1440 images for training, 180 images for validation, and 180 images for testing.",
+     "location": "§4.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "reported",
+     "value": "trained from scratch, no pre-training weights",
+     "evidence": "pre-training weights are not used in all experiments in this paper. All comparison methods and our proposed model were trained from scratch under identical training conditions.",
+     "location": "§4.2"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "test split exists in F02, but Table 1 does not explicitly specify test vs val",
+     "evidence": "Table 1 Results on the NEU-DET dataset.",
+     "location": "Table 1"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "All input images are standardized to a resolution of 640",
+     "location": "§4.2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300",
+     "evidence": "the training cycle is 300",
+     "location": "§4.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "8",
+     "evidence": "the batch size is 8",
+     "location": "§4.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "All comparison methods and our proposed model were trained from scratch under identical training conditions.",
+     "location": "§4.2"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "NVIDIA GeForce RTX 3060 GPU 12GB, batch 8",
+     "evidence": "The system utilized an NVIDIA GeForce RTX 3060 GPU with 12 GB memory and an Intel Core i5-13400F CPU.",
+     "location": "§4.2"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "LCED-YOLO",
+    "map50": 79.8,
+    "map50_95": null,
+    "baseline": "YOLOV11n",
+    "baseline_map50": 77.2,
+    "improvement_pp": 2.6,
+    "single_run": null,
+    "evidence": "LCED-YOLO | 48.2% | 82.6% | 94.5% | 89.1% | 70.6% | 93.5% | 79.8%",
+    "location": "Table 1"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "10 categories, 2294 images (1834 train, 230 val, 230 test)",
+     "evidence": "the GC10-DET dataset includes ten categories of steel surface defects",
+     "location": "§4.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "8:1:1 train/val/test (1834/230/230)",
+     "evidence": "This study employs an 8:1:1 ratio to partition the dataset, consisting of 1834 training images, 230 validation images, and 230 test images.",
+     "location": "§4.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "reported",
+     "value": "trained from scratch, no pre-training weights",
+     "evidence": "pre-training weights are not used in all experiments in this paper. All comparison methods and our proposed model were trained from scratch under identical training conditions.",
+     "location": "§4.2"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "test split exists in F02, but Table 3 does not explicitly specify test vs val",
+     "evidence": "Table 3 Results on the GC10-DET dataset.",
+     "location": "Table 3"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "All input images are standardized to a resolution of 640",
+     "location": "§4.2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300",
+     "evidence": "the training cycle is 300",
+     "location": "§4.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "8",
+     "evidence": "the batch size is 8",
+     "location": "§4.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "All comparison methods and our proposed model were trained from scratch under identical training conditions.",
+     "location": "§4.2"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "NVIDIA GeForce RTX 3060 GPU 12GB, batch 8",
+     "evidence": "The system utilized an NVIDIA GeForce RTX 3060 GPU with 12 GB memory and an Intel Core i5-13400F CPU.",
+     "location": "§4.2"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "LCED-YOLO",
+    "map50": 70.3,
+    "map50_95": null,
+    "baseline": "YOLOV11n",
+    "baseline_map50": 67.0,
+    "improvement_pp": 3.3,
+    "single_run": null,
+    "evidence": "LCED-YOLO | 99.3% | 96.6% | 94.9% | 73.8% | 70.2% | 68.6% | 32.5% | 15.8% | 59.0% | 92.6% | 70.3%",
+    "location": "Table 3"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "LCED-YOLO evaluated on NEU-DET (Table 1) and GC10-DET (Table 3). Both split 8:1:1. Trained from scratch without pretrained weights."
+}

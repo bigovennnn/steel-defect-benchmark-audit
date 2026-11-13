@@ -1,0 +1,131 @@
+{
+  "idx": 232,
+  "pmcid": "PMC10681978",
+  "eligibility": "include",
+  "exclusion_code": "",
+  "eligibility_reason": "Original research proposing an improved YOLOv5s with CSPlayer and GAMAttention and evaluating bounding box defect detection on an augmented GC10-DET dataset.",
+  "detector_family": "YOLOv5",
+  "is_preprint_or_version_note": "",
+  "datasets": [
+    {
+      "dataset": "GC10-DET",
+      "fields": {
+        "F01": {
+          "status": "reported",
+          "value": "GC10-DET [31], 10 classes, augmented to 4508 images",
+          "evidence": "The total number of images in the expanded dataset is 4508. And the dataset is divided into train set, validation set and test set in the ratio of 8:1:1.",
+          "location": "§Experiment — Dataset"
+        },
+        "F02": {
+          "status": "reported",
+          "value": "8:1:1 (train 3608, val 450, test 450)",
+          "evidence": "And the dataset is divided into train set, validation set and test set in the ratio of 8:1:1. The training set has 3608 images and the test set and validation set have 450 images each.",
+          "location": "§Experiment — Dataset"
+        },
+        "F03": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§Experiment — Dataset, full text checked"
+        },
+        "F04": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§Experiment — Dataset, full text checked"
+        },
+        "F05": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§Experiment, Table 1, full text checked"
+        },
+        "F06": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§Experiment, full text checked"
+        },
+        "F07": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§Experimental results, Table 2, Table 4, full text checked"
+        },
+        "F08": {
+          "status": "not_reported_in_paper",
+          "value": "unclear",
+          "evidence": "",
+          "location": "§Experiment, full text checked"
+        },
+        "F09": {
+          "status": "reported",
+          "value": "640x640",
+          "evidence": "Parameter | Value Learning rate | 0.01 Batch size | 8 Image size | 640*640 Weight decay | 0.0005 Momentum | 0.937 Epoch | 300",
+          "location": "Table 1"
+        },
+        "F10": {
+          "status": "reported",
+          "value": "300 epochs",
+          "evidence": "Parameter | Value Learning rate | 0.01 Batch size | 8 Image size | 640*640 Weight decay | 0.0005 Momentum | 0.937 Epoch | 300",
+          "location": "Table 1"
+        },
+        "F11": {
+          "status": "reported",
+          "value": "8",
+          "evidence": "Parameter | Value Learning rate | 0.01 Batch size | 8 Image size | 640*640 Weight decay | 0.0005 Momentum | 0.937 Epoch | 300",
+          "location": "Table 1"
+        },
+        "F12": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§Experiment, Table 1, full text checked"
+        },
+        "F13": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§Experimental results, Table 2, Table 4, full text checked"
+        },
+        "F14": {
+          "status": "reported",
+          "value": "rerun",
+          "evidence": "Faster R-CNN, YOLOv5s, YOLOv5l, YOLOv5m, and YOLOv5x were separately used for detection on the augmented GC10-DET dataset.",
+          "location": "§Comparison experiment"
+        },
+        "F15": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§Experimental environment and training parameters, Table 4, full text checked"
+        },
+        "F16": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§Data availability, full text checked"
+        },
+        "F17": {
+          "status": "not_reported_in_paper",
+          "value": "",
+          "evidence": "",
+          "location": "§Data availability, full text checked"
+        }
+      },
+      "main_result": {
+        "model": "YOLOv5s + CSPLayer + GAMAttention (OURS)",
+        "map50": 82.8,
+        "map50_95": 55.5,
+        "baseline": "YOLOv5s",
+        "baseline_map50": 81.4,
+        "improvement_pp": 1.4,
+        "single_run": null,
+        "evidence": "In the performance of the improved model, the mAP@0.5 and mAP@0.5:0.95 of the proposed model reached 82.8% and 55.5%, respectively, 1.4% and 1.7% higher compared to the original YOLOv5s.",
+        "location": "Table 2, Table 4, §Comparison experiment"
+      }
+    }
+  ],
+  "code_links": [],
+  "coder_notes": "In §Experiment — Dataset, GC10-DET was first expanded via offline data augmentation (random rotation, brightness adjustment, sensor noise, glass blur) to 4508 images, and then divided 8:1:1 into train (3608), val (450), and test (450), which risks near-duplicate leakage across splits."
+}

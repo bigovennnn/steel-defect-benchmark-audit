@@ -1,0 +1,131 @@
+{
+ "idx": 177,
+ "pmcid": "PMC10422419",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing a hybrid attention network based on YOLOX-S (with CBAM, ASFF, and CIoU) and evaluating bounding-box detection on NEU-DET.",
+ "detector_family": "YOLOX (YOLOX-S)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 grayscale images, 6 classes (300 each)",
+     "evidence": "It includes a total of 1800 grayscale images, with 300 samples for each defect type.",
+     "location": "5.1"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "5.1, 5.4, Table 2; validation set mentioned in 5.6, but split ratios/counts not stated"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "5.1"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "5.1, 5.2"
+    },
+    "F05": {
+     "status": "ambiguous",
+     "value": "freezing and unfreezing fine-tuning phases used, implying pretrained backbone weights, but weight source not specified",
+     "evidence": "During the freezing phase, the feature extraction network did not change and the system occupied less significant memory to fine-tune the network.",
+     "location": "5.4"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "5.4, 5.6"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "validation set mAP per epoch stated as slightly lower than final evaluation value; exact split/protocol for final evaluation in Tables 3-4 unclear",
+     "evidence": "Since the mAP is calculated for the validation set after each epoch of training, it is slightly lower than the final evaluation value.",
+     "location": "5.6"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "5.6"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "224x224",
+     "evidence": "The scale transformation was to change the size of the input image to [224,224], which aimed to reduce the computational complexity of the network, thus shortening the training time of the model.",
+     "location": "5.2, Table 2"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "Epoch | 300",
+     "location": "Table 1, Table 2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "8 (Table 1; freeze-batch-size 16, unfreeze-batch-size 8 in Table 2)",
+     "evidence": "freeze-batch-size | 16\nunfreeze-batch-size | 8",
+     "location": "Table 1, Table 2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "5.4, Tables 1-2"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "5"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "In this study, we utilized established deep-learning-based algorithms for object detection to investigate the six mentioned defects. We compared the performance of these different models and present the results of detection and the loss of training components in Table 4",
+     "location": "5.6"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "5, 6; no inference speed/FPS reported"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "Ours (Improved YOLOX-S)",
+    "map50": 85.63,
+    "map50_95": null,
+    "baseline": "YOLOX-S (Baseline)",
+    "baseline_map50": 79.04,
+    "improvement_pp": 6.59,
+    "single_run": null,
+    "evidence": "Baseline | 41.45 | 84.52 | 95.24 | 92.55 | 69.68 | 90.82 | 79.04\nOurs | 63.65 | 89.00 | 93.89 | 94.14 | 77.63 | 95.48 | 85.63",
+    "location": "Table 3, Table 4"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Both Table 3 and Table 4 list Baseline mAP = 79.04% and Ours mAP = 85.63% (actual difference = 6.59 percentage points, or 8.34% relative improvement: 6.59 / 79.04 = 8.338%). The text in Abstract, 5.5, and 5.6 states '8.34% improvement in mAP', which is relative improvement rather than percentage points (or misstated as percentage points)."
+}

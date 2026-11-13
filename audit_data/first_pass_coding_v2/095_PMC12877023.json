@@ -1,0 +1,249 @@
+{
+ "idx": 95,
+ "pmcid": "PMC12877023",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing a MobileMamba-based detector with contrastive auxiliary loss, evaluated on NEU-DET and GC10-DET.",
+ "detector_family": "YOLOv11 (MobileMamba-Net)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 grayscale images, 6 classes, 300 per class, NEU",
+     "evidence": "The surface defect database released by Northeastern University (NEU) includes six typical surface defects of hot-rolled steel strips: rolled scale (RS), plaque (Pa), crack (Cr), pitting surface (PS), inclusion (In), and scratch (Sc). It contains 1800 grayscale images",
+     "location": "Results - Datasets, Table 1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "8:1:1 (training, validation, testing)",
+     "evidence": "During our training process, the dataset was allocated in an 8:1:1 ratio, which was respectively used for the training, validation and testing of the model.",
+     "location": "Results - Datasets"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Results - Datasets"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Results - Datasets"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Methods, Results"
+    },
+    "F06": {
+     "status": "ambiguous",
+     "value": "states best-performing model was retained in real-time without specifying subset or metric",
+     "evidence": "Experimental results were saved every 20 epochs, and the best-performing model was retained in real-time.",
+     "location": "Results - Experimental setup"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Results"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "Results"
+    },
+    "F09": {
+     "status": "ambiguous",
+     "value": "input size not stated for main model (Tables 4-7); 320x320 and 416x416 reported for Ours-Nano edge model in Table 8",
+     "evidence": "Meanwhile, in order to ensure that the model can achieve real-time detection on the Jeston Nano computing board with limited computing power, we reduced the input size of the model",
+     "location": "Results - Experimental setup, Table 8"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "100 epochs",
+     "evidence": "The model was trained for a total of 100 epochs with a batch size of 16.",
+     "location": "Results - Experimental setup"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "The model was trained for a total of 100 epochs with a batch size of 16.",
+     "location": "Results - Experimental setup"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Results"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Results"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "mixed",
+     "evidence": "we conducted comparative experiments using the Nvidia Jeston Nano B01 edge device to compare with the currently popular edge detection models and focus on the size of the FPS value under this device.",
+     "location": "Results - Comparative experiments"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "hardware reported (RTX 3060 x2 in Table 2; Nvidia Jetson Nano B01 / Maxwell GPU in Table 3); batch size and precision for speed not reported",
+     "evidence": "The system configurations for training are listed in Table 2, while the edge computing device specifications for evaluating model inference efficiency are also provided in Table 3.",
+     "location": "Results - Experimental setup, Table 2, Table 3"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "available on request from corresponding author",
+     "evidence": "",
+     "location": "Data Availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Data Availability"
+    }
+   },
+   "main_result": {
+    "model": "MobileMamba-Net (Our)",
+    "map50": 79.7,
+    "map50_95": null,
+    "baseline": "YOLOv11n",
+    "baseline_map50": 76.51,
+    "improvement_pp": 3.19,
+    "single_run": null,
+    "evidence": "YOLOv11 | NEU-DET | 76.51 | 2.6 | 6.5 | 12 YOLOv12 | 76.97 | 2.6 | 6.0 | 11 CABF-YOLO | 76.39 | 6.9 | 15.4 | 26 FD-YOLO | 78.46 | 4.9 | 9.8 | 18 EdgeYOLO | 75.35 | 7.0 | 16.1 | 28 Mamba-YOLO | 78.61 | 6.1 | 14.3 | 23 Our | 79.70 | 2.4 | 5.9 | 10",
+    "location": "Table 4, Table 5"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "2294 images, 10 classes, 2048x1000 pixels",
+     "evidence": "1000 pixels. It includes ten defect categories: punching_hole, welding_line, crescent_gap, water_spot, oil_spot, silk_spot, inclusion, rolled_pit, crease, and waist_folding. The dataset is split in an 8:1:1 ratio, with 1,835 images for training and 459 for validation",
+     "location": "Table 1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "8:1:1 train/val/test stated in text; Table 1 states 8:1:1 with 1835 training and 459 validation",
+     "evidence": "The dataset is split in an 8:1:1 ratio, with 1,835 images for training and 459 for validation",
+     "location": "Results - Datasets, Table 1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Results - Datasets"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Results - Datasets"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Methods, Results"
+    },
+    "F06": {
+     "status": "ambiguous",
+     "value": "states best-performing model was retained in real-time without specifying subset or metric",
+     "evidence": "Experimental results were saved every 20 epochs, and the best-performing model was retained in real-time.",
+     "location": "Results - Experimental setup"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Results"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "Results"
+    },
+    "F09": {
+     "status": "ambiguous",
+     "value": "input size not stated for main model (Tables 4-7); 320x320 and 416x416 reported for Ours-Nano edge model in Table 8",
+     "evidence": "Meanwhile, in order to ensure that the model can achieve real-time detection on the Jeston Nano computing board with limited computing power, we reduced the input size of the model",
+     "location": "Results - Experimental setup, Table 8"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "100 epochs",
+     "evidence": "The model was trained for a total of 100 epochs with a batch size of 16.",
+     "location": "Results - Experimental setup"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16",
+     "evidence": "The model was trained for a total of 100 epochs with a batch size of 16.",
+     "location": "Results - Experimental setup"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Results"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Results"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "mixed",
+     "evidence": "we conducted comparative experiments using the Nvidia Jeston Nano B01 edge device to compare with the currently popular edge detection models and focus on the size of the FPS value under this device.",
+     "location": "Results - Comparative experiments"
+    },
+    "F15": {
+     "status": "ambiguous",
+     "value": "hardware reported (RTX 3060 x2 in Table 2; Nvidia Jetson Nano B01 / Maxwell GPU in Table 3); batch size and precision for speed not reported",
+     "evidence": "The system configurations for training are listed in Table 2, while the edge computing device specifications for evaluating model inference efficiency are also provided in Table 3.",
+     "location": "Results - Experimental setup, Table 2, Table 3"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "available on request from corresponding author",
+     "evidence": "",
+     "location": "Data Availability"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "Data Availability"
+    }
+   },
+   "main_result": {
+    "model": "MobileMamba-Net (Our)",
+    "map50": 69.95,
+    "map50_95": null,
+    "baseline": "YOLOv11n",
+    "baseline_map50": 67.03,
+    "improvement_pp": 2.92,
+    "single_run": null,
+    "evidence": "YOLOv11 | GC10-DET | 67.03 | 2.6 | 6.5 | 12 YOLOv12 | 67.54 | 2.6 | 6.0 | 11 CABF-YOLO | 68.16 | 6.9 | 15.4 | 26 FD-YOLO | 68.90 | 4.9 | 9.8 | 18 EdgeYOLO | 66.17 | 7.0 | 16.1 | 28 Mamba-YOLO | 68.52 | 6.1 | 14.3 | 23 Our | 69.95 | 2.4 | 5.9 | 10",
+    "location": "Table 4, Table 5"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Table 4/5 report mAP (%) without explicit @0.5 suffix, coded under map50 per YOLO convention. For GC10-DET, text states 8:1:1 train/val/test while Table 1 says 8:1:1 with 1835 train and 459 val (which sums to 2294)."
+}

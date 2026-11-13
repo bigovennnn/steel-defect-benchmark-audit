@@ -1,0 +1,131 @@
+{
+ "idx": 188,
+ "pmcid": "PMC10346955",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research proposing STMS-YOLOv5 for gear surface defect detection and also conducting a bounding-box detection ablation study on NEU-DET (Table 3).",
+ "detector_family": "YOLOv5 (STMS-YOLOv5s: ShuffleNetv2 + TransposeConv + MECA + SIoU)",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 pictures, 6 categories",
+     "evidence": "The NEU-DET dataset contains a total of 1800 pictures and 6 categories (crazing, inclusion, patches, pitted_surface, rolled-in_scale, and scratches).",
+     "location": "5.4"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "5.2, 5.4; 8:2 train/test split is stated for the gear dataset (2400/600), not stated for NEU-DET"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "5.2, 5.4"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "5.2, 5.4"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "5.3"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "5.3"
+    },
+    "F07": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "5.4, Table 3"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "5.4"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "640x640",
+     "evidence": "The size of the input image is 640 × 640 pixels, the batch size is 128, and the initial learning rate is 0.01. The total number of training epochs is 300.",
+     "location": "5.3"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "300 epochs",
+     "evidence": "The size of the input image is 640 × 640 pixels, the batch size is 128, and the initial learning rate is 0.01. The total number of training epochs is 300.",
+     "location": "5.3"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "128",
+     "evidence": "The size of the input image is 640 × 640 pixels, the batch size is 128, and the initial learning rate is 0.01. The total number of training epochs is 300.",
+     "location": "5.3"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "5.3"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "5.4"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun",
+     "evidence": "To verify the generalization ability of the proposed model, the publicly available NEU-DET steel surface defect dataset is used for an ablation experiment.",
+     "location": "5.4, Table 3"
+    },
+    "F15": {
+     "status": "not_reported_in_paper",
+     "value": "Nvidia A100-SXM4 40GB GPU stated in 5.1 and FPS reported in Table 3, but inference batch size and precision not stated",
+     "evidence": "",
+     "location": "5.1, Table 3"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "data available from corresponding author upon reasonable request",
+     "evidence": "",
+     "location": "Data Availability Statement"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text"
+    }
+   },
+   "main_result": {
+    "model": "STMS-YOLOv5s",
+    "map50": 73.5,
+    "map50_95": null,
+    "baseline": "YOLOv5s",
+    "baseline_map50": 72.6,
+    "improvement_pp": 0.9,
+    "single_run": null,
+    "evidence": "The final STMS-YOLOv5s model increases the mAP by 0.9 and the FPS by 33.3, as well as reducing the number of parameters and GFLOPs by 44.44% and 50.31%, respectively, which proves the generalization ability of the proposed model.",
+    "location": "5.4, Table 3"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Primary dataset is Guizhou University gear dataset (3000 images, 8:2 split); NEU-DET is evaluated in Section 5.4 (Table 3) for generalization."
+}

@@ -1,0 +1,12 @@
+{
+ "idx": 36,
+ "pmcid": "PMC12165410",
+ "eligibility": "exclude",
+ "exclusion_code": "E3",
+ "eligibility_reason": "All detection experiments use a self-built zinc flower defect dataset of galvanized sheet; NEU-DET is only mentioned in related work.",
+ "detector_family": "YOLOv5",
+ "is_preprint_or_version_note": "",
+ "datasets": [],
+ "code_links": [],
+ "coder_notes": "Neu-Det appears only in the description of reference [15] (GDM-YOLO)."
+}

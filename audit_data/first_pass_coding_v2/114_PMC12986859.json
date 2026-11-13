@@ -1,0 +1,131 @@
+{
+ "idx": 114,
+ "pmcid": "PMC12986859",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original research evaluating YOLO11-based defect detection on NEU-DET.",
+ "detector_family": "YOLO11",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 6 classes, NEU",
+     "evidence": "NEU-DET dataset, which contains 1800 images across six defect types: crazing, inclusion, patches, pitted surface, rolled-in scale, and scratches",
+     "location": "§Dataset"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "partition ratio reported",
+     "evidence": "Both the DeepPCB and NEU-DET datasets were divided into training, validation, and test sets at an 8:1:1 ratio, with all experimental parameters and evaluation metrics kept consistent.",
+     "location": "§Experimental Setup"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F05": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F06": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F07": {
+     "status": "ambiguous",
+     "value": "evaluation split stated",
+     "evidence": "[TABLE] Table 9 Comparison of experimental results on NEU-DET generalization performance.",
+     "location": "Table/§Experiments"
+    },
+    "F08": {
+     "status": "not_reported_in_paper",
+     "value": "unclear",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "input resolution reported",
+     "evidence": "Second, the fixed input resolution of 640 × 640 pixels—a common constraint for real-time models—may limit the exploitation of finer details available in very high-resolution UAV imagery, potentially affecting the detection of extremely small or",
+     "location": "§Experimental Setup"
+    },
+    "F10": {
+     "status": "reported",
+     "value": "epochs reported",
+     "evidence": "As shown in Figure 8, the training process of both POLD-YOLO and the baseline YOLOv11n is stable, with the performance metrics converging after approximately 200 epochs.",
+     "location": "§Experimental Setup"
+    },
+    "F11": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F12": {
+     "status": "reported",
+     "value": "seed reported",
+     "evidence": "To guarantee the reproducibility of all experimental results, we set a fixed random seed of 42 for all training runs.",
+     "location": "§Experimental Setup"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F14": {
+     "status": "ambiguous",
+     "value": "comparative baseline table",
+     "evidence": "[TABLE] Table 9 Comparison of experimental results on NEU-DET generalization performance.",
+     "location": "Table/§Experiments"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "hardware reported",
+     "evidence": "Hardware Configuration | Parameters\nCPU | Intel® Xeon® Silver 4214R (Intel Corporation, Santa Clara, CA, USA)\nGPU | NVIDIA GeForce RTX 3080Ti (NVIDIA Corporation, Santa Clara, CA, USA)\nCUDA | 12.",
+     "location": "§Experimental Setup"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    }
+   },
+   "main_result": {
+    "model": "YOLO11-improved",
+    "map50": 92.4,
+    "map50_95": null,
+    "baseline": "YOLO11 baseline",
+    "baseline_map50": 89.9,
+    "improvement_pp": 2.5,
+    "single_run": null,
+    "evidence": "From an accuracy standpoint, our model achieves the highest scores on both mAP@0.5 (92.40%) and the more stringent mAP@0.",
+    "location": "Table/§Results"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Automated evidence extraction compliant with Coding Manual v1.4. Single_run set to null in accordance with Manual v1.2."
+}

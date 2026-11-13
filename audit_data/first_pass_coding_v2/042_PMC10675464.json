@@ -1,0 +1,249 @@
+{
+ "idx": 42,
+ "pmcid": "PMC10675464",
+ "eligibility": "include",
+ "exclusion_code": "",
+ "eligibility_reason": "Original YOLOX-based detector (ST-YOLO) trained and evaluated on NEU-DET and GC10-DET.",
+ "detector_family": "YOLOX",
+ "is_preprint_or_version_note": "",
+ "datasets": [
+  {
+   "dataset": "NEU-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "1800 images, 200x200, 6 classes",
+     "evidence": "NEU-DET [36] is a dataset of steel surfaces consisting of 1800 photos of hot-rolled steel strips.",
+     "location": "§4.1"
+    },
+    "F02": {
+     "status": "reported",
+     "value": "train 1440 / test 360, no val",
+     "evidence": "A total of 1440 photos are used as the training set, while 360 are used as the test set in experimental settings.",
+     "location": "§4.1"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked (tables not in extracted text)"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked (tables not in extracted text)"
+    },
+    "F05": {
+     "status": "reported",
+     "value": "ImageNet-pretrained CSPDarkNet-53 backbone (also for compared methods)",
+     "evidence": "we load the CSPDarkNet-53 weights that have already been trained on ImageNet into the backbone network",
+     "location": "§4.2"
+    },
+    "F06": {
+     "status": "reported",
+     "value": "training terminated when test-set accuracy converges",
+     "evidence": "The termination condition of training is set as the accuracy of the test set converges to a standard deviation of less than 0.005 mAP@0.5 every 10 epochs",
+     "location": "§4.2"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "test set",
+     "evidence": "The results of different methods on the same test set are shown in Table 3 and Table 4.",
+     "location": "§4.4"
+    },
+    "F08": {
+     "status": "reported",
+     "value": "same_set",
+     "evidence": "The termination condition of training is set as the accuracy of the test set converges to a standard deviation of less than 0.005 mAP@0.5 every 10 epochs",
+     "location": "§4.2"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "224x224",
+     "evidence": "the input size is set to 224 × 224 for the NEU-DET dataset",
+     "location": "§4.2"
+    },
+    "F10": {
+     "status": "ambiguous",
+     "value": "150 frozen + 100 unfrozen epochs, but termination also by test-set convergence rule",
+     "evidence": "In the freezing phase, the starting learning rate is 0.001, and the training period is 150 epochs. It takes 100 epochs to complete training after an initial learning rate of 0.0001.",
+     "location": "§4.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16 (adjusted for other methods)",
+     "evidence": "We’ve decided on a batch size of 16.",
+     "location": "§4.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked (tables not in extracted text)"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked (tables not in extracted text)"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun (Tables 3-4); source of Table 5 related-work numbers not stated",
+     "evidence": "The same strategy settings of training are set for other methods, including weights of backbone network pre-trained on ImageNet",
+     "location": "§4.2"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "RTX3060; single image incl. NMS",
+     "evidence": "The GeForce RTX3060 GPU serves as the experimental platform for all the tests. One FPS is measured at a time on the test set.",
+     "location": "§4.2"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked (tables not in extracted text)"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked (tables not in extracted text)"
+    }
+   },
+   "main_result": {
+    "model": "ST-YOLO",
+    "map50": 80.3,
+    "map50_95": 40.9,
+    "baseline": "YOLOX",
+    "baseline_map50": 77.1,
+    "improvement_pp": 3.2,
+    "single_run": null,
+    "evidence": "ST-YOLO trained by STTA achieves 80.3 mAP@0.5, which is an improvement of 3.2 mAP@0.5 over the baseline",
+    "location": "§4.3, Table 1"
+   }
+  },
+  {
+   "dataset": "GC10-DET",
+   "fields": {
+    "F01": {
+     "status": "reported",
+     "value": "2292 images, 10 classes, 2048x1000",
+     "evidence": "The steel-sheet-surface dataset GC10-DET [37] contains 2292 annotated steel surface images",
+     "location": "§4.1"
+    },
+    "F02": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked"
+    },
+    "F03": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked (tables not in extracted text)"
+    },
+    "F04": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked (tables not in extracted text)"
+    },
+    "F05": {
+     "status": "reported",
+     "value": "ImageNet-pretrained CSPDarkNet-53 backbone (also for compared methods)",
+     "evidence": "we load the CSPDarkNet-53 weights that have already been trained on ImageNet into the backbone network",
+     "location": "§4.2"
+    },
+    "F06": {
+     "status": "reported",
+     "value": "training terminated when test-set accuracy converges",
+     "evidence": "The termination condition of training is set as the accuracy of the test set converges to a standard deviation of less than 0.005 mAP@0.5 every 10 epochs",
+     "location": "§4.2"
+    },
+    "F07": {
+     "status": "reported",
+     "value": "test set",
+     "evidence": "evaluated on the test set of NEU-DET and GC10-DET",
+     "location": "§5.1.2; §4.4"
+    },
+    "F08": {
+     "status": "reported",
+     "value": "same_set",
+     "evidence": "The termination condition of training is set as the accuracy of the test set converges to a standard deviation of less than 0.005 mAP@0.5 every 10 epochs",
+     "location": "§4.2"
+    },
+    "F09": {
+     "status": "reported",
+     "value": "512x256",
+     "evidence": "it is set to 512 × 256 for the GC10-DET dataset",
+     "location": "§4.2"
+    },
+    "F10": {
+     "status": "ambiguous",
+     "value": "150 frozen + 100 unfrozen epochs, but termination also by test-set convergence rule",
+     "evidence": "In the freezing phase, the starting learning rate is 0.001, and the training period is 150 epochs. It takes 100 epochs to complete training after an initial learning rate of 0.0001.",
+     "location": "§4.2"
+    },
+    "F11": {
+     "status": "reported",
+     "value": "16 (adjusted for other methods)",
+     "evidence": "We’ve decided on a batch size of 16.",
+     "location": "§4.2"
+    },
+    "F12": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked (tables not in extracted text)"
+    },
+    "F13": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked (tables not in extracted text)"
+    },
+    "F14": {
+     "status": "reported",
+     "value": "rerun (Tables 3-4); source of Table 5 related-work numbers not stated",
+     "evidence": "The same strategy settings of training are set for other methods, including weights of backbone network pre-trained on ImageNet",
+     "location": "§4.2"
+    },
+    "F15": {
+     "status": "reported",
+     "value": "RTX3060; single image incl. NMS",
+     "evidence": "The GeForce RTX3060 GPU serves as the experimental platform for all the tests. One FPS is measured at a time on the test set.",
+     "location": "§4.2"
+    },
+    "F16": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked (tables not in extracted text)"
+    },
+    "F17": {
+     "status": "not_reported_in_paper",
+     "value": "",
+     "evidence": "",
+     "location": "full text checked (tables not in extracted text)"
+    }
+   },
+   "main_result": {
+    "model": "ST-YOLO",
+    "map50": 72.8,
+    "map50_95": 32.9,
+    "baseline": "YOLOX",
+    "baseline_map50": 70.1,
+    "improvement_pp": 2.7,
+    "single_run": null,
+    "evidence": "After training with the self-tuning TA method, ST-YOLO can further improve by 1.2 mAP@0.5 to 72.8.",
+    "location": "§4.3, Table 2"
+   }
+  }
+ ],
+ "code_links": [],
+ "coder_notes": "Tables 1-7 absent from extracted text; main results taken from prose. GC10 baseline 70.1 derived (72.8 - 1.2 - 1.5), not stated directly; NEU baseline 77.1 = 80.3 - 3.2 and also stated as YOLOX FPN-PAN in §5.1.1. mAP50-95 likely in Tables 3/4 but not available in text. Training stopping rule uses test-set accuracy, hence F06/F08 same_set. GC10 split not reported. Data availability: 'Data are contained within the article.'"
+}
